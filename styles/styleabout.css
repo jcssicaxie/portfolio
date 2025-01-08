@@ -5,22 +5,16 @@ header nav ul li:nth-of-type(3) {
 /********/
 /* MAIN */
 /********/
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     display: flex;
     flex-direction: column;
 }
 
 main {
-    padding: 3em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
 }
 
 img {
@@ -28,11 +22,11 @@ img {
 }
 
 main p {
+    font-family: 'Inter';
     text-transform: none;
     text-align: center;
-    padding-top: 3em;
 }
 
 footer {
-    padding-top: 10em;
+    padding-top: 7em;
 }
