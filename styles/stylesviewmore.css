@@ -3,8 +3,7 @@ header nav ul li:nth-of-type(2) {
 }
 
 main {
-    padding-top: 1em;
-    padding-bottom: 3em;
+    padding: 3em .7em;
 }
 
 img {
@@ -16,7 +15,6 @@ img {
     overflow: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    padding-top: 2em;
 }
 
 .carouselphotos {
@@ -31,7 +29,7 @@ img {
 
 main p {
     text-transform: none;
-    /* text-align: center; */
+    padding-bottom: 3em;
 }
 
 main a {
@@ -44,10 +42,17 @@ main a {
 .KCtitle {
     display: grid;
     grid-template-columns: 1fr max-content;
+    padding-bottom: 3em;
 }
 
 .KCtitle a {
     font-style: italic;
     font-size: .8em;
+}
+
+.silverbook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 

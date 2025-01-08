@@ -1,7 +1,7 @@
 /* CUSTOM PROPERTIES */
 @font-face {
     font-family: 'Inter';
-    src: url(font/Inter_18pt-Regular.ttf);
+    src: url(font/Inter/Inter_28pt-Regular.ttf);
     font-weight: 700;
 }
 
@@ -60,6 +60,7 @@ footer {
     justify-items: center;
     padding-block: .5em;
     padding-top: 3em;
+    font-size: small;
 }
 
 footer p {
@@ -103,5 +104,5 @@ footer a {
     display: flex;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
-    padding-top: 3em;
+    padding: 3em;
 }

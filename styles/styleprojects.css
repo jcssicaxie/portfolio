@@ -10,7 +10,7 @@ main img {
 }
 
 main {
-    padding: 3em;
+    padding: 3em .7em 0;
 }
 
 .text a {
@@ -18,15 +18,14 @@ main {
     color: var(--color-link);
     text-decoration: underline;
     text-transform: none;
-    padding: .9em;
+    padding: 1em;
+    padding-right: 0;
 }
 
 main .text {
     display: grid;
     justify-items: start;
     grid-template-columns: 2fr max-content;
-    /* padding-left: 3em; */
-    /* padding-right: 3em; */
     padding-bottom: 3em;
 }
 
