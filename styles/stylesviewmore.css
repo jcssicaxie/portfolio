@@ -1,0 +1,53 @@
+header nav ul li:nth-of-type(2) {
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+img {
+    width: 20em;
+}
+
+.carousel {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding-top: 2em;
+}
+
+.carouselphotos {
+    display: flex;
+    gap: .5em;
+    scroll-snap-align: start; 
+}
+
+.carousel img {
+    flex-shrink: 0;
+}
+
+main p {
+    text-transform: none;
+    /* text-align: center; */
+}
+
+main a {
+    color: var(--color-link);
+    text-transform: none;
+    padding: 1.3em;
+    padding-right: 0;
+}
+
+.KCtitle {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.KCtitle a {
+    font-style: italic;
+    font-size: .8em;
+}
+
