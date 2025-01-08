@@ -1,0 +1,52 @@
+header nav ul li:nth-of-type(2) {
+    text-decoration: underline;
+}
+
+/********/
+/* MAIN */
+/********/
+main img {
+    width: 15em;
+}
+
+main {
+    padding: 3em;
+}
+
+.text a {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color-link);
+    text-decoration: underline;
+    text-transform: none;
+    padding: .9em;
+}
+
+main .text {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 2fr max-content;
+    /* padding-left: 3em; */
+    /* padding-right: 3em; */
+    padding-bottom: 3em;
+}
+
+.carousel {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.carouselphotos {
+    display: flex;
+    gap: .5em;
+    scroll-snap-align: start; 
+}
+
+.carousel img {
+    flex-shrink: 0;
+}
+
+main p {
+    text-transform: none;
+}
