@@ -5,28 +5,61 @@ header nav ul li:nth-of-type(2) {
 /********/
 /* MAIN */
 /********/
+main {
+    padding-bottom: 0;
+}
+
 main img {
     width: 15em;
 }
 
-main {
-    padding: 3em .7em 0;
-}
-
-.text a {
-    font-family: 'Times New Roman', Times, serif;
-    color: var(--color-link);
-    text-decoration: underline;
+main p {
     text-transform: none;
-    padding: 1em;
-    padding-right: 0;
 }
 
-main .text {
+@media (width > 40em) {
+    main {
+        padding: 2em 15em;
+    }
+}
+
+/*************/
+/* VIEW MORE */
+/*************/
+.info {
     display: grid;
     justify-items: start;
+    align-items: center;
     grid-template-columns: 2fr max-content;
-    padding-bottom: 3em;
+}
+
+.info a {
+    font-size: small;
+    font-style: italic;
+    color: var(--color-text);
+    text-decoration: none;
+    text-transform: none;
+}
+
+.border-link {
+    display: inline-block; 
+    padding: .3em .8em; 
+    border: 1px solid var(--color-text); 
+    border-radius: 50%; 
+    text-decoration: none; 
+    font-size: small; 
+    text-align: center; 
+}
+
+/************/
+/* SECTIONS */
+/************/
+section {
+    padding-bottom: 2em;
+}
+
+section:nth-of-type(3) {
+    padding: 0;
 }
 
 .carousel {
@@ -44,8 +77,4 @@ main .text {
 
 .carousel img {
     flex-shrink: 0;
-}
-
-main p {
-    text-transform: none;
 }

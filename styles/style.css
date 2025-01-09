@@ -1,9 +1,8 @@
 /* CUSTOM PROPERTIES */
-@font-face {
-    font-family: 'Inter';
-    src: url(font/Inter/Inter_28pt-Regular.ttf);
-    font-weight: 700;
-}
+/* @font-face {
+    font-family: 'Milton One';
+    src: url('font/milton-one');
+} */
 
 :root {
     --color-text: black;
@@ -15,30 +14,52 @@
     --color-accent3: #F5F4F0;
 }
 
+img {
+    width: 20em;
+}
+
 /********/
 /* BODY */
 /********/
 body {
-    font-family: 'Inter';
+    font-family: 'Helvetica';
     color: var(--color-text);
     text-transform: uppercase;
     margin: 0;
-    padding: 1em;
+    background-color: #F5F4F0;
+}
+
+/********/
+/* MAIN */
+/********/
+main {
+    padding: 2em;
+}
+
+main h2 {
+    display: none;
 }
 
 /**********/
 /* HEADER */
 /**********/
-header h1 {
+header img {
+    width: 100%;
+}
+
+/* header p {
     display: flex;
     justify-content: center;
-}
+    margin-bottom: 0;
+} */
 
 header nav ul {
     display: flex;
     justify-content: center;
-    gap: 3em;
+    gap: 2em;
     padding: 0;
+    margin-top: 0;
+    font-size: small;
 }
 
 header nav ul li {
@@ -59,7 +80,7 @@ footer {
     gap: .5em;
     justify-items: center;
     padding-block: .5em;
-    padding-top: 3em;
+    padding: 2em 0;
     font-size: small;
 }
 
@@ -77,7 +98,23 @@ footer a {
     text-decoration: none;
 }
 
-@media (width > 48em) {
+@media (width > 40em) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img {
+        width: auto;
+        height: 10em;
+    }
+
+    header nav ul {
+        gap: 4em;
+    }
+
     footer {
         justify-items: start;
         grid-template-columns: 1fr max-content;
@@ -85,6 +122,7 @@ footer a {
         grid-template-areas: 
         "mail .         "
         "titel copyright";
+        padding: 2em;
     }
 
     footer p:nth-of-type(1) {
@@ -103,6 +141,19 @@ footer a {
 .backbutton {
     display: flex;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 3em;
+}
+
+.backbutton a {
+    color: var(--color-text);
+    font-style: italic;
+}
+
+.backbutton .border-link {
+    display: inline-block; 
+    padding: .3em 1.9em; 
+    border: 1px solid var(--color-text); 
+    border-radius: 50%; 
+    text-decoration: none; 
+    font-size: smaller; 
+    text-align: center; 
 }

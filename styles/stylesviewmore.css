@@ -2,12 +2,12 @@ header nav ul li:nth-of-type(2) {
     text-decoration: underline;
 }
 
-main {
-    padding: 3em .7em;
-}
-
 img {
     width: 20em;
+}
+
+section {
+    padding-bottom: 2em;
 }
 
 .carousel {
@@ -27,9 +27,16 @@ img {
     flex-shrink: 0;
 }
 
+@media (width > 40em) {
+    main {
+        padding: 2em 15em;
+    }
+}
+
 main p {
     text-transform: none;
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
+    text-align: center;
 }
 
 main a {
@@ -39,16 +46,20 @@ main a {
     padding-right: 0;
 }
 
-.KCtitle {
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    padding-bottom: 3em;
+.magazine-pdf {
+    text-decoration: none;
 }
 
-.KCtitle a {
+section:nth-of-type(1) a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-style: italic;
-    font-size: .8em;
+    font-size: small;
+    padding: 0;
 }
+
+section:nth-of-type(2)
 
 .silverbook {
     display: flex;
@@ -56,3 +67,8 @@ main a {
     justify-content: center;
 }
 
+.returnof10s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
