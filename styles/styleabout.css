@@ -20,8 +20,6 @@ main p {
     max-width: 18em;
 }
 
-/* main img {
-    width: 100%; */
-    /* padding-top: 2em; */
-    /* opacity: 90%;
-} */
+main img {
+    max-width: 15em;
+}

@@ -16,8 +16,7 @@ main p {
 main img {
     display: flex;
     justify-content: center;
-    /* max-width: 20em; */
-    width: 15em;
+    width: 10em;
 } 
 
 main div:nth-of-type(1) {
