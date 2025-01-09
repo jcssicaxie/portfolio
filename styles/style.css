@@ -4,6 +4,13 @@
     src: url('font/milton-one');
 } */
 
+body {
+    /* background-image: url(/images/JessicaBlur.JPEG); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 :root {
     --color-text: black;
     --color-base: white;
@@ -146,6 +153,7 @@ footer a {
 .backbutton a {
     color: var(--color-text);
     font-style: italic;
+    text-transform: none;
 }
 
 .backbutton .border-link {

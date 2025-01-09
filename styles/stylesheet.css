@@ -27,6 +27,6 @@ main div:nth-of-type(1) p {
     text-align: center;
 }
 
-/* div p {
-    padding: 0 1em;
-} */
+.backbutton {
+    padding-top: 2em;
+}
