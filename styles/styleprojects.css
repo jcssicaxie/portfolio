@@ -41,6 +41,10 @@ main p {
     text-transform: none;
 }
 
+/* .info p {
+    visibility: hidden;
+} */
+
 .border-link {
     display: inline-block; 
     padding: .3em .8em; 
