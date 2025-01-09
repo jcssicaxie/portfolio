@@ -5,27 +5,21 @@ header nav ul li:nth-of-type(3) {
 /********/
 /* MAIN */
 /********/
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    padding: 2em;
+main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-img {
-    width: 20em;
+    /* padding: 0; */
 }
 
 main p {
+    font-style: italic;
     text-transform: none;
     text-align: center;
+    padding: 0 1em;
+    max-width: 18em;
 }
 
-footer {
-    padding-top: 7em;
+main img {
+    max-width: 15em;
 }
