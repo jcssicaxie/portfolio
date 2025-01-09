@@ -17,10 +17,11 @@ main p {
     text-transform: none;
     text-align: center;
     padding: 0 1em;
+    max-width: 15em;
 }
 
-main img {
-    /* width: 100%; */
+/* main img {
+    width: 100%; */
     /* padding-top: 2em; */
-    opacity: 90%;
-}
+    /* opacity: 90%;
+} */

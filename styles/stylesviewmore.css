@@ -27,11 +27,11 @@ section {
     flex-shrink: 0;
 }
 
-@media (width > 40em) {
+/* @media (width > 40em) {
     main {
         padding: 2em 15em;
     }
-}
+} */
 
 main p {
     text-transform: none;
