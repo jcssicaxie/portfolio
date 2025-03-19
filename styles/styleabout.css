@@ -23,3 +23,9 @@ main p {
 main img {
     max-width: 15em;
 }
+
+@media (width > 60em) {
+    main img {
+        max-width: 10.4em;
+    }
+}

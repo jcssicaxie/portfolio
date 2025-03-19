@@ -17,11 +17,11 @@ main p {
     text-transform: none;
 }
 
-/* @media (width > 60em) {
+@media (width > 60em) {
     main {
         padding: 2em 15em;
     }
-} */
+}
 
 /*************/
 /* VIEW MORE */
@@ -81,4 +81,14 @@ section:nth-of-type(3) {
 
 .carousel img {
     flex-shrink: 0;
+}
+
+section:nth-of-type(4) img {
+    width: 15em;
+}
+
+@media (width > 60em) {
+    section:nth-of-type(4) img {
+        width: 30em;
+    }
 }
