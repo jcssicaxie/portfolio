@@ -1,0 +1,174 @@
+/* CUSTOM PROPERTIES */
+/* @font-face {
+    font-family: 'Milton One';
+    src: url('font/milton-one');
+} */
+
+body {
+    /* background-image: url(/images/JessicaBlur.JPEG); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+:root {
+    --color-text: black;
+    --color-base: white;
+    --color-link: #2077D6;
+    --color-fade: #D9D9D9;
+    --color-accent: #FDFBE2;
+    --color-accent2: #F5F2E3;
+    --color-accent3: #F5F4F0;
+}
+
+img {
+    width: 20em;
+}
+
+/********/
+/* BODY */
+/********/
+body {
+    font-family: 'Helvetica';
+    color: var(--color-text);
+    text-transform: uppercase;
+    margin: 0;
+    background-color: #F5F4F0;
+}
+
+/********/
+/* MAIN */
+/********/
+main {
+    padding: 2em;
+} 
+
+@media (width > 60em) {
+    main {
+        padding: 3em;
+        padding-bottom: 6em;
+    }
+}
+
+main h2 {
+    display: none;
+}
+
+/**********/
+/* HEADER */
+/**********/
+header img {
+    width: 100%;
+}
+
+/* header p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+} */
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0;
+    margin-top: 0;
+    font-size: small;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
+    color: var(--color-text);
+    display: grid;
+    gap: .5em;
+    justify-items: center;
+    padding-block: .5em;
+    padding: 2em 0;
+    font-size: small;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:nth-of-type(3) {
+    font-style: italic;
+    text-transform: none;
+}
+
+footer a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+@media (width > 40em) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img {
+        width: auto;
+        height: 10em;
+    }
+
+    header nav ul {
+        gap: 4em;
+    }
+
+    footer {
+        justify-items: start;
+        grid-template-columns: 1fr max-content;
+
+        grid-template-areas: 
+        "mail .         "
+        "titel copyright";
+        padding: 2em;
+    }
+
+    footer p:nth-of-type(1) {
+        grid-area:mail;
+    }
+    
+    footer p:nth-of-type(2) {
+        grid-area:titel;
+    }
+    
+    footer p:nth-of-type(3) {
+        grid-area:copyright;
+    }
+}
+
+.backbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.backbutton a {
+    color: var(--color-text);
+    font-style: italic;
+    text-transform: none;
+}
+
+.backbutton .border-link {
+    display: inline-block; 
+    padding: .3em 1.9em; 
+    border: 1px solid var(--color-text); 
+    border-radius: 50%; 
+    text-decoration: none; 
+    font-size: smaller; 
+    text-align: center; 
+}
