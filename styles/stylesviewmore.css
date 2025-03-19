@@ -8,12 +8,6 @@ img {
 
 section {
     padding-bottom: 2em;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .carousel {
@@ -99,6 +93,13 @@ section:nth-of-type(1) a {
         width: 40em;
         height: 25em;
     }
+}
+
+.webdesign section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (width < 60em) {
