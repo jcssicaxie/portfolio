@@ -43,13 +43,6 @@ main {
     padding: 2em;
 } 
 
-@media (width > 60em) {
-    main {
-        padding: 3em;
-        padding-bottom: 6em;
-    }
-}
-
 main h2 {
     display: none;
 }

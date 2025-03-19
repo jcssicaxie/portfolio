@@ -8,6 +8,12 @@ img {
 
 section {
     padding-bottom: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .carousel {
@@ -74,13 +80,45 @@ section:nth-of-type(1) a {
 /*************/
 /* WEBDESIGN */
 /*************/
-.webdesign img {
-    height: 30em;
-    width: auto;
+.duoboekenzoeker, .neworderimg {
+    display: flex;
+    flex-direction: row;
 }
 
-.webdesign {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.duoboekenzoeker {
+    padding-bottom: 2em;
 }
+
+@media (width > 60em) {
+    .webdesign img {
+        height: 25em;
+        width: auto;
+    }
+
+    iframe {
+        width: 40em;
+        height: 25em;
+    }
+}
+
+@media (width < 60em) {
+    .webdesign {
+        padding: 2em;
+    }
+
+    .webdesign img {
+        height: 10em;
+        width: auto;
+    }
+
+    .duoboekenzoeker {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 20em;
+        height: auto;
+    }
+}
+
