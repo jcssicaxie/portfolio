@@ -5,30 +5,34 @@ header nav ul li:nth-of-type(3) {
 /********/
 /* MAIN */
 /********/
-
-* {
-    box-sizing: border-box;
+@media (width > 60em) {
+    main {
+        padding: 3em;
+        padding-bottom: 1.6em;
+    }
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    padding: 3em;
+main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
-}
-
-img {
-    width: 20em;
+    /* padding: 0; */
 }
 
 main p {
+    font-style: italic;
     text-transform: none;
     text-align: center;
-    padding-top: 3em;
+    padding: 0 1em;
+    max-width: 18em;
+}
+
+main img {
+    max-width: 15em;
+}
+
+@media (width > 60em) {
+    main img {
+        max-width: 10.4em;
+    }
 }
