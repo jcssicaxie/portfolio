@@ -3,6 +3,12 @@
     font-family: 'Milton One';
     src: url('font/milton-one');
 } */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 body {
     /* background-image: url(/images/JessicaBlur.JPEG); */
@@ -40,15 +46,9 @@ body {
 /* MAIN */
 /********/
 main {
+    flex: 1;
     padding: 2em;
 } 
-
-@media (width > 60em) {
-    main {
-        padding: 3em;
-        padding-bottom: 6em;
-    }
-}
 
 main h2 {
     display: none;
