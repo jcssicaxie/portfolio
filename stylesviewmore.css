@@ -118,7 +118,7 @@ section:nth-of-type(1) a {
 
     iframe {
         width: 20em;
-        height: auto;
+        height: 20em;
     }
 }
 
