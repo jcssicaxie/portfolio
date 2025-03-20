@@ -27,7 +27,7 @@ section {
     flex-shrink: 0;
 }
 
-@media (width > 40em) {
+@media (width > 50em) {
     main {
         padding: 2em 15em;
     }
@@ -83,9 +83,9 @@ section:nth-of-type(1) a {
     padding-bottom: 2em;
 }
 
-@media (width > 60em) {
+@media (width > 50em) {
     .webdesign img {
-        height: 25em;
+        height: 20em;
         width: auto;
     }
 
@@ -102,19 +102,24 @@ section:nth-of-type(1) a {
     align-items: center;
 }
 
-@media (width < 60em) {
+@media (width < 50em) {
     .webdesign {
         padding: 2em;
     }
 
     .webdesign img {
-        height: 10em;
+        height: 11em;
         width: auto;
     }
-
+    
     .duoboekenzoeker {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
+    }
+
+    .webdesign .duoboekenzoeker img {
+        height: 14em;
+        width: auto; 
     }
 
     iframe {

@@ -5,7 +5,7 @@ header nav ul li:nth-of-type(3) {
 /********/
 /* MAIN */
 /********/
-@media (width > 60em) {
+@media (width > 50em) {
     main {
         padding: 3em;
         padding-bottom: 1.6em;
@@ -31,7 +31,7 @@ main img {
     max-width: 15em;
 }
 
-@media (width > 60em) {
+@media (width > 50em) {
     main img {
         max-width: 10.4em;
     }
