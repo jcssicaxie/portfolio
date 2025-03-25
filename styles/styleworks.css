@@ -31,6 +31,7 @@ main p {
     justify-items: start;
     align-items: center;
     grid-template-columns: 2fr max-content;
+    padding-bottom: 2em;
 }
 
 .info a {
