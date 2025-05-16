@@ -106,6 +106,7 @@ nav button {
     transform: rotate(90deg) translateY(2rem);
     border: none;
     background: transparent;
+    color: black;
     font-size: 1em;
     width: 6rem;
     text-transform: uppercase;
