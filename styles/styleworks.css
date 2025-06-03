@@ -59,19 +59,20 @@ main p {
 /************/
 /* SECTIONS */
 /************/
-section {
+/* section {
     padding-bottom: 2em;
-}
+} */
 
 section:nth-of-type(3) {
     padding: 0;
 }
 
 .carousel {
+    overflow-x: auto;
     display: flex;
-    overflow: auto;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .carouselphotos {
@@ -81,6 +82,7 @@ section:nth-of-type(3) {
 }
 
 .carousel img {
+    scroll-snap-align: center;
     flex-shrink: 0;
 }
 
@@ -88,8 +90,19 @@ section:nth-of-type(4) img {
     width: 15em;
 }
 
+.carousel::-webkit-scrollbar {
+    display: none; /* verberg scrollbar in Chrome/Safari */
+}
+
 @media (width > 60em) {
     section:nth-of-type(4) img {
         width: 30em;
     }
+
+    .carousel-buttons {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -2.5em;
+      }
 }

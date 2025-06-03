@@ -50,7 +50,7 @@ main a {
     text-decoration: none;
 }
 
-section:nth-of-type(1) a {
+main section:nth-of-type(1) a {
     display: flex;
     align-items: center;
     justify-content: center;
