@@ -9,13 +9,30 @@ function toggleMenu() {
     nav.classList.toggle("toonMenu");
 }
 
-// Toggle menu on button click
 menuButton.addEventListener("click", toggleMenu);
 
-// Close menu when clicking outside
 document.addEventListener("click", (event) => {
     if (!nav.contains(event.target)) {
         // navLinks.classList.remove("toonMenu");
         nav.classList.remove("toonMenu");
     }
 });
+
+// picture zoom
+document.querySelectorAll('.webdesign img').forEach(img => {
+    img.classList.add('zoomable');
+    img.addEventListener('click', () => {
+      document.getElementById('overlay-img').src = img.src;
+      document.getElementById('overlay').style.display = 'flex';
+    });
+  });
+
+  function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeOverlay();
+    }
+  });
