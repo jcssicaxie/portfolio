@@ -18,4 +18,21 @@ document.addEventListener("click", (event) => {
     }
 });
 
-// carousel function
+// picture zoom
+document.querySelectorAll('.webdesign img').forEach(img => {
+    img.classList.add('zoomable');
+    img.addEventListener('click', () => {
+      document.getElementById('overlay-img').src = img.src;
+      document.getElementById('overlay').style.display = 'flex';
+    });
+  });
+
+  function closeOverlay() {
+    document.getElementById('overlay').style.display = 'none';
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeOverlay();
+    }
+  });

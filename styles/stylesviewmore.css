@@ -80,7 +80,7 @@ main section:nth-of-type(1) a {
     flex-direction: row;
 }
 
-.duoboekenzoeker {
+.duoboekenzoeker, .starsyncimg {
     padding-bottom: 2em;
 }
 
@@ -108,6 +108,10 @@ main section:nth-of-type(1) a {
         padding: 2em;
     }
 
+    .webdesign .starsyncimg img {
+        height: 29em;
+    }
+
     .webdesign img {
         height: 11em;
         width: auto;
@@ -129,3 +133,37 @@ main section:nth-of-type(1) a {
     }
 }
 
+/* zoom on picture */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  #overlay img {
+    height: 25em;
+    width: auto;
+  }
+  
+  img.zoomable {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+  }
+  
+  img.zoomable:hover {
+    transform: scale(1.03);
+  }
+
+@media (width < 50em) {
+  #overlay img {
+    height: 20em;
+    width: auto;
+  }
+}
