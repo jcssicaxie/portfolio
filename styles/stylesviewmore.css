@@ -163,7 +163,7 @@ main section:nth-of-type(1) a {
 
 @media (width < 50em) {
   #overlay img {
-    height: 20em;
+    height: 15em;
     width: auto;
   }
 }
