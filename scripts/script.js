@@ -5,7 +5,6 @@ const navLinks = document.getElementById("nav-links");
 const nav = document.querySelector("nav");
 
 function toggleMenu() {
-    // navLinks.classList.toggle("toonMenu");
     nav.classList.toggle("toonMenu");
 }
 
@@ -13,7 +12,6 @@ menuButton.addEventListener("click", toggleMenu);
 
 document.addEventListener("click", (event) => {
     if (!nav.contains(event.target)) {
-        // navLinks.classList.remove("toonMenu");
         nav.classList.remove("toonMenu");
     }
 });
@@ -22,17 +20,31 @@ document.addEventListener("click", (event) => {
 document.querySelectorAll('.webdesign img').forEach(img => {
     img.classList.add('zoomable');
     img.addEventListener('click', () => {
-      document.getElementById('overlay-img').src = img.src;
-      document.getElementById('overlay').style.display = 'flex';
-    });
-  });
+        const overlay = document.getElementById('overlay');
+        const overlayImg = document.getElementById('overlay-img');
+      
+        overlayImg.src = img.src;
+        overlay.style.display = 'flex';
+      
+        overlay.classList.remove('starsync-overlay', 'neworder-first-overlay');
+      
+        if (img.closest('.starsyncimg')) {
+          overlay.classList.add('starsync-overlay');
+        }
+      
+        const neworderContainer = img.closest('.neworderimg');
+        if (neworderContainer && neworderContainer.firstElementChild === img) {
+          overlay.classList.add('neworder-first-overlay');
+        }
+    });  
+});  
 
-  function closeOverlay() {
+function closeOverlay() {
     document.getElementById('overlay').style.display = 'none';
-  }
+}
 
-  document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       closeOverlay();
     }
-  });
+});
