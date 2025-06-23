@@ -161,9 +161,17 @@ main section:nth-of-type(1) a {
     transform: scale(1.03);
   }
 
-@media (width < 50em) {
-  #overlay img {
-    height: 15em;
-    width: auto;
+  @media (width < 50em) {
+    #overlay img {
+      height: 15em;
+      width: auto;
+    }
+  
+    #overlay.starsync-overlay img {
+      height: 25em;
+    }
+  
+    #overlay.neworder-first-overlay img {
+      height: 22em;
+    }
   }
-}
