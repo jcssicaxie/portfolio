@@ -76,6 +76,7 @@ nav {
     position: fixed;
     bottom: 33vh;
     transition: transform 300ms ease, opacity 300ms ease;
+    z-index: 100;
 }
 
 #nav-links {
