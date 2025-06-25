@@ -144,7 +144,6 @@ main section:nth-of-type(1) a {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 1;
   }
   
   #overlay img {
