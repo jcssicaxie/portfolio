@@ -128,8 +128,17 @@ main section a {
         height: 11em;
         width: auto;
     }
+
+    .thugclubimg {
+        gap: 5px;
+    }
+
+    .thugclubimg img {
+        height: auto;
+        width: 20em;
+    }
     
-    .duoboekenzoeker {
+    .duoboekenzoeker, .thugclubimg {
         display: flex;
         flex-direction: column;
     }
