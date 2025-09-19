@@ -51,7 +51,7 @@ main a {
     text-decoration: none;
 }
 
-main section:nth-of-type(1) a {
+main section a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +78,7 @@ main section:nth-of-type(1) a {
 .duoboekenzoeker, .neworderimg {
     display: flex;
     flex-direction: row;
+    gap: 5px;
 }
 
 .duoboekenzoeker, .starsyncimg {
@@ -90,10 +91,17 @@ main section:nth-of-type(1) a {
         width: auto;
     }
 
+    .thugclubimg, .duoboekenzoeker {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
     iframe {
         width: 40em;
         height: 25em;
     }
+
 }
 
 .webdesign section {
@@ -119,7 +127,7 @@ main section:nth-of-type(1) a {
     
     .duoboekenzoeker {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .webdesign .duoboekenzoeker img {
