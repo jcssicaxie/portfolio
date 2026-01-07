@@ -232,3 +232,29 @@ footer a {
     font-size: smaller; 
     text-align: center; 
 }
+
+/************/
+/* CAROUSEL */
+/************/
+
+
+/* .carousel-btn {
+    position: absolute;
+    top: 430px;
+    transform: translateY(-50%);
+    background: none;
+    color: black;
+    border: 1px solid var(--color-text);
+    border-radius: 50%;
+    font-size: smaller;
+    padding: 0.5rem 0.5rem;
+    z-index: 10;
+  }
+  
+  .carousel-btn.prev {
+    left: 14em;
+  }
+  
+  .carousel-btn.next {
+    right: 14em;
+  } */

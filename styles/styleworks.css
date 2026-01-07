@@ -42,10 +42,6 @@ main p {
     text-transform: none;
 }
 
-/* .info p {
-    visibility: hidden;
-} */
-
 .border-link {
     display: inline-block; 
     padding: .3em .8em; 
@@ -59,9 +55,6 @@ main p {
 /************/
 /* SECTIONS */
 /************/
-/* section {
-    padding-bottom: 2em;
-} */
 
 section:nth-of-type(3) {
     padding: 0;
