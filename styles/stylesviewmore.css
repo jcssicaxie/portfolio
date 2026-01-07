@@ -149,7 +149,7 @@ main section a {
         flex-direction: column;
     }
 
-    .webdesign .duoboekenzoeker img {
+    .webdesign .duoboekenzoeker img, .rmddimg img {
         height: 14em;
         width: auto; 
     }
