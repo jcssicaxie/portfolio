@@ -46,3 +46,11 @@ main img {
     height: 12em;
     object-fit: cover;
 }
+
+@media (width < 50em) {
+    .myvideo-aboutme {
+        width: auto;
+        height: 10em;
+        object-fit: cover;
+    }
+}
