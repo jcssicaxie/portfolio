@@ -81,7 +81,13 @@ main section a {
     gap: 5px;
 }
 
-.duoboekenzoeker, .starsyncimg {
+.rmddimg {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.duoboekenzoeker, .starsyncimg, .rmddimg {
     padding-bottom: 2em;
 }
 
@@ -138,7 +144,7 @@ main section a {
         width: 20em;
     }
     
-    .duoboekenzoeker, .thugclubimg {
+    .duoboekenzoeker, .thugclubimg, .rmddimg {
         display: flex;
         flex-direction: column;
     }
