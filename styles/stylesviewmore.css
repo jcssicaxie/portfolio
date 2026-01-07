@@ -27,11 +27,11 @@ section {
     flex-shrink: 0;
 }
 
-/* @media (width > 40em) {
+@media (width > 50em) {
     main {
         padding: 2em 15em;
     }
-} */
+}
 
 main p {
     text-transform: none;
@@ -44,13 +44,14 @@ main a {
     text-transform: none;
     padding: 1.3em;
     padding-right: 0;
+    line-height: 2em;
 }
 
 .magazine-pdf {
     text-decoration: none;
 }
 
-section:nth-of-type(1) a {
+main section a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,8 +59,6 @@ section:nth-of-type(1) a {
     font-size: small;
     padding: 0;
 }
-
-section:nth-of-type(2)
 
 .silverbook {
     display: flex;
@@ -72,3 +71,127 @@ section:nth-of-type(2)
     justify-content: center;
     align-items: center;
 }
+
+/*************/
+/* WEBDESIGN */
+/*************/
+.duoboekenzoeker, .neworderimg {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.duoboekenzoeker, .starsyncimg {
+    padding-bottom: 2em;
+}
+
+@media (width > 50em) {
+    .webdesign img {
+        height: 20em;
+        width: auto;
+    }
+
+    .thugclubimg, .duoboekenzoeker {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    iframe {
+        width: 40em;
+        height: 25em;
+    }
+
+}
+
+.webdesign section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.starsyncimg {
+    padding-top: 1em;
+}
+
+@media (width < 50em) {
+    .webdesign {
+        padding: 2em;
+    }
+
+    .webdesign .starsyncimg img {
+        height: 29em;
+    }
+
+    .webdesign img {
+        height: 11em;
+        width: auto;
+    }
+
+    .thugclubimg {
+        gap: 5px;
+    }
+
+    .thugclubimg img {
+        height: auto;
+        width: 20em;
+    }
+    
+    .duoboekenzoeker, .thugclubimg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .webdesign .duoboekenzoeker img {
+        height: 14em;
+        width: auto; 
+    }
+
+    iframe {
+        width: 20em;
+        height: 20em;
+    }
+}
+
+/* zoom on picture */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #overlay img {
+    height: 25em;
+    width: auto;
+  }
+  
+  img.zoomable {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+  }
+  
+  img.zoomable:hover {
+    transform: scale(1.03);
+  }
+
+  @media (width < 50em) {
+    #overlay img {
+      height: 15em;
+      width: auto;
+    }
+  
+    #overlay.starsync-overlay img {
+      height: 25em;
+    }
+  
+    #overlay.neworder-first-overlay img {
+      height: 22em;
+    }
+  }

@@ -17,11 +17,11 @@ main p {
     text-transform: none;
 }
 
-/* @media (width > 60em) {
+@media (width > 60em) {
     main {
         padding: 2em 15em;
     }
-} */
+}
 
 /*************/
 /* VIEW MORE */
@@ -31,6 +31,7 @@ main p {
     justify-items: start;
     align-items: center;
     grid-template-columns: 2fr max-content;
+    padding-bottom: 2em;
 }
 
 .info a {
@@ -40,10 +41,6 @@ main p {
     text-decoration: none;
     text-transform: none;
 }
-
-/* .info p {
-    visibility: hidden;
-} */
 
 .border-link {
     display: inline-block; 
@@ -58,19 +55,17 @@ main p {
 /************/
 /* SECTIONS */
 /************/
-section {
-    padding-bottom: 2em;
-}
 
 section:nth-of-type(3) {
     padding: 0;
 }
 
 .carousel {
+    overflow-x: auto;
     display: flex;
-    overflow: auto;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .carouselphotos {
@@ -80,5 +75,27 @@ section:nth-of-type(3) {
 }
 
 .carousel img {
+    scroll-snap-align: center;
     flex-shrink: 0;
+}
+
+section:nth-of-type(4) img {
+    width: 15em;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* verberg scrollbar in Chrome/Safari */
+}
+
+@media (width > 60em) {
+    section:nth-of-type(4) img {
+        width: 30em;
+    }
+
+    .carousel-buttons {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -2.5em;
+      }
 }
