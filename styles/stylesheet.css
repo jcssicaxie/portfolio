@@ -5,9 +5,10 @@
 /********/
 /* MAIN */
 /********/
-/* main {
-    padding-bottom: 3em;
-} */
+main {
+    padding-top: 3em;
+}
+
 @media (width > 50em) {
     main {
         padding: 3em;
