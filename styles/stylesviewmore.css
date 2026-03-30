@@ -81,9 +81,9 @@ main section a {
     }
 
 @media (width < 50em) {
-    .carousel img {
+    .webdesign .carousel img {
         width: auto;
-        height: 15em;
+        height: 10em;
     }
 }
 
