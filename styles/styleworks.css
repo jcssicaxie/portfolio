@@ -55,11 +55,6 @@ main p {
 /************/
 /* SECTIONS */
 /************/
-
-section:nth-of-type(3) {
-    padding: 0;
-}
-
 .carousel {
     overflow-x: auto;
     display: flex;
