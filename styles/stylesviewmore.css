@@ -80,10 +80,10 @@ main section a {
         height: 20em;
     }
 
-@media (width > 50em) {
+@media (width < 50em) {
     .carousel img {
         width: auto;
-        height: 30em;
+        height: 10em;
     }
 }
 /* .duoboekenzoeker, .neworderimg {
