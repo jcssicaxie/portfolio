@@ -6,10 +6,6 @@ img {
     width: 20em;
 }
 
-section {
-    padding-bottom: 2em;
-}
-
 .carousel {
     display: flex;
     overflow: auto;
