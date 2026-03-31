@@ -17,23 +17,15 @@ section {
     scrollbar-width: none;
 }
 
-.carouselbookcover, .asiancy {
+.lumirisesketchphoto {
     display: flex;
     justify-content: center;
-} 
-
-.lumirise {
-    display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-.lumirise img, .asiancy img {
-    width: 30em;
-}
-
-.carouselbookcover img {
-    width: auto;
+.lumirisesketchphoto img{
     height: 20em;
+    width: auto;
 }
 
 .carouselphotos {
@@ -103,10 +95,15 @@ main section a {
 }
 
 @media (width < 50em) {
-    .webdesign .carousel img {
+    .webdesign .carousel img, .uxdesign .carousel img {
         width: auto;
         height: 10em;
     }
+
+    .lumirisesketchphoto img{
+    height: 10em;
+    width: auto;
+}
 }
 
 /* zoom on picture */
