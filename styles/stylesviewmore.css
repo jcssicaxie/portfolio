@@ -12,10 +12,29 @@ section {
 
 .carousel {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     overflow: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+}
+
+.carouselbookcover, .asiancy {
+    display: flex;
+    justify-content: center;
+} 
+
+.lumirise {
+    display: flex;
+    justify-content: center;
+}
+
+.lumirise img, .asiancy img {
+    width: 30em;
+}
+
+.carouselbookcover img {
+    width: auto;
+    height: 20em;
 }
 
 .carouselphotos {
