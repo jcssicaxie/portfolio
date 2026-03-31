@@ -85,6 +85,9 @@ nav {
     transition: transform 300ms ease, opacity 300ms ease;
 }
 
+.menu {
+    padding-bottom: 0;
+}
 
 .menu a {
     color: black;

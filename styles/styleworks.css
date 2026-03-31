@@ -66,7 +66,7 @@ main p {
 .carouselphotos {
     display: flex;
     gap: .5em;
-    scroll-snap-align: start; 
+    scroll-snap-align: start;
 }
 
 .carousel img {
@@ -82,9 +82,10 @@ section:nth-of-type(1) img {
     display: none; /* verberg scrollbar in Chrome/Safari */
 }
 
-@media (width > 60em) {
-    section:nth-of-type(1) img {
-        width: 30em;
+@media (width > 50em) {
+    section:nth-of-type(1) img, section:nth-last-of-type(3) img {
+        width: auto;
+        height: 22.89em;
     }
 
     .carousel-buttons {

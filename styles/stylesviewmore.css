@@ -6,6 +6,10 @@ img {
     width: 20em;
 }
 
+section {
+    padding-bottom: 2em;
+}
+
 .carousel {
     display: flex;
     justify-content: center;
