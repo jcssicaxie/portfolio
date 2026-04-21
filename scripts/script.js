@@ -4,17 +4,29 @@ const menuButton = document.querySelector("nav button");
 const navLinks = document.getElementById("nav-links");
 const nav = document.querySelector("nav");
 
-function toggleMenu() {
-    nav.classList.toggle("toonMenu");
+// Menu persistence using localStorage
+const MENU_STATE_KEY = "menuIsOpen";
+
+// Check if menu should be open on page load
+function initializeMenu() {
+    const isMenuOpen = localStorage.getItem(MENU_STATE_KEY) === "true";
+    if (isMenuOpen) {
+        nav.classList.add("toonMenu");
+    }
 }
 
-menuButton.addEventListener("click", toggleMenu);
+function toggleMenu() {
+    nav.classList.toggle("toonMenu");
+    // Save the menu state to localStorage
+    const isNowOpen = nav.classList.contains("toonMenu");
+    localStorage.setItem(MENU_STATE_KEY, isNowOpen);
+}
 
-document.addEventListener("click", (event) => {
-    if (!nav.contains(event.target)) {
-        nav.classList.remove("toonMenu");
-    }
-});
+// Initialize menu on page load
+initializeMenu();
+
+// Only toggle on button click - removed the document click listener
+menuButton.addEventListener("click", toggleMenu);
 
 // picture zoom
 document.querySelectorAll('.webdesign img').forEach(img => {
