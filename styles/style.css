@@ -1,8 +1,3 @@
-/* CUSTOM PROPERTIES */
-/* @font-face {
-    font-family: 'Milton One';
-    src: url('font/milton-one');
-} */
 
 html, body {
     height: 100%;
@@ -240,25 +235,11 @@ footer a {
 /************/
 /* CAROUSEL */
 /************/
-
-
-/* .carousel-btn {
-    position: absolute;
-    top: 430px;
-    transform: translateY(-50%);
-    background: none;
-    color: black;
-    border: 1px solid var(--color-text);
-    border-radius: 50%;
-    font-size: smaller;
-    padding: 0.5rem 0.5rem;
-    z-index: 10;
-  }
-  
-  .carousel-btn.prev {
-    left: 14em;
-  }
-  
-  .carousel-btn.next {
-    right: 14em;
-  } */
+.carouselhome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding:3em 0 5em 0;
+}
