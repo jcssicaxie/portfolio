@@ -243,3 +243,9 @@ footer a {
     gap: 3em;
     padding:3em 0 5em 0;
 }
+
+@media (width < 50em) {
+    .carouselhome, .portfolio-grid {
+        flex-direction: column;
+    }
+}
