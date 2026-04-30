@@ -3,130 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JESSICA XIE</title>
+    <meta name="description" content="Photography collections by Jessica Xie, including Paris Fashion Week street photography and Tokyo and Kyoto travel photography.">
+    <title>Photography | Jessica Xie</title>
 
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/stylesviewmore.css">
+    <link rel="stylesheet" href="../styles/styleabout.css">
 </head>
 
-<body>
-    <header>
-        <img src="../images/logo.png" alt="jessica xie logo png">
+<body class="portfolio-figma">
+    <header class="about-figma-header">
+        <a class="about-logo" href="../index.html" aria-label="Jessica Xie home">
+            <img src="../images/logo.png" alt="Jessica Xie">
+        </a>
+
+        <nav class="about-figma-nav" aria-label="Project navigation">
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false">MENU</button>
+            <a href="../works.html" aria-current="page">WORKS</a>
+            <a href="../about.html">ABOUT</a>
+            <a class="mobile-contact-link" href="mailto:jessicaxie01@gmail.com">CONTACT</a>
+        </nav>
     </header>
 
-    <section class="menu">
-        <nav>
-            <ul id="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="../about.html">About</a></li>
-            </ul>
-            <button>Menu</button>
+    <main class="portfolio-showcase" aria-label="Photography collections">
+        <nav class="portfolio-project-index" aria-label="Photography project links">
+            <a href="#tokyo-kyoto">2025_Tokyo / Kyoto</a>
+            <a href="#paris-fashion-week">2024_Paris Fashion Week</a>
         </nav>
-    </section>
 
-    <main>
-        <section aria-label="Japan Summer 2025 Photography">
-            <div class="carousel">
-                <button class="carousel-btn prev">‹</button>
-                <div class="carouselphotos">
-                    <img src="../images/photography/japan2025/japan1.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan2.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan3.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan4.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan5.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan6.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan7.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan11.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan8.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan9.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan10.jpeg" alt="Japan Summer 2025 Photography">
-                    <img src="../images/photography/japan2025/japan12.jpeg" alt="Japan Summer 2025 Photography">
-                </div>
-                <button class="carousel-btn next">›</button>
+        <section id="tokyo-kyoto" class="portfolio-project" aria-labelledby="tokyo-kyoto-title" data-location="Tokyo / Kyoto" data-camera="Panasonic Lumix DC-FZ82">
+            <div class="portfolio-project-media portfolio-project-media--single">
+                <a href="photography-tokyo-kyoto.html">
+                    <img class="portfolio-asset" src="../images/photography/japan2025/japan3.jpeg" alt="Tokyo and Kyoto travel photography">
+                </a>
             </div>
-            <p>
-                <small>
-                    <i>
-                        Japan Summer photography | Tokyo & Kyoto, 2025
-                    </i>
-                </small>
-            </p>
-            <p>
-                <small>
-                    <i>
-                        Exploring Tokyo and Kyoto in the summer of 2025, I discovered a world where vibrant personalities meet breathtaking landscapes. This collection captures the essence of Japan’s culture, from its playful kawaii charm to its fashion forward streets, and from serene nature to dynamic city life, celebrating the beautiful diversity that makes this country truly unforgettable.
-                    </i>
-                </small>
-            </p>
-            <p>
-                <small>
-                    <i>
-                        Shot on Panasonic Lumix DC-FZ82
-                    </i>
-                </small>
-            </p>
-    </section>
 
-    <section aria-label="Paris Fashion Week 2024 Street Photography">
-        <h2>photography</h2>
-            <div class="carousel">
-                <div class="carouselphotos">
-                    <img src="../images/photography/paris2024/P1020036.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020032.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020009.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020011.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020027.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020047.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020014.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020008.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020043.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020053.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020059.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                    <img src="../images/photography/paris2024/P1020061.jpeg" alt="Paris Fashion Week 2024 streetphotography">
-                </div>
+            <aside class="portfolio-project-note">
+                <p id="tokyo-kyoto-title"><i>Tokyo / Kyoto</i></p>
+                <p>A summer travel series across Tokyo and Kyoto, capturing city textures, quiet nature, and everyday energy.</p>
+            </aside>
+        </section>
+
+        <section id="paris-fashion-week" class="portfolio-project" aria-labelledby="paris-fashion-week-title" data-location="Paris" data-camera="Panasonic Lumix DC-FZ82&#10;Nikon Coolpix S9900">
+            <div class="portfolio-project-media portfolio-project-media--single">
+                <a href="photography-paris.html">
+                    <img class="portfolio-asset" src="../images/photography/paris2024/P1020032.jpeg" alt="Paris Fashion Week street style outfit detail">
+                </a>
             </div>
-            <p>
-                <small>
-                    <i>
-                        PFW Spring/Summer streetphotography | Paris, 2024
-                    </i>
-                </small>
-            </p>
-            <p>
-                <small>
-                    <i>
-                        On the streets of Paris, stylish individuals were photographed showcasing standout pieces, including select designs from Jenny Fax (@jennyfax.official). This photo series celebrates spontaneous fashion moments and captures the vibrant creative spirit of Paris Fashion Week.                        </i>
-                </small>
-            </p>
-            <p>
-                <small>
-                    <i>
-                        Shot on Panasonic Lumix DC-FZ82 & Nikon Coolpix S9900
-                    </i>
-                </small>
-            </p>
-    </section>
 
-    <div class="backbutton">
-        <a href="works.html" class="border-link">Back</a>
-    </div>
+            <aside class="portfolio-project-note">
+                <p id="paris-fashion-week-title"><i>Paris Fashion Week</i></p>
+                <p>Street-style photography focused on standout pieces, spontaneous fashion moments, and the rhythm around the shows.</p>
+            </aside>
+        </section>
     </main>
 
-    <footer>
-        <p>
+    <footer class="about-figma-footer">
+        <div>
             <a href="mailto:jessicaxie01@gmail.com" target="_blank" rel="noopener noreferrer">
                 JESSICAXIE01@GMAIL.COM
             </a>
-        </p>
-        <p>
-            ( MULTIDISCIPLINARY DESIGNER )
-        </p>
+            <p>MULTI-DISCIPLINARY DESIGNER</p>
+        </div>
         <p>
             All Rights Reserved © 2026
         </p>
     </footer>
-
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/script.js?v=project-index"></script>
 </body>
 </html>
