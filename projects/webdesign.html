@@ -3,208 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JESSICA XIE</title>
+    <meta name="description" content="UI and web design projects by Jessica Xie, including responsive interfaces, prototypes, and front-end development work.">
+    <title>UI Design | Jessica Xie</title>
 
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/stylesviewmore.css">
+    <link rel="stylesheet" href="../styles/styleabout.css?v=webdesign-mobile">
 </head>
 
-<body>
-    <header>
-        <img src="../images/logo.png" alt="jessica xie logo png">
+<body class="ui-design-figma">
+    <header class="about-figma-header">
+        <a class="about-logo" href="../index.html" aria-label="Jessica Xie home">
+            <img src="../images/logo.png" alt="Jessica Xie">
+        </a>
+
+        <nav class="about-figma-nav" aria-label="Project navigation">
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false">MENU</button>
+            <a href="../works.html" aria-current="page">WORKS</a>
+            <a href="../about.html">ABOUT</a>
+            <a class="mobile-contact-link" href="mailto:jessicaxie01@gmail.com">CONTACT</a>
+        </nav>
     </header>
 
-    <section class="menu">
-        <nav>
-            <ul id="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="../about.html">About</a></li>
-            </ul>
-            <button>Menu</button>
+    <main class="ui-design-showcase" aria-label="UI design projects">
+        <nav class="ui-project-index" aria-label="UI project links">
+            <a href="#heartspace">2026_HeartSpace</a>
+            <a href="#thugclub">2025_Thug Club front-end</a>
+            <a href="#boekenzoeker">2025_BoekenZoeker</a>
+            <a href="#public-city-jazz">2024_Public City Jazz</a>
+            <a href="#starsync">2024_StarSync</a>
+            <a href="#the-new-order">2024_The New Order</a>
         </nav>
-    </section>
 
-    <main class="webdesign">
-        <section aria-label="RMDD">
-            <h2>UI Design</h2>
-
-            <div class="carousel">
-                <div class="carouselphotos">
-                    <img src="../images/webdesign/heartspacemockup4.png" alt="HeartSpace design mockup">
-                    <img src="../images/webdesign/heartspacemockup1.png" alt="HeartSpace design mockup">
-                    <img src="../images/webdesign/heartspacemockup3.png" alt="HeartSpace design mockup">
-                    <img src="../images/webdesign/heartspacemockup2.png" alt="HeartSpace design mockup">
-                    <img src="../images/webdesign/heartspacemockup5.png" alt="HeartSpace design mockup">
+        <section id="heartspace" class="ui-project ui-project--heartspace" aria-labelledby="heartspace-title" data-location="Amsterdam">
+            <div class="ui-scene ui-scene--hero ui-scene--heartspace-hero">
+                <div class="ui-image ui-image--heartspace-main">
+                    <img src="../images/webdesign/HSmockup.png" alt="HeartSpace desktop and mobile landing screens">
                 </div>
             </div>
-                <p>
-                    <small>
-                        <i>
-                            HeartSpace: A Space For What You Feel | Amsterdam, 2025
-                        </i>
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i>
-                            HeartSpace is a responsive multi-device social journaling platform built in Figma. Grounded in user research and a defined user journey, it enables quick note-style posts on mobile, deeper writing on desktop, and lightweight engagement via smartwatch notifications.                        </i>
-                    </small>
-                </p>
-                <a href="../documents/RMDD_productbio.pdf" class="productbiography-RMDD-pdf">CLICK to view Product Biography (NL)</a>
-        </section>
 
-        <section aria-label="Front-end development">
-            <h2>UI Design</h2>
-
-            <div class="carousel">
-                <div class="carouselphotos">
-                    <img src="../images/webdesign/thugclubmock2.png" alt="Thug Club re-design mockup">
-                    <img src="../images/webdesign/thugclubmock1.png" alt="Thug Club re-design mockup">
-                    <img src="../images/webdesign/thugclubpage2.png" alt="Thug Club re-design page">
+            <div class="ui-scene ui-scene--copy-pair ui-scene--heartspace-screens">
+                <div class="ui-image ui-image--heartspace-mobile">
+                    <img src="../images/webdesign/HSmockup2.png" alt="HeartSpace mobile feed screens">
+                </div>
+                <div class="ui-copy ui-copy--right">
+                    <p id="heartspace-title"><i>HeartSpace: A Space For What You Feel</i></p>
+                    <p>
+                        HeartSpace is a responsive multi-device social journaling platform built in Figma. Grounded in user research and a defined user journey, it enables quick note-style posts on mobile, deeper writing on desktop, and lightweight engagement via smartwatch notifications.
+                    </p>
                 </div>
             </div>
-                <p>
-                    <small>
-                        <i>
-                            Thug Club Front-end Development | Amsterdam, 2025
-                        </i>
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i>
-                            A responsive HTML, CSS, and JavaScript re-designed website developed in VSCode, incorporating research-backed accessibility improvements, including screenreader support. Features include dark and light mode options, enhanced readability, and clean, maintainable code structure.                        
-                        </i>
-                    </small>
-                </p>
-                <a href="https://jcssicaxie.github.io/FED24-25/" target="_blank">CLICK to visit the Website</a>
-        </section>
 
-        <section aria-label="webdesign visual interface design">
-            <h2>UI Design</h2>
-                <div class="carousel">
-                    <div class="carouselphotos">
-                        <img src="../images/webdesign/Boekenzoekermockup1.png" alt="boekenzoeker">
-                        <img src="../images/webdesign/Boekenzoekermockup2.png" alt="boekenzoeker">
-                        <img src="../images/webdesign/Boekenzoekermockup3.png" alt="boekenzoeker">
-                        <img src="../images/webdesign/stijlpaginaboekenzoeker.png" alt="stijlpagina boekenzoeker">
-                    </div>
+            <div class="ui-scene ui-scene--hero ui-scene--heartspace-editor">
+                <div class="ui-image ui-image--heartspace-desktop">
+                    <img src="../images/webdesign/HSmockup3.png" alt="HeartSpace desktop writing interface">
                 </div>
-                <p>
-                    <small>
-                        <i>
-                            Visual Interface Design | Amsterdam, 2024
-                        </i>
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i>
-                            "De BoekenZoeker" for Municipality Amsterdam presents a visual user interface on an iPad, designed for high school students that allow them to easily browse and find interesting books to read in the school library.
-                        </i>
-                    </small>
-                </p>
-                <a href="../documents/iteratieschermen.pdf" class="iteratieschermen">CLICK to view iteration screens (NL)</a>
-        </section>
+            </div>
 
-        <section aria-label="public city jazz design">
-            <h2>UI Design</h2>
-                <div class="carousel">
-                    <div class="carouselphotos">
-                        <img src="../images/webdesign/publiccityjazz1.png" alt="Public city jazz responsive UI design">
-                        <img src="../images/webdesign/publiccityjazz2.png" alt="Public city jazz responsive UI design">
-                        <img src="../images/webdesign/publiccityjazz3.png" alt="Public city jazz responsive UI design">
-                    </div>
+            <div class="ui-scene ui-scene--wide ui-scene--heartspace-flow">
+                <div class="ui-image ui-image--heartspace-flow">
+                    <img src="../images/webdesign/HSscreenflow.png" alt="HeartSpace screen flow diagram">
                 </div>
-                <p>
-                    <small>
-                        <i>
-                            Public City Jazz | Amsterdam, 2024
-                        </i>
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i>
-                            I designed a responsive event platform for Public City Jazz, following the visual identity of the Municipality of Rotterdam. The focus was on layout, hierarchy, and translating the energy of jazz into a clear and structured interface across multiple screen sizes.                        </i>
-                    </small>
-                </p>
+            </div>
         </section>
 
-        <section aria-label="UI design starsync">
-            <h2>UI Design</h2>
-                <div class="carousel">
-                    <div class="carouselphotos">
-                        <img src="../images/webdesign/starsyncmockup1.png" alt="StarSync concept poster">
-                        <img src="../images/webdesign/starsyncmockup2.png" alt="boekenzoeker">
-                        <img src="../images/webdesign/starsyncmockup3.png" alt="boekenzoeker">
-                    </div>
+        <section id="thugclub" class="ui-project ui-project--thugclub" aria-labelledby="thugclub-title" data-location="Amsterdam">
+            <div class="ui-scene ui-scene--hero ui-scene--thugclub-hero">
+                <div class="ui-image ui-image--thugclub-main">
+                    <img class="ui-hover-base" src="../images/webdesign/TCmockup.png" alt="Thug Club responsive website mockup">
+                    <img class="ui-hover-swap" src="../images/webdesign/TCmockup2.png" alt="" aria-hidden="true">
                 </div>
-                <p>
-                    <small>
-                        <i>
-                            StarSync Community Application | Amsterdam, 2024
-                        </i>
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i>
-                            At the CMD Amsterdam, I designed an app that co-creates a community within Communication and Multimedia Design, celebrating individuality within the collective.
-                        </i>
-                    </small>
-                </p>
-                <a href="../documents/productbiografie-starsync.pdf" class="productbiography-starsync-pdf">CLICK to view Product Biography (NL)</a>
-        </section>
+            </div>
 
-        <section aria-label="UI design the new order">
-            <h2>UI Design</h2>
-                 <div class="carousel">
-                    <div class="carouselphotos">
-                        <img src="../images/webdesign/thenewordermockup1.png" alt="New Order webdesign">
-                        <img src="../images/webdesign/thenewordermockup2.png" alt="New Order webdesign">
-                        <img src="../images/webdesign/productbiografieneworder.png" alt="New Order webdesign">
-                    </div>
+            <div class="ui-scene ui-scene--copy-pair ui-scene--thugclub-pages">
+                <div class="ui-image ui-image--thugclub-page">
+                    <img class="ui-hover-base" src="../images/webdesign/TCmockup3.png" alt="Thug Club website page design">
+                    <img class="ui-hover-swap" src="../images/webdesign/TCmockup4.png" alt="" aria-hidden="true">
                 </div>
-                <p>
-                    <small>
-                        <i>
-                            The New Order | Amsterdam, 2024
-                        </i>
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i>
-                            The first html/css website that is coded on VSCode, with motives of sharing local high-end-vintage shops located in Amsterdam
-                        </i>
-                    </small>
-                </p>
+                <div class="ui-copy ui-copy--right">
+                    <p id="thugclub-title"><i>Thug Club Front-end Development</i></p>
+                    <p>
+                        A responsive HTML, CSS, and JavaScript re-designed website developed in VSCode, incorporating research-backed accessibility improvements, including screenreader support. 
+                    </p>
+                    <p>
+                        Features include dark and light mode options, enhanced readability, and clean, maintainable code structure.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <div class="backbutton">
-            <a href="../projects/works.html" class="border-link">Back</a>
-        </div>
+        <section id="boekenzoeker" class="ui-project ui-project--boekenzoeker" aria-labelledby="boekenzoeker-title" data-location="Amsterdam">
+            <div class="ui-scene ui-scene--hero ui-scene--boekenzoeker-hero">
+                <div class="ui-image ui-image--boekenzoeker-main">
+                    <img src="../images/webdesign/Boekenzoekermockup1.png" alt="BoekenZoeker iPad interface mockup">
+                </div>
+            </div>
+
+            <div class="ui-scene ui-scene--copy-pair ui-scene--boekenzoeker-intro">
+                <div class="ui-image ui-image--boekenzoeker-screen-2">
+                    <img src="../images/webdesign/Boekenzoekermockup2.png" alt="BoekenZoeker book browsing mockup">
+                </div>
+                <div class="ui-copy ui-copy--right">
+                    <p id="boekenzoeker-title"><i>Visual Interface Design</i></p>
+                    <p>
+                        "De BoekenZoeker" for Municipality Amsterdam presents a visual user interface on an iPad, designed for high school students that allow them to easily browse and find interesting books to read in the school library.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="public-city-jazz" class="ui-project ui-project--public-city-jazz" aria-labelledby="public-city-jazz-title" data-location="Rotterdam">
+            <div class="ui-scene ui-scene--copy-pair ui-scene--public-jazz-hero">
+                <div class="ui-image ui-image--public-jazz-main">
+                    <img src="../images/webdesign/publiccityjazz1.png" alt="Public City Jazz responsive event platform screen">
+                </div>
+                <div class="ui-copy ui-copy--right">
+                    <p id="public-city-jazz-title"><i>Public City Jazz</i></p>
+                    <p>
+                        A responsive event platform for Public City Jazz, following the visual identity of the Municipality of Rotterdam. The focus was on layout, hierarchy, and translating the energy of jazz into a clear and structured interface across multiple screen sizes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui-scene ui-scene--wide ui-scene--public-jazz-screens">
+                <div class="ui-image ui-image--public-jazz-wide">
+                    <img src="../images/webdesign/publiccityjazz2.png" alt="Public City Jazz mobile and desktop screens">
+                </div>
+            </div>
+        </section>
+
+        <section id="starsync" class="ui-project ui-project--starsync" aria-labelledby="starsync-title" data-location="Amsterdam">
+            <div class="ui-scene ui-scene--copy-pair ui-scene--starsync-copy">
+                <div class="ui-image ui-image--starsync-light">
+                    <img src="../images/webdesign/starsyncmockup1.png" alt="StarSync mobile interface mockup">
+                </div>
+                <div class="ui-copy ui-copy--right">
+                    <p id="starsync-title"><i>StarSync Community Application</i></p>
+                    <p>
+                        A community app concept that co-creates a community within Communication and Multimedia Design students, celebrating individuality within the collective.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui-scene ui-scene--hero ui-scene--starsync-hero">
+                <div class="ui-image ui-image--starsync-main">
+                    <img src="../images/webdesign/starsyncmockup2.png" alt="StarSync concept poster">
+                </div>
+            </div>
+        </section>
+
+        <section id="the-new-order" class="ui-project ui-project--new-order" aria-labelledby="new-order-title" data-location="Amsterdam">
+            <div class="ui-scene ui-scene--hero ui-scene--new-order-hero">
+                <div class="ui-image ui-image--new-order-main">
+                    <img src="../images/webdesign/thenewordermockup1.png" alt="The New Order website mockup">
+                </div>
+            </div>
+
+            <div class="ui-scene ui-scene--copy-pair ui-scene--new-order-screens">
+                <div class="ui-image ui-image--new-order-responsive">
+                    <img src="../images/webdesign/thenewordermockup2.png" alt="The New Order responsive website screens">
+                </div>
+                <div class="ui-copy ui-copy--right">
+                    <p id="new-order-title"><i>The New Order</i></p>
+                    <p>
+                        The first HTML/CSS website with motives of sharing local high-end-vintage shops located in Amsterdam
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui-scene ui-scene--wide ui-scene--new-order-logo-scene">
+                <div class="ui-image ui-image--new-order-logo">
+                    <img src="../images/webdesign/logoneworder.jpg" alt="The New Order logo">
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>
+    <footer class="about-figma-footer">
+        <div>
             <a href="mailto:jessicaxie01@gmail.com" target="_blank" rel="noopener noreferrer">
                 JESSICAXIE01@GMAIL.COM
             </a>
-        </p>
-        <p>
-            ( MULTIDISCIPLINARY DESIGNER )
-        </p>
+            <p>MULTI-DISCIPLINARY DESIGNER</p>
+        </div>
         <p>
             All Rights Reserved © 2026
         </p>
     </footer>
-
-    <script src="../scripts/script.js"></script>
-    <div id="overlay" onclick="closeOverlay()">
-        <img id="overlay-img" src="" alt="Vergrote afbeelding">
-    </div>
+    <script src="../scripts/script.js?v=project-index"></script>
 </body>
 </html>

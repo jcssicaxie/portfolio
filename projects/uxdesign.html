@@ -3,94 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JESSICA XIE</title>
+    <meta name="description" content="UX and service design projects by Jessica Xie, including exhibition concepts, multimodal interaction, and research-driven prototypes.">
+    <title>UX Design | Jessica Xie</title>
 
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/stylesviewmore.css">
+    <link rel="stylesheet" href="../styles/styleabout.css">
 </head>
 
-<body>
-    <header>
-        <img src="../images/logo.png" alt="jessica xie logo png">
+<body class="portfolio-figma ux-design-page">
+    <header class="about-figma-header">
+        <a class="about-logo" href="../index.html" aria-label="Jessica Xie home">
+            <img src="../images/logo.png" alt="Jessica Xie">
+        </a>
+
+        <nav class="about-figma-nav" aria-label="Project navigation">
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false">MENU</button>
+            <a href="../works.html" aria-current="page">WORKS</a>
+            <a href="../about.html">ABOUT</a>
+            <a class="mobile-contact-link" href="mailto:jessicaxie01@gmail.com">CONTACT</a>
+        </nav>
     </header>
 
-    <section class="menu">
-        <nav>
-            <ul id="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="../about.html">About</a></li>
-            </ul>
-            <button>Menu</button>
+    <main class="portfolio-showcase" aria-label="UX design projects">
+        <nav class="portfolio-project-index" aria-label="UX project links">
+            <a href="#herinnering-aan-tafel">2026_Herinnering Aan Tafel</a>
         </nav>
-    </section>
 
-    <main class="uxdesign">
-        <h2>uc design</h2>
-            <section aria-label="asiancy Herinnering op Tafel">
-                <div class="carousel">
-                    <div class="carouselphotos">
-                        <img src="../images/uxdesign/asiancy2.png" alt="mockup asiancy">
-                        <img src="../images/uxdesign/asiancy1.png" alt="mockup asiancy">
-                    </div>
-                </div>
-                <p>
-                    <small>
-                        <i>
-                            Herinnering Aan Tafel | Amsterdam, 2026
-                        </i>
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i>
-                            Over a six-month period, we developed an interactive exhibition concept for Wereldmuseum Amsterdam. During the Service Design minor, I focused on cultural preservation, combining research, storytelling, and immersive audiovisual design within a cohesive service design framework.                        
-                        </i>
-                    </small>
-                </p>
-                <a href="../documents/DesignbriefASIANCY.pdf" class="designbrief-asiancy-pdf">CLICK to view Design Brief (NL)</a>
-            </section>
-
-            <section aria-label="LumiRise MID">
-                <div class="lumirisesketchphoto">
-                    <img src="../images/uxdesign/lumirisesketch.png" alt="sketch LumiRise">
-                </div>
-                <p>
-                    <small>
-                        <i>
-                            LumiRise | Amsterdam, 2024
-                        </i>
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i>
-                            For this project, we explored a user-centered multimodal concept where interaction is not limited to a single input. By combining different forms of input and feedback, we designed a system that supports a more natural way of waking up through light and scent, prototyped using Arduino.                        
-                        </i>
-                    </small>
-                </p>
-                <a href="../documents/DesignRationaleLumiRise.pdf" class="designrationale-LumiRise-pdf">CLICK to view Design Rationale (NL)</a>
-            </section>
-
-            <div class="backbutton">
-                <a href="../projects/works.html" class="border-link">Back</a>
+        <section id="herinnering-aan-tafel" class="portfolio-project" aria-labelledby="herinnering-aan-tafel-title" data-location="Amsterdam">
+            <div class="portfolio-project-media portfolio-project-media--ux-figma">
+                <img class="portfolio-asset" src="../images/uxdesign/asiancyprototype.png" alt="Herinnering Aan Tafel exhibition concept mockup">
+                <img class="portfolio-asset" src="../images/uxdesign/asiancyprototype2.png" alt="Herinnering Aan Tafel interface mockup">
+                <img class="portfolio-asset" src="../images/uxdesign/asiancyprototype3.jpg" alt="Herinnering Aan Tafel interface mockup">
+                <img class="portfolio-asset" src="../images/uxdesign/asiancyplattegrond.png" alt="Herinnering Aan Tafel interface mockup">
+                <img class="portfolio-asset" src="../images/uxdesign/asiancylegenda.png" alt="Herinnering Aan Tafel interface mockup">
+                <img class="portfolio-asset" src="../images/uxdesign/asiancyreflectie.png" alt="Herinnering Aan Tafel interface mockup">
+                <img class="portfolio-asset" src="../images/uxdesign/asiancyreflectie2.png" alt="Herinnering Aan Tafel interface mockup">
             </div>
+
+            <aside class="portfolio-project-note">
+                <p id="herinnering-aan-tafel-title"><i>Herinnering Aan Tafel</i></p>
+                <p>
+                    Developed over a six-month collaboration with Wereldmuseum Amsterdam, this project explores how immersive, sensory experiences can communicate stories of cultures under pressure. 
+                </p>
+                <p>
+                    Grounded in research and service design, the concept uses food as an entry point to connect visitors with personal narratives, cultural identity, and collective memory. 
+                </p>
+                <p>
+                    Through a combination of storytelling, audiovisual elements, and tactile interaction, the exhibition invites visitors to move beyond passive observation and engage with culture in a more embodied and reflective way.
+                </p>
+            </aside>
+        </section>
+
     </main>
 
-    <footer>
-        <p>
+    <footer class="about-figma-footer">
+        <div>
             <a href="mailto:jessicaxie01@gmail.com" target="_blank" rel="noopener noreferrer">
                 JESSICAXIE01@GMAIL.COM
             </a>
-        </p>
-        <p>
-            ( MULTIDISCIPLINARY DESIGNER )
-        </p>
+            <p>MULTI-DISCIPLINARY DESIGNER</p>
+        </div>
         <p>
             All Rights Reserved © 2026
         </p>
     </footer>
-
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/script.js?v=project-index"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    overscroll-behavior: none;
 }
 
 body {
@@ -34,8 +35,8 @@ body {
     font-family: 'Helvetica';
     color: var(--color-text);
     text-transform: uppercase;
-    margin: 0;
-    background-color: #F5F4F0;
+    padding-bottom: 5em;
+    box-sizing: border-box;
 }
 
 /********/
@@ -44,6 +45,7 @@ body {
 main {
     flex: 1;
     padding: 2em;
+    padding-bottom: 15em;
 } 
 
 main h2 {
@@ -76,9 +78,7 @@ nav {
 }
 
 #nav-links {
-    width: 4rem;
-    transition: transform 300ms ease, opacity 300ms ease;
-}
+    width: 4rem;}
 
 .menu {
     padding-bottom: 0;
@@ -92,12 +92,11 @@ nav {
     transition: var(--transition);
 }
 
-ul {
+.menu ul {
     list-style-type: none;
     margin: 0;
     padding: 2em 2em;
     line-height: 2em;
-    background-color: var(--color-accent);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -110,7 +109,6 @@ nav button {
     font-size: 1em;
     width: 6rem;
     text-transform: uppercase;
-    background-color: var(--color-accent);
     padding: 1em 1.5em 2em 1.5em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -121,17 +119,151 @@ nav.toonMenu {
     transform: translateX(0);
 }
 
+/********************/
+/* EDITORIAL HEADER */
+/********************/
+header {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 210;
+    display: block;
+    font-family: 'Helvetica', sans-serif;
+    font-size: .75em;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    text-transform: none;
+    pointer-events: none;
+}
+
+header img {
+    width: 8.5rem;
+    height: auto;
+    opacity: .88;
+}
+
+.photo-site-header {
+    position: fixed;
+    top: .75rem;
+    left: .75rem;
+    z-index: 230;
+    display: grid;
+    gap: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: .75em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15;
+    color: black;
+    text-transform: none;
+    pointer-events: auto;
+}
+
+.photo-site-header a {
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.photo-site-header a:hover {
+    text-decoration: underline;
+}
+
+.photo-site-header a[aria-current="page"] {
+    text-decoration: line-through;
+}
+
+.photo-site-header .site-name {
+    font-weight: 400;
+}
+
+.menu {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 220;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: .75em;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    text-transform: none;
+}
+
+nav {
+    position: static;
+    display: block;
+    transform: none;
+}
+
+#nav-links {
+    width: auto;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: .35rem .85rem;
+    max-width: 15rem;
+    padding: 0;
+    line-height: 1;
+    background: transparent;
+    border-radius: 0;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    letter-spacing: 0;
+}
+
+nav button {
+    display: none;
+}
+
+.menu a {
+    color: black;
+    opacity: .72;
+    text-transform: none;
+}
+
+.menu a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 7.5rem;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
 /**********/
 /* FOOTER */
 /**********/
 footer {
-    color: var(--color-text);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 240;
+    min-height: 5em;
+    box-sizing: border-box;
+    color: black;
+    background: white;
     display: grid;
-    gap: .5em;
+    align-content: center;
     justify-items: center;
-    padding-block: .5em;
-    padding: 2em 0;
-    font-size: small;
+    padding: .7em 1rem;
+    font-family: 'Helvetica', sans-serif;
+    font-size: .75em;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: none;
 }
 
 footer p {
@@ -139,13 +271,152 @@ footer p {
 }
 
 footer p:nth-of-type(3) {
-    font-style: italic;
     text-transform: none;
+    font-style: italic;
 }
 
 footer a {
-    color: var(--color-text);
+    color: black;
     text-decoration: none;
+    text-transform: none;
+}
+
+/**************/
+/* FIGMA HOME */
+/**************/
+.home-figma {
+    min-height: 100vh;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    text-transform: none;
+}
+
+.home-figma-page {
+    flex: 1;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.home-intro {
+    position: absolute;
+    inset: 0;
+}
+
+.home-intro h1 {
+    position: absolute;
+    top: 17.95rem;
+    left: 8.46rem;
+    width: 40.27rem;
+    margin: 0;
+    color: #000;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.home-study {
+    position: absolute;
+    top: 24.27rem;
+    left: 8.59rem;
+    width: 26.58rem;
+    margin: 0;
+    color: #000;
+    font-size: .9375rem;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    text-transform: none;
+}
+
+.home-name {
+    color: #f973b8;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.home-portrait {
+    position: absolute;
+    top: calc(50% - 21.32px);
+    right: 8.46rem;
+    display: block;
+    width: 30em;
+    object-fit: cover;
+    object-position: 50% center;
+    transform: translateY(-50%);
+}
+
+@media (width < 62em) {
+    .home-figma-page {
+        padding-inline: 2rem;
+    }
+
+    .home-intro {
+        position: static;
+        display: grid;
+        grid-template-columns: minmax(19rem, 1fr) minmax(16rem, 22.68rem);
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    .home-intro h1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+        font-size: 2rem;
+    }
+
+    .home-study {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+        margin-top: -2.4rem;
+    }
+
+    .home-portrait {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+}
+
+@media (width < 44em) {
+    .home-figma-page {
+        min-height: auto;
+        padding: 8rem .85rem 4rem;
+    }
+
+    .home-intro {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: min(100%, 28rem);
+    }
+
+    .home-intro h1 {
+        font-size: 1.75rem;
+    }
+
+    .home-study {
+        margin-top: -1.35rem;
+        font-size: .875rem;
+    }
+
+    .home-portrait {
+        width: min(100%, 22.68rem);
+        justify-self: center;
+    }
 }
 
 @media (width > 40em) {
@@ -157,8 +428,8 @@ footer a {
     }
 
     header img {
-        width: auto;
-        height: 10em;
+        width: 10rem;
+        height: auto;
     }
 
     header nav ul {
@@ -168,11 +439,10 @@ footer a {
     footer {
         justify-items: start;
         grid-template-columns: 1fr max-content;
-
         grid-template-areas: 
         "mail .         "
         "titel copyright";
-        padding: 2em;
+        align-content: center;
     }
 
     footer p:nth-of-type(1) {
@@ -185,6 +455,32 @@ footer a {
     
     footer p:nth-of-type(3) {
         grid-area:copyright;
+    }
+}
+
+@media (width < 38em) {
+    header {
+        top: .85rem;
+        left: .85rem;
+    }
+
+    header img {
+        width: 6.75rem;
+    }
+
+    .menu {
+        top: .85rem;
+        right: .8rem;
+    }
+
+    .menu ul {
+        max-width: 10.5rem;
+        gap: .4rem .65rem;
+        font-size: .68rem;
+    }
+
+    main {
+        padding-top: 6.75rem;
     }
 }
 
@@ -232,25 +528,184 @@ footer a {
     text-align: center; 
 }
 
-/************/
-/* CAROUSEL */
-/************/
-.carouselhome {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 3em;
-    padding:1.5em 0 2.5em 0;
+/**************************/
+/* EDITORIAL PAGE SYSTEM */
+/**************************/
+
+.photography-system .photo-site-header,
+.photography-system .photo-context,
+.photography-system .photo-description,
+.photography-system .photo-series-nav,
+.photography-system .menu {
+    font-family: 'Helvetica', sans-serif;
+    font-size: .75em;
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    line-height: 1.15;
+    text-transform: none;
 }
 
-@media (width < 50em) {
-    .carouselhome, .portfolio-grid {
-        flex-direction: column;
+.photography-system .photo-site-header {
+    position: fixed;
+    top: .75rem;
+    left: .75rem;
+    z-index: 230;
+    display: grid;
+    gap: 0;
+    pointer-events: auto;
+}
+
+.photography-system .photo-site-header a,
+.photography-system .photo-series-nav a,
+.photography-system .menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.photography-system .photo-site-header a:hover,
+.photography-system .photo-series-nav a:hover,
+.photography-system .menu a:hover {
+    text-decoration: underline;
+}
+
+.photography-system .photo-series-nav a[aria-current="page"],
+.photography-system .photo-site-header a[aria-current="page"],
+.photography-system .menu a[aria-current="page"] {
+    text-decoration: line-through;
+}
+
+.photography-system .photo-context {
+    position: fixed;
+    top: 9.9rem;
+    left: .75rem;
+    z-index: 220;
+    width: min(18rem, 24vw);
+    max-height: calc(100vh - 8rem);
+    overflow: auto;
+}
+
+.photography-system .photo-context dl {
+    display: grid;
+    gap: .1rem;
+    margin: 0;
+}
+
+.photography-system .photo-context div {
+    display: grid;
+    grid-template-columns: 5.25rem 1fr;
+    gap: .4rem;
+}
+
+.photography-system .photo-context dt,
+.photography-system .photo-context dd {
+    margin: 0;
+}
+
+.photography-system .photo-description {
+    position: fixed;
+    top: 18rem;
+    left: .75rem;
+    z-index: 220;
+    width: min(18rem, 24vw);
+    max-height: calc(100vh - 19rem);
+    overflow: auto;
+}
+
+.photography-system .photo-description p {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-transform: none;
+}
+
+.photography-system .photo-series-nav {
+    position: fixed;
+    top: .75rem;
+    right: .75rem;
+    z-index: 230;
+    display: grid;
+    gap: 0;
+    width: min(12rem, 18vw);
+}
+
+.photography-system .menu {
+    top: .75rem;
+    right: auto;
+    left: calc(min(52vw, 48rem) + 2em);
+    z-index: 230;
+    width: min(21rem, 26vw);
+}
+
+.photography-system .menu ul {
+    display: grid;
+    justify-content: start;
+    gap: 0;
+    max-width: none;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.photography-system main.home-page {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13rem clamp(1rem, 7vw, 7rem) 4rem clamp(19rem, 27vw, 24rem);
+}
+
+@media (width < 70em) {
+    .photography-system .photo-site-header,
+    .photography-system .photo-context,
+    .photography-system .photo-description {
+        width: 14rem;
     }
 
-    .carouselhome img {
-        width: 100%;
-        height: auto;
+    .photography-system .menu {
+        left: calc(46vw + 2em);
+        width: 16rem;
+    }
+
+    .photography-system .photo-series-nav {
+        width: 10rem;
+    }
+
+    .photography-system main.home-page {
+        padding-left: 16rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (width < 54em) {
+    .photography-system .photo-site-header,
+    .photography-system .photo-context,
+    .photography-system .photo-description,
+    .photography-system .photo-series-nav,
+    .photography-system .menu {
+        position: static;
+        width: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .photography-system .photo-site-header {
+        padding: .85rem .85rem 0;
+    }
+
+    .photography-system .menu,
+    .photography-system .photo-series-nav,
+    .photography-system .photo-context,
+    .photography-system .photo-description {
+        padding: 1rem .85rem 0;
+    }
+
+    .photography-system .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 .85rem;
+    }
+
+    .photography-system main.home-page {
+        padding: 2.75rem .85rem 3rem;
     }
 }

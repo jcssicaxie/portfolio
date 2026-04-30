@@ -3,85 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JESSICA XIE</title>
+    <meta name="description" content="Craft projects by Jessica Xie, including photo binders, wax carving, and handmade textured book covers.">
+    <title>Crafts | Jessica Xie</title>
 
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/stylesviewmore.css">
+    <link rel="stylesheet" href="../styles/styleabout.css">
 </head>
 
-<body>
-    <header>
-        <img src="../images/logo.png" alt="jessica xie logo png">
+<body class="portfolio-figma">
+    <header class="about-figma-header">
+        <a class="about-logo" href="../index.html" aria-label="Jessica Xie home">
+            <img src="../images/logo.png" alt="Jessica Xie">
+        </a>
+
+        <nav class="about-figma-nav" aria-label="Project navigation">
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false">MENU</button>
+            <a href="../works.html" aria-current="page">WORKS</a>
+            <a href="../about.html">ABOUT</a>
+            <a class="mobile-contact-link" href="mailto:jessicaxie01@gmail.com">CONTACT</a>
+        </nav>
     </header>
 
-    <section class="menu">
-        <nav>
-            <ul id="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="../about.html">About</a></li>
-            </ul>
-            <button>Menu</button>
+    <main class="portfolio-showcase" aria-label="Craft projects">
+        <nav class="portfolio-project-index" aria-label="Craft project links">
+            <a href="#photo-binder">2026_Collectible Photo Binder</a>
+            <a href="#y-ring">2025_Silver Y Ring</a>
+            <a href="#textured-bookcover">2023_Textured Book Cover</a>
         </nav>
-    </section>
 
-    <main>
-        <h2>magazine design</h2>
-        <section aria-label="Collectible photo binder">
-            <div class="carousel">
-                <div class="carouselphotos">
-                    <img src="../images/crafting/photobinder/picjournal.png" alt="picture scrapbook">
-                    <img src="../images/crafting/photobinder/picjournal1.png" alt="picture scrapbook">
-                    <img src="../images/crafting/photobinder/picjournal2.png" alt="picture scrapbook">
-                    <img src="../images/crafting/photobinder/picjournal3.png" alt="picture scrapbook">
-                    <img src="../images/crafting/photobinder/picjournal4.png" alt="picture scrapbook">
-                    <img src="../images/crafting/photobinder/picjournal5.png" alt="picture scrapbook">
-                </div>
+        <section id="photo-binder" class="portfolio-project" aria-labelledby="photo-binder-title">
+            <div class="portfolio-project-media portfolio-project-media--many">
+                <img class="portfolio-asset" src="../images/crafting/photobinder/picjournal.png" alt="Collectible photo binder">
+                <img class="portfolio-asset" src="../images/crafting/photobinder/picjournal1.png" alt="Collectible photo binder page">
+                <img class="portfolio-asset" src="../images/crafting/photobinder/picjournal2.png" alt="Collectible photo binder page">
+                <img class="portfolio-asset" src="../images/crafting/photobinder/picjournal3.png" alt="Collectible photo binder page">
+                <img class="portfolio-asset" src="../images/crafting/photobinder/picjournal4.png" alt="Collectible photo binder page">
+                <img class="portfolio-asset" src="../images/crafting/photobinder/picjournal5.png" alt="Collectible photo binder page">
             </div>
-            <p>
-                <small>
-                    <i>
-                        Collectible photo binder | Rotterdam, 2026
-                    </i>
-                </small>
-            </p>
+
+            <aside class="portfolio-project-note">
+                <p id="photo-binder-title"><i>Collectible Photo Binder</i></p>
+                <p>A physical photo binder exploring collecting, image-making, and playful page sequences.</p>
+            </aside>
         </section>
 
-        <section aria-label="Silver textured bookcover">
-            <div class="carousel">
-                <div class="carouselphotos">
-                    <img src="../images/crafting/bookcover.png" alt="silver spraypainted bookcover with textures and prints">
-                    <img src="../images/crafting/boekkaft.jpeg" alt="silver spraypainted bookcover with textures and prints">
-                </div>
+        <section id="y-ring" class="portfolio-project" aria-labelledby="y-ring-title">
+            <div class="portfolio-project-media portfolio-project-media--three">
+                <img class="portfolio-asset" src="../images/crafting/waxcarving/Yring.jpg" alt="Silver Y-shaped ring with textures">
+                <img class="portfolio-asset" src="../images/crafting/waxcarving/Yring1.jpg" alt="Silver Y-shaped ring detail">
+                <img class="portfolio-asset" src="../images/crafting/waxcarving/Yring2.jpg" alt="Silver Y-shaped ring detail">
             </div>
-            <p>
-                <small>
-                    <i>
-                        Spray-painted book cover featuring glue-gunned textures and prints | Amsterdam, 2023
-                    </i>
-                </small>
-            </p>
+
+            <aside class="portfolio-project-note">
+                <p id="y-ring-title"><i>Silver Y Ring</i></p>
+                <p>Wax-carved Y-shaped ring with surface texture and a handmade finish.</p>
+            </aside>
         </section>
 
-        <div class="backbutton">
-            <a href="../projects/works.html" class="border-link">Back</a>
-        </div>
+        <section id="textured-bookcover" class="portfolio-project" aria-labelledby="textured-bookcover-title">
+            <div class="portfolio-project-media portfolio-project-media--two">
+                <img class="portfolio-asset" src="../images/crafting/silverbookcover/bookcover.png" alt="Silver spray-painted textured book cover">
+                <img class="portfolio-asset" src="../images/crafting/silverbookcover/boekkaft.jpeg" alt="Silver spray-painted textured book cover detail">
+            </div>
+
+            <aside class="portfolio-project-note">
+                <p id="textured-bookcover-title"><i>Textured Book Cover</i></p>
+                <p>Spray-painted book cover with glue-gunned textures and printed surface details.</p>
+            </aside>
+        </section>
     </main>
 
-    <footer>
-        <p>
+    <footer class="about-figma-footer">
+        <div>
             <a href="mailto:jessicaxie01@gmail.com" target="_blank" rel="noopener noreferrer">
                 JESSICAXIE01@GMAIL.COM
             </a>
-        </p>
-        <p>
-            ( MULTIDISCIPLINARY DESIGNER )
-        </p>
+            <p>MULTI-DISCIPLINARY DESIGNER</p>
+        </div>
         <p>
             All Rights Reserved © 2026
         </p>
     </footer>
-
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/script.js?v=project-index"></script>
 </body>
 </html>

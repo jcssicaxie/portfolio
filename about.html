@@ -3,70 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT</title>
+    <meta name="description" content="About Jessica Xie, a multidisciplinary designer based in the Netherlands.">
+    <title>About | Jessica Xie</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stylesviewmore.css">
     <link rel="stylesheet" href="styles/styleabout.css">
 </head>
 
-<body>
-    <header>
-        <img src="images/logo2.png" alt="jessica xie logo png">
-    </header>
+<body class="about-figma">
+    <header class="about-figma-header">
+        <a class="about-logo" href="index.html" aria-label="Jessica Xie home">
+            <img src="images/logo.png" alt="Jessica Xie">
+        </a>
 
-    <section class="menu">
-        <nav>
-            <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="../projects/works.html">Works</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-            <button>Menu</button>
+        <nav class="about-figma-nav" aria-label="About navigation">
+            <button class="mobile-menu-toggle" type="button" aria-expanded="false">MENU</button>
+            <a href="works.html">WORKS</a>
+            <a href="about.html" aria-current="page">ABOUT</a>
+            <a class="mobile-contact-link" href="mailto:jessicaxie01@gmail.com">CONTACT</a>
         </nav>
-    </section>
+    </header>
     
-    <main>
+    <main class="about-page">
         <section aria-label="About">
-            <h2>about</h2>
-            <video autoplay muted loop playsinline class="myvideo-aboutme">
+            <video autoplay muted loop playsinline class="myvideo-aboutme" aria-hidden="true">
                 <source src="images/videoaboutme.mp4" type="video/mp4">
-              </video>
+            </video>
             <p>
-                <small>
-                Endlessly inspired by photography, fashion, and culture, I’m constantly growing into myself and pushing beyond my limits. Driven by curiosity, I seek new perspectives by exploring cultures, lifestyles, and the many ways creativity is expressed within society.            
-                </small>
-            </p>
-
-<p>
-    ˚⟡˖ ࣪
-</p>
-            <p>
-                <small>
-                    Currently a student at the Hogeschool van Amsterdam.
-                </small>
-            </p>
-            <p>
-                <small>
-                    Based in the Netherlands.
-                </small>
+                I have a background in <span class="about-highlight">communication and multi-media design</span> increasingly focused on art direction and experience-led work. My practice is shaped by curiosity and informed by culture, lifestyle, and the many ways creativity appears in everyday life. Influenced by fashion and contemporary visual culture, I approach projects with both aesthetic awareness and strategic intent. I’m interested in creating work—digital and physical—that invites interaction and forms meaningful connections with people.
             </p>
         </section>
     </main>
 
-   <footer>
-        <p>
+    <footer class="about-figma-footer">
+        <div>
             <a href="mailto:jessicaxie01@gmail.com" target="_blank" rel="noopener noreferrer">
                 JESSICAXIE01@GMAIL.COM
             </a>
-        </p>
-        <p>
-            ( MULTIDISCIPLINARY DESIGNER )
-        </p>
+            <p>MULTI-DISCIPLINARY DESIGNER</p>
+        </div>
         <p>
             All Rights Reserved © 2026
         </p>
     </footer>
 
-    <script src="../scripts/script.js"></script>
+    <script src="scripts/script.js?v=header-nav"></script>
 </body>
 </html>
