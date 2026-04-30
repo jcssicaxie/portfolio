@@ -1324,10 +1324,16 @@
     .portfolio-project-media--figma-row {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: .35rem;
+        padding: 0;
     }
 
     .portfolio-project-media--figma-row .portfolio-asset:nth-child(n) {
         grid-column: auto;
+    }
+
+    .portfolio-project-media--sip-swap .portfolio-project-media--figma-row {
+        grid-column: 1 / 13;
+        width: 100%;
     }
 
     .portfolio-project-media--ux-figma .portfolio-asset:nth-child(n) {
@@ -1335,6 +1341,30 @@
         width: 100%;
         margin-top: 0;
         transform: none;
+    }
+
+    .ux-design-page .portfolio-project {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .ux-design-page .portfolio-project-media--ux-figma {
+        display: contents;
+    }
+
+    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-child(-n + 3) {
+        order: 1;
+    }
+
+    .ux-design-page .portfolio-project .portfolio-project-note {
+        grid-column: 1 / 13;
+        order: 2;
+        max-width: none;
+        width: 100%;
+    }
+
+    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-child(n + 4) {
+        order: 3;
     }
 
     .portfolio-project-media--ux-figma .portfolio-asset:nth-child(5) {

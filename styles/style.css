@@ -395,7 +395,7 @@ footer a {
 @media (width < 44em) {
     .home-figma-page {
         min-height: auto;
-        padding: 8rem .85rem 4rem;
+        padding: 8rem 1.75rem 4rem;
     }
 
     .home-intro {
