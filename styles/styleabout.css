@@ -1707,3 +1707,70 @@
         font-style: italic;
     }
 }
+
+@media (width < 44em) {
+    .portfolio-showcase {
+        width: 100%;
+        padding-top: 7.75rem;
+    }
+
+    .graphic-design-page .portfolio-showcase {
+        width: 100%;
+        padding-top: 7.75rem;
+    }
+
+    .ui-design-showcase {
+        padding: 7.25rem .85rem 5rem;
+    }
+
+    .portfolio-project-index,
+    .ui-project-index {
+        position: fixed;
+        top: 5.75rem;
+        left: .85rem;
+        z-index: 1001;
+        display: grid;
+        gap: 0;
+        width: min(7.75rem, 38vw);
+        max-width: none;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        color: #000;
+        background: transparent;
+        font-size: .58rem;
+        line-height: 1.12;
+    }
+
+    .portfolio-project-index a,
+    .ui-project-index a {
+        display: block;
+        max-width: none;
+        line-height: 1.12;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .project-meta-index {
+        position: static;
+        width: 100%;
+        margin: -.85rem 0 1.5rem;
+        transform: none;
+    }
+
+    .project-meta-index dl {
+        grid-template-columns: max-content 1fr;
+        column-gap: 1.15rem;
+    }
+
+    .ui-project:first-of-type {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 1119px) {
+    .project-meta-index {
+        display: none !important;
+    }
+}
