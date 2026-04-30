@@ -1440,6 +1440,7 @@
     line-height: normal;
     text-decoration: none;
     text-transform: uppercase;
+    transition: color 220ms ease, transform 260ms ease;
 }
 
 .work-card img {
@@ -1448,6 +1449,20 @@
     max-width: none;
     aspect-ratio: 1 / 1.32;
     object-fit: cover;
+    transition: filter 260ms ease, transform 320ms ease;
+}
+
+.work-card small {
+    display: block;
+    max-width: 11.5rem;
+    margin-top: -.75rem;
+    color: #000;
+    font-size: .68rem;
+    font-weight: 400;
+    line-height: 1.16;
+    text-transform: none;
+    opacity: .56;
+    transition: opacity 220ms ease, color 220ms ease;
 }
 
 .work-card span {
@@ -1460,6 +1475,23 @@
     text-decoration: underline;
 }
 
+.work-card:hover,
+.work-card:focus-visible {
+    transform: translateY(-.45rem);
+}
+
+.work-card:hover img,
+.work-card:focus-visible img {
+    filter: saturate(1.08) contrast(1.04);
+    transform: scale(1.018);
+}
+
+.work-card:hover small,
+.work-card:focus-visible small {
+    color: var(--color-link);
+    opacity: 1;
+}
+
 .work-card:focus-visible {
     outline: 1px solid #000;
     outline-offset: .35rem;
@@ -1468,6 +1500,21 @@
 .work-card-ui,
 .work-card-ux {
     gap: 1.15rem;
+}
+
+@media (width >= 72em) {
+    .work-card-photography,
+    .work-card-ux {
+        margin-top: 3.25rem;
+    }
+
+    .work-card-graphic {
+        margin-top: 1.25rem;
+    }
+
+    .work-card-zine {
+        margin-top: 2rem;
+    }
 }
 
 @media (width < 72em) {
@@ -1497,6 +1544,12 @@
     .work-card {
         gap: .85rem;
         font-size: .85rem;
+    }
+
+    .work-card small {
+        max-width: none;
+        margin-top: -.45rem;
+        font-size: .66rem;
     }
 
     .work-card img {

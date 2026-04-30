@@ -335,6 +335,84 @@ footer a {
     text-transform: none;
 }
 
+.home-actions {
+    position: absolute;
+    top: 27.45rem;
+    left: 8.59rem;
+    display: flex;
+    gap: .55rem;
+    align-items: center;
+    font-size: .72rem;
+    line-height: 1;
+    text-transform: none;
+}
+
+.home-actions a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.15rem;
+    box-sizing: border-box;
+    color: #000;
+    padding: 0;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 220ms ease, background 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+
+.home-action-primary {
+    padding: 0 .95rem !important;
+    border: 1px solid #000;
+    border-radius: 999px;
+    background: #000;
+    color: #fff !important;
+}
+
+.home-action-primary::after {
+    content: "↗";
+    margin-left: .55rem;
+    font-size: .68rem;
+    line-height: 1;
+}
+
+.home-action-secondary {
+    padding: 0 .75rem !important;
+    border: 1px solid transparent;
+}
+
+.home-action-secondary::after {
+    content: "";
+    width: 1.85rem;
+    height: 1px;
+    margin-left: .55rem;
+    background: currentColor;
+    transform: scaleX(.45);
+    transform-origin: left;
+    transition: transform 220ms ease;
+}
+
+.home-actions a:hover,
+.home-actions a:focus-visible {
+    transform: translateY(-1px);
+}
+
+.home-action-primary:hover,
+.home-action-primary:focus-visible {
+    border-color: var(--color-link);
+    background: var(--color-link);
+    color: #000 !important;
+}
+
+.home-action-secondary:hover,
+.home-action-secondary:focus-visible {
+    color: var(--color-link);
+}
+
+.home-action-secondary:hover::after,
+.home-action-secondary:focus-visible::after {
+    transform: scaleX(1);
+}
+
 .home-name {
     color: #f973b8;
     font-weight: 500;
@@ -350,6 +428,12 @@ footer a {
     object-fit: cover;
     object-position: 50% center;
     transform: translateY(-50%);
+    transition: transform 420ms ease, filter 420ms ease;
+}
+
+.home-portrait:hover {
+    filter: saturate(1.04) contrast(1.03);
+    transform: translateY(-50%) rotate(-1deg);
 }
 
 @media (width < 62em) {
@@ -382,12 +466,20 @@ footer a {
         margin-top: -2.4rem;
     }
 
+    .home-actions {
+        display: none;
+    }
+
     .home-portrait {
         position: relative;
         top: auto;
         right: auto;
         width: 100%;
         height: auto;
+        transform: none;
+    }
+
+    .home-portrait:hover {
         transform: none;
     }
 }
@@ -411,6 +503,12 @@ footer a {
     .home-study {
         margin-top: -1.35rem;
         font-size: .875rem;
+    }
+
+    .home-actions {
+        margin-top: -1.35rem;
+        flex-wrap: wrap;
+        font-size: .72rem;
     }
 
     .home-portrait {
