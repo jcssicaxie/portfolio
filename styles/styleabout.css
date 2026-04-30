@@ -1283,6 +1283,7 @@
     grid-column: 2 / 13;
     width: 100%;
     margin-top: 0;
+    transform: translateX(clamp(1.5rem, 3.2vw, 3rem));
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-child(2),
@@ -1290,36 +1291,43 @@
     grid-column: 5 / 13;
     width: 100%;
     margin-top: 0;
+    transform: translateX(clamp(1.5rem, 3.2vw, 3rem));
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-child(4) {
     grid-column: 1 / 11;
     width: 105%;
     margin-top: clamp(5rem, 11vw, 9rem);
-    transform: translateX(15%);
+    transform: translateX(25%);
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-child(5) {
     grid-column: 12 / 17;
     width: 120%;
     margin-top: clamp(5rem, 11vw, 9rem);
-    transform: translateX(15%);
-}
-
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(6),
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(7) {
-    width: 106%;
-    margin-top: clamp(2rem, 5vw, 4rem);
+    transform: translateX(50%);
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-child(6) {
-    grid-column: 1 / 7;
-    transform: translateX(clamp(5rem, 11.4vw, 9rem));
+    grid-column: 1 / 10;
+    width: 100%;
+    margin-top: clamp(2.75rem, 6vw, 5rem);
+    transform: translateX(clamp(4rem, 6.5vw, 6rem));
+}
+
+.portfolio-project-media--ux-figma .portfolio-asset:nth-child(7),
+.portfolio-project-media--ux-figma .portfolio-asset:nth-child(8) {
+    grid-column: 10 / 15;
+    width: 150%;
+    transform: translateX(clamp(4rem, 6.5vw, 6rem));
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-child(7) {
-    grid-column: 8 / 16;
-    transform: translateX(clamp(4rem, 10.2vw, 8rem));
+    margin-top: clamp(8rem, 16vw, 12.4rem);
+}
+
+.portfolio-project-media--ux-figma .portfolio-asset:nth-child(8) {
+    margin-top: 0;
 }
 
 .portfolio-project-media--sip-swap {
@@ -1445,6 +1453,14 @@
         grid-column: 1 / 13;
         width: 100%;
         margin-top: 0;
+        transform: none;
+    }
+
+    .portfolio-project-media--ux-figma .portfolio-asset:nth-child(5) {
+        grid-column: 8 / 13;
+        width: min(100%, 11rem);
+        justify-self: end;
+        margin-top: clamp(1rem, 3vw, 2rem);
         transform: none;
     }
 
@@ -1977,5 +1993,395 @@
     .project-pager a:last-child {
         justify-items: start;
         text-align: left;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1119px) {
+    .home-figma-page {
+        display: grid;
+        align-items: start;
+        min-height: 100vh;
+        padding: 7rem 2rem 7rem;
+    }
+
+    .home-intro {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "study"
+            "portrait"
+            "actions";
+        align-items: start;
+        gap: 1rem;
+        width: min(100%, 30rem);
+        margin: 0 auto;
+    }
+
+    .home-intro h1 {
+        grid-area: title;
+        position: static;
+        width: auto;
+        margin: 0;
+        font-size: clamp(1.85rem, 3.2vw, 2.25rem);
+        line-height: 1.08;
+    }
+
+    .home-study {
+        grid-area: study;
+        position: static;
+        width: auto;
+        margin: 0;
+    }
+
+    .home-actions {
+        grid-area: actions;
+        position: static;
+        display: flex;
+        margin: -.15rem 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-portrait {
+        grid-area: portrait;
+        position: static;
+        width: min(100%, 22.68rem);
+        justify-self: center;
+        transform: none;
+    }
+
+    .home-portrait:hover {
+        transform: none;
+    }
+
+    .about-figma-header,
+    .ui-design-figma .about-figma-header {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        min-height: 5.25rem;
+        padding: 1rem 1.5rem 0;
+        pointer-events: none;
+    }
+
+    .about-logo,
+    .ui-design-figma .about-logo {
+        grid-column: 2;
+        width: 8rem;
+        pointer-events: auto;
+    }
+
+    .about-figma-nav,
+    .ui-design-figma .about-figma-nav {
+        position: fixed;
+        top: auto;
+        right: 0;
+        bottom: clamp(4.5rem, 13vh, 8rem);
+        z-index: 1002;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        align-content: center;
+        gap: 1.55rem;
+        min-height: 10.75rem;
+        margin-top: 0;
+        padding: 1.45rem 1.35rem;
+        box-sizing: border-box;
+        background: var(--color-accent);
+        border-radius: 2rem 0 0 2rem;
+        line-height: 1;
+        pointer-events: auto;
+        overflow: visible;
+        transform: translateX(100%);
+        transition: transform 300ms ease;
+    }
+
+    .ui-design-figma .mobile-menu-toggle,
+    .about-figma-nav .mobile-menu-toggle {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -4.5rem;
+        width: 6.15rem;
+        height: 3.6rem;
+        color: #000;
+        border: 0;
+        background: var(--color-accent);
+        font: inherit;
+        font-size: .95rem;
+        line-height: 1;
+        padding: 0;
+        cursor: pointer;
+        transform: translateY(-50%) rotate(270deg);
+        transform-origin: center;
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+    }
+
+    .about-figma-nav a,
+    .ui-design-figma .about-figma-nav a {
+        grid-column: 1;
+        justify-self: end;
+        color: #000;
+        font-size: .95rem;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .about-figma-nav .mobile-contact-link,
+    .ui-design-figma .mobile-contact-link {
+        display: inline;
+    }
+
+    .portfolio-project-index,
+    .ui-design-figma .ui-project-index {
+        position: fixed;
+        top: 1rem;
+        left: 1.5rem;
+        z-index: 1001;
+        display: grid;
+        width: min(10.5rem, 19vw);
+        max-width: none;
+        color: #000;
+        background: transparent;
+        font-size: .68rem;
+        line-height: 1.14;
+    }
+
+    .portfolio-project-index a,
+    .ui-design-figma .ui-project-index a {
+        display: block;
+        line-height: 1.14;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .portfolio-showcase {
+        width: auto;
+        margin: 0 2rem 0 clamp(12.5rem, 23vw, 15rem);
+        padding-top: 8.75rem;
+    }
+
+    .graphic-design-page .portfolio-showcase {
+        width: auto;
+        margin: 0 2rem 0 clamp(12.5rem, 23vw, 15rem);
+        padding-top: 8.75rem;
+    }
+
+    .portfolio-project,
+    .graphic-design-page .portfolio-project {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+        padding-left: 0;
+    }
+
+    .portfolio-project-note {
+        position: static;
+        max-width: 24rem;
+        order: -1;
+    }
+
+    .graphic-design-page .portfolio-project-note {
+        display: block;
+    }
+
+    .graphic-design-page .graphic-fixed-project-note {
+        display: none !important;
+    }
+
+    .portfolio-project-media .portfolio-asset {
+        margin-top: 0;
+    }
+
+    .ui-design-showcase {
+        padding: 8.75rem 2rem 5rem clamp(12.5rem, 23vw, 15rem);
+    }
+
+    .ui-project:first-of-type {
+        padding-top: 0;
+    }
+
+    .ui-scene,
+    .ui-scene--wide,
+    .ui-scene--pair,
+    .ui-scene--overlap,
+    .ui-scene--copy-pair,
+    .ui-scene--text-row {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .ui-scene--hero .ui-image,
+    .ui-scene--heartspace-hero .ui-image,
+    .ui-scene--heartspace-editor .ui-image,
+    .ui-scene--thugclub-hero .ui-image,
+    .ui-scene--boekenzoeker-hero .ui-image,
+    .ui-scene--starsync-hero .ui-image,
+    .ui-scene--new-order-hero .ui-image {
+        --ui-img-mobile-width: 100%;
+    }
+
+    .ui-image--heartspace-flow,
+    .ui-image--public-jazz-wide,
+    .ui-image--boekenzoeker-style,
+    .ui-image--starsync-light {
+        width: 100%;
+    }
+
+    .ui-design-figma .ui-scene--heartspace-hero,
+    .ui-design-figma .ui-scene--heartspace-editor,
+    .ui-design-figma .ui-scene--thugclub-hero {
+        width: 100vw;
+        margin-left: calc(-1 * clamp(12.5rem, 23vw, 15rem));
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .ui-design-figma .ui-image--heartspace-main,
+    .ui-design-figma .ui-image--heartspace-mobile,
+    .ui-design-figma .ui-image--heartspace-desktop,
+    .ui-design-figma .ui-image--thugclub-main,
+    .ui-design-figma .ui-image--thugclub-page {
+        --ui-img-mobile-width: 100vw;
+        width: 100vw;
+        max-width: none;
+    }
+
+    .ui-design-figma .ui-image--heartspace-mobile,
+    .ui-design-figma .ui-image--thugclub-page {
+        margin-left: calc(-1 * clamp(12.5rem, 23vw, 15rem));
+    }
+
+    .portfolio-project-media--ux-figma .portfolio-asset:nth-child(n) {
+        grid-column: 1 / 13;
+        width: 100%;
+        margin-top: 0;
+        transform: none;
+    }
+
+    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-child(5) {
+        grid-column: 8 / 13;
+        width: min(100%, 11rem);
+        justify-self: end;
+        margin-top: clamp(1rem, 3vw, 2rem);
+        transform: none;
+    }
+
+    .about-figma-footer,
+    .ui-design-figma .about-figma-footer {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.25rem;
+        left: 1.5rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0;
+        font-size: .68rem;
+        line-height: normal;
+        text-align: left;
+    }
+
+    .about-figma-footer div,
+    .about-figma-footer p,
+    .ui-design-figma .about-figma-footer div,
+    .ui-design-figma .about-figma-footer p {
+        display: block;
+        margin: 0;
+        line-height: normal;
+        text-align: left;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-intro {
+        grid-template-areas:
+            "title"
+            "study"
+            "portrait"
+            "actions";
+    }
+
+    .home-intro h1 {
+        grid-area: title;
+    }
+
+    .home-study {
+        grid-area: study;
+    }
+
+    .home-actions {
+        grid-area: actions;
+        position: static;
+        display: flex;
+        margin-top: -.35rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: .72rem;
+    }
+
+    .home-portrait {
+        grid-area: portrait;
+    }
+
+    .ui-design-figma .ui-design-showcase {
+        padding: 8.5rem .85rem 5rem;
+    }
+
+    .ui-design-figma .ui-project:first-of-type {
+        padding-top: 0;
+    }
+
+    .ui-design-figma .ui-project-index {
+        position: fixed;
+        top: 5.75rem;
+        left: .85rem;
+        z-index: 1001;
+        display: grid;
+        gap: 0;
+        width: min(7.75rem, 38vw);
+        max-width: none;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        color: #000;
+        background: transparent;
+        font-size: .58rem;
+        line-height: 1.12;
+    }
+
+    .ui-design-figma .ui-project-index a {
+        display: block;
+        max-width: none;
+        line-height: 1.12;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .ui-design-figma .ui-scene--heartspace-hero,
+    .ui-design-figma .ui-scene--heartspace-editor,
+    .ui-design-figma .ui-scene--thugclub-hero {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .ui-design-figma .ui-image--heartspace-main,
+    .ui-design-figma .ui-image--heartspace-mobile,
+    .ui-design-figma .ui-image--heartspace-desktop,
+    .ui-design-figma .ui-image--thugclub-main,
+    .ui-design-figma .ui-image--thugclub-page {
+        --ui-img-mobile-width: 100vw;
+        width: 100vw;
+        max-width: none;
+        justify-self: center;
+    }
+
+    .ui-design-figma .ui-image--heartspace-mobile,
+    .ui-design-figma .ui-image--thugclub-page {
+        margin-left: -1.7rem;
     }
 }
