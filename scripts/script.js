@@ -170,6 +170,7 @@ projectIndexes.forEach(index => {
     metaIndex.className = "project-meta-index";
     metaIndex.setAttribute("aria-label", "Current project details");
     metaIndex.innerHTML = `
+        <p class="project-index-count"><span data-meta-current>01</span> / <span data-meta-total>01</span></p>
         <dl>
             <div>
                 <dt>Category</dt>
@@ -206,19 +207,47 @@ projectIndexes.forEach(index => {
     }
 
     function updateMetaIndex(section) {
+        const metaList = metaIndex.querySelector("dl");
         const metaCategory = metaIndex.querySelector("[data-meta-category]");
         const metaLocation = metaIndex.querySelector("[data-meta-location]");
         const metaCamera = metaIndex.querySelector("[data-meta-camera]");
         const metaCameraRow = metaIndex.querySelector("[data-meta-camera-row]");
         const metaYear = metaIndex.querySelector("[data-meta-year]");
+        const metaCurrent = metaIndex.querySelector("[data-meta-current]");
+        const metaTotal = metaIndex.querySelector("[data-meta-total]");
         const currentCategory = section.dataset.category || category || "-";
         const camera = currentCategory.toLowerCase() === "photography" ? section.dataset.camera || "" : "";
+        const activeIndex = Math.max(trackedSections.indexOf(section), 0);
+        const formatCount = number => String(number).padStart(2, "0");
 
         metaCategory.textContent = currentCategory;
         metaLocation.textContent = section.dataset.location || "-";
         metaCamera.textContent = camera;
         metaCameraRow.hidden = !camera;
         metaYear.textContent = getProjectYear(section);
+        metaCurrent.textContent = formatCount(activeIndex + 1);
+        metaTotal.textContent = formatCount(trackedSections.length);
+
+        metaList.querySelectorAll("[data-project-detail-row]").forEach(row => row.remove());
+
+        section.querySelectorAll(".project-details > div").forEach(detail => {
+            const term = detail.querySelector("dt");
+            const description = detail.querySelector("dd");
+
+            if (!term || !description) {
+                return;
+            }
+
+            const row = document.createElement("div");
+            const dt = document.createElement("dt");
+            const dd = document.createElement("dd");
+
+            row.dataset.projectDetailRow = "";
+            dt.textContent = term.textContent;
+            dd.textContent = description.textContent;
+            row.append(dt, dd);
+            metaList.append(row);
+        });
     }
 
     function updateFixedProjectNote(section) {

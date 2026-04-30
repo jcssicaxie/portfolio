@@ -24,6 +24,18 @@ body {
     --transition: all 300ms ease-in;
 }
 
+html,
+body,
+a,
+button,
+input,
+textarea,
+select,
+summary,
+[role="button"] {
+    cursor: url("../images/cursor.png") 8 8, auto;
+}
+
 img {
     width: 20em;
 }

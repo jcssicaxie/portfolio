@@ -940,10 +940,17 @@
     margin: 0;
 }
 
+.project-index-count {
+    margin: 0 0 .65rem;
+    color: var(--color-link);
+    font-size: .75rem;
+    line-height: 1;
+}
+
 .project-meta-index dl {
     display: grid;
-    grid-template-columns: max-content max-content;
-    column-gap: 3.5rem;
+    grid-template-columns: max-content minmax(0, 12rem);
+    column-gap: 1.35rem;
     row-gap: .1rem;
 }
 
@@ -962,8 +969,61 @@
     white-space: pre-line;
 }
 
+.project-meta-index dd {
+    text-transform: none;
+}
+
 .portfolio-showcase[aria-label="Photography collections"] .project-meta-index {
     display: none;
+}
+
+.project-pager {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: end;
+    gap: 1.5rem;
+    width: min(70rem, calc(100vw - 7rem));
+    margin: 0 auto;
+    padding: 1rem 0 8rem;
+    color: #000;
+    font-size: .75rem;
+    line-height: 1.15;
+    text-transform: none;
+}
+
+.ui-design-showcase + .project-pager {
+    width: min(73rem, calc(100vw - 7rem));
+}
+
+.project-pager a {
+    display: grid;
+    gap: .18rem;
+    color: #000;
+    padding: 0;
+    line-height: 1.15;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.project-pager a:nth-child(2) {
+    justify-items: center;
+    text-align: center;
+}
+
+.project-pager a:last-child {
+    justify-items: end;
+    text-align: right;
+}
+
+.project-pager span {
+    color: var(--color-link);
+    font-size: .65rem;
+}
+
+.project-pager a:hover,
+.project-pager a:focus-visible {
+    color: var(--color-link);
+    text-decoration: underline;
 }
 
 .portfolio-project {
@@ -1042,6 +1102,51 @@
 
 .portfolio-project-note p:last-child {
     margin-bottom: 0;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: .16rem .85rem;
+    margin: 0 0 1rem;
+    padding: 0 0 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .16);
+    color: #000;
+    font-size: .68rem;
+    line-height: 1.18;
+}
+
+.portfolio-project-note .project-details,
+.ui-copy .project-details {
+    display: none;
+}
+
+.project-details div {
+    display: contents;
+}
+
+.project-details dt,
+.project-details dd {
+    margin: 0;
+    font-weight: 400;
+}
+
+.project-details dt {
+    opacity: .55;
+}
+
+.project-details dd {
+    text-transform: none;
+}
+
+.project-caption {
+    max-width: 18rem;
+    margin: .55rem 0 0;
+    color: #000;
+    font-size: .68rem;
+    line-height: 1.18;
+    text-transform: none;
+    opacity: .62;
 }
 
 .portfolio-project-media--single .portfolio-asset {
@@ -1855,5 +1960,22 @@
 @media (max-width: 1119px) {
     .project-meta-index {
         display: none !important;
+    }
+
+    .project-pager,
+    .ui-design-showcase + .project-pager {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: auto;
+        margin: 0 .85rem;
+        padding: 1rem 0 4rem;
+        font-size: .72rem;
+    }
+
+    .project-pager a,
+    .project-pager a:nth-child(2),
+    .project-pager a:last-child {
+        justify-items: start;
+        text-align: left;
     }
 }
