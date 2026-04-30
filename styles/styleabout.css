@@ -1980,19 +1980,29 @@
 
     .project-pager,
     .ui-design-showcase + .project-pager {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        width: auto;
-        margin: 0 .85rem;
+        grid-template-columns: minmax(0, 1fr) max-content minmax(0, 1fr);
+        gap: clamp(.65rem, 2.5vw, 1.25rem);
+        width: calc(100% - 1.7rem);
+        margin: 0 auto;
         padding: 1rem 0 4rem;
         font-size: .72rem;
     }
 
-    .project-pager a,
-    .project-pager a:nth-child(2),
-    .project-pager a:last-child {
+    .project-pager a {
         justify-items: start;
         text-align: left;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .project-pager a:nth-child(2) {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .project-pager a:last-child {
+        justify-items: end;
+        text-align: right;
     }
 }
 
@@ -2295,6 +2305,11 @@
 }
 
 @media (max-width: 700px) {
+    .about-figma-nav,
+    .ui-design-figma .about-figma-nav {
+        bottom: clamp(6rem, 16vh, 9rem);
+    }
+
     .home-intro {
         grid-template-areas:
             "title"
