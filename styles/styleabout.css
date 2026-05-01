@@ -2604,6 +2604,12 @@
         overflow-wrap: anywhere;
         text-align: left;
     }
+
+    .portfolio-project-index a[aria-current="page"],
+    .ui-project-index a[aria-current="page"],
+    .ui-design-figma .ui-project-index a[aria-current="page"] {
+        color: var(--color-link);
+    }
 }
 
 @media (max-width: 700px) {

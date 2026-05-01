@@ -37,6 +37,36 @@ if (mobileMenuToggle && mobileMenu) {
     });
 }
 
+const autoplayVideos = Array.from(document.querySelectorAll("video[autoplay]"));
+
+function playAutoplayVideos() {
+    autoplayVideos.forEach(video => {
+        video.muted = true;
+        video.defaultMuted = true;
+        video.playsInline = true;
+        video.preload = "auto";
+        video.setAttribute("muted", "");
+        video.setAttribute("playsinline", "");
+        video.setAttribute("webkit-playsinline", "");
+
+        const playAttempt = video.play();
+
+        if (playAttempt && typeof playAttempt.catch === "function") {
+            playAttempt.catch(() => {});
+        }
+    });
+}
+
+if (autoplayVideos.length) {
+    playAutoplayVideos();
+    window.addEventListener("pageshow", playAutoplayVideos);
+    document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) {
+            playAutoplayVideos();
+        }
+    });
+}
+
 const projectDescription = document.querySelector(".project-description-panel");
 const projectLocation = document.querySelector("[data-project-location]");
 const projectYear = document.querySelector("[data-project-year]");
@@ -307,5 +337,49 @@ projectIndexes.forEach(index => {
         });
 
         trackedSections.forEach(section => observer.observe(section));
+    }
+
+    const mobileProjectIndexQuery = window.matchMedia("(max-width: 1119px)");
+    let activeScrollFrame = null;
+
+    function updateActiveIndexFromScroll() {
+        activeScrollFrame = null;
+
+        if (!mobileProjectIndexQuery.matches) {
+            return;
+        }
+
+        const activationLine = window.innerHeight * 0.42;
+        const activeSection = trackedSections.find(section => {
+            const rect = section.getBoundingClientRect();
+            return rect.top <= activationLine && rect.bottom > activationLine;
+        }) || trackedSections.reduce((closest, section) => {
+            const sectionDistance = Math.abs(section.getBoundingClientRect().top - activationLine);
+            const closestDistance = Math.abs(closest.getBoundingClientRect().top - activationLine);
+            return sectionDistance < closestDistance ? section : closest;
+        }, trackedSections[0]);
+
+        setActiveIndexLink(activeSection);
+    }
+
+    function requestActiveIndexUpdate() {
+        if (activeScrollFrame !== null) {
+            return;
+        }
+
+        activeScrollFrame = window.requestAnimationFrame(updateActiveIndexFromScroll);
+    }
+
+    if (mobileProjectIndexQuery.matches) {
+        updateActiveIndexFromScroll();
+    }
+
+    window.addEventListener("scroll", requestActiveIndexUpdate, { passive: true });
+    window.addEventListener("resize", requestActiveIndexUpdate);
+
+    if (mobileProjectIndexQuery.addEventListener) {
+        mobileProjectIndexQuery.addEventListener("change", requestActiveIndexUpdate);
+    } else if (mobileProjectIndexQuery.addListener) {
+        mobileProjectIndexQuery.addListener(requestActiveIndexUpdate);
     }
 });

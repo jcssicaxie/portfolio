@@ -381,10 +381,14 @@ footer a {
 }
 
 .home-action-primary::after {
-    content: "↗";
+    content: "";
+    display: inline-block;
+    width: .42rem;
+    height: .42rem;
     margin-left: .55rem;
-    font-size: .68rem;
-    line-height: 1;
+    border-top: 1px solid currentColor;
+    border-right: 1px solid currentColor;
+    transform: rotate(45deg);
 }
 
 .home-action-secondary {
