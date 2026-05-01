@@ -896,8 +896,9 @@
     height: max-content;
     color: #000;
     font-size: .75rem;
-    line-height: 1.18;
+    line-height: normal;
     text-transform: none;
+    overflow: hidden;
 }
 
 .portfolio-project-index a {
@@ -1279,55 +1280,58 @@
     overflow: visible;
 }
 
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(1) {
+.portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(1) {
     grid-column: 2 / 13;
     width: 100%;
     margin-top: 0;
-    transform: translateX(clamp(1.5rem, 3.2vw, 3rem));
+    transform: translateX(clamp(2.5rem, 5vw, 5rem));
 }
 
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(2),
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(3) {
+.portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(2),
+.portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(3) {
     grid-column: 5 / 13;
     width: 100%;
     margin-top: 0;
-    transform: translateX(clamp(1.5rem, 3.2vw, 3rem));
+    transform: translateX(clamp(2.5rem, 5vw, 5rem));
 }
 
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(4) {
+.portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(4) {
     grid-column: 1 / 11;
     width: 105%;
     margin-top: clamp(5rem, 11vw, 9rem);
     transform: translateX(25%);
 }
 
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(5) {
+.portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(5) {
     grid-column: 12 / 17;
     width: 120%;
     margin-top: clamp(5rem, 11vw, 9rem);
     transform: translateX(50%);
 }
 
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(6) {
-    grid-column: 1 / 10;
+.portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(6) {
+    grid-column: 2 / 13;
+    grid-row: 5;
     width: 100%;
     margin-top: clamp(2.75rem, 6vw, 5rem);
-    transform: translateX(clamp(4rem, 6.5vw, 6rem));
+    transform: translateX(clamp(2.5rem, 5vw, 5rem));
 }
 
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(7),
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(8) {
-    grid-column: 10 / 15;
-    width: 150%;
-    transform: translateX(clamp(4rem, 6.5vw, 6rem));
+.reflection-project-note {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    position: static;
+    width: 16rem;
+    margin-top: clamp(2.75rem, 6vw, 5rem);
+    transform: translateX(54rem);
 }
 
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(7) {
-    margin-top: clamp(8rem, 16vw, 12.4rem);
-}
-
-.portfolio-project-media--ux-figma .portfolio-asset:nth-child(8) {
+.portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(7),
+.portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(8) {
+    grid-column: 5 / 13;
+    width: 100%;
     margin-top: 0;
+    transform: translateX(clamp(2.5rem, 5vw, 5rem));
 }
 
 .portfolio-project-media--sip-swap {
@@ -1449,14 +1453,15 @@
         width: 100%;
     }
 
-    .portfolio-project-media--ux-figma .portfolio-asset:nth-child(n) {
+    .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(n) {
         grid-column: 1 / 13;
+        grid-row: auto;
         width: 100%;
         margin-top: 0;
         transform: none;
     }
 
-    .portfolio-project-media--ux-figma .portfolio-asset:nth-child(5) {
+    .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(5) {
         grid-column: 8 / 13;
         width: min(100%, 11rem);
         justify-self: end;
@@ -1473,7 +1478,7 @@
         display: contents;
     }
 
-    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-child(-n + 3) {
+    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(-n + 3) {
         order: 1;
     }
 
@@ -1484,11 +1489,21 @@
         width: 100%;
     }
 
-    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-child(n + 4) {
+    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(n + 4) {
         order: 3;
     }
 
-    .portfolio-project-media--ux-figma .portfolio-asset:nth-child(5) {
+    .ux-design-page .portfolio-project .reflection-project-note {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        order: 3;
+        width: 100%;
+        margin: 0;
+        font-size: .72rem;
+        transform: none;
+    }
+
+    .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(5) {
         width: min(45%, 12rem);
         justify-self: end;
     }
@@ -2263,18 +2278,26 @@
         margin-left: calc(-1 * clamp(12.5rem, 23vw, 15rem));
     }
 
-    .portfolio-project-media--ux-figma .portfolio-asset:nth-child(n) {
+    .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(n) {
         grid-column: 1 / 13;
         width: 100%;
         margin-top: 0;
         transform: none;
     }
 
-    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-child(5) {
+    .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(5) {
         grid-column: 8 / 13;
         width: min(100%, 11rem);
         justify-self: end;
         margin-top: clamp(1rem, 3vw, 2rem);
+        transform: none;
+    }
+
+    .reflection-project-note {
+        grid-column: 1 / 13;
+        grid-row: auto;
+        width: 100%;
+        margin: 0;
         transform: none;
     }
 
@@ -2305,6 +2328,50 @@
 }
 
 @media (max-width: 700px) {
+    .about-figma .about-figma-header {
+        min-height: 5.75rem;
+        padding-top: .9rem;
+    }
+
+    .about-figma .about-logo {
+        width: 9.4rem;
+    }
+
+    .about-figma .about-page {
+        min-height: 100vh;
+        padding: 10.25rem 1.9rem 7rem;
+    }
+
+    .about-figma .about-page section {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 2.2rem;
+        width: 100%;
+        min-height: 0;
+    }
+
+    .about-figma .myvideo-aboutme {
+        position: static;
+        z-index: 0;
+        width: min(100%, 36rem);
+        height: auto;
+        aspect-ratio: 16 / 7.5;
+        max-width: none;
+        object-fit: cover;
+        opacity: .32;
+        transform: none;
+    }
+
+    .about-figma .about-page p {
+        width: min(100%, 42rem);
+        max-width: none;
+        margin: 0 auto;
+        font-size: .75rem;
+        line-height: 1.18;
+        text-align: center;
+    }
+
     .about-figma-nav,
     .ui-design-figma .about-figma-nav {
         bottom: clamp(6rem, 16vh, 9rem);
@@ -2341,7 +2408,7 @@
     }
 
     .ui-design-figma .ui-design-showcase {
-        padding: 8.5rem .85rem 5rem;
+        padding: 8.5rem 0 5rem;
     }
 
     .ui-design-figma .ui-project:first-of-type {
@@ -2375,6 +2442,45 @@
         overflow-wrap: anywhere;
     }
 
+    .ui-design-figma .ui-scene--copy-pair {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .ui-design-figma .ui-copy {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: .85rem;
+        padding-left: .85rem;
+        box-sizing: border-box;
+        justify-self: stretch;
+    }
+
+    .ui-design-figma .ui-scene,
+    .ui-design-figma .ui-scene--wide,
+    .ui-design-figma .ui-scene--pair,
+    .ui-design-figma .ui-scene--overlap,
+    .ui-design-figma .ui-scene--copy-pair,
+    .ui-design-figma .ui-scene--text-row {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .ui-design-figma .ui-image {
+        --ui-img-mobile-width: 100vw;
+        width: 100vw;
+        max-width: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .ui-design-figma .ui-image--new-order-logo {
+        --ui-img-mobile-width: calc(100vw - 4rem);
+        width: calc(100vw - 4rem);
+        max-width: 18rem;
+    }
+
     .ui-design-figma .ui-scene--heartspace-hero,
     .ui-design-figma .ui-scene--heartspace-editor,
     .ui-design-figma .ui-scene--thugclub-hero {
@@ -2397,6 +2503,122 @@
 
     .ui-design-figma .ui-image--heartspace-mobile,
     .ui-design-figma .ui-image--thugclub-page {
-        margin-left: -1.7rem;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .about-figma .about-figma-header {
+        min-height: 5.75rem;
+        padding-top: .9rem;
+    }
+
+    .about-figma .about-logo {
+        width: 9.4rem;
+    }
+
+    .about-figma .about-page {
+        min-height: 100vh;
+        padding: 13.35rem 1.9rem 7rem;
+    }
+
+    .about-figma .about-page section {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 3rem;
+        width: 100%;
+        min-height: 0;
+    }
+
+    .about-figma .myvideo-aboutme {
+        position: static;
+        z-index: 0;
+        width: min(100%, 36rem);
+        height: auto;
+        aspect-ratio: 16 / 7.5;
+        max-width: none;
+        object-fit: cover;
+        opacity: .32;
+        transform: none;
+    }
+
+    .about-figma .about-page p {
+        width: min(100%, 43rem);
+        max-width: none;
+        margin: 0 auto;
+        font-size: 1.65rem;
+        line-height: 1.23;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1119px) {
+    .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(6),
+    .reflection-project-note {
+        grid-row: auto;
+    }
+
+    .portfolio-project-index,
+    .ui-project-index,
+    .ui-design-figma .ui-project-index {
+        position: fixed;
+        top: 5.75rem;
+        left: .85rem;
+        right: auto;
+        bottom: auto;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        gap: 0;
+        width: min(10rem, calc(100vw - 1.7rem));
+        max-width: min(10rem, calc(100vw - 1.7rem));
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        color: #000;
+        background: transparent;
+        font-size: .75rem;
+        line-height: 1.18;
+    }
+
+    .portfolio-project-index a,
+    .ui-project-index a,
+    .ui-design-figma .ui-project-index a {
+        position: static;
+        display: block;
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        line-height: 1.18;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        text-align: left;
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio-project-index,
+    .ui-project-index,
+    .ui-design-figma .ui-project-index {
+        width: min(7.75rem, 38vw);
+        max-width: min(7.75rem, 38vw);
+        font-size: .58rem;
+        line-height: 1.12;
+    }
+
+    .portfolio-project-index a,
+    .ui-project-index a,
+    .ui-design-figma .ui-project-index a {
+        line-height: 1.12;
     }
 }
