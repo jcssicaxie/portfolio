@@ -96,6 +96,63 @@
     padding: 5rem 1.5rem 5rem;
 }
 
+.about-motion-stage {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(6, var(--about-motion-tile));
+    grid-template-rows: repeat(2, var(--about-motion-tile));
+    gap: 0;
+    width: max-content;
+    overflow: visible;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    --about-motion-tile: clamp(9.2rem, 16vw, 13rem);
+}
+
+.about-motion-photo {
+    display: block;
+    width: var(--about-motion-tile);
+    aspect-ratio: 1;
+    margin: 0;
+    overflow: hidden;
+    background: transparent;
+    opacity: 0;
+    pointer-events: auto;
+    transform: none;
+    transition:
+        opacity 420ms ease,
+        filter 420ms ease;
+}
+
+.about-motion-photo:last-child {
+    opacity: 1;
+    transform: none;
+}
+
+.about-motion-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.96) contrast(.96);
+    transform: none;
+    transition:
+        filter 420ms ease;
+}
+
+.about-motion-photo:hover {
+    opacity: 1;
+    transform: none;
+}
+
+.about-motion-photo:hover img {
+    filter: saturate(1) contrast(1);
+    transform: none;
+}
+
 .about-page section {
     position: relative;
     display: grid;
@@ -118,9 +175,13 @@
     transform: translate(-50%, calc(-50% + 1.84rem));
 }
 
+.about-motion-ready .myvideo-aboutme {
+    display: none;
+}
+
 .about-page p {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     max-width: 53.77rem;
     margin: 0;
     color: #000;
@@ -128,6 +189,7 @@
     line-height: normal;
     text-align: center;
     text-transform: none;
+    pointer-events: none;
 }
 
 .about-highlight {
@@ -1579,13 +1641,42 @@
     transition: color 220ms ease, transform 260ms ease;
 }
 
+.work-card-media {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 1 / 1.32;
+    background: #fff;
+    isolation: isolate;
+}
+
+.work-card-media::before,
+.work-card-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 360ms ease, transform 520ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.work-card-media::before {
+    background: rgba(255, 255, 255, .42);
+}
+
+.work-card-media::after {
+    background:
+        linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, .16) 32%, rgba(255, 255, 255, .86) 50%, rgba(255, 255, 255, .18) 68%, transparent 100%);
+    transform: translateX(-120%) skewX(-8deg);
+}
+
 .work-card img {
     display: block;
     width: 100%;
+    height: 100%;
     max-width: none;
-    aspect-ratio: 1 / 1.32;
-    object-fit: cover;
-    transition: filter 260ms ease, transform 320ms ease;
+    transition: filter 520ms ease, transform 680ms cubic-bezier(.2, .8, .2, 1);
 }
 
 .work-card small {
@@ -1613,13 +1704,24 @@
 
 .work-card:hover,
 .work-card:focus-visible {
-    transform: translateY(-.45rem);
+    transform: none;
 }
 
 .work-card:hover img,
 .work-card:focus-visible img {
-    filter: saturate(1.08) contrast(1.04);
-    transform: scale(1.018);
+    filter: saturate(.72) contrast(1.04) brightness(1.16);
+    transform: scale(1.045) translate3d(.35rem, -.35rem, 0);
+}
+
+.work-card:hover .work-card-media::before,
+.work-card:focus-visible .work-card-media::before {
+    opacity: 1;
+}
+
+.work-card:hover .work-card-media::after,
+.work-card:focus-visible .work-card-media::after {
+    opacity: 1;
+    transform: translateX(120%) skewX(-8deg);
 }
 
 .work-card:hover small,
@@ -1636,21 +1738,6 @@
 .work-card-ui,
 .work-card-ux {
     gap: 1.15rem;
-}
-
-@media (width >= 72em) {
-    .work-card-photography,
-    .work-card-ux {
-        margin-top: 3.25rem;
-    }
-
-    .work-card-graphic {
-        margin-top: 1.25rem;
-    }
-
-    .work-card-zine {
-        margin-top: 2rem;
-    }
 }
 
 @media (width < 72em) {
@@ -2324,6 +2411,17 @@
         margin: 0;
         line-height: normal;
         text-align: left;
+    }
+}
+
+@media (max-width: 56rem) {
+    .about-motion-stage {
+        display: none;
+        --about-motion-tile: min(18.6vw, 4.9rem);
+    }
+
+    .about-motion-ready .myvideo-aboutme {
+        display: block;
     }
 }
 

@@ -36,6 +36,21 @@ summary,
     cursor: url("../images/cursor.png") 8 8, auto;
 }
 
+.site-ascii-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    color: #000;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(.78rem, 1.2vw, 1rem);
+    line-height: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    transform: translate3d(8vw, 12vh, 0) translate(-50%, -140%);
+    will-change: transform;
+}
+
 img {
     width: 20em;
 }

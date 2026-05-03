@@ -65,6 +65,22 @@ if (autoplayVideos.length) {
             playAutoplayVideos();
         }
     });
+
+    window.addEventListener("resize", playAutoplayVideos);
+
+    if ("IntersectionObserver" in window) {
+        const autoplayObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    playAutoplayVideos();
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        autoplayVideos.forEach(video => autoplayObserver.observe(video));
+    }
 }
 
 const projectDescription = document.querySelector(".project-description-panel");
@@ -178,6 +194,43 @@ figmaHeaderLinks.forEach(link => {
 });
 
 const projectIndexes = Array.from(document.querySelectorAll(".portfolio-project-index, .ui-project-index"));
+
+const asciiCursorText = "𐔌՞ ܸ.ˬ.ܸ՞𐦯";
+const asciiCursor = document.createElement("div");
+const asciiCursorPosition = {
+    x: window.innerWidth * 0.08,
+    y: window.innerHeight * 0.12,
+    targetX: window.innerWidth * 0.08,
+    targetY: window.innerHeight * 0.12
+};
+
+asciiCursor.className = "site-ascii-cursor";
+asciiCursor.textContent = asciiCursorText;
+asciiCursor.setAttribute("aria-hidden", "true");
+document.body.appendChild(asciiCursor);
+
+function moveAsciiCursor(clientX, clientY) {
+    asciiCursorPosition.targetX = clientX;
+    asciiCursorPosition.targetY = clientY;
+}
+
+function renderAsciiCursor() {
+    asciiCursorPosition.x += (asciiCursorPosition.targetX - asciiCursorPosition.x) * 0.14;
+    asciiCursorPosition.y += (asciiCursorPosition.targetY - asciiCursorPosition.y) * 0.14;
+    asciiCursor.style.transform = `translate3d(${asciiCursorPosition.x}px, ${asciiCursorPosition.y}px, 0) translate(-50%, -140%)`;
+    window.requestAnimationFrame(renderAsciiCursor);
+}
+
+window.addEventListener("pointermove", event => moveAsciiCursor(event.clientX, event.clientY), { passive: true });
+window.addEventListener("touchmove", event => {
+    const touch = event.touches[0];
+
+    if (touch) {
+        moveAsciiCursor(touch.clientX, touch.clientY);
+    }
+}, { passive: true });
+
+renderAsciiCursor();
 
 projectIndexes.forEach(index => {
     const links = Array.from(index.querySelectorAll("a[href]"));
