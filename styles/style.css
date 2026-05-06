@@ -48,7 +48,14 @@ summary,
     white-space: nowrap;
     pointer-events: none;
     transform: translate3d(8vw, 12vh, 0) translate(-50%, -140%);
+    transition: color 260ms ease, font-style 260ms ease, opacity 260ms ease;
     will-change: transform;
+}
+
+.site-ascii-cursor.is-click-cursor {
+    color: var(--color-link);
+    font-style: italic;
+    font-weight: 400;
 }
 
 img {

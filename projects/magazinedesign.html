@@ -6,8 +6,8 @@
     <meta name="description" content="Magazine and editorial design work by Jessica Xie, including Kitty Couture fashion magazine.">
     <title>Magazine Design | Jessica Xie</title>
 
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/styleabout.css?v=project-index-active-mobile">
+    <link rel="stylesheet" href="../styles/style.css?v=click-cursor-italic">
+    <link rel="stylesheet" href="../styles/styleabout.css?v=kitty-flipbook-fast">
 </head>
 
 <body class="portfolio-figma">
@@ -64,6 +64,29 @@
                 </p>
             </aside>
         </section>
+
+        <section class="kitty-flipbook-section" aria-label="Interactive Kitty Couture magazine">
+            <div class="kitty-flipbook-toolbar">
+                <button class="kitty-flipbook-button" type="button" data-kitty-prev aria-label="Previous magazine spread">Previous</button>
+                <p class="kitty-flipbook-count" aria-live="polite">
+                    <span data-kitty-current>01</span> / <span data-kitty-total>41</span>
+                </p>
+                <button class="kitty-flipbook-button" type="button" data-kitty-next aria-label="Next magazine spread">Next</button>
+            </div>
+
+            <div class="kitty-flipbook" data-kitty-flipbook>
+                <div class="kitty-book-shadow" aria-hidden="true"></div>
+                <div class="kitty-book-page kitty-book-page--left">
+                    <img data-kitty-left alt="">
+                </div>
+                <div class="kitty-book-page kitty-book-page--right">
+                    <img data-kitty-right alt="">
+                </div>
+                <div class="kitty-book-page kitty-book-page--turn" data-kitty-turn aria-hidden="true">
+                    <img data-kitty-turn-image alt="">
+                </div>
+            </div>
+        </section>
     </main>
 
     <nav class="project-pager" aria-label="Project page navigation">
@@ -84,5 +107,6 @@
         </p>
     </footer>
     <script src="../scripts/script.js?v=video-autoplay-inline"></script>
+    <script src="../scripts/kitty-flipbook.js?v=kitty-flipbook-back-spread"></script>
 </body>
 </html>
