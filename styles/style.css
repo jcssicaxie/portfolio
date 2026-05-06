@@ -33,7 +33,7 @@ textarea,
 select,
 summary,
 [role="button"] {
-    cursor: url("../images/cursor.png") 8 8, auto;
+    cursor: auto;
 }
 
 .site-ascii-cursor {
