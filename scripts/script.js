@@ -264,7 +264,7 @@ projectIndexes.forEach(index => {
                 <dd data-meta-location></dd>
             </div>
             <div data-meta-camera-row hidden>
-                <dt>Shot on</dt>
+                <dt>Camera</dt>
                 <dd data-meta-camera></dd>
             </div>
             <div>
