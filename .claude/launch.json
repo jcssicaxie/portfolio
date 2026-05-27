@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Users/jessicaxie/Documents/GitHub/portfolio && python3 -m http.server 3333"],
+      "port": 3333
+    }
+  ]
+}
