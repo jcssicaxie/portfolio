@@ -553,6 +553,19 @@
     text-transform: none;
 }
 
+.ui-product-bio-link {
+    color: #f973b8;
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.ui-product-bio-link:hover,
+.ui-product-bio-link:focus-visible {
+    color: #f973b8;
+    text-decoration: underline;
+}
+
 .ui-image--boekenzoeker-screen-2,
 .ui-image--public-jazz-main,
 .ui-image--new-order-responsive {
@@ -1592,29 +1605,31 @@
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: clamp(1.25rem, 3.2vw, 2.75rem) clamp(.85rem, 1.65vw, 1.35rem);
     align-items: start;
+    justify-self: stretch;
+    width: 100%;
     overflow: visible;
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(1) {
-    grid-column: 2 / 13;
+    grid-column: 4 / 12;
     width: 100%;
     margin-top: 0;
-    transform: translateX(clamp(2.5rem, 5vw, 5rem));
+    transform: translateX(2rem);
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(2),
 .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(3) {
-    grid-column: 5 / 13;
+    grid-column: 4 / 12;
     width: 100%;
     margin-top: 0;
-    transform: translateX(clamp(2.5rem, 5vw, 5rem));
+    transform: translateX(2rem);
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(4) {
     grid-column: 1 / 11;
-    width: 105%;
+    width: 100%;
     margin-top: clamp(5rem, 11vw, 9rem);
-    transform: translateX(25%);
+    transform: none;
 }
 
 .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(5) {
@@ -1647,6 +1662,106 @@
     width: 100%;
     margin-top: 0;
     transform: translateX(clamp(2.5rem, 5vw, 5rem));
+}
+
+.ux-plan-section {
+    display: grid;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.ux-plan-layout {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(1rem, 2vw, 2rem);
+    padding: 0 clamp(1.5rem, 3.5vw, 3.5rem);
+}
+
+.ux-plan-map {
+    position: relative;
+    grid-column: 1 / 8;
+    width: 100%;
+    justify-self: start;
+}
+
+.ux-plan-map > img {
+    width: 100%;
+    height: auto;
+}
+
+.ux-plan-hotspot {
+    position: absolute;
+    z-index: 2;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.ux-plan-hotspot:focus-visible {
+    outline: 2px solid #f973b8;
+    outline-offset: 3px;
+}
+
+.ux-plan-hotspot--table {
+    left: 55%;
+    top: 57%;
+    width: 28%;
+    height: 22%;
+}
+
+.ux-plan-hotspot--reflection {
+    left: 69%;
+    top: 42%;
+    width: 24%;
+    height: 14%;
+}
+
+.ux-plan-hotspot--projection {
+    left: 43%;
+    top: 27%;
+    width: 35%;
+    height: 14%;
+}
+
+.ux-plan-hotspot--scent {
+    left: 17%;
+    top: 51%;
+    width: 33%;
+    height: 11%;
+}
+
+.ux-plan-hotspot--intro {
+    left: 17%;
+    top: 75%;
+    width: 45%;
+    height: 12%;
+}
+
+.ux-plan-preview {
+    position: relative;
+    grid-column: 8 / 13;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.ux-plan-preview-image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 180ms ease;
+}
+
+.ux-plan-layout:has(.ux-plan-hotspot--table:is(:hover, :focus-visible)) .ux-plan-preview-image--table,
+.ux-plan-layout:has(.ux-plan-hotspot--reflection:is(:hover, :focus-visible)) .ux-plan-preview-image--reflection,
+.ux-plan-layout:has(.ux-plan-hotspot--projection:is(:hover, :focus-visible)) .ux-plan-preview-image--projection,
+.ux-plan-layout:has(.ux-plan-hotspot--scent:is(:hover, :focus-visible)) .ux-plan-preview-image--scent,
+.ux-plan-layout:has(.ux-plan-hotspot--intro:is(:hover, :focus-visible)) .ux-plan-preview-image--intro {
+    opacity: 1;
 }
 
 .portfolio-project-media--sip-swap {
@@ -2977,5 +3092,20 @@
     .ui-project-index a,
     .ui-design-figma .ui-project-index a {
         line-height: 1.12;
+    }
+
+    .ux-plan-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .ux-plan-map,
+    .ux-plan-preview {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .ux-plan-preview {
+        min-height: 14rem;
     }
 }
