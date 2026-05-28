@@ -462,7 +462,7 @@ footer a {
     top: calc(50% - 21.32px);
     right: 8.46rem;
     display: block;
-    width: 30em;
+    width: min(30em, max(9rem, calc(100vw - 59.2rem)));
     object-fit: cover;
     object-position: 50% center;
     transform: translateY(-50%);
@@ -474,46 +474,57 @@ footer a {
     transform: translateY(-50%) rotate(-1deg);
 }
 
-@media (width < 62em) {
+@media (max-width: 70em) {
     .home-figma-page {
-        padding-inline: 2rem;
+        min-height: auto;
+        padding: 8rem 1.75rem 4rem;
     }
 
     .home-intro {
         position: static;
         display: grid;
-        grid-template-columns: minmax(19rem, 1fr) minmax(16rem, 22.68rem);
-        align-items: center;
-        gap: 3rem;
-        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "study"
+            "actions"
+            "portrait";
+        gap: 2rem;
+        width: min(100%, 28rem);
+        margin: 0 auto;
     }
 
     .home-intro h1 {
-        position: relative;
-        top: auto;
-        left: auto;
+        grid-area: title;
+        position: static;
         width: auto;
-        font-size: 2rem;
+        margin: 0;
+        font-size: 1.75rem;
     }
 
     .home-study {
-        position: relative;
-        top: auto;
-        left: auto;
+        grid-area: study;
+        position: static;
         width: auto;
-        margin-top: -2.4rem;
+        margin-top: -1.35rem;
+        font-size: .875rem;
     }
 
     .home-actions {
-        display: none;
+        grid-area: actions;
+        position: static;
+        margin-top: -1.35rem;
+        flex-wrap: wrap;
+        font-size: .72rem;
     }
 
     .home-portrait {
-        position: relative;
+        grid-area: portrait;
+        position: static;
         top: auto;
         right: auto;
-        width: 100%;
-        height: auto;
+        width: min(100%, 22.68rem);
+        justify-self: center;
         transform: none;
     }
 
@@ -522,40 +533,7 @@ footer a {
     }
 }
 
-@media (width < 44em) {
-    .home-figma-page {
-        min-height: auto;
-        padding: 8rem 1.75rem 4rem;
-    }
-
-    .home-intro {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        width: min(100%, 28rem);
-    }
-
-    .home-intro h1 {
-        font-size: 1.75rem;
-    }
-
-    .home-study {
-        margin-top: -1.35rem;
-        font-size: .875rem;
-    }
-
-    .home-actions {
-        margin-top: -1.35rem;
-        flex-wrap: wrap;
-        font-size: .72rem;
-    }
-
-    .home-portrait {
-        width: min(100%, 22.68rem);
-        justify-self: center;
-    }
-}
-
-@media (width > 40em) {
+@media (min-width: 40em) {
     header {
         display: flex;
         flex-direction: column;
@@ -594,7 +572,7 @@ footer a {
     }
 }
 
-@media (width < 38em) {
+@media (max-width: 38em) {
     header {
         top: .85rem;
         left: .85rem;
@@ -790,7 +768,7 @@ footer a {
     padding: 13rem clamp(1rem, 7vw, 7rem) 4rem clamp(19rem, 27vw, 24rem);
 }
 
-@media (width < 70em) {
+@media (max-width: 70em) {
     .photography-system .photo-site-header,
     .photography-system .photo-context,
     .photography-system .photo-description {
@@ -812,7 +790,7 @@ footer a {
     }
 }
 
-@media (width < 54em) {
+@media (max-width: 54em) {
     .photography-system .photo-site-header,
     .photography-system .photo-context,
     .photography-system .photo-description,

@@ -439,21 +439,37 @@
 .ui-project-index {
     position: fixed;
     top: 1rem;
+    right: auto;
+    bottom: auto;
     left: 1.875rem;
     z-index: 1001;
-    display: grid;
-    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-self: auto;
     gap: 0;
     width: min(14rem, 18vw);
-    height: max-content;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin: 0;
+    padding: 0;
     color: #000;
     font-size: .75rem;
     line-height: 1.18;
     text-transform: none;
+    transform: none;
+    transition: none;
+    pointer-events: auto;
 }
 
 .ui-project-index a {
     display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
     color: #000;
     margin: 0;
     padding: 0;
@@ -875,7 +891,7 @@
     }
 }
 
-@media (width < 62em) {
+@media (max-width: 62em) {
     .ui-project-index {
         width: min(13rem, 26vw);
     }
@@ -1160,21 +1176,37 @@
 .portfolio-project-index {
     position: fixed;
     top: 1rem;
+    right: auto;
+    bottom: auto;
     left: 1.875rem;
     z-index: 1001;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
     gap: 0;
     width: min(16rem, 22vw);
-    height: max-content;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin: 0;
+    padding: 0;
     color: #000;
     font-size: .75rem;
-    line-height: normal;
+    line-height: 1.18;
     text-transform: none;
     overflow: hidden;
+    transform: none;
+    transition: none;
+    pointer-events: auto;
 }
 
 .portfolio-project-index a {
     display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
     color: #000;
     margin: 0;
     padding: 0;
@@ -1701,7 +1733,7 @@
     }
 }
 
-@media (width < 44em) {
+@media (max-width: 44em) {
     .kitty-flipbook-section {
         margin-top: 4rem;
     }
@@ -2031,7 +2063,7 @@
     grid-column: 1;
 }
 
-@media (width < 62em) {
+@media (max-width: 62em) {
     .portfolio-showcase {
         width: min(100% - 2rem, 52rem);
     }
@@ -2056,7 +2088,7 @@
     }
 }
 
-@media (width < 44em) {
+@media (max-width: 44em) {
     .portfolio-showcase {
         gap: 4rem;
         width: 100%;
@@ -2370,7 +2402,7 @@
     gap: 1.15rem;
 }
 
-@media (width < 72em) {
+@media (max-width: 72em) {
     .works-figma-page {
         padding-inline: 2rem;
     }
@@ -2382,7 +2414,7 @@
     }
 }
 
-@media (width < 54em) {
+@media (max-width: 54em) {
     .works-figma-page {
         min-height: auto;
         padding: 8.5rem .85rem 5rem;
@@ -2411,7 +2443,7 @@
     }
 }
 
-@media (width < 34em) {
+@media (max-width: 34em) {
     .works-figma-page {
         padding-top: 8rem;
     }
@@ -2422,7 +2454,7 @@
     }
 }
 
-@media (width < 54em) {
+@media (max-width: 54em) {
     .photography-system {
         padding-top: 6.25rem;
     }
@@ -2470,7 +2502,7 @@
     }
 }
 
-@media (width < 34em) {
+@media (max-width: 34em) {
     .about-figma-header {
         min-height: 6.25rem;
     }
@@ -2644,7 +2676,7 @@
     }
 }
 
-@media (width < 44em) {
+@media (max-width: 44em) {
     .portfolio-showcase {
         width: 100%;
         padding-top: 7.75rem;
@@ -2739,65 +2771,6 @@
 }
 
 @media (min-width: 701px) and (max-width: 1119px) {
-    .home-figma-page {
-        display: grid;
-        align-items: start;
-        min-height: 100vh;
-        padding: 7rem 2rem 7rem;
-    }
-
-    .home-intro {
-        position: static;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "title"
-            "study"
-            "portrait"
-            "actions";
-        align-items: start;
-        gap: 1rem;
-        width: min(100%, 30rem);
-        margin: 0 auto;
-    }
-
-    .home-intro h1 {
-        grid-area: title;
-        position: static;
-        width: auto;
-        margin: 0;
-        font-size: clamp(1.85rem, 3.2vw, 2.25rem);
-        line-height: 1.08;
-    }
-
-    .home-study {
-        grid-area: study;
-        position: static;
-        width: auto;
-        margin: 0;
-    }
-
-    .home-actions {
-        grid-area: actions;
-        position: static;
-        display: flex;
-        margin: -.15rem 0 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .home-portrait {
-        grid-area: portrait;
-        position: static;
-        width: min(100%, 22.68rem);
-        justify-self: center;
-        transform: none;
-    }
-
-    .home-portrait:hover {
-        transform: none;
-    }
-
     .about-figma-header,
     .ui-design-figma .about-figma-header {
         display: grid;
@@ -3385,5 +3358,72 @@
 
     .ux-plan-preview {
         min-height: 14rem;
+    }
+}
+
+body .portfolio-project-index,
+body .ui-project-index,
+body.ui-design-figma .ui-project-index {
+    position: fixed;
+    top: 1rem;
+    right: auto;
+    bottom: auto;
+    left: 1.875rem;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 0;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    transform: none;
+    transition: none;
+}
+
+body .portfolio-project-index a,
+body .ui-project-index a,
+body.ui-design-figma .ui-project-index a {
+    position: static;
+    display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.18;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 1119px) {
+    body .portfolio-project-index,
+    body .ui-project-index,
+    body.ui-design-figma .ui-project-index {
+        top: 5.75rem;
+        left: .85rem;
+        width: min(10rem, calc(100vw - 1.7rem));
+        max-width: min(10rem, calc(100vw - 1.7rem));
+    }
+}
+
+@media (max-width: 700px) {
+    body .portfolio-project-index,
+    body .ui-project-index,
+    body.ui-design-figma .ui-project-index {
+        width: min(7.75rem, 38vw);
+        max-width: min(7.75rem, 38vw);
+        font-size: .58rem;
+        line-height: 1.12;
+    }
+
+    body .portfolio-project-index a,
+    body .ui-project-index a,
+    body.ui-design-figma .ui-project-index a {
+        line-height: 1.12;
     }
 }
