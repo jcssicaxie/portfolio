@@ -13,7 +13,7 @@ if (aboutMotionStage) {
         "images/aboutimgs/about9.png",
         "images/aboutimgs/about10.png",
         "images/aboutimgs/about11.jpg",
-        "images/aboutimgs/about12.HEIC.png"
+        "images/aboutimgs/about12.png"
     ];
 
     const tiles = aboutImages.map((source, index) => {
