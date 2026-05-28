@@ -1279,7 +1279,7 @@
 }
 
 #gisou-retail .portfolio-project-media--two .portfolio-asset:nth-child(1) {
-    margin-top: 0;
+    margin-top: -3rem;
 }
 
 .portfolio-project-media--three .portfolio-asset:nth-child(1) {
