@@ -580,6 +580,7 @@
 .ui-image--boekenzoeker-screen-2,
 .ui-image--public-jazz-main,
 .ui-image--new-order-responsive,
+.ui-image--gisou-asset,
 .ui-image--gisou-homepage {
     grid-column: 3 / 8;
 }
@@ -591,7 +592,6 @@
 .ui-image--heartspace-desktop,
 .ui-image--boekenzoeker-screen-3,
 .ui-image--starsync-dark,
-.ui-image--gisou-asset,
 .ui-image--gisou-header {
     grid-column: 1 / -1;
     margin-top: 0;
@@ -893,6 +893,7 @@
     .ui-image--starsync-light,
     .ui-image--new-order-responsive,
     .ui-image--new-order-logo,
+    .ui-image--gisou-asset,
     .ui-image--gisou-homepage {
         --ui-img-mobile-width: min(100%, 24rem);
     }
