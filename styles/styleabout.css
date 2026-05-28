@@ -583,8 +583,8 @@
 }
 
 .ui-image--heartspace-mobile {
-    grid-column: 4 / 9;
-    margin-left: -2rem;
+    grid-column: 3 / 9;
+    margin-left: 1rem;
 }
 
 .ui-image--heartspace-desktop,
@@ -676,7 +676,7 @@
 }
 
 .ui-gisou-images {
-    grid-column: 4 / 9;
+    grid-column: 3 / 9;
     margin-left: -2rem;
     display: flex;
     flex-direction: column;
@@ -1276,6 +1276,10 @@
 
 .portfolio-project-media--two .portfolio-asset:nth-child(2) {
     grid-column: 2 / 12;
+}
+
+#gisou-retail .portfolio-project-media--two .portfolio-asset:nth-child(1) {
+    margin-top: 0;
 }
 
 .portfolio-project-media--three .portfolio-asset:nth-child(1) {
