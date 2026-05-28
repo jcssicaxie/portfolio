@@ -65,6 +65,7 @@
     border: 0;
     background: transparent;
     font: inherit;
+    font-style: italic;
     padding: 0;
     cursor: pointer;
     text-decoration: none;
@@ -73,7 +74,8 @@
 .about-figma-nav a:hover,
 .about-figma-nav a[aria-current="page"],
 .about-figma-nav button:hover {
-    text-decoration: underline;
+    color: var(--color-link);
+    text-decoration: none;
 }
 
 .about-figma-nav form {
@@ -2178,8 +2180,8 @@
     align-content: start;
     color: #000;
     font-size: .9375rem;
-    font-style: normal;
-    font-weight: 700;
+    font-style: italic;
+    font-weight: 400;
     line-height: normal;
     text-decoration: none;
     text-transform: uppercase;
@@ -2244,7 +2246,6 @@
 .work-card:hover span,
 .work-card:focus-visible span {
     color: var(--color-link);
-    text-decoration: underline;
 }
 
 .work-card:hover,
