@@ -584,7 +584,7 @@
 
 .ui-image--heartspace-mobile {
     grid-column: 4 / 9;
-    margin-left: -1rem;
+    margin-left: -2rem;
 }
 
 .ui-image--heartspace-desktop,
@@ -677,7 +677,7 @@
 
 .ui-gisou-images {
     grid-column: 4 / 9;
-    margin-left: -1rem;
+    margin-left: -2rem;
     display: flex;
     flex-direction: column;
     gap: clamp(1rem, 2vw, 1.5rem);
