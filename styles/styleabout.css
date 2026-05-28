@@ -1779,8 +1779,52 @@
     display: none;
 }
 
+.ux-design-page .portfolio-showcase {
+    padding-top: 0;
+}
+
 .ux-design-page .portfolio-project-note {
-    position: static;
+    position: sticky;
+    top: 7rem;
+}
+
+.ux-design-page #heartspace {
+    min-width: 0;
+    width: 100%;
+    overflow: visible;
+}
+
+.ux-design-page #heartspace .ui-scene--heartspace-hero,
+.ux-design-page #heartspace .ui-scene--heartspace-editor,
+.ux-design-page #heartspace .ui-scene--heartspace-screens,
+.ux-design-page #heartspace .ui-scene--heartspace-flow {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.ux-design-page #heartspace .ui-scene--heartspace-hero .ui-image,
+.ux-design-page #heartspace .ui-scene--heartspace-editor .ui-image,
+.ux-design-page #heartspace .ui-image--heartspace-main,
+.ux-design-page #heartspace .ui-image--heartspace-desktop {
+    --ui-img-width: 100vw;
+    width: 100vw;
+    max-width: none;
+}
+
+.ux-design-page #heartspace .ui-image--heartspace-mobile {
+    grid-column: 3 / 9;
+    margin-left: 1rem;
+}
+
+.ux-design-page #heartspace .ui-copy--right {
+    grid-column: 10 / 13;
+    justify-self: start;
+    margin-left: clamp(-4.75rem, calc(25vw - 17.25rem), -3.25rem);
+}
+
+.ux-design-page #heartspace .ui-image--heartspace-flow {
+    grid-column: 3 / 11;
+    width: var(--ui-img-width, 76vw);
 }
 
 .portfolio-project-media--ux-figma {
@@ -2088,8 +2132,19 @@
         grid-template-columns: 1fr;
     }
 
+    .ux-design-page .portfolio-showcase {
+        padding-top: 8.5rem;
+    }
+
     .ux-design-page .portfolio-project-media--ux-figma {
         display: contents;
+    }
+
+    .ux-design-page #heartspace .ui-image--heartspace-mobile,
+    .ux-design-page #heartspace .ui-copy--right,
+    .ux-design-page #heartspace .ui-image--heartspace-flow {
+        grid-column: 1 / -1;
+        margin-left: 0;
     }
 
     .ux-design-page .portfolio-project-media--ux-figma .portfolio-asset:nth-of-type(-n + 3) {
@@ -2099,6 +2154,7 @@
     .ux-design-page .portfolio-project .portfolio-project-note {
         grid-column: 1 / 13;
         order: 2;
+        position: static;
         max-width: none;
         width: 100%;
     }
