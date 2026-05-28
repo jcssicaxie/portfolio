@@ -291,6 +291,137 @@
     text-transform: none;
 }
 
+/* ── CV page ─────────────────────────────────────────────── */
+
+.cv-figma {
+    background: #fff;
+    color: #000;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+.cv-page {
+    width: min(52rem, calc(100vw - 4rem));
+    margin: 0 auto;
+    padding: 10rem 0 6rem;
+}
+
+.cv-intro {
+    margin-bottom: clamp(3rem, 6vw, 5rem);
+    border-bottom: 1px solid #000;
+    padding-bottom: 1.25rem;
+}
+
+.cv-name {
+    margin: 0 0 .2rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 700;
+    letter-spacing: .04em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.cv-discipline {
+    margin: 0;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #555;
+    text-transform: none;
+}
+
+.cv-list {
+    display: grid;
+    gap: clamp(2.5rem, 5vw, 4rem);
+}
+
+.cv-year-group {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 0 clamp(2rem, 4vw, 3.5rem);
+    align-items: start;
+}
+
+.cv-year {
+    margin: 0;
+    padding-top: .05rem;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: .02em;
+    color: #000;
+}
+
+.cv-projects {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0;
+}
+
+.cv-project {
+    border-top: 1px solid #e0e0e0;
+}
+
+.cv-project:last-child {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cv-project-link {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: baseline;
+    gap: 1rem;
+    padding: .6rem 0;
+    color: #000;
+    text-decoration: none;
+    transition: color 150ms ease;
+}
+
+.cv-project-link:hover,
+.cv-project-link:focus-visible {
+    color: var(--color-link, hotpink);
+}
+
+.cv-project-title {
+    font-size: .85rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.cv-project-category {
+    font-size: .7rem;
+    font-weight: 400;
+    color: #888;
+    text-align: right;
+    white-space: nowrap;
+    text-transform: none;
+}
+
+.cv-project-link:hover .cv-project-category,
+.cv-project-link:focus-visible .cv-project-category {
+    color: var(--color-link, hotpink);
+}
+
+@media (max-width: 600px) {
+    .cv-year-group {
+        grid-template-columns: 2.5rem 1fr;
+        gap: 0 1rem;
+    }
+
+    .cv-project-link {
+        grid-template-columns: 1fr;
+        gap: .15rem;
+    }
+
+    .cv-project-category {
+        text-align: left;
+    }
+}
+
+/* ── end CV page ─────────────────────────────────────────── */
+
 .ui-design-showcase {
     width: 100%;
     margin: 0;
