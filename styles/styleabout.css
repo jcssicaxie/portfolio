@@ -411,7 +411,8 @@
 .ui-scene--boekenzoeker-hero .ui-image,
 .ui-scene--starsync-hero .ui-image,
 .ui-scene--starsync-desk .ui-image,
-.ui-scene--new-order-hero .ui-image {
+.ui-scene--new-order-hero .ui-image,
+.ui-scene--gisou-hero .ui-image {
     width: var(--ui-img-width, 100vw);
 }
 
@@ -499,6 +500,16 @@
     --ui-img-width: 100%;
 }
 
+.ui-image--gisou-main {
+    --ui-img-width: 100vw;
+}
+
+.ui-image--gisou-homepage,
+.ui-image--gisou-asset,
+.ui-image--gisou-header {
+    --ui-img-width: 100%;
+}
+
 .ui-copy {
     position: sticky;
     top: 9.5rem;
@@ -568,7 +579,8 @@
 
 .ui-image--boekenzoeker-screen-2,
 .ui-image--public-jazz-main,
-.ui-image--new-order-responsive {
+.ui-image--new-order-responsive,
+.ui-image--gisou-homepage {
     grid-column: 3 / 8;
 }
 
@@ -578,7 +590,9 @@
 
 .ui-image--heartspace-desktop,
 .ui-image--boekenzoeker-screen-3,
-.ui-image--starsync-dark {
+.ui-image--starsync-dark,
+.ui-image--gisou-asset,
+.ui-image--gisou-header {
     grid-column: 1 / -1;
     margin-top: 0;
 }
@@ -842,6 +856,7 @@
     .ui-scene--starsync-hero .ui-image,
     .ui-scene--starsync-desk .ui-image,
     .ui-scene--new-order-hero .ui-image,
+    .ui-scene--gisou-hero .ui-image,
     .ui-image--boekenzoeker-style,
     .ui-image--starsync-light {
         width: var(--ui-img-mobile-width, 100%);
@@ -861,7 +876,8 @@
     .ui-image--boekenzoeker-main,
     .ui-image--public-jazz-wide,
     .ui-image--starsync-main,
-    .ui-image--new-order-main {
+    .ui-image--new-order-main,
+    .ui-image--gisou-main {
         --ui-img-mobile-width: calc(100vw - 1.7rem);
     }
 
@@ -876,7 +892,8 @@
     .ui-image--public-jazz-main,
     .ui-image--starsync-light,
     .ui-image--new-order-responsive,
-    .ui-image--new-order-logo {
+    .ui-image--new-order-logo,
+    .ui-image--gisou-homepage {
         --ui-img-mobile-width: min(100%, 24rem);
     }
 
