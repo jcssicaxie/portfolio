@@ -166,17 +166,13 @@
     top: 50%;
     left: 50%;
     z-index: 0;
-    display: block;
+    display: none;
     width: 33.07rem;
     height: 15.6rem;
     max-width: 100%;
     object-fit: cover;
     opacity: .35;
     transform: translate(-50%, calc(-50% + 1.84rem));
-}
-
-.about-motion-ready .myvideo-aboutme {
-    display: none;
 }
 
 .about-page p {
@@ -2964,7 +2960,7 @@
         --about-motion-tile: min(18.6vw, 4.9rem);
     }
 
-    .about-motion-ready .myvideo-aboutme {
+    .myvideo-aboutme {
         display: block;
     }
 }
