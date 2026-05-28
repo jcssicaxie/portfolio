@@ -2,7 +2,7 @@ const aboutMotionStage = document.querySelector("[data-about-motion]");
 
 if (aboutMotionStage) {
     const aboutImages = [
-        "images/aboutimgs/about.jpg",
+        "images/aboutimgs/about12.png",
         "images/aboutimgs/about2.JPEG",
         "images/aboutimgs/about3.jpg",
         "images/aboutimgs/about4.png",
@@ -13,7 +13,7 @@ if (aboutMotionStage) {
         "images/aboutimgs/about9.png",
         "images/aboutimgs/about10.png",
         "images/aboutimgs/about11.jpg",
-        "images/aboutimgs/about12.png"
+        "images/aboutimgs/about.png"
     ];
 
     const tiles = aboutImages.map((source, index) => {
