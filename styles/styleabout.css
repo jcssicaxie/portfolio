@@ -715,8 +715,18 @@
 }
 
 .ui-image--boekenzoeker-screen-2,
-.ui-image--public-jazz-main,
 .ui-image--new-order-responsive {
+    grid-column: 3 / 8;
+}
+
+.ui-image--boekenzoeker-screen-2 {
+    grid-column: 3 / 9;
+    margin-left: -2rem;
+}
+
+.ui-image--public-jazz-main {
+    --ui-img-width: 92%;
+    --ui-img-align: stretch;
     grid-column: 3 / 8;
 }
 
@@ -850,6 +860,19 @@
 .ui-image--new-order-bio {
     grid-column: 6 / 13;
     margin-top: 34vh;
+}
+
+@media (min-width: 1120px) {
+    .ui-design-figma {
+        --ui-nonfullwidth-shift: clamp(2.5rem, 4vw, 3.75rem);
+    }
+
+    .ui-design-figma .ui-scene--copy-pair > .ui-image,
+    .ui-design-figma .ui-scene--copy-pair > .ui-copy,
+    .ui-design-figma .ui-scene--gisou-content > .ui-copy,
+    .ui-design-figma .ui-gisou-images {
+        transform: translateX(var(--ui-nonfullwidth-shift));
+    }
 }
 
 @media (width < 62em) {
