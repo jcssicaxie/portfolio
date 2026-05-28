@@ -1282,6 +1282,10 @@
     margin-top: -3rem;
 }
 
+#gisou-retail {
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
 .portfolio-project-media--three .portfolio-asset:nth-child(1) {
     grid-column: 1 / 13;
 }
