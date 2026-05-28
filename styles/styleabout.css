@@ -671,6 +671,14 @@
     padding: clamp(2.25rem, 5vw, 5rem) 0;
 }
 
+.ui-scene--gisou-homepage {
+    padding-top: clamp(1rem, 2vw, 1.5rem);
+}
+
+.ui-project--gisou .ui-copy .project-details {
+    display: grid;
+}
+
 .ui-image--starsync-light {
     width: var(--ui-img-width, 100%);
     grid-column: 3 / 8;
