@@ -65,7 +65,6 @@
     border: 0;
     background: transparent;
     font: inherit;
-    font-style: italic;
     padding: 0;
     cursor: pointer;
     text-decoration: none;
@@ -74,8 +73,7 @@
 .about-figma-nav a:hover,
 .about-figma-nav a[aria-current="page"],
 .about-figma-nav button:hover {
-    color: var(--color-link);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .about-figma-nav form {
