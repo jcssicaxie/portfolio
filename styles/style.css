@@ -352,7 +352,7 @@ body.home-figma.works-figma.about-figma {
 #home,
 #works,
 #about {
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 0;
 }
 
 #works {
