@@ -351,7 +351,8 @@ body.home-figma.works-figma.about-figma {
 
 #home,
 #works,
-#about {
+#about,
+#cv {
     scroll-margin-top: 0;
 }
 
