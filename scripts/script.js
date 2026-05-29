@@ -206,6 +206,101 @@ document.addEventListener("click", event => {
     }
 });
 
+const worksSection = document.querySelector("#works");
+const worksStage = document.querySelector("#works .works-horizontal-stage");
+const worksGallery = document.querySelector("#works .works-gallery");
+let pendingHashLanding = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : null;
+
+function resolvePendingHashLanding() {
+    if (!pendingHashLanding) {
+        return;
+    }
+
+    const target = document.getElementById(pendingHashLanding);
+
+    if (target) {
+        target.scrollIntoView({ block: "start", behavior: "auto" });
+    }
+
+    pendingHashLanding = null;
+}
+
+if (worksSection && worksStage && worksGallery) {
+    let worksDistance = 0;
+    let worksTranslateDistance = 0;
+    let worksStartHold = 0;
+    let worksEndHold = 0;
+    let worksScrollFactor = 1;
+    let worksTarget = 0;
+    let worksCurrent = 0;
+    let worksFrame = null;
+    let worksMeasureFrame = null;
+
+    function measureWorksGallery() {
+        worksMeasureFrame = null;
+        worksTranslateDistance = Math.max(0, worksGallery.scrollWidth - worksStage.clientWidth);
+        worksStartHold = Math.min(window.innerHeight * 0.24, 190);
+        worksEndHold = Math.min(window.innerHeight * 0.95, 800);
+        worksScrollFactor = 1.45;
+        worksDistance = worksStartHold + (worksTranslateDistance * worksScrollFactor) + worksEndHold;
+        worksSection.style.setProperty("--works-scroll-distance", `${worksDistance}px`);
+        updateWorksTarget();
+        renderWorksScroll();
+        resolvePendingHashLanding();
+    }
+
+    function requestWorksMeasure() {
+        if (worksMeasureFrame !== null) {
+            return;
+        }
+
+        worksMeasureFrame = window.requestAnimationFrame(measureWorksGallery);
+    }
+
+    function updateWorksTarget() {
+        const sectionTop = worksSection.offsetTop;
+        const rawProgress = window.scrollY - sectionTop;
+        const horizontalProgress = Math.max(rawProgress - worksStartHold, 0) / worksScrollFactor;
+        worksTarget = Math.min(horizontalProgress, worksTranslateDistance);
+        requestWorksFrame();
+    }
+
+    function renderWorksScroll() {
+        worksFrame = null;
+        worksCurrent += (worksTarget - worksCurrent) * 0.18;
+
+        if (Math.abs(worksTarget - worksCurrent) < 0.35) {
+            worksCurrent = worksTarget;
+        }
+
+        worksSection.style.setProperty("--works-translate", `${worksCurrent}px`);
+
+        if (worksCurrent !== worksTarget) {
+            requestWorksFrame();
+        }
+    }
+
+    function requestWorksFrame() {
+        if (worksFrame !== null) {
+            return;
+        }
+
+        worksFrame = window.requestAnimationFrame(renderWorksScroll);
+    }
+
+    window.addEventListener("scroll", updateWorksTarget, { passive: true });
+    window.addEventListener("resize", requestWorksMeasure);
+    window.addEventListener("load", requestWorksMeasure);
+    worksGallery.querySelectorAll("img").forEach(image => {
+        if (!image.complete) {
+            image.addEventListener("load", requestWorksMeasure, { once: true });
+        }
+    });
+    requestWorksMeasure();
+} else {
+    window.addEventListener("load", resolvePendingHashLanding);
+}
+
 figmaHeaderLinks.forEach(link => {
     link.addEventListener("pointerdown", event => {
         const isModifiedClick = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0;

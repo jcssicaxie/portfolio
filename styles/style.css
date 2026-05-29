@@ -353,14 +353,59 @@ body.home-figma.works-figma.about-figma {
 }
 
 body.home-figma.works-figma.about-figma #works.works-figma-page {
-    padding-right: clamp(1.5rem, 2.2vw, 2.4rem);
-    padding-left: clamp(1.5rem, 2.2vw, 2.4rem);
+    --works-scroll-distance: 0px;
+    --works-translate: 0px;
+    height: calc(100vh + var(--works-scroll-distance));
+    min-height: 100vh;
+    overflow: visible;
+    padding: 0;
+}
+
+body.home-figma.works-figma.about-figma #works .works-horizontal-stage {
+    position: sticky;
+    top: 0;
+    display: grid;
+    align-content: center;
+    place-items: center start;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: clamp(6rem, 10vh, 8rem) 0 clamp(5rem, 8vh, 7rem);
+    box-sizing: border-box;
 }
 
 body.home-figma.works-figma.about-figma #works .works-gallery {
-    grid-template-columns: repeat(5, minmax(0, 14.25rem));
-    gap: 0 clamp(1.25rem, 1.6vw, 1.75rem);
-    width: min(100%, 78.25rem);
+    display: flex;
+    grid-template-columns: none;
+    gap: clamp(1.25rem, 2vw, 1.75rem);
+    width: max-content;
+    max-width: none;
+    margin: 0;
+    padding: 0 clamp(1.5rem, 6.5vw, 5.4rem);
+    box-sizing: border-box;
+    overflow: visible;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    transform: translate3d(calc(var(--works-translate) * -1), 0, 0);
+    will-change: transform;
+    -webkit-overflow-scrolling: touch;
+}
+
+body.home-figma.works-figma.about-figma #works .works-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+body.home-figma.works-figma.about-figma #works .work-card {
+    flex: 0 0 clamp(16.5rem, 24vw, 20.5rem);
+    scroll-snap-align: start;
+}
+
+body.home-figma.works-figma.about-figma #works .work-card-media {
+    aspect-ratio: 1 / 1.32;
+}
+
+body.home-figma.works-figma.about-figma #works .work-card small {
+    max-width: 14rem;
 }
 
 .home-intro {
@@ -557,6 +602,31 @@ body.home-figma.works-figma.about-figma #works .works-gallery {
 
     .home-portrait:hover {
         transform: none;
+    }
+}
+
+@media (max-width: 54em) {
+    body.home-figma.works-figma.about-figma #works.works-figma-page {
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    body.home-figma.works-figma.about-figma #works .works-horizontal-stage {
+        place-items: center start;
+        padding: 8.5rem 0 5rem;
+    }
+
+    body.home-figma.works-figma.about-figma #works .works-gallery {
+        grid-template-columns: none;
+        gap: 1rem;
+        width: max-content;
+        padding-right: .85rem;
+        padding-left: .85rem;
+        scroll-padding-inline: .85rem;
+    }
+
+    body.home-figma.works-figma.about-figma #works .work-card {
+        flex-basis: min(72vw, 19rem);
     }
 }
 
