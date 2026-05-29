@@ -30,18 +30,31 @@ if (menuButton && nav) {
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
 const mobileMenu = mobileMenuToggle ? mobileMenuToggle.closest("nav") : null;
 
-if (document.documentElement.classList.contains("is-loading-hash")) {
-    window.addEventListener("load", () => {
-        const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+function getSamePageHashTarget(href) {
+    if (!href || href.startsWith("mailto:") || href.startsWith("http")) {
+        return null;
+    }
 
-        if (target) {
-            target.scrollIntoView({ block: "start", behavior: "auto" });
-        }
+    const url = new URL(href, window.location.href);
+    const currentUrl = new URL(window.location.href);
 
-        window.requestAnimationFrame(() => {
-            document.documentElement.classList.remove("is-loading-hash");
-        });
-    });
+    if (!url.hash || url.origin !== currentUrl.origin || url.pathname !== currentUrl.pathname || url.search !== currentUrl.search) {
+        return null;
+    }
+
+    return document.getElementById(decodeURIComponent(url.hash.slice(1)));
+}
+
+function scrollToSamePageHash(href, behavior = "smooth") {
+    const target = getSamePageHashTarget(href);
+
+    if (!target) {
+        return false;
+    }
+
+    target.scrollIntoView({ block: "start", behavior });
+    window.history.pushState(null, "", new URL(href, window.location.href).hash);
+    return true;
 }
 
 if (mobileMenuToggle && mobileMenu) {
@@ -170,8 +183,28 @@ function navigateHeaderLink(link) {
         return;
     }
 
+    if (scrollToSamePageHash(href)) {
+        return;
+    }
+
     window.location.href = new URL(href, window.location.href).href;
 }
+
+document.addEventListener("click", event => {
+    if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) {
+        return;
+    }
+
+    const link = event.target.closest("a[href]");
+
+    if (!link) {
+        return;
+    }
+
+    if (scrollToSamePageHash(link.getAttribute("href"))) {
+        event.preventDefault();
+    }
+});
 
 figmaHeaderLinks.forEach(link => {
     link.addEventListener("pointerdown", event => {

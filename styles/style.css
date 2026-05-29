@@ -7,14 +7,6 @@ html, body {
     overscroll-behavior: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-html.is-loading-hash {
-    scroll-behavior: auto;
-}
-
 body {
     background-repeat: no-repeat;
     background-size: cover;
