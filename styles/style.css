@@ -7,6 +7,14 @@ html, body {
     overscroll-behavior: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html.is-loading-hash {
+    scroll-behavior: auto;
+}
+
 body {
     background-repeat: no-repeat;
     background-size: cover;
@@ -327,6 +335,11 @@ footer a {
     text-transform: none;
 }
 
+body.home-figma.works-figma.about-figma {
+    display: block;
+    min-height: 100%;
+}
+
 .home-figma-page {
     flex: 1;
     position: relative;
@@ -334,6 +347,27 @@ footer a {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
+}
+
+#home,
+#works,
+#about {
+    scroll-margin-top: 4rem;
+}
+
+#works {
+    background: #F5F4F0;
+}
+
+body.home-figma.works-figma.about-figma #works.works-figma-page {
+    padding-right: clamp(1.5rem, 2.2vw, 2.4rem);
+    padding-left: clamp(1.5rem, 2.2vw, 2.4rem);
+}
+
+body.home-figma.works-figma.about-figma #works .works-gallery {
+    grid-template-columns: repeat(5, minmax(0, 14.25rem));
+    gap: 0 clamp(1.25rem, 1.6vw, 1.75rem);
+    width: min(100%, 78.25rem);
 }
 
 .home-intro {

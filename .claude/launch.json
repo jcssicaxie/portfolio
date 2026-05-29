@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "portfolio",
-      "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd /Users/jessicaxie/Documents/GitHub/portfolio && python3 -m http.server 3333"],
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "3333", "--directory", "/Users/jessicaxie/Documents/GitHub/portfolio"],
       "port": 3333
     }
   ]

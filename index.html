@@ -6,40 +6,102 @@
     <meta name="description" content="Portfolio of Jessica Xie, a UX/UI and visual designer exploring fashion, user experience, interfaces, and image-led storytelling.">
     <title>Jessica Xie | UX/UI & Visual Designer</title>
 
-    <link rel="stylesheet" href="styles/style.css?v=home-fixed-text-safe-image">
+    <script>
+        if (window.location.hash) {
+            document.documentElement.classList.add("is-loading-hash");
+        }
+    </script>
+    <link rel="stylesheet" href="styles/style.css?v=works-gallery-larger">
     <link rel="stylesheet" href="styles/stylesviewmore.css">
     <link rel="stylesheet" href="styles/styleabout.css?v=safari-project-index-final">
 </head>
 
-<body class="home-figma">
+<body class="home-figma works-figma about-figma">
     <header class="about-figma-header">
-        <a class="about-logo" href="index.html" aria-label="Jessica Xie home">
+        <a class="about-logo" href="index.html#home" aria-label="Jessica Xie home">
             <img src="images/logo.png" alt="Jessica Xie">
         </a>
 
-        <nav class="about-figma-nav" aria-label="Home navigation">
+        <nav class="about-figma-nav" aria-label="Page navigation">
             <button class="mobile-menu-toggle" type="button" aria-expanded="false">MENU</button>
-            <a href="works.html">WORKS</a>
-            <a href="about.html">ABOUT</a>
+            <a href="index.html#home">HOME</a>
+            <a href="index.html#works">WORKS</a>
+            <a href="index.html#about">ABOUT</a>
             <a href="cv.html">CV</a>
             <a class="mobile-contact-link" href="mailto:jessicaxie01@gmail.com">CONTACT</a>
         </nav>
     </header>
 
     <main class="home-figma-page">
-        <section class="home-intro" aria-label="Portfolio introduction">
+        <section id="home" class="home-intro" aria-label="Portfolio introduction">
             <h1>
                 <span class="home-name">JESSICA XIE</span> is a UX/UI and visual designer, based in The Netherlands.
             </h1>
             <p class="home-study">Student at Hogeschool van Amsterdam, Communication &amp; Multi-media Design.</p>
             <div class="home-actions" aria-label="Portfolio shortcuts">
-                <a class="home-action-primary" href="works.html">View selected works</a>
-                <a class="home-action-secondary" href="about.html">About Jessica</a>
+                <a class="home-action-primary" href="#works">View selected works</a>
+                <a class="home-action-secondary" href="#about">About Jessica</a>
             </div>
 
             <img class="home-portrait" src="images/home-portrait.png" alt="Jessica Xie arranging flowers">
         </section>
-    </main>  
+    </main>
+
+    <section id="works" class="works-figma-page" aria-label="Selected works">
+        <section class="works-gallery" aria-label="Portfolio categories">
+            <a class="work-card work-card-ui" href="projects/webdesign.html">
+                <span class="work-card-media">
+                    <img src="images/webdesign/GISOUworks.png" alt="UI project preview">
+                </span>
+                <span>UI</span>
+                <small>Interfaces, prototypes, front-end</small>
+            </a>
+
+            <a class="work-card work-card-ux" href="projects/uxdesign.html">
+                <span class="work-card-media">
+                    <img src="images/webdesign/heartspacemockup3.png" alt="UX project preview">
+                </span>
+                <span>UX</span>
+                <small>Research, service design, exhibitions</small>
+            </a>
+
+            <a class="work-card work-card-photography" href="projects/photography.html">
+                <span class="work-card-media">
+                    <img src="images/photography/paris2024/P1020036.jpeg" alt="Photography project preview">
+                </span>
+                <span>PHOTOGRAPHY</span>
+                <small>Street style, travel, visual essays</small>
+            </a>
+
+            <a class="work-card work-card-zine" href="projects/magazinedesign.html">
+                <span class="work-card-media">
+                    <img src="images/magazine/kittycouture/KCkaft.jpeg" alt="Zine project preview">
+                </span>
+                <span>ZINE</span>
+                <small>Editorial, print, visual storytelling</small>
+            </a>
+
+            <a class="work-card work-card-graphic" href="projects/graphicdesign.html">
+                <span class="work-card-media">
+                    <img src="images/posters/lowside/afropiano.jpg" alt="Graphic design project preview">
+                </span>
+                <span>GRAPHIC</span>
+                <small>Posters, flyers, event identities</small>
+            </a>
+        </section>
+    </section>
+
+    <section id="about" class="about-page" aria-label="About Jessica">
+        <section class="about-motion-section" aria-label="About">
+            <div class="about-motion-stage" data-about-motion aria-hidden="true"></div>
+            <video autoplay muted loop playsinline class="myvideo-aboutme" aria-hidden="true">
+                <source src="images/videoaboutme.mp4" type="video/mp4">
+            </video>
+            <p>
+                I have a background in <span class="about-highlight">communication and multi-media design</span>, increasingly focused on UX/UI and visual design, fashion-informed art direction, and user experience. My practice is shaped by curiosity and informed by culture, lifestyle, and the many ways creativity appears in everyday life. Influenced by fashion and contemporary visual culture, I approach projects with both aesthetic awareness and strategic intent. I’m interested in creating digital experiences and visual work that invite interaction and form meaningful connections with people.
+            </p>
+        </section>
+    </section>
 
     <footer class="about-figma-footer">
         <div>
@@ -54,6 +116,7 @@
     </footer>
 
     <script src="scripts/script.js?v=video-autoplay-inline"></script>
+    <script type="module" src="scripts/about-motion.js?v=about-stage-20260528"></script>
 
 </body>
 </html>

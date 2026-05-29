@@ -30,6 +30,20 @@ if (menuButton && nav) {
 const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
 const mobileMenu = mobileMenuToggle ? mobileMenuToggle.closest("nav") : null;
 
+if (document.documentElement.classList.contains("is-loading-hash")) {
+    window.addEventListener("load", () => {
+        const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+
+        if (target) {
+            target.scrollIntoView({ block: "start", behavior: "auto" });
+        }
+
+        window.requestAnimationFrame(() => {
+            document.documentElement.classList.remove("is-loading-hash");
+        });
+    });
+}
+
 if (mobileMenuToggle && mobileMenu) {
     mobileMenuToggle.addEventListener("click", () => {
         const isOpen = mobileMenu.classList.toggle("is-mobile-menu-open");
