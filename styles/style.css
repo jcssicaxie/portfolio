@@ -606,31 +606,47 @@ body.home-figma.works-figma.about-figma #works .work-card small {
 }
 
 @media (max-width: 54em) {
-    /* Keeps the same pinned, scroll-driven horizontal effect as desktop
-       (see scripts/script.js) -- only the hold/scroll-factor constants
-       differ on phones, tuned so the section doesn't turn into several
-       extra screen-heights of blank scrolling before the next section. */
+    /* Below this width the pinned/scroll-jacked horizontal effect is
+       turned off (see the matching matchMedia check in scripts/script.js).
+       Cards lay out as a normal 2-column grid that wraps like ordinary
+       content instead of scrolling horizontally -- the same pattern
+       styles/styleabout.css already uses for the standalone works.html
+       page, just scoped to the #works section here. */
     body.home-figma.works-figma.about-figma #works.works-figma-page {
-        min-height: 100vh;
+        height: auto;
+        min-height: auto;
         padding: 0;
     }
 
     body.home-figma.works-figma.about-figma #works .works-horizontal-stage {
-        place-items: center start;
-        padding: 8.5rem 0 5rem;
+        position: static;
+        display: block;
+        height: auto;
+        min-height: auto;
+        overflow: visible;
+        padding: 4.5rem .85rem 3.5rem;
     }
 
     body.home-figma.works-figma.about-figma #works .works-gallery {
-        grid-template-columns: none;
-        gap: 1rem;
-        width: max-content;
-        padding-right: .85rem;
-        padding-left: .85rem;
-        scroll-padding-inline: .85rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.25rem 1rem;
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        transform: none !important;
     }
 
     body.home-figma.works-figma.about-figma #works .work-card {
-        flex-basis: min(72vw, 19rem);
+        flex: none;
+        gap: .85rem;
+        font-size: .85rem;
+    }
+
+    body.home-figma.works-figma.about-figma #works .work-card small {
+        max-width: none;
+        margin-top: -.45rem;
+        font-size: .66rem;
     }
 }
 

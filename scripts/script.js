@@ -226,11 +226,10 @@ function resolvePendingHashLanding() {
 }
 
 if (worksSection && worksStage && worksGallery) {
-    // The pin/scroll-jack effect stays active at every width -- only the
-    // hold/scroll-factor constants change below 54em (must match the
-    // breakpoint in styles/style.css), so phones get the same "scroll
-    // drives the horizontal carousel" feel as desktop without the section
-    // ballooning into several extra screen-heights of blank scrolling.
+    // Below 54em the CSS lays the cards out as a normal 2-column (then
+    // 1-column) grid instead of a horizontally pinned strip, so there is
+    // nothing to measure or translate -- the pin/scroll-jack math below
+    // only runs above that breakpoint. Must match styles/style.css.
     const worksCompactQuery = window.matchMedia("(max-width: 54em)");
     let worksIsCompact = worksCompactQuery.matches;
     let worksDistance = 0;
@@ -245,18 +244,22 @@ if (worksSection && worksStage && worksGallery) {
 
     function measureWorksGallery() {
         worksMeasureFrame = null;
-        worksTranslateDistance = Math.max(0, worksGallery.scrollWidth - worksStage.clientWidth);
 
         if (worksIsCompact) {
-            worksStartHold = Math.min(window.innerHeight * 0.1, 80);
-            worksEndHold = Math.min(window.innerHeight * 0.3, 250);
-            worksScrollFactor = 1;
-        } else {
-            worksStartHold = Math.min(window.innerHeight * 0.24, 190);
-            worksEndHold = Math.min(window.innerHeight * 0.95, 800);
-            worksScrollFactor = 1.45;
+            worksTranslateDistance = 0;
+            worksDistance = 0;
+            worksTarget = 0;
+            worksCurrent = 0;
+            worksSection.style.setProperty("--works-scroll-distance", "0px");
+            worksSection.style.setProperty("--works-translate", "0px");
+            resolvePendingHashLanding();
+            return;
         }
 
+        worksTranslateDistance = Math.max(0, worksGallery.scrollWidth - worksStage.clientWidth);
+        worksStartHold = Math.min(window.innerHeight * 0.24, 190);
+        worksEndHold = Math.min(window.innerHeight * 0.95, 800);
+        worksScrollFactor = 1.45;
         worksDistance = worksStartHold + (worksTranslateDistance * worksScrollFactor) + worksEndHold;
         worksSection.style.setProperty("--works-scroll-distance", `${worksDistance}px`);
         updateWorksTarget();
@@ -273,6 +276,10 @@ if (worksSection && worksStage && worksGallery) {
     }
 
     function updateWorksTarget() {
+        if (worksIsCompact) {
+            return;
+        }
+
         const sectionTop = worksSection.offsetTop;
         const rawProgress = window.scrollY - sectionTop;
         const horizontalProgress = Math.max(rawProgress - worksStartHold, 0) / worksScrollFactor;
