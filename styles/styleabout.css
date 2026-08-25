@@ -301,6 +301,17 @@
     padding: 10rem 0 6rem;
 }
 
+@media (max-width: 54em) {
+    /* The header stays position:fixed at ~92px tall on mobile, so the top
+       padding can't go to 0 without content sliding under the logo/menu --
+       trimmed to just clear it instead. The footer here is in normal flow
+       (not fixed), so the bottom padding has nothing to guard against and
+       can be cut much closer to 0. */
+    .cv-page {
+        padding: 6.5rem 0 2rem;
+    }
+}
+
 .cv-figma .about-figma-nav a,
 .cv-figma .about-figma-nav a:visited,
 .cv-figma .about-figma-nav a:hover,
