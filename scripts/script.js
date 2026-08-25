@@ -226,6 +226,13 @@ function resolvePendingHashLanding() {
 }
 
 if (worksSection && worksStage && worksGallery) {
+    // Below 54em the CSS turns the gallery into a normal, natively
+    // swipeable horizontal strip instead of the pinned scroll-jacked
+    // effect (that effect stretched the section several extra
+    // screen-heights tall on phones). This must match the breakpoint
+    // used in styles/style.css.
+    const worksPinQuery = window.matchMedia("(min-width: 54.0625em)");
+    let worksPinEnabled = worksPinQuery.matches;
     let worksDistance = 0;
     let worksTranslateDistance = 0;
     let worksStartHold = 0;
@@ -238,6 +245,18 @@ if (worksSection && worksStage && worksGallery) {
 
     function measureWorksGallery() {
         worksMeasureFrame = null;
+
+        if (!worksPinEnabled) {
+            worksTranslateDistance = 0;
+            worksDistance = 0;
+            worksTarget = 0;
+            worksCurrent = 0;
+            worksSection.style.setProperty("--works-scroll-distance", "0px");
+            worksSection.style.setProperty("--works-translate", "0px");
+            resolvePendingHashLanding();
+            return;
+        }
+
         worksTranslateDistance = Math.max(0, worksGallery.scrollWidth - worksStage.clientWidth);
         worksStartHold = Math.min(window.innerHeight * 0.24, 190);
         worksEndHold = Math.min(window.innerHeight * 0.95, 800);
@@ -258,6 +277,10 @@ if (worksSection && worksStage && worksGallery) {
     }
 
     function updateWorksTarget() {
+        if (!worksPinEnabled) {
+            return;
+        }
+
         const sectionTop = worksSection.offsetTop;
         const rawProgress = window.scrollY - sectionTop;
         const horizontalProgress = Math.max(rawProgress - worksStartHold, 0) / worksScrollFactor;
@@ -286,6 +309,17 @@ if (worksSection && worksStage && worksGallery) {
         }
 
         worksFrame = window.requestAnimationFrame(renderWorksScroll);
+    }
+
+    function handleWorksPinChange(event) {
+        worksPinEnabled = event.matches;
+        requestWorksMeasure();
+    }
+
+    if (worksPinQuery.addEventListener) {
+        worksPinQuery.addEventListener("change", handleWorksPinChange);
+    } else if (worksPinQuery.addListener) {
+        worksPinQuery.addListener(handleWorksPinChange);
     }
 
     window.addEventListener("scroll", updateWorksTarget, { passive: true });

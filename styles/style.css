@@ -606,23 +606,36 @@ body.home-figma.works-figma.about-figma #works .work-card small {
 }
 
 @media (max-width: 54em) {
+    /* Below this width the pinned/scroll-jacked horizontal effect is turned
+       off (see the matching matchMedia check in scripts/script.js) because it
+       made the section scroll for several extra screen-heights on phones.
+       Instead the gallery becomes a normal, natively swipeable horizontal
+       strip that takes only as much vertical space as it needs. */
     body.home-figma.works-figma.about-figma #works.works-figma-page {
-        min-height: 100vh;
+        height: auto;
+        min-height: auto;
         padding: 0;
     }
 
     body.home-figma.works-figma.about-figma #works .works-horizontal-stage {
+        position: static;
+        height: auto;
+        min-height: auto;
+        overflow: visible;
         place-items: center start;
-        padding: 8.5rem 0 5rem;
+        padding: 4.5rem 0 3.5rem;
     }
 
     body.home-figma.works-figma.about-figma #works .works-gallery {
         grid-template-columns: none;
         gap: 1rem;
-        width: max-content;
+        width: 100%;
+        max-width: 100%;
         padding-right: .85rem;
         padding-left: .85rem;
         scroll-padding-inline: .85rem;
+        overflow-x: auto;
+        transform: none !important;
     }
 
     body.home-figma.works-figma.about-figma #works .work-card {
