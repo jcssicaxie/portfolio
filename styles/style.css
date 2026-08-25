@@ -605,6 +605,108 @@ body.home-figma.works-figma.about-figma #works .work-card small {
     }
 }
 
+.home-motion-stage,
+.home-motion-scrim {
+    display: none;
+}
+
+@media (max-width: 54em) {
+    /* Mobile-only hero treatment: swap the static portrait for the same
+       photo set used in the About "hover to reveal" effect, laid out as a
+       grid behind the text and auto-animated in an alternating checkerboard
+       pattern (see the [data-home-motion] logic in scripts/about-motion.js).
+       The text and CTA buttons sit above it via z-index, and the photo/scrim
+       layers are pointer-events:none so the buttons keep working normally. */
+    .home-figma-page {
+        min-height: 100vh;
+    }
+
+    .home-intro {
+        /* Fill the page's remaining height (100vh minus the 8rem/4rem
+           top/bottom padding set at the 70em breakpoint above) so the
+           photo grid has an actual backdrop to animate in, instead of
+           just hugging the text's own height. */
+        min-height: calc(100vh - 12rem);
+        position: relative;
+        overflow: hidden;
+        align-content: center;
+    }
+
+    /* top/left are reset here because the base (desktop) rules for these
+       three set absolute-style top/left offsets that are normally inert
+       under position:static -- switching to position:relative (needed so
+       z-index can lift them above the photo grid/scrim) would otherwise
+       reactivate those offsets and shove the text out of view. */
+    .home-intro h1,
+    .home-study,
+    .home-actions {
+        position: relative;
+        top: auto;
+        left: auto;
+        z-index: 2;
+    }
+
+    .home-portrait {
+        display: none;
+    }
+
+    .home-motion-stage {
+        display: grid;
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        pointer-events: none;
+    }
+
+    .home-motion-photo {
+        position: relative;
+        overflow: hidden;
+        opacity: 0;
+        animation: home-motion-flicker 6s ease-in-out infinite;
+        animation-delay: var(--home-motion-delay, 0s);
+    }
+
+    .home-motion-photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(.94) contrast(.96);
+    }
+
+    .home-motion-scrim {
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: rgba(255, 255, 255, .62);
+        pointer-events: none;
+    }
+}
+
+@keyframes home-motion-flicker {
+    0%, 8% {
+        opacity: 0;
+    }
+
+    24%, 36% {
+        opacity: .82;
+    }
+
+    52%, 100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 54em) and (prefers-reduced-motion: reduce) {
+    .home-motion-photo {
+        animation: none;
+        opacity: .16;
+    }
+}
+
 @media (max-width: 54em) {
     /* Below this width the pinned/scroll-jacked horizontal effect is
        turned off (see the matching matchMedia check in scripts/script.js).

@@ -7,7 +7,7 @@
     <title>UX Design | Jessica Xie</title>
 
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/styleabout.css?v=heartspace-visual-pacing">
+    <link rel="stylesheet" href="../styles/styleabout.css?v=safari-project-index-final">
 </head>
 
 <body class="portfolio-figma ux-design-page">
@@ -27,182 +27,52 @@
     </header>
 
     <main class="portfolio-showcase" aria-label="UX design projects">
-        <section id="heartspace" class="ui-project ui-project--heartspace heartspace-case-study" aria-labelledby="heartspace-title" data-category="UX/UI design" data-location="Amsterdam">
-            <div class="ui-scene ui-scene--hero ui-scene--heartspace-hero heartspace-case-hero">
+        <nav class="portfolio-project-index" aria-label="UX project links">
+            <a href="#heartspace">2026_HeartSpace</a>
+            <a href="#herinnering-aan-tafel">2026_Herinnering Aan Tafel</a>
+        </nav>
+
+        <section id="heartspace" class="ui-project ui-project--heartspace" aria-labelledby="heartspace-title" data-category="UX/UI design" data-location="Amsterdam">
+            <div class="ui-scene ui-scene--hero ui-scene--heartspace-hero">
                 <div class="ui-image ui-image--heartspace-main">
                     <img src="../images/webdesign/HSmockup.png" alt="HeartSpace desktop and mobile landing screens">
                 </div>
             </div>
 
-            <div class="heartspace-case-shell">
-                <aside class="heartspace-case-summary">
+            <div class="ui-scene ui-scene--copy-pair ui-scene--heartspace-screens">
+                <div class="ui-image ui-image--heartspace-mobile">
+                    <img src="../images/webdesign/HSmockup2.png" alt="HeartSpace mobile feed screens">
+                </div>
+                <div class="ui-copy ui-copy--right">
                     <p id="heartspace-title"><i>HeartSpace: A Space For What You Feel</i></p>
                     <dl class="project-details">
                         <div>
                             <dt>Role</dt>
-                            <dd>UX research, UX/UI design, wireflows, feedback iteration, responsive prototype</dd>
+                            <dd>UX research, interface design, user journey, responsive prototype</dd>
                         </div>
                         <div>
                             <dt>Tools</dt>
                             <dd>Figma</dd>
                         </div>
-                        <div>
-                            <dt>Timeline</dt>
-                            <dd>Research, wireflow, visual design, prototype</dd>
-                        </div>
-                        <div>
-                            <dt>Focus</dt>
-                            <dd>Creative sharing, reflection, inspiration saving, multi-device UX</dd>
-                        </div>
-                        <div>
-                            <dt>Deliverables</dt>
-                            <dd>User journey, requirements, wireflow, responsive screens, UI states</dd>
-                        </div>
-                        <div>
-                            <dt>Outcome</dt>
-                            <dd>Multi-device social platform for creative reflection and inspiration</dd>
-                        </div>
                     </dl>
                     <p>
-                        HeartSpace is a UX/UI concept for creatives who want to share work, collect inspiration, write reflections, and connect in a calmer digital space.
+                        HeartSpace is a responsive multi-device social journaling platform built in Figma. Grounded in user research and a defined user journey, it enables quick note-style posts on mobile, deeper writing on desktop, and lightweight engagement via smartwatch notifications.
                     </p>
                     <p>
                         <a class="ui-product-bio-link" href="../documents/RMDD_productbio.pdf" target="_blank" rel="noopener">CLICK to view productbiography in NL</a>
                     </p>
-                </aside>
+                </div>
+            </div>
 
-                <div class="heartspace-case-content">
-                    <section class="heartspace-case-block heartspace-case-block--intro" aria-label="HeartSpace project overview">
-                        <p class="heartspace-case-kicker">Overview</p>
-                        <p>
-                            The project explores how a social platform can feel less performative and more reflective. HeartSpace combines posting, inspiration saving, writing, feedback, and multi-device access into one product experience.
-                        </p>
-                    </section>
+            <div class="ui-scene ui-scene--hero ui-scene--heartspace-editor">
+                <div class="ui-image ui-image--heartspace-desktop">
+                    <img src="../images/webdesign/HSmockup3.png" alt="HeartSpace desktop writing interface">
+                </div>
+            </div>
 
-                    <section class="heartspace-case-grid" aria-label="HeartSpace challenge and requirements">
-                        <article class="heartspace-case-card">
-                            <p class="heartspace-case-kicker">Challenge</p>
-                            <p>
-                                Create a social product that supports expression without becoming noisy or overwhelming. The interface needed to feel familiar enough to use quickly, but softer than a typical feed.
-                            </p>
-                        </article>
-                        <article class="heartspace-case-card">
-                            <p class="heartspace-case-kicker">Requirements</p>
-                            <p>
-                                Users need to create posts, save inspiration, search by tags, receive feedback, and move between short mobile moments and longer desktop writing.
-                            </p>
-                        </article>
-                        <article class="heartspace-case-card">
-                            <p class="heartspace-case-kicker">UX principles</p>
-                            <p>
-                                I focused on calm hierarchy, low-friction creation, visible feedback, and enough space for emotional or reflective content.
-                            </p>
-                        </article>
-                    </section>
-
-                    <section class="heartspace-requirements-board" aria-label="HeartSpace product requirements board">
-                        <p class="heartspace-case-kicker">Product requirements board</p>
-                        <div class="heartspace-requirements-list">
-                            <p><span>01</span>Create short posts and longer reflections.</p>
-                            <p><span>02</span>Save inspiration and organise it through tags.</p>
-                            <p><span>03</span>Support feedback through likes, comments, shares, and insights.</p>
-                            <p><span>04</span>Continue the experience across mobile, desktop, and smartwatch notifications.</p>
-                        </div>
-                    </section>
-
-                    <figure class="heartspace-case-visual heartspace-case-visual--journey">
-                        <img src="../images/webdesign/HSuserjourney.png" alt="HeartSpace user journey mapping before, during, and after use">
-                        <figcaption>User journey mapping clarified the before, during, and after moments around inspiration, creation, saving, feedback, and returning to creative work.</figcaption>
-                    </figure>
-
-                    <section class="heartspace-case-block" aria-label="HeartSpace research and inspiration">
-                        <p class="heartspace-case-kicker">Research & patterns</p>
-                        <p>
-                            I studied familiar interaction patterns from Instagram, Pinterest, and Apple Watch notifications. Instagram informed social posting and feedback, Pinterest informed saving and discovery, and Apple Watch inspired lightweight notification moments.
-                        </p>
-                    </section>
-
-                    <figure class="heartspace-case-visual heartspace-case-visual--wide">
-                        <img src="../images/webdesign/heartspace-case/hs-visual-research.png" alt="HeartSpace visual design research moodboard">
-                        <figcaption>Visual research helped define a calm creative direction: soft contrast, familiar grid behaviour, and a quieter interface language.</figcaption>
-                    </figure>
-
-                    <figure class="heartspace-case-visual heartspace-case-visual--wide">
-                        <img src="../images/webdesign/heartspace-case/hs-ux-principles.png" alt="HeartSpace UX principles and feedback annotations">
-                        <figcaption>The interaction logic was checked against continuity, complementarity, and consistency so the product would feel predictable across platforms.</figcaption>
-                    </figure>
-
-                    <section class="heartspace-case-grid" aria-label="HeartSpace wireflow and feedback iterations">
-                        <article class="heartspace-case-card">
-                            <p class="heartspace-case-kicker">Wireflow</p>
-                            <p>
-                                I developed the flow around clear entry points: create, search, save, react, and return to your own work. The goal was to make each action predictable across devices.
-                            </p>
-                        </article>
-                        <article class="heartspace-case-card">
-                            <p class="heartspace-case-kicker">Iteration</p>
-                            <p>
-                                Feedback helped simplify navigation and clarify the difference between browsing, collecting inspiration, and publishing a personal reflection.
-                            </p>
-                        </article>
-                        <article class="heartspace-case-card">
-                            <p class="heartspace-case-kicker">UI states</p>
-                            <p>
-                                I considered ideal, partial, error, and blank states so the interface could work beyond polished final screens.
-                            </p>
-                        </article>
-                    </section>
-
-                    <figure class="heartspace-case-visual heartspace-case-visual--flow">
-                        <img src="../images/webdesign/HSscreenflow.png" alt="HeartSpace hi-fi screenflow diagram">
-                        <figcaption>The hi-fi screenflow connects onboarding, discovery, creation, saving, profile, feedback, and notification moments into one responsive product system.</figcaption>
-                    </figure>
-
-                    <section class="heartspace-case-block" aria-label="HeartSpace visual design direction">
-                        <p class="heartspace-case-kicker">Visual direction</p>
-                        <p>
-                            The visual direction uses soft neutrals, generous spacing, rounded controls, and simple iconography. This keeps creative content central while giving the platform a quiet, supportive tone.
-                        </p>
-                    </section>
-
-                    <div class="heartspace-process-visuals" aria-label="HeartSpace screen design and UI states">
-                        <figure class="heartspace-case-visual">
-                            <img src="../images/webdesign/heartspace-case/hs-screen-overview.png" alt="HeartSpace screen design overview">
-                            <figcaption>Screen design overview: exploration of saved boards, profiles, discovery, and content patterns.</figcaption>
-                        </figure>
-                        <figure class="heartspace-case-visual">
-                            <img src="../images/webdesign/heartspace-case/hs-ui-stack.png" alt="HeartSpace UI stack and UI states">
-                            <figcaption>UI stack and states: ideal, partial, error, and blank moments were treated as part of the product system.</figcaption>
-                        </figure>
-                    </div>
-
-                    <section class="heartspace-final-section" aria-label="HeartSpace final interface screens">
-                        <p class="heartspace-case-kicker">Final interface</p>
-                        <p>
-                            The final screens bring the system together across desktop, mobile, and smartwatch touchpoints.
-                        </p>
-                        <div class="heartspace-final-showcase">
-                            <figure class="heartspace-case-visual heartspace-case-visual--desktop">
-                                <img src="../images/webdesign/HSmockup3.png" alt="HeartSpace desktop writing and post reading interfaces">
-                                <figcaption>Desktop gives more room for writing, reading, profile context, and feedback.</figcaption>
-                            </figure>
-                            <figure class="heartspace-case-visual heartspace-case-visual--mobile">
-                                <img src="../images/webdesign/HSmockup2.png" alt="HeartSpace mobile feed and profile screens">
-                                <figcaption>Mobile supports quick browsing, saving, profile viewing, and fast social feedback.</figcaption>
-                            </figure>
-                            <figure class="heartspace-case-visual heartspace-case-visual--device">
-                                <img src="../images/webdesign/heartspacemockup3.png" alt="HeartSpace content creation and post detail screens">
-                                <figcaption>Multi-device behaviour supports quick interaction and deeper creation.</figcaption>
-                            </figure>
-                        </div>
-                    </section>
-
-                    <section class="heartspace-case-block heartspace-case-block--outcome" aria-label="HeartSpace reflection and outcome">
-                        <p class="heartspace-case-kicker">Outcome</p>
-                        <p>
-                            HeartSpace became a complete UX/UI case study with product reasoning behind the screens. The final concept shows how research, requirements, wireflows, feedback, visual exploration, responsive layouts, and UI states can shape a calmer social platform.
-                        </p>
-                    </section>
+            <div class="ui-scene ui-scene--wide ui-scene--heartspace-flow">
+                <div class="ui-image ui-image--heartspace-flow">
+                    <img src="../images/webdesign/HSscreenflow.png" alt="HeartSpace screen flow diagram">
                 </div>
             </div>
         </section>
@@ -287,6 +157,6 @@
             All Rights Reserved © 2026
         </p>
     </footer>
-    <script src="../scripts/script.js?v=works-scroll-faster"></script>
+    <script src="../scripts/script.js?v=direct-hash-navigation"></script>
 </body>
 </html>
