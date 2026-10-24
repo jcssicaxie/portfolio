@@ -1011,5 +1011,15 @@ html, body { overscroll-behavior-y: none; }
 @media (max-width: 63.99rem) { .nav .nav-about { display: none; } }
 
 /* Footer row without the colophon sentence: label, e-mail, copyright */
-@media (min-width: 40rem) { .c-a { grid-column: 1 / 3; } .c-c { grid-column: 3 / 7; } .c-d { grid-column: 7 / 9; } }
-@media (min-width: 64rem) { .c-a { grid-column: 1 / 3; } .c-c { grid-column: 3 / 8; } .c-d { grid-column: 11 / 13; } }
+@media (min-width: 40rem) { .c-a { grid-column: 1 / 3; } .c-b { grid-column: 3 / 9; } .c-c { grid-column: 1 / 5; } .c-d { grid-column: 5 / 9; } }
+@media (min-width: 64rem) { .c-a { grid-column: 1 / 3; } .c-b { grid-column: 3 / 8; } .c-c { grid-column: 8 / 11; } .c-d { grid-column: 11 / 13; } }
+
+/* Home: the header floats transparent over the hero photo and turns solid
+   once the hero (including its fade) has scrolled past it */
+body.home .hero4 {
+  margin-top: calc(-1 * var(--head-h));
+  padding-top: calc(var(--head-h) + clamp(1rem, 2vw, 1.75rem));
+  min-height: 100svh;
+}
+body.home .masthead { transition: background-color .35s var(--ease), border-color .35s var(--ease); }
+.head-clear body.home .masthead { background-color: transparent; border-bottom-color: transparent; }

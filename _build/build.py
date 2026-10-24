@@ -217,6 +217,10 @@ OVAL = (
     '<path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg>'
 )
 
+# Full-screen intro on the home page (name writes itself, then the page turns up). Off for now:
+# set INTRO_ON = True and remove "false&&" in the head script to bring it back.
+INTRO_ON = False
+INTRO_HTML = '<div class="intro" aria-hidden="true" data-intro><div class="intro-inner"><p class="intro-name">JessicaXie</p><p class="intro-sub">Portfolio</p></div></div>\n'
 NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About"), ("contact.html", "Contact")]
 
 
@@ -237,7 +241,7 @@ def head(title, desc, depth, path, og=None):
 <meta property="og:url" content="{canonical}">
 {f'<meta property="og:image" content="{og_img}">' if og_img else ''}
 <meta name="color-scheme" content="light">
-<script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname;if((p.slice(-1)=='/'||p.slice(-10)=='index.html')&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
+<script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(false&&home&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Pinyon+Script&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
@@ -283,6 +287,7 @@ def colophon(depth, big=False):
     return f"""<footer class="{cls}">{big_html}
   <div class="colophon-row grid">
     <p class="label c-a">Footer</p>
+    <p class="c-b">Jessica Xie &mdash; Portfolio {SITE['edition']}</p>
     <p class="c-c"><a href="mailto:{SITE['email']}">{SITE['email']}</a></p>
     <p class="label c-d">&copy; {TODAY.year} &middot; <a href="#top">Back to top&nbsp;&uarr;</a></p>
   </div>
@@ -433,8 +438,7 @@ def build_home():
         ("Practice", "UX/UI, visual &amp; editorial design, photography"),
     ], "receipt note-facts")
     main = f"""
-<div class="intro" aria-hidden="true" data-intro><div class="intro-inner"><p class="intro-name">JessicaXie</p><p class="intro-sub">Portfolio</p></div></div>
-<section class="cover hero4" aria-labelledby="cover-title">
+{INTRO_HTML if INTRO_ON else ''}<section class="cover hero4" aria-labelledby="cover-title">
   <div class="cover-bg" aria-hidden="true" style="background-image:url('{thumb(SITE['hero_image'], '', 2000)}')"></div>
   <div class="h4-top label">
     <span>Communication &amp; Multimedia Design</span>

@@ -27,6 +27,22 @@
     intro.remove();
   }
 
+  /* Home header: clear while the hero is under it, solid after */
+  const hero = $(".hero4");
+  if (hero && "IntersectionObserver" in window) {
+    const headH = () => ($(".masthead")?.offsetHeight || 60);
+    let io;
+    const watch = () => {
+      io?.disconnect();
+      io = new IntersectionObserver(([en]) => root.classList.toggle("head-clear", en.isIntersecting),
+        { rootMargin: `-${headH()}px 0px 0px 0px`, threshold: 0 });
+      io.observe(hero);
+    };
+    watch(); window.addEventListener("resize", watch);
+  } else {
+    root.classList.remove("head-clear");
+  }
+
   /* Theme: light (#F5F4F0) by default; dark only when the reader chooses it */
   const isDark = () => root.dataset.theme === "dark";
   const themeBtn = $("[data-theme-toggle]");
