@@ -1030,3 +1030,7 @@ body.home .masthead { transition: background-color .35s var(--ease), border-colo
 /* Work index on mobile: thumbnails keep their width, height follows the image (no cropping) */
 .ix-thumb { aspect-ratio: auto; height: auto; object-fit: contain; align-self: start; }
 .ix-thumb { background: none; }
+
+/* No grey/pink tap flash on touch screens; keyboard focus rings stay */
+html { -webkit-tap-highlight-color: transparent; }
+@media (hover: none) { :focus:not(:focus-visible) { outline: none; } }

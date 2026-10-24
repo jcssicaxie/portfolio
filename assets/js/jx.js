@@ -69,10 +69,11 @@
   };
   if (menuBtn && panel) {
     setMenu(false);
-    menuBtn.addEventListener("click", () => {
+    menuBtn.addEventListener("click", (e) => {
       const open = !root.classList.contains("menu-open");
       setMenu(open);
-      if (open) $("a", panel)?.focus();
+      // move focus into the menu only for keyboard users (a tap reports detail > 0), so no ring appears on touch
+      if (open && e.detail === 0) $("a", panel)?.focus();
     });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && root.classList.contains("menu-open")) { setMenu(false); menuBtn.focus(); }
