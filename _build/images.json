@@ -1,0 +1,2043 @@
+{
+ "images/Blurjess.JPEG": {
+  "alpha": false,
+  "h": 1152,
+  "key": "blurjess",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/aboutimgs/about.jpg": {
+  "alpha": false,
+  "h": 3659,
+  "key": "aboutimgs-about",
+  "w": 3659,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/about10.png": {
+  "alpha": true,
+  "h": 750,
+  "key": "aboutimgs-about10",
+  "w": 1000,
+  "widths": [
+   640,
+   1000
+  ]
+ },
+ "images/aboutimgs/about11.jpg": {
+  "alpha": false,
+  "h": 1367,
+  "key": "aboutimgs-about11",
+  "w": 1025,
+  "widths": [
+   640,
+   1025
+  ]
+ },
+ "images/aboutimgs/about12.png": {
+  "alpha": true,
+  "h": 1000,
+  "key": "aboutimgs-about12",
+  "w": 750,
+  "widths": [
+   640,
+   750
+  ]
+ },
+ "images/aboutimgs/about2.JPEG": {
+  "alpha": false,
+  "h": 4000,
+  "key": "aboutimgs-about2",
+  "w": 3000,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/about3.jpg": {
+  "alpha": false,
+  "h": 1481,
+  "key": "aboutimgs-about3",
+  "w": 1111,
+  "widths": [
+   640,
+   1111
+  ]
+ },
+ "images/aboutimgs/about4.png": {
+  "alpha": true,
+  "h": 1000,
+  "key": "aboutimgs-about4",
+  "w": 749,
+  "widths": [
+   640,
+   749
+  ]
+ },
+ "images/aboutimgs/about5.png": {
+  "alpha": true,
+  "h": 750,
+  "key": "aboutimgs-about5",
+  "w": 999,
+  "widths": [
+   640,
+   999
+  ]
+ },
+ "images/aboutimgs/about6.png": {
+  "alpha": true,
+  "h": 768,
+  "key": "aboutimgs-about6",
+  "w": 1000,
+  "widths": [
+   640,
+   1000
+  ]
+ },
+ "images/aboutimgs/about7.png": {
+  "alpha": true,
+  "h": 1000,
+  "key": "aboutimgs-about7",
+  "w": 750,
+  "widths": [
+   640,
+   750
+  ]
+ },
+ "images/aboutimgs/about8.png": {
+  "alpha": true,
+  "h": 1000,
+  "key": "aboutimgs-about8",
+  "w": 751,
+  "widths": [
+   640,
+   751
+  ]
+ },
+ "images/aboutimgs/about9.png": {
+  "alpha": true,
+  "h": 750,
+  "key": "aboutimgs-about9",
+  "w": 1000,
+  "widths": [
+   640,
+   1000
+  ]
+ },
+ "images/fashion/cult-classics/cultclassics1.jpg": {
+  "alpha": false,
+  "h": 720,
+  "key": "fashion-cult-classics-cultclassics1",
+  "w": 1080,
+  "widths": [
+   640,
+   1080
+  ]
+ },
+ "images/fashion/cult-classics/cultclassics2.jpg": {
+  "alpha": false,
+  "h": 1717,
+  "key": "fashion-cult-classics-cultclassics2",
+  "w": 2576,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/fashion/cult-classics/cultclassics3.jpg": {
+  "alpha": false,
+  "h": 1718,
+  "key": "fashion-cult-classics-cultclassics3",
+  "w": 2576,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/home-portrait.png": {
+  "alpha": true,
+  "h": 2361,
+  "key": "home-portrait",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/magazine/kittycouture/KCkaft.png": {
+  "alpha": true,
+  "h": 3505,
+  "key": "magazine-kittycouture-kckaft",
+  "w": 2483,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/magazine/kittycouture/KCkaft2.png": {
+  "alpha": true,
+  "h": 3505,
+  "key": "magazine-kittycouture-kckaft2",
+  "w": 2483,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/magazine/kittycouture/KCmock.png": {
+  "alpha": false,
+  "h": 3001,
+  "key": "magazine-kittycouture-kcmock",
+  "w": 2251,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/magazine/kittycouture/KCschets1.png": {
+  "alpha": true,
+  "h": 2360,
+  "key": "magazine-kittycouture-kcschets1",
+  "w": 1640,
+  "widths": [
+   640,
+   1200,
+   1640
+  ]
+ },
+ "images/magazine/kittycouture/KCschets2.jpeg": {
+  "alpha": false,
+  "h": 2360,
+  "key": "magazine-kittycouture-kcschets2",
+  "w": 1640,
+  "widths": [
+   640,
+   1200,
+   1640
+  ]
+ },
+ "images/magazine/kittycouture/KCschets3.jpeg": {
+  "alpha": false,
+  "h": 2360,
+  "key": "magazine-kittycouture-kcschets3",
+  "w": 1640,
+  "widths": [
+   640,
+   1200,
+   1640
+  ]
+ },
+ "images/magazine/kittycouture/KittyCouture.jpeg": {
+  "alpha": false,
+  "h": 1364,
+  "key": "magazine-kittycouture-kittycouture",
+  "w": 942,
+  "widths": [
+   640,
+   942
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0001.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0001",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0002.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0002",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0003.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0003",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0004.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0004",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0005.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0005",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0006.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0006",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0007.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0007",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0008.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0008",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0009.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0009",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0010.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0010",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0011.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0011",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0012.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0012",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0013.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0013",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0014.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0014",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0015.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0015",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0016.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0016",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0017.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0017",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0018.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0018",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0019.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0019",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0020.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0020",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0021.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0021",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0022.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0022",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0023.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0023",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0024.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0024",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0025.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0025",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0026.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0026",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0027.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0027",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0028.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0028",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0029.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0029",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0030.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0030",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0031.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0031",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0032.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0032",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0033.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0033",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0034.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0034",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0035.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0035",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0036.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0036",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0037.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0037",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0038.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0038",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0039.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0039",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0040.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0040",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-0041.jpg": {
+  "alpha": false,
+  "h": 1630,
+  "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0041",
+  "w": 1152,
+  "widths": [
+   640,
+   1152
+  ]
+ },
+ "images/photography/japan2025/japan1.jpeg": {
+  "alpha": false,
+  "h": 4342,
+  "key": "photography-japan2025-japan1",
+  "w": 3257,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan10.jpeg": {
+  "alpha": false,
+  "h": 4266,
+  "key": "photography-japan2025-japan10",
+  "w": 3200,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan11.jpeg": {
+  "alpha": false,
+  "h": 3672,
+  "key": "photography-japan2025-japan11",
+  "w": 2754,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan12.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-japan2025-japan12",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan2.jpeg": {
+  "alpha": false,
+  "h": 3998,
+  "key": "photography-japan2025-japan2",
+  "w": 2998,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan3.jpeg": {
+  "alpha": false,
+  "h": 4043,
+  "key": "photography-japan2025-japan3",
+  "w": 3032,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan4.jpeg": {
+  "alpha": false,
+  "h": 4215,
+  "key": "photography-japan2025-japan4",
+  "w": 3161,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan5.jpeg": {
+  "alpha": false,
+  "h": 3898,
+  "key": "photography-japan2025-japan5",
+  "w": 2924,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan6.jpeg": {
+  "alpha": false,
+  "h": 4034,
+  "key": "photography-japan2025-japan6",
+  "w": 3026,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan7.jpeg": {
+  "alpha": false,
+  "h": 3810,
+  "key": "photography-japan2025-japan7",
+  "w": 2858,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan8.jpeg": {
+  "alpha": false,
+  "h": 4412,
+  "key": "photography-japan2025-japan8",
+  "w": 3309,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/japan2025/japan9.jpeg": {
+  "alpha": false,
+  "h": 4015,
+  "key": "photography-japan2025-japan9",
+  "w": 3011,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020008.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020008",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020009.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020009",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020011.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020011",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020014.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020014",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020027.jpeg": {
+  "alpha": false,
+  "h": 4025,
+  "key": "photography-paris2024-p1020027",
+  "w": 3019,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020032.jpeg": {
+  "alpha": false,
+  "h": 4465,
+  "key": "photography-paris2024-p1020032",
+  "w": 3348,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020036.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020036",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020043.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020043",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020047.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020047",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020053.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020053",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020059.jpeg": {
+  "alpha": false,
+  "h": 3709,
+  "key": "photography-paris2024-p1020059",
+  "w": 2782,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/photography/paris2024/P1020061.jpeg": {
+  "alpha": false,
+  "h": 4896,
+  "key": "photography-paris2024-p1020061",
+  "w": 3672,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/posters/NFLToekomstmaker/flyerNFLToekomstmaker1.png": {
+  "alpha": false,
+  "h": 2481,
+  "key": "posters-nfltoekomstmaker-flyernfltoekomstmaker1",
+  "w": 1748,
+  "widths": [
+   640,
+   1200,
+   1748
+  ]
+ },
+ "images/posters/NFLToekomstmaker/flyerNFLToekomstmaker2.png": {
+  "alpha": false,
+  "h": 2481,
+  "key": "posters-nfltoekomstmaker-flyernfltoekomstmaker2",
+  "w": 1748,
+  "widths": [
+   640,
+   1200,
+   1748
+  ]
+ },
+ "images/posters/NFLToekomstmaker/flyerNFLToekomstmaker3.png": {
+  "alpha": false,
+  "h": 2481,
+  "key": "posters-nfltoekomstmaker-flyernfltoekomstmaker3",
+  "w": 1748,
+  "widths": [
+   640,
+   1200,
+   1748
+  ]
+ },
+ "images/posters/NFLToekomstmaker/flyerNFLToekomstmaker4.png": {
+  "alpha": false,
+  "h": 2481,
+  "key": "posters-nfltoekomstmaker-flyernfltoekomstmaker4",
+  "w": 1748,
+  "widths": [
+   640,
+   1200,
+   1748
+  ]
+ },
+ "images/posters/NFLflyer/NFLflyerSH1.png": {
+  "alpha": false,
+  "h": 2552,
+  "key": "posters-nflflyer-nflflyersh1",
+  "w": 1819,
+  "widths": [
+   640,
+   1200,
+   1819
+  ]
+ },
+ "images/posters/NFLflyer/NFLflyerSH2.png": {
+  "alpha": false,
+  "h": 2552,
+  "key": "posters-nflflyer-nflflyersh2",
+  "w": 1819,
+  "widths": [
+   640,
+   1200,
+   1819
+  ]
+ },
+ "images/posters/NFLflyer/NFLflyerSH3.png": {
+  "alpha": false,
+  "h": 2552,
+  "key": "posters-nflflyer-nflflyersh3",
+  "w": 1819,
+  "widths": [
+   640,
+   1200,
+   1819
+  ]
+ },
+ "images/posters/NFLflyer/NFLflyerSH4.png": {
+  "alpha": false,
+  "h": 2552,
+  "key": "posters-nflflyer-nflflyersh4",
+  "w": 1819,
+  "widths": [
+   640,
+   1200,
+   1819
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-01.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-01",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-02.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-02",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-03.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-03",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-04.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-04",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-05.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-05",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-06.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-06",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-07.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-07",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-08.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-08",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-09.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-09",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-10.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-10",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-11.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-11",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-12.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-12",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-13.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-13",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-14.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-14",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/ansichtkaartNFL/ansichtkaartNFL-15.png": {
+  "alpha": false,
+  "h": 1748,
+  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-15",
+  "w": 1241,
+  "widths": [
+   640,
+   1200,
+   1241
+  ]
+ },
+ "images/posters/gisou/mockupEDG.png": {
+  "alpha": true,
+  "h": 944,
+  "key": "posters-gisou-mockupedg",
+  "w": 708,
+  "widths": [
+   640,
+   708
+  ]
+ },
+ "images/posters/gisou/mockupHUB.png": {
+  "alpha": true,
+  "h": 917,
+  "key": "posters-gisou-mockuphub",
+  "w": 688,
+  "widths": [
+   640,
+   688
+  ]
+ },
+ "images/posters/gisou/process/gisou-artworks-overview.png": {
+  "alpha": false,
+  "h": 2218,
+  "key": "posters-gisou-process-gisou-artworks-overview",
+  "w": 3622,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/posters/gisou/process/gisou-colour-palette.png": {
+  "alpha": false,
+  "h": 1763,
+  "key": "posters-gisou-process-gisou-colour-palette",
+  "w": 840,
+  "widths": [
+   640,
+   840
+  ]
+ },
+ "images/posters/gisou/process/gisou-gwp-signage.png": {
+  "alpha": false,
+  "h": 965,
+  "key": "posters-gisou-process-gisou-gwp-signage",
+  "w": 965,
+  "widths": [
+   640,
+   965
+  ]
+ },
+ "images/posters/gisou/process/gisou-moodboard.png": {
+  "alpha": false,
+  "h": 2445,
+  "key": "posters-gisou-process-gisou-moodboard",
+  "w": 2360,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/posters/gisou/process/gisou-tester-tray.png": {
+  "alpha": false,
+  "h": 635,
+  "key": "posters-gisou-process-gisou-tester-tray",
+  "w": 2670,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/posters/lowside/LShalloween.jpeg": {
+  "alpha": false,
+  "h": 2655,
+  "key": "posters-lowside-lshalloween",
+  "w": 1888,
+  "widths": [
+   640,
+   1200,
+   1888
+  ]
+ },
+ "images/posters/lowside/LShalloween2.jpeg": {
+  "alpha": false,
+  "h": 2655,
+  "key": "posters-lowside-lshalloween2",
+  "w": 1888,
+  "widths": [
+   640,
+   1200,
+   1888
+  ]
+ },
+ "images/posters/lowside/LShalloween3.jpeg": {
+  "alpha": false,
+  "h": 3235,
+  "key": "posters-lowside-lshalloween3",
+  "w": 2301,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/posters/lowside/LShalloween4.jpeg": {
+  "alpha": false,
+  "h": 2655,
+  "key": "posters-lowside-lshalloween4",
+  "w": 1888,
+  "widths": [
+   640,
+   1200,
+   1888
+  ]
+ },
+ "images/posters/lowside/afropiano.jpg": {
+  "alpha": false,
+  "h": 2045,
+  "key": "posters-lowside-afropiano",
+  "w": 1640,
+  "widths": [
+   640,
+   1200,
+   1640
+  ]
+ },
+ "images/posters/lowside/afropiano2.jpeg": {
+  "alpha": false,
+  "h": 2045,
+  "key": "posters-lowside-afropiano2",
+  "w": 1640,
+  "widths": [
+   640,
+   1200,
+   1640
+  ]
+ },
+ "images/posters/lowside/afropianoannouncement.jpeg": {
+  "alpha": false,
+  "h": 2045,
+  "key": "posters-lowside-afropianoannouncement",
+  "w": 1640,
+  "widths": [
+   640,
+   1200,
+   1640
+  ]
+ },
+ "images/posters/lowside/afropianosisi.png": {
+  "alpha": true,
+  "h": 2045,
+  "key": "posters-lowside-afropianosisi",
+  "w": 1640,
+  "widths": [
+   640,
+   1200,
+   1640
+  ]
+ },
+ "images/posters/lowside/returnof10s.jpeg": {
+  "alpha": false,
+  "h": 2045,
+  "key": "posters-lowside-returnof10s",
+  "w": 1638,
+  "widths": [
+   640,
+   1200,
+   1638
+  ]
+ },
+ "images/posters/lowside/returnof10s1.png": {
+  "alpha": true,
+  "h": 2048,
+  "key": "posters-lowside-returnof10s1",
+  "w": 2048,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/posters/lowside/sipnswapCOD.jpg": {
+  "alpha": false,
+  "h": 2045,
+  "key": "posters-lowside-sipnswapcod",
+  "w": 1638,
+  "widths": [
+   640,
+   1200,
+   1638
+  ]
+ },
+ "images/posters/lowside/sipnswapmain.jpeg": {
+  "alpha": false,
+  "h": 2045,
+  "key": "posters-lowside-sipnswapmain",
+  "w": 1638,
+  "widths": [
+   640,
+   1200,
+   1638
+  ]
+ },
+ "images/posters/lowside/sipnswapprogram.jpeg": {
+  "alpha": false,
+  "h": 2045,
+  "key": "posters-lowside-sipnswapprogram",
+  "w": 1638,
+  "widths": [
+   640,
+   1200,
+   1638
+  ]
+ },
+ "images/uxdesign/asiancy1.png": {
+  "alpha": true,
+  "h": 2044,
+  "key": "uxdesign-asiancy1",
+  "w": 1693,
+  "widths": [
+   640,
+   1200,
+   1693
+  ]
+ },
+ "images/uxdesign/asiancyplattegrond.png": {
+  "alpha": true,
+  "h": 1811,
+  "key": "uxdesign-asiancyplattegrond",
+  "w": 2309,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/uxdesign/asiancyprototype.png": {
+  "alpha": false,
+  "h": 1086,
+  "key": "uxdesign-asiancyprototype",
+  "w": 1448,
+  "widths": [
+   640,
+   1200,
+   1448
+  ]
+ },
+ "images/uxdesign/asiancyprototype2.png": {
+  "alpha": false,
+  "h": 1086,
+  "key": "uxdesign-asiancyprototype2",
+  "w": 1448,
+  "widths": [
+   640,
+   1200,
+   1448
+  ]
+ },
+ "images/uxdesign/asiancyprototype3.png": {
+  "alpha": false,
+  "h": 1086,
+  "key": "uxdesign-asiancyprototype3",
+  "w": 1448,
+  "widths": [
+   640,
+   1200,
+   1448
+  ]
+ },
+ "images/uxdesign/asiancyprototype4.png": {
+  "alpha": false,
+  "h": 1086,
+  "key": "uxdesign-asiancyprototype4",
+  "w": 1448,
+  "widths": [
+   640,
+   1200,
+   1448
+  ]
+ },
+ "images/uxdesign/asiancyprototype5.png": {
+  "alpha": false,
+  "h": 1086,
+  "key": "uxdesign-asiancyprototype5",
+  "w": 1448,
+  "widths": [
+   640,
+   1200,
+   1448
+  ]
+ },
+ "images/uxdesign/asiancyreflectie.png": {
+  "alpha": true,
+  "h": 1876,
+  "key": "uxdesign-asiancyreflectie",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/uxdesign/asiancyreflectie2.png": {
+  "alpha": true,
+  "h": 1876,
+  "key": "uxdesign-asiancyreflectie2",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/Boekenzoekermockup1.png": {
+  "alpha": true,
+  "h": 1459,
+  "key": "webdesign-boekenzoekermockup1",
+  "w": 3000,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/Boekenzoekermockup2.png": {
+  "alpha": true,
+  "h": 11485,
+  "key": "webdesign-boekenzoekermockup2",
+  "w": 2893,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/Boekenzoekermockup3.png": {
+  "alpha": true,
+  "h": 5439,
+  "key": "webdesign-boekenzoekermockup3",
+  "w": 2710,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/GISOUasset.png": {
+  "alpha": true,
+  "h": 1800,
+  "key": "webdesign-gisouasset",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/GISOUhomepage.png": {
+  "alpha": true,
+  "h": 10666,
+  "key": "webdesign-gisouhomepage",
+  "w": 2893,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/GISOUmockup.jpg": {
+  "alpha": false,
+  "h": 1205,
+  "key": "webdesign-gisoumockup",
+  "w": 2177,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/HSmockup.png": {
+  "alpha": true,
+  "h": 1205,
+  "key": "webdesign-hsmockup",
+  "w": 2185,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/HSmockup2.png": {
+  "alpha": true,
+  "h": 1800,
+  "key": "webdesign-hsmockup2",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/HSmockup3.png": {
+  "alpha": true,
+  "h": 3059,
+  "key": "webdesign-hsmockup3",
+  "w": 5631,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/HSscreenflow.png": {
+  "alpha": true,
+  "h": 1756,
+  "key": "webdesign-hsscreenflow",
+  "w": 2930,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/HSuserjourney.png": {
+  "alpha": true,
+  "h": 1516,
+  "key": "webdesign-hsuserjourney",
+  "w": 2401,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/TCmockup.png": {
+  "alpha": true,
+  "h": 2738,
+  "key": "webdesign-tcmockup",
+  "w": 5631,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/TCmockup2.png": {
+  "alpha": true,
+  "h": 1167,
+  "key": "webdesign-tcmockup2",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/TCmockup3.png": {
+  "alpha": true,
+  "h": 1651,
+  "key": "webdesign-tcmockup3",
+  "w": 2483,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/TCmockup4.png": {
+  "alpha": true,
+  "h": 1651,
+  "key": "webdesign-tcmockup4",
+  "w": 2483,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/1. HERO — Hair oil campaign.png": {
+  "alpha": true,
+  "h": 1707,
+  "key": "webdesign-heartspace-case-1-hero-hair-oil-campaign",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/2. PRODUCT SPOTLIGHT — The icon.png": {
+  "alpha": true,
+  "h": 1707,
+  "key": "webdesign-heartspace-case-2-product-spotlight-the-icon",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/3. HOW IT WORKS — Signature ritual.png": {
+  "alpha": true,
+  "h": 1707,
+  "key": "webdesign-heartspace-case-3-how-it-works-signature-ritual",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/4. CAMPAIGN EDITORIAL/LIFESTYLE immersion.png": {
+  "alpha": true,
+  "h": 1707,
+  "key": "webdesign-heartspace-case-4-campaign-editorial-lifestyle-immersion",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/5. CONVERSION/CRM CTA.png": {
+  "alpha": true,
+  "h": 1707,
+  "key": "webdesign-heartspace-case-5-conversion-crm-cta",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/GISOUColorpalette.png": {
+  "alpha": true,
+  "h": 1857,
+  "key": "webdesign-heartspace-case-gisoucolorpalette",
+  "w": 2461,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/GISOUEmailassignment.png": {
+  "alpha": true,
+  "h": 11498,
+  "key": "webdesign-heartspace-case-gisouemailassignment",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/GISOUMobileLayout.png": {
+  "alpha": true,
+  "h": 7166,
+  "key": "webdesign-heartspace-case-gisoumobilelayout",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/GISOUcompetitors.png": {
+  "alpha": true,
+  "h": 1787,
+  "key": "webdesign-heartspace-case-gisoucompetitors",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/GISOUgraphicassets.png": {
+  "alpha": true,
+  "h": 2096,
+  "key": "webdesign-heartspace-case-gisougraphicassets",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/UIstates.png": {
+  "alpha": true,
+  "h": 1102,
+  "key": "webdesign-heartspace-case-uistates",
+  "w": 2349,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/hs-ui-stack.png": {
+  "alpha": false,
+  "h": 721,
+  "key": "webdesign-heartspace-case-hs-ui-stack",
+  "w": 749,
+  "widths": [
+   640,
+   749
+  ]
+ },
+ "images/webdesign/heartspace-case/hs-ux-principles.png": {
+  "alpha": false,
+  "h": 775,
+  "key": "webdesign-heartspace-case-hs-ux-principles",
+  "w": 1032,
+  "widths": [
+   640,
+   1032
+  ]
+ },
+ "images/webdesign/heartspace-case/hs-visual-research.png": {
+  "alpha": false,
+  "h": 1558,
+  "key": "webdesign-heartspace-case-hs-visual-research",
+  "w": 2880,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/hsdeskresearch.png": {
+  "alpha": true,
+  "h": 1800,
+  "key": "webdesign-heartspace-case-hsdeskresearch",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/hsmusthaves.png": {
+  "alpha": true,
+  "h": 1147,
+  "key": "webdesign-heartspace-case-hsmusthaves",
+  "w": 2363,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/hswireflow.png": {
+  "alpha": true,
+  "h": 1800,
+  "key": "webdesign-heartspace-case-hswireflow",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/smartphone.png": {
+  "alpha": true,
+  "h": 2015,
+  "key": "webdesign-heartspace-case-smartphone",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspace-case/smartwatch.png": {
+  "alpha": true,
+  "h": 1241,
+  "key": "webdesign-heartspace-case-smartwatch",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/heartspacemockup3.png": {
+  "alpha": true,
+  "h": 2044,
+  "key": "webdesign-heartspacemockup3",
+  "w": 1693,
+  "widths": [
+   640,
+   1200,
+   1693
+  ]
+ },
+ "images/webdesign/logoneworder.png": {
+  "alpha": true,
+  "h": 3398,
+  "key": "webdesign-logoneworder",
+  "w": 5692,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/productbiografieneworder.png": {
+  "alpha": true,
+  "h": 947,
+  "key": "webdesign-productbiografieneworder",
+  "w": 1263,
+  "widths": [
+   640,
+   1200,
+   1263
+  ]
+ },
+ "images/webdesign/publiccityjazz1.png": {
+  "alpha": true,
+  "h": 3258,
+  "key": "webdesign-publiccityjazz1",
+  "w": 2696,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/publiccityjazz2.png": {
+  "alpha": true,
+  "h": 1167,
+  "key": "webdesign-publiccityjazz2",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/starsyncmockup1.png": {
+  "alpha": true,
+  "h": 1440,
+  "key": "webdesign-starsyncmockup1",
+  "w": 1499,
+  "widths": [
+   640,
+   1200,
+   1499
+  ]
+ },
+ "images/webdesign/starsyncmockup2.png": {
+  "alpha": true,
+  "h": 1155,
+  "key": "webdesign-starsyncmockup2",
+  "w": 2920,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/starsyncmockup3.png": {
+  "alpha": true,
+  "h": 1440,
+  "key": "webdesign-starsyncmockup3",
+  "w": 1920,
+  "widths": [
+   640,
+   1200,
+   1920
+  ]
+ },
+ "images/webdesign/stijlpaginaboekenzoeker.png": {
+  "alpha": false,
+  "h": 3508,
+  "key": "webdesign-stijlpaginaboekenzoeker",
+  "w": 4961,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/thenewordermockup1.png": {
+  "alpha": true,
+  "h": 1459,
+  "key": "webdesign-thenewordermockup1",
+  "w": 2400,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/webdesign/thenewordermockup2.png": {
+  "alpha": true,
+  "h": 1440,
+  "key": "webdesign-thenewordermockup2",
+  "w": 1499,
+  "widths": [
+   640,
+   1200,
+   1499
+  ]
+ },
+ "video:images/fashion/cult-classics/cultclassics-bts1.mp4": {
+  "h": 854,
+  "poster": "fashion-cult-classics-cultclassics-bts1-poster.webp",
+  "w": 1280
+ },
+ "video:images/fashion/cult-classics/cultclassics-bts2.mp4": {
+  "h": 854,
+  "poster": "fashion-cult-classics-cultclassics-bts2-poster.webp",
+  "w": 1280
+ },
+ "video:images/fashion/cult-classics/cultclassics-bts3.mp4": {
+  "h": 854,
+  "poster": "fashion-cult-classics-cultclassics-bts3-poster.webp",
+  "w": 1280
+ },
+ "video:images/posters/ansichtkaartNFL/ansichtkaartNFL1.mp4": {
+  "h": 1756,
+  "poster": "posters-ansichtkaartnfl-ansichtkaartnfl1-poster.webp",
+  "w": 1248
+ },
+ "video:images/posters/ansichtkaartNFL/ansichtkaartNFL2.mp4": {
+  "h": 1756,
+  "poster": "posters-ansichtkaartnfl-ansichtkaartnfl2-poster.webp",
+  "w": 1248
+ },
+ "video:images/posters/ansichtkaartNFL/ansichtkaartNFL3.mp4": {
+  "h": 1756,
+  "poster": "posters-ansichtkaartnfl-ansichtkaartnfl3-poster.webp",
+  "w": 1248
+ },
+ "video:images/posters/lowside/LShalloween.mp4": {
+  "h": 3258,
+  "poster": "posters-lowside-lshalloween-poster.webp",
+  "w": 2592
+ },
+ "video:images/posters/lowside/afropiano.mp4": {
+  "h": 2054,
+  "poster": "posters-lowside-afropiano-poster.webp",
+  "w": 1648
+ },
+ "video:images/posters/lowside/sipnswap1.mp4": {
+  "h": 2056,
+  "poster": "posters-lowside-sipnswap1-poster.webp",
+  "w": 1648
+ },
+ "video:images/posters/lowside/sipnswap2.mp4": {
+  "h": 2056,
+  "poster": "posters-lowside-sipnswap2-poster.webp",
+  "w": 1648
+ },
+ "video:images/posters/lowside/sipnswap3.mp4": {
+  "h": 2056,
+  "poster": "posters-lowside-sipnswap3-poster.webp",
+  "w": 1648
+ }
+}

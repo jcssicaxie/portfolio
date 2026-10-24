@@ -1,0 +1,1748 @@
+{
+  "site": {
+    "name": "Jessica Xie",
+    "url": "https://jcssicaxie.com",
+    "email": "jessicaxie01@gmail.com",
+    "edition": "2026",
+    "location": "The Netherlands",
+    "study": "Communication & Multimedia Design",
+    "school": "Hogeschool van Amsterdam",
+    "headline": [
+      "Between the",
+      "<em>image</em>",
+      "and the interface."
+    ],
+    "deck": "Jessica Xie studies Communication &amp; Multimedia Design at the Hogeschool van Amsterdam. Interfaces, exhibitions, editorial and graphic design, hair &amp; make-up, and the photographs she takes along the way.",
+    "about_short": "I have a background in communication and multimedia design, increasingly focused on UX/UI and visual design, fashion-informed art direction and user experience. My practice is shaped by curiosity and informed by culture, lifestyle, and the many ways creativity appears in everyday life.",
+    "about_long": [
+      "I have a background in communication and multimedia design, increasingly focused on UX/UI and visual design, fashion-informed art direction, and user experience.",
+      "My practice is shaped by curiosity and informed by culture, lifestyle, and the many ways creativity appears in everyday life. Influenced by fashion and contemporary visual culture, I approach projects with both aesthetic awareness and strategic intent.",
+      "I&rsquo;m interested in creating digital experiences and visual work that invite interaction and form meaningful connections with people."
+    ],
+    "tools": [
+      "Figma",
+      "Adobe Creative Suite",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "VS Code"
+    ],
+    "pull_quote": "Endlessly fueled by photography &amp; fashion.",
+    "about_portrait": "images/aboutimgs/about.jpg",
+    "about_portrait_alt": "Jessica Xie lying on white sheets, a pink hair clip in her dark hair",
+    "about_sheet": [
+      [
+        "images/aboutimgs/about2.JPEG",
+        "Close-up self-portrait on a white pillow"
+      ],
+      [
+        "images/aboutimgs/about11.jpg",
+        "Crouching in a Japanese garden, wearing a kimono"
+      ],
+      [
+        "images/aboutimgs/about5.png",
+        "Mirror selfie in black"
+      ],
+      [
+        "images/aboutimgs/about4.png",
+        "Standing in green water"
+      ],
+      [
+        "images/aboutimgs/about12.png",
+        "Pink embroidered veil in a bamboo forest"
+      ],
+      [
+        "images/aboutimgs/about7.png",
+        "Sitting in a black leather chair"
+      ],
+      [
+        "images/aboutimgs/about3.jpg",
+        "Bathing in a ceramic tub"
+      ],
+      [
+        "images/aboutimgs/about8.png",
+        "Holding a parasol in front of a lit temple at night"
+      ],
+      [
+        "images/aboutimgs/about10.png",
+        "Self-portrait in a studded top"
+      ],
+      [
+        "images/aboutimgs/about9.png",
+        "Lying back in white trousers"
+      ],
+      [
+        "images/aboutimgs/about6.png",
+        "Full outfit photographed from above"
+      ]
+    ],
+    "hero_image": "images/Blurjess.JPEG",
+    "logo": "assets/logo.png",
+    "instagram": "jcssicaxie",
+    "issue": "No. 01",
+    "cover_image": "images/home-portrait.png",
+    "cover_alt": "Jessica Xie crouching with a flower arrangement, framed in a four-lobed window shape"
+  },
+  "disciplines": {
+    "ui": "UI",
+    "ux": "UX",
+    "graphic": "Graphic",
+    "editorial": "Editorial",
+    "fashion": "Fashion",
+    "photography": "Photography"
+  },
+  "featured": [
+    {
+      "slug": "cult-classics",
+      "layout": "a",
+      "image": "images/fashion/cult-classics/cultclassics3.jpg",
+      "alt": "A figure in a black sculpted dress stands over blindfolded dancers reaching up from the floor"
+    },
+    {
+      "slug": "gisou-digital",
+      "layout": "b",
+      "image": "images/webdesign/heartspace-case/1. HERO — Hair oil campaign.png",
+      "alt": "Gisou campaign hero: a woman with long blonde hair holding the honey-infused hair oil"
+    },
+    {
+      "slug": "herinnering-aan-tafel",
+      "layout": "c",
+      "image": "images/uxdesign/asiancyprototype3.png",
+      "alt": "Visitors seated at a long table in a dark exhibition room with projections",
+      "image2": "images/uxdesign/asiancyplattegrond.png",
+      "alt2": "Floor plan of the exhibition concept"
+    },
+    {
+      "slug": "heartspace",
+      "layout": "g",
+      "image": "images/webdesign/HSmockup2.png",
+      "alt": "HeartSpace desktop landing screen next to a mobile feed"
+    },
+    {
+      "slug": "kitty-couture",
+      "layout": "d",
+      "image": "images/magazine/kittycouture/KCkaft.png",
+      "alt": "Kitty Couture front cover made from the back pocket of black jeans",
+      "image2": "images/magazine/kittycouture/KCschets2.jpeg",
+      "alt2": "Pencil sketches of the Kitty Couture page layout"
+    },
+    {
+      "slug": "paris-fashion-week",
+      "layout": "e",
+      "images": [
+        [
+          "images/photography/paris2024/P1020036.jpeg",
+          "Man in a fur-collared coat against a wooden door"
+        ],
+        [
+          "images/photography/paris2024/P1020009.jpeg",
+          "Guest in a pink ruffled jacket, seated"
+        ],
+        [
+          "images/photography/paris2024/P1020032.jpeg",
+          "Two guests in black and white on the street"
+        ]
+      ]
+    },
+    {
+      "slug": "lowside",
+      "layout": "f",
+      "images": [
+        [
+          "images/posters/lowside/afropiano.jpg",
+          "Afropiano poster with a dotted pink sphere"
+        ],
+        [
+          "images/posters/lowside/returnof10s.jpeg",
+          "Return of 10's poster"
+        ],
+        [
+          "images/posters/lowside/sipnswapmain.jpeg",
+          "Sip 'n Swap poster with cartoon characters"
+        ],
+        [
+          "images/posters/lowside/LShalloween.jpeg",
+          "Halloween poster with an x-ray skeleton"
+        ]
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "cult-classics",
+      "title": "Cult Classics",
+      "subtitle": "An unpublished visual story for Garment Magazine",
+      "index_title": "Cult Classics",
+      "year": "2026",
+      "discipline": "fashion",
+      "label": "Hair &amp; Make-up",
+      "meta": [
+        [
+          "Role",
+          "Make-up &amp; hair"
+        ],
+        [
+          "For",
+          "<a href=\"https://www.instagram.com/garmentmagazine/\" target=\"_blank\" rel=\"noopener\">@garmentmagazine</a> (unpublished)"
+        ],
+        [
+          "Location",
+          "<a href=\"https://www.instagram.com/studiosborgerstraat/\" target=\"_blank\" rel=\"noopener\">@studiosborgerstraat</a>"
+        ]
+      ],
+      "lead": "&ldquo;Cult Classics&rdquo; is an unpublished visual story for Garment Magazine. I did the make-up and hair, together with <a href=\"https://www.instagram.com/kyrakuils/\" target=\"_blank\" rel=\"noopener\">@kyrakuils</a> and <a href=\"https://www.instagram.com/arsiarg/\" target=\"_blank\" rel=\"noopener\">@arsiarg</a>.",
+      "body": [],
+      "cover": [
+        "images/fashion/cult-classics/cultclassics3.jpg",
+        "A figure in a black sculpted dress stands over dancers in blindfolds reaching up from the floor"
+      ],
+      "credits": [
+        [
+          "Look 1 &amp; 3",
+          [
+            [
+              "Dress",
+              [
+                "<a href=\"https://www.instagram.com/svsanna_/\" target=\"_blank\" rel=\"noopener\">@svsanna_</a>"
+              ]
+            ],
+            [
+              "Bolero",
+              [
+                "<a href=\"https://www.instagram.com/_namilia_/\" target=\"_blank\" rel=\"noopener\">@_namilia_</a>"
+              ]
+            ],
+            [
+              "Shoes",
+              "model&rsquo;s own"
+            ]
+          ]
+        ],
+        [
+          "Look 2",
+          [
+            [
+              "Top",
+              [
+                "<a href=\"https://www.instagram.com/dp.drg/\" target=\"_blank\" rel=\"noopener\">@dp.drg</a>"
+              ]
+            ],
+            [
+              "Skirt",
+              [
+                "<a href=\"https://www.instagram.com/mantas.krikstaponis/\" target=\"_blank\" rel=\"noopener\">@mantas.krikstaponis</a>"
+              ]
+            ]
+          ]
+        ],
+        [
+          "Team",
+          [
+            [
+              "Creative direction",
+              [
+                "<a href=\"https://www.instagram.com/pounouuuu/\" target=\"_blank\" rel=\"noopener\">@pounouuuu</a>"
+              ]
+            ],
+            [
+              "Photography",
+              [
+                "<a href=\"https://www.instagram.com/oliviagracephotographyyy/\" target=\"_blank\" rel=\"noopener\">@oliviagracephotographyyy</a>"
+              ]
+            ],
+            [
+              "Styling",
+              [
+                "<a href=\"https://www.instagram.com/pounouuuu/\" target=\"_blank\" rel=\"noopener\">@pounouuuu</a>",
+                "<a href=\"https://www.instagram.com/keituktuks/\" target=\"_blank\" rel=\"noopener\">@keituktuks</a>"
+              ]
+            ],
+            [
+              "Movement direction",
+              [
+                "<a href=\"https://www.instagram.com/sophiegisbertz/\" target=\"_blank\" rel=\"noopener\">@sophiegisbertz</a>"
+              ]
+            ],
+            [
+              "Make-up &amp; hair",
+              [
+                "Jessica Xie",
+                "<a href=\"https://www.instagram.com/kyrakuils/\" target=\"_blank\" rel=\"noopener\">@kyrakuils</a>",
+                "<a href=\"https://www.instagram.com/arsiarg/\" target=\"_blank\" rel=\"noopener\">@arsiarg</a>"
+              ]
+            ],
+            [
+              "Location",
+              [
+                "<a href=\"https://www.instagram.com/studiosborgerstraat/\" target=\"_blank\" rel=\"noopener\">@studiosborgerstraat</a>"
+              ]
+            ]
+          ]
+        ],
+        [
+          "Dancers",
+          [
+            [
+              "",
+              [
+                "<a href=\"https://www.instagram.com/liisucerenius/\" target=\"_blank\" rel=\"noopener\">@liisucerenius</a>",
+                "<a href=\"https://www.instagram.com/m.iness.calvi/\" target=\"_blank\" rel=\"noopener\">@m.iness.calvi</a>",
+                "<a href=\"https://www.instagram.com/esilamayadag/\" target=\"_blank\" rel=\"noopener\">@esilamayadag</a>",
+                "<a href=\"https://www.instagram.com/marusha.jakopic/\" target=\"_blank\" rel=\"noopener\">@marusha.jakopic</a>",
+                "<a href=\"https://www.instagram.com/mac.chocolatine/\" target=\"_blank\" rel=\"noopener\">@mac.chocolatine</a>",
+                "<a href=\"https://www.instagram.com/shmagy_/\" target=\"_blank\" rel=\"noopener\">@shmagy_</a>",
+                "<a href=\"https://www.instagram.com/evelina_roze/\" target=\"_blank\" rel=\"noopener\">@evelina_roze</a>",
+                "<a href=\"https://www.instagram.com/victoriamoreira_vm/\" target=\"_blank\" rel=\"noopener\">@victoriamoreira_vm</a>",
+                "<a href=\"https://www.instagram.com/zoe_dsa/\" target=\"_blank\" rel=\"noopener\">@zoe_dsa</a>",
+                "<a href=\"https://www.instagram.com/orpheegokp/\" target=\"_blank\" rel=\"noopener\">@orpheegokp</a>"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "full",
+          "items": [
+            [
+              "images/fashion/cult-classics/cultclassics2.jpg",
+              "Dancers throw clothes into the air around a figure in a fur bolero and white wig",
+              "Look 2"
+            ]
+          ]
+        },
+        {
+          "type": "offset",
+          "side": "left",
+          "items": [
+            [
+              "images/fashion/cult-classics/cultclassics1.jpg",
+              "Blindfolded dancers in lace surround the central figure in a fur bolero",
+              "Look 1"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "label": "Behind the scenes",
+          "text": "On set at Studios Borgerstraat."
+        },
+        {
+          "type": "row",
+          "items": [
+            {
+              "video": "images/fashion/cult-classics/cultclassics-bts1.mp4",
+              "alt": "Behind the scenes: photographer shooting the dancers"
+            },
+            {
+              "video": "images/fashion/cult-classics/cultclassics-bts2.mp4",
+              "alt": "Behind the scenes: the final pose under the lights"
+            },
+            {
+              "video": "images/fashion/cult-classics/cultclassics-bts3.mp4",
+              "alt": "Behind the scenes: reviewing shots on a laptop"
+            }
+          ]
+        },
+        {
+          "type": "credits"
+        }
+      ]
+    },
+    {
+      "slug": "gisou-digital",
+      "title": "Gisou",
+      "subtitle": "The Icon of Honey Glow",
+      "index_title": "Gisou Digital Design Concept",
+      "year": "2026",
+      "discipline": "ui",
+      "label": "UX/UI Design",
+      "meta": [
+        [
+          "Role",
+          "UX/UI design, visual design, responsive design, CRM"
+        ],
+        [
+          "Tools",
+          "Figma"
+        ],
+        [
+          "Format",
+          "Responsive landing page &amp; CRM email"
+        ],
+        [
+          "Context",
+          "Campaign concept for Gisou"
+        ]
+      ],
+      "lead": "&ldquo;The Icon of Honey Glow&rdquo; is a premium e-commerce campaign concept created for Gisou, centred on the Honey Infused Hair Oil as the brand&rsquo;s iconic hero product.",
+      "body": [
+        "The project explored how editorial storytelling, luxury beauty aesthetics and conversion-focused digital design could be combined into a cohesive cross-channel campaign experience across desktop, mobile and CRM touchpoints.",
+        "The homepage was structured as a narrative journey, moving from emotional campaign storytelling toward product discovery, ritual-based merchandising and community-focused conversion moments. Inspired by Gisou&rsquo;s honey-infused identity and Mirsalehi heritage, the visual direction focused on warm neutral tones, spacious layouts, strong hierarchy and premium editorial imagery.",
+        "Alongside the responsive landing page, a complementary CRM email concept was developed to extend the campaign into a realistic luxury beauty e-commerce ecosystem.",
+        "This project allowed me to explore the intersection between branding, responsive UX/UI design, digital merchandising and campaign storytelling within a commercial e-commerce context."
+      ],
+      "cover": [
+        "images/webdesign/heartspace-case/1. HERO — Hair oil campaign.png",
+        "Gisou campaign hero: a woman with long blonde hair holding the honey-infused hair oil"
+      ],
+      "docs": [
+        [
+          "documents/Gisou_CaseStudyJX_digitaldesign.pdf",
+          "view the case study",
+          "EN"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "full",
+          "items": [
+            [
+              "images/webdesign/GISOUmockup.jpg",
+              "Gisou landing page on a laptop",
+              "The landing page, desktop"
+            ]
+          ]
+        },
+        {
+          "type": "pair",
+          "ratio": "6-6",
+          "items": [
+            [
+              "images/webdesign/heartspace-case/2. PRODUCT SPOTLIGHT — The icon.png",
+              "Product spotlight section",
+              "Product spotlight &mdash; the icon"
+            ],
+            [
+              "images/webdesign/heartspace-case/3. HOW IT WORKS — Signature ritual.png",
+              "Signature ritual section",
+              "How it works &mdash; the signature ritual"
+            ]
+          ]
+        },
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/heartspace-case/4. CAMPAIGN EDITORIAL/LIFESTYLE immersion.png",
+              "Campaign editorial section with lifestyle imagery",
+              "Campaign editorial &mdash; lifestyle immersion"
+            ]
+          ]
+        },
+        {
+          "type": "offset",
+          "side": "right",
+          "items": [
+            [
+              "images/webdesign/heartspace-case/5. CONVERSION/CRM CTA.png",
+              "Community sign-up section",
+              "Conversion &mdash; join the community"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "label": "Research &amp; system",
+          "text": "Competitor research, palette and graphic assets that shaped the campaign."
+        },
+        {
+          "type": "pair",
+          "ratio": "7-5",
+          "items": [
+            [
+              "images/webdesign/heartspace-case/GISOUcompetitors.png",
+              "Competitor website screenshots",
+              "Competitor research"
+            ],
+            [
+              "images/webdesign/heartspace-case/GISOUColorpalette.png",
+              "Colour palette swatches",
+              "Colour palette"
+            ]
+          ]
+        },
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/heartspace-case/GISOUgraphicassets.png",
+              "Campaign photography and product renders",
+              "Graphic assets"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "label": "Full pages",
+          "text": "Scroll inside each frame to read the full page."
+        },
+        {
+          "type": "scroll",
+          "items": [
+            [
+              "images/webdesign/GISOUhomepage.png",
+              "Full Gisou homepage design",
+              "Homepage, desktop"
+            ],
+            [
+              "images/webdesign/heartspace-case/GISOUMobileLayout.png",
+              "Gisou mobile layouts",
+              "Mobile layouts"
+            ],
+            [
+              "images/webdesign/heartspace-case/GISOUEmailassignment.png",
+              "Gisou CRM email design",
+              "CRM email"
+            ]
+          ]
+        },
+        {
+          "type": "full",
+          "items": [
+            [
+              "images/webdesign/GISOUasset.png",
+              "Gisou mobile and desktop screens",
+              "Mobile &amp; desktop"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gisou-retail",
+      "title": "Gisou Retail",
+      "subtitle": "In-store concept",
+      "index_title": "Gisou Retail Design Concept",
+      "year": "2026",
+      "discipline": "graphic",
+      "label": "Graphic Design",
+      "meta": [
+        [
+          "Role",
+          "Retail graphic design, spatial branding"
+        ],
+        [
+          "Format",
+          "In-store retail concept"
+        ],
+        [
+          "Context",
+          "Sephora Beauty Hub &amp; EDG environments"
+        ]
+      ],
+      "lead": "&ldquo;Winter Honey Rescue&rdquo; is a retail experience concept for Gisou&rsquo;s Sephora Beauty Hub and EDG environments, centred on the Honey Gloss Ceramide Therapy Hair Mask as the hero product.",
+      "body": [
+        "The concept explores how campaign storytelling, product merchandising and spatial branding can create a cohesive luxury beauty experience in-store. The visual direction is warm light in cold weather: Gisou&rsquo;s signature honey tones and soft creams, with a subtle winter blue as a seasonal cue for hydration.",
+        "For the Beauty Hub, the focus is service and education. A lifestyle panel tells the product story in short paragraphs aligned with the French Sephora guidelines, the tester tray guides customers through a three-step routine (cleanse, repair, seal), and the service menu repeats that routine with a clear call to action: &ldquo;Essayez le rituel&rdquo;.",
+        "For the EDG shelf, I designed a &ldquo;try first, buy next&rdquo; flow: testers on the top shelf with a &ldquo;Try me&rdquo; call-out, the mask and hair oil as the &ldquo;repair + seal&rdquo; pairing in the middle, and the wider Gisou universe below. The background visual explains why the mask works: ceramides, hyaluronic acid and Mirsalehi Honey.",
+        "All campaign artwork, layouts and retail execution decisions are my own; AI-generated product mockups were used only to visualise the concept in context."
+      ],
+      "cover": [
+        "images/posters/gisou/mockupHUB.png",
+        "Gisou Sephora Beauty Hub retail mockup"
+      ],
+      "cover_style": "contained",
+      "docs": [
+        [
+          "documents/Gisou_CaseStudyJX_retaildesign.pdf",
+          "view the case study",
+          "EN"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "label": "Concept",
+          "text": "Warm light in cold weather: a cocooning, glowing moment inside while it is winter outside."
+        },
+        {
+          "type": "match",
+          "items": [
+            [
+              "images/posters/gisou/process/gisou-moodboard.png",
+              "Moodboard for Winter Honey Rescue: snow, honey, knitwear, warm drinks",
+              "Moodboard"
+            ],
+            [
+              "images/posters/gisou/process/gisou-colour-palette.png",
+              "Colour palette: cream, black, honey tones, winter blue and chocolate browns",
+              "Colour palette"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "label": "Artwork",
+          "text": "Every surface designed to Sephora&rsquo;s specifications, from service menu to shelf covers."
+        },
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/posters/gisou/process/gisou-artworks-overview.png",
+              "Overview of all retail artworks with their dimensions",
+              "Artworks overview"
+            ]
+          ]
+        },
+        {
+          "type": "match",
+          "items": [
+            [
+              "images/posters/gisou/process/gisou-tester-tray.png",
+              "Tester tray artwork with the three routine steps in French",
+              "Tester tray, 600 &times; 140 mm"
+            ],
+            [
+              "images/posters/gisou/process/gisou-gwp-signage.png",
+              "Gift-with-purchase signage for the tester tray",
+              "GWP signage, 100 &times; 100 mm"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "label": "In store",
+          "text": "Two environments, one ritual: cleanse, repair, seal."
+        },
+        {
+          "type": "match",
+          "items": [
+            [
+              "images/posters/gisou/mockupHUB.png",
+              "Gisou Sephora Beauty Hub retail mockup",
+              "Sephora Beauty Hub"
+            ],
+            [
+              "images/posters/gisou/mockupEDG.png",
+              "Gisou Sephora EDG shelf mockup",
+              "Sephora EDG"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "herinnering-aan-tafel",
+      "title": "Herinnering aan Tafel",
+      "subtitle": "Memories at the table",
+      "index_title": "Herinnering aan Tafel",
+      "year": "2026",
+      "discipline": "ux",
+      "label": "UX Design",
+      "meta": [
+        [
+          "Role",
+          "UX research, service design, concept development"
+        ],
+        [
+          "Tools",
+          "Figma, prototyping, research synthesis"
+        ],
+        [
+          "Outcome",
+          "Immersive exhibition concept"
+        ],
+        [
+          "With",
+          "Wereldmuseum Amsterdam"
+        ],
+        [
+          "Duration",
+          "Six months"
+        ]
+      ],
+      "lead": "Developed over a six-month collaboration with Wereldmuseum Amsterdam, this project explores how immersive, sensory experiences can communicate stories of cultures under pressure.",
+      "body": [
+        "Grounded in research and service design, the concept uses food as an entry point to connect visitors with personal narratives, cultural identity and collective memory.",
+        "Through a combination of storytelling, audiovisual elements and tactile interaction, the exhibition invites visitors to move beyond passive observation and engage with culture in a more embodied and reflective way."
+      ],
+      "cover": [
+        "images/uxdesign/asiancyprototype2.png",
+        "Long dark exhibition room with a projection of hands shaping dough"
+      ],
+      "docs": [
+        [
+          "documents/DesignbriefASIANCY.pdf",
+          "view the design brief",
+          "NL"
+        ],
+        [
+          "documents/ServiceDesign-Product Biografie-JX.pdf",
+          "view the product biography",
+          "NL"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "pair",
+          "ratio": "5-7",
+          "items": [
+            [
+              "images/uxdesign/asiancy1.png",
+              "Projection room with benches",
+              "The projection room"
+            ],
+            [
+              "images/uxdesign/asiancyprototype3.png",
+              "Visitors at a long table under projections",
+              "The table"
+            ]
+          ]
+        },
+        {
+          "type": "offset",
+          "side": "left",
+          "items": [
+            [
+              "images/uxdesign/asiancyplattegrond.png",
+              "Floor plan of the exhibition concept",
+              "Floor plan"
+            ]
+          ]
+        },
+        {
+          "type": "full",
+          "items": [
+            [
+              "images/uxdesign/asiancyprototype4.png",
+              "Interactive map projection with tablets",
+              "Interactive map and tablets"
+            ]
+          ]
+        },
+        {
+          "type": "pair",
+          "ratio": "6-6",
+          "items": [
+            [
+              "images/uxdesign/asiancyreflectie.png",
+              "Tablet screen: Herinneringen op tafel",
+              "Reflection screen &mdash; start"
+            ],
+            [
+              "images/uxdesign/asiancyreflectie2.png",
+              "Tablet screen: Wat voor herinneringen bedoelen we?",
+              "Reflection screen &mdash; question"
+            ]
+          ]
+        },
+        {
+          "type": "pair",
+          "ratio": "7-5",
+          "stagger": true,
+          "items": [
+            [
+              "images/uxdesign/asiancyprototype.png",
+              "Exhibition wall with objects on plinths",
+              "Objects and wall texts"
+            ],
+            [
+              "images/uxdesign/asiancyprototype5.png",
+              "Photo wall titled Verleden de Mijnen",
+              "Photo wall"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heartspace",
+      "title": "HeartSpace",
+      "subtitle": "A space for what you feel",
+      "index_title": "HeartSpace",
+      "year": "2025",
+      "discipline": "ux",
+      "label": "UX/UI Design",
+      "meta": [
+        [
+          "Role",
+          "UX research, interface design, user journey, responsive prototype"
+        ],
+        [
+          "Tools",
+          "Figma"
+        ],
+        [
+          "Devices",
+          "Mobile, desktop, smartwatch"
+        ]
+      ],
+      "lead": "HeartSpace is a responsive, multi-device social journaling platform built in Figma.",
+      "body": [
+        "Grounded in user research and a defined user journey, it enables quick note-style posts on mobile, deeper writing on desktop, and lightweight engagement through smartwatch notifications."
+      ],
+      "cover": [
+        "images/webdesign/HSmockup.png",
+        "HeartSpace landing screen on a laptop in soft daylight"
+      ],
+      "docs": [
+        [
+          "documents/RMDD_productbio.pdf",
+          "view the product biography",
+          "NL"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/HSmockup2.png",
+              "HeartSpace desktop and mobile screens",
+              "Desktop &amp; mobile"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "label": "Research",
+          "text": "Desk research and visual research before the first screen."
+        },
+        {
+          "type": "match",
+          "items": [
+            [
+              "images/webdesign/heartspace-case/hs-visual-research.png",
+              "Visual research moodboard",
+              "Visual research"
+            ],
+            [
+              "images/webdesign/heartspace-case/hsdeskresearch.png",
+              "Desk research on social platforms",
+              "Desk research"
+            ]
+          ]
+        },
+        {
+          "type": "match",
+          "items": [
+            [
+              "images/webdesign/heartspace-case/hs-ux-principles.png",
+              "UX principles overview",
+              "UX principles"
+            ],
+            [
+              "images/webdesign/heartspace-case/hsmusthaves.png",
+              "Must have, should have, nice to have",
+              "Prioritising features"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "label": "Structure",
+          "text": "Mapping the journey and the flow between screens."
+        },
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/HSuserjourney.png",
+              "User journey: before, during, after",
+              "User journey"
+            ]
+          ]
+        },
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/HSscreenflow.png",
+              "Screen flow diagram",
+              "Screen flow"
+            ]
+          ]
+        },
+        {
+          "type": "match",
+          "items": [
+            [
+              "images/webdesign/heartspace-case/smartphone.png",
+              "HeartSpace smartphone screens",
+              "Smartphone"
+            ],
+            [
+              "images/webdesign/heartspace-case/smartwatch.png",
+              "HeartSpace smartwatch screens",
+              "Smartwatch"
+            ]
+          ],
+          "scale": [
+            1,
+            0.96
+          ]
+        },
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/HSmockup3.png",
+              "HeartSpace desktop writing interface",
+              "Writing on desktop"
+            ]
+          ]
+        },
+        {
+          "type": "match",
+          "items": [
+            [
+              "images/webdesign/heartspacemockup3.png",
+              "HeartSpace profile page: My creations",
+              "My creations"
+            ],
+            [
+              "images/webdesign/heartspace-case/UIstates.png",
+              "Interface states",
+              "UI states"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "thug-club",
+      "title": "Thug Club",
+      "subtitle": "Front-end development",
+      "index_title": "Thug Club Front-end",
+      "year": "2025",
+      "discipline": "ui",
+      "label": "UI / Front-end",
+      "meta": [
+        [
+          "Role",
+          "Front-end development, accessibility improvements"
+        ],
+        [
+          "Tools",
+          "HTML, CSS, JavaScript, VS Code"
+        ],
+        [
+          "Features",
+          "Screen-reader support, light &amp; dark mode"
+        ]
+      ],
+      "lead": "A responsive, redesigned website built in HTML, CSS and JavaScript in VS Code.",
+      "body": [
+        "It incorporates research-backed accessibility improvements, including screen-reader support. Features include dark and light mode options, enhanced readability, and a clean, maintainable code structure."
+      ],
+      "cover": [
+        "images/webdesign/TCmockup.png",
+        "Thug Club website on a laptop"
+      ],
+      "blocks": [
+        {
+          "type": "pair",
+          "ratio": "6-6",
+          "items": [
+            [
+              "images/webdesign/TCmockup3.png",
+              "Thug Club product page, light mode",
+              "Light mode"
+            ],
+            [
+              "images/webdesign/TCmockup4.png",
+              "Thug Club product page, dark mode",
+              "Dark mode"
+            ]
+          ]
+        },
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/TCmockup2.png",
+              "Thug Club website on a laptop, dark",
+              "Collection overview"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tokyo-kyoto",
+      "title": "Tokyo / Kyoto",
+      "subtitle": "Summer, 2025",
+      "index_title": "Tokyo / Kyoto",
+      "year": "2025",
+      "discipline": "photography",
+      "label": "Photography",
+      "meta": [
+        [
+          "Type",
+          "Photo essay"
+        ],
+        [
+          "Place",
+          "Tokyo &amp; Kyoto, Japan"
+        ]
+      ],
+      "lead": "Exploring Tokyo and Kyoto in the summer of 2025, I discovered a world where vibrant personalities meet breathtaking landscapes.",
+      "body": [
+        "This collection captures the essence of Japan&rsquo;s culture, from its playful kawaii charm to its fashion-forward streets, and from serene nature to dynamic city life, celebrating the diversity that makes this country so unforgettable."
+      ],
+      "cover": [
+        "images/photography/japan2025/japan12.jpeg",
+        "A narrow Tokyo street at night, lined with glowing signs"
+      ],
+      "cover_style": "portrait",
+      "blocks": [
+        {
+          "type": "trio",
+          "items": [
+            [
+              "images/photography/japan2025/japan1.jpeg",
+              "Man in traditional dress beside a rickshaw",
+              ""
+            ],
+            [
+              "images/photography/japan2025/japan10.jpeg",
+              "Woman in a kimono with a black umbrella",
+              ""
+            ],
+            [
+              "images/photography/japan2025/japan4.jpeg",
+              "Man in a harness top, photographed in black and white",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "pair",
+          "ratio": "6-6",
+          "stagger": true,
+          "items": [
+            [
+              "images/photography/japan2025/japan7.jpeg",
+              "Two friends in pastel lolita dresses",
+              ""
+            ],
+            [
+              "images/photography/japan2025/japan2.jpeg",
+              "Display case of food samples and plush toys",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "offset",
+          "side": "left",
+          "items": [
+            [
+              "images/photography/japan2025/japan11.jpeg",
+              "Steaming volcanic valley with bare trees",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "trio",
+          "items": [
+            [
+              "images/photography/japan2025/japan5.jpeg",
+              "Looking down a crowded shopping street",
+              ""
+            ],
+            [
+              "images/photography/japan2025/japan6.jpeg",
+              "Stone figure among bamboo",
+              ""
+            ],
+            [
+              "images/photography/japan2025/japan8.jpeg",
+              "A bear-shaped wall lamp",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "pair",
+          "ratio": "5-7",
+          "items": [
+            [
+              "images/photography/japan2025/japan3.jpeg",
+              "Street signs and pedestrians with umbrellas",
+              ""
+            ],
+            [
+              "images/photography/japan2025/japan9.jpeg",
+              "Mountain road with a traffic warden",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "boekenzoeker",
+      "title": "De BoekenZoeker",
+      "subtitle": "Visual interface design",
+      "index_title": "BoekenZoeker",
+      "year": "2024",
+      "discipline": "ui",
+      "label": "UI Design",
+      "meta": [
+        [
+          "Role",
+          "Visual interface design"
+        ],
+        [
+          "Tools",
+          "Figma"
+        ],
+        [
+          "Format",
+          "iPad interface"
+        ],
+        [
+          "For",
+          "Municipality of Amsterdam"
+        ]
+      ],
+      "lead": "&ldquo;De BoekenZoeker&rdquo; for the Municipality of Amsterdam is a visual interface on an iPad, designed for high-school students.",
+      "body": [
+        "It allows them to easily browse and find interesting books to read in the school library."
+      ],
+      "cover": [
+        "images/webdesign/Boekenzoekermockup1.png",
+        "Hands holding an iPad showing the BoekenZoeker start screen"
+      ],
+      "docs": [
+        [
+          "documents/iteratieschermen.pdf",
+          "view the iteration screens",
+          "NL"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/stijlpaginaboekenzoeker.png",
+              "BoekenZoeker style page with colours, type and components",
+              "Style page"
+            ]
+          ]
+        },
+        {
+          "type": "scroll",
+          "items": [
+            [
+              "images/webdesign/Boekenzoekermockup2.png",
+              "BoekenZoeker browsing flow",
+              "Browsing"
+            ],
+            [
+              "images/webdesign/Boekenzoekermockup3.png",
+              "BoekenZoeker book detail page",
+              "Book detail"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "kitty-couture",
+      "title": "Kitty Couture",
+      "subtitle": "A fashion magazine",
+      "index_title": "Kitty Couture Fashion Magazine",
+      "year": "2024",
+      "discipline": "editorial",
+      "label": "Zine / Editorial",
+      "meta": [
+        [
+          "Role",
+          "Editorial concept, layout, art direction"
+        ],
+        [
+          "Format",
+          "Printed fashion magazine &amp; mockup"
+        ],
+        [
+          "Focus",
+          "Fast-fashion awareness, long-lasting style"
+        ],
+        [
+          "With",
+          "Kyra, Mayra &amp; Maud"
+        ]
+      ],
+      "lead": "Kitty Couture is a creative magazine for young, curious fashion lovers that highlights the problems with fast fashion and promotes high-quality, long-lasting style.",
+      "body": [
+        "It combines ideas from different sources to make learning about fashion fun and meaningful. Kitty Couture is about understanding how fashion connects to the world, and inspiring thoughtful conversations."
+      ],
+      "cover": [
+        "images/magazine/kittycouture/KCmock.png",
+        "Kitty Couture magazine on a table beside a black puffer jacket"
+      ],
+      "cover_style": "portrait",
+      "docs": [
+        [
+          "documents/passieprojectkittycouture.pdf",
+          "read the full magazine",
+          "PDF"
+        ],
+        [
+          "documents/Productbiografie-kittycouture.pdf",
+          "view the product biography",
+          "NL"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "pair",
+          "ratio": "6-6",
+          "items": [
+            [
+              "images/magazine/kittycouture/KCkaft.png",
+              "Front cover: the back pocket of black jeans",
+              "Front cover"
+            ],
+            [
+              "images/magazine/kittycouture/KCkaft2.png",
+              "Back cover: the front of black jeans",
+              "Back cover"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "label": "Turn the pages",
+          "text": "All 41 pages. Swipe, scroll, or use the arrows."
+        },
+        {
+          "type": "pages",
+          "src": "images/magazine/kittycouture/kittycouturepages/passieprojectkittycouture_page-{n}.jpg",
+          "count": 41,
+          "alt": "Kitty Couture page"
+        },
+        {
+          "type": "heading",
+          "label": "Process",
+          "text": "From pencil to pocket."
+        },
+        {
+          "type": "trio",
+          "items": [
+            [
+              "images/magazine/kittycouture/KCschets2.jpeg",
+              "Page layout thumbnail sketches",
+              "Layout sketches"
+            ],
+            [
+              "images/magazine/kittycouture/KCschets3.jpeg",
+              "Concept sketches for cover and logo",
+              "Cover &amp; logo"
+            ],
+            [
+              "images/magazine/kittycouture/KCschets1.png",
+              "Material tests with denim",
+              "Material"
+            ]
+          ]
+        },
+        {
+          "type": "offset",
+          "side": "right",
+          "items": [
+            [
+              "images/magazine/kittycouture/KittyCouture.jpeg",
+              "Close-up of the denim cover with keyrings",
+              "Detail"
+            ]
+          ]
+        }
+      ],
+      "index_ctx": "Printed fashion magazine"
+    },
+    {
+      "slug": "public-city-jazz",
+      "title": "Public City Jazz",
+      "subtitle": "A responsive event platform",
+      "index_title": "Public City Jazz",
+      "year": "2024",
+      "discipline": "ui",
+      "label": "UI Design",
+      "meta": [
+        [
+          "Role",
+          "Visual interface, responsiveness"
+        ],
+        [
+          "Tools",
+          "Figma"
+        ],
+        [
+          "Format",
+          "Tablet, iPhone, desktop"
+        ],
+        [
+          "Identity",
+          "Municipality of Rotterdam"
+        ]
+      ],
+      "lead": "A responsive event platform for Public City Jazz, following the visual identity of the Municipality of Rotterdam.",
+      "body": [
+        "The focus was on layout, hierarchy, and translating the energy of jazz into a clear and structured interface across multiple screen sizes."
+      ],
+      "cover": [
+        "images/webdesign/publiccityjazz1.png",
+        "Public City Jazz on a tablet"
+      ],
+      "cover_style": "contained",
+      "docs": [
+        [
+          "documents/Reflectie-PubliccityJazz.pdf",
+          "view the design reflection",
+          "NL"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "full",
+          "items": [
+            [
+              "images/webdesign/publiccityjazz2.png",
+              "Public City Jazz desktop and mobile screens",
+              "Desktop, tablet, mobile"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "starsync",
+      "title": "StarSync",
+      "subtitle": "Community application",
+      "index_title": "StarSync",
+      "year": "2024",
+      "discipline": "ui",
+      "label": "UI Design",
+      "meta": [
+        [
+          "Role",
+          "Visual interface design"
+        ],
+        [
+          "Tools",
+          "Figma"
+        ],
+        [
+          "Format",
+          "Mobile app concept"
+        ]
+      ],
+      "lead": "A community app concept that co-creates a community among Communication and Multimedia Design students, celebrating individuality within the collective.",
+      "body": [],
+      "cover": [
+        "images/webdesign/starsyncmockup1.png",
+        "Two phones showing the StarSync leaderboard and profile"
+      ],
+      "cover_style": "contained",
+      "docs": [
+        [
+          "documents/productbiografie-starsync.pdf",
+          "view the product biography",
+          "NL"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "full",
+          "items": [
+            [
+              "images/webdesign/starsyncmockup2.png",
+              "Row of StarSync screens",
+              "Screens"
+            ]
+          ]
+        },
+        {
+          "type": "offset",
+          "side": "left",
+          "items": [
+            [
+              "images/webdesign/starsyncmockup3.png",
+              "StarSync on a phone beside a notebook",
+              "Share screen"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-new-order",
+      "title": "The New Order",
+      "subtitle": "Amsterdam&rsquo;s high-end vintage",
+      "index_title": "The New Order",
+      "year": "2024",
+      "discipline": "ui",
+      "label": "UI / Front-end",
+      "meta": [
+        [
+          "Role",
+          "Front-end development, visual design"
+        ],
+        [
+          "Tools",
+          "HTML/CSS, Adobe Creative Suite"
+        ]
+      ],
+      "lead": "My first HTML/CSS website, made to share local high-end vintage shops in Amsterdam.",
+      "body": [],
+      "cover": [
+        "images/webdesign/thenewordermockup2.png",
+        "Two phones showing the Discover and About pages"
+      ],
+      "cover_style": "contained",
+      "docs": [
+        [
+          "documents/Neworder-productbiografie.pdf",
+          "view the product biography",
+          "NL"
+        ]
+      ],
+      "blocks": [
+        {
+          "type": "pair",
+          "ratio": "7-5",
+          "items": [
+            [
+              "images/webdesign/thenewordermockup1.png",
+              "The New Order on three phones",
+              "Discover, stores, about"
+            ],
+            [
+              "images/webdesign/logoneworder.png",
+              "The New Order symbols",
+              "Symbols"
+            ]
+          ]
+        },
+        {
+          "type": "wide",
+          "items": [
+            [
+              "images/webdesign/productbiografieneworder.png",
+              "Three weeks of process on a board",
+              "Process, weeks 1&ndash;3"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "paris-fashion-week",
+      "title": "Paris Fashion Week",
+      "subtitle": "Street style",
+      "index_title": "Paris Fashion Week",
+      "year": "2024",
+      "discipline": "photography",
+      "label": "Photography",
+      "meta": [
+        [
+          "Type",
+          "Street-style photo essay"
+        ],
+        [
+          "Place",
+          "Paris"
+        ],
+        [
+          "Featuring",
+          "Designs by Jenny Fax"
+        ]
+      ],
+      "lead": "On the streets of Paris, stylish individuals were photographed showcasing standout pieces, including select designs from Jenny Fax.",
+      "body": [
+        "This photo series celebrates spontaneous fashion moments and captures the creative spirit of Paris Fashion Week."
+      ],
+      "cover": [
+        "images/photography/paris2024/P1020036.jpeg",
+        "Man in a fur-collared coat against a wooden door"
+      ],
+      "cover_style": "portrait",
+      "blocks": [
+        {
+          "type": "pair",
+          "ratio": "5-7",
+          "stagger": true,
+          "items": [
+            [
+              "images/photography/paris2024/P1020014.jpeg",
+              "Guest in a white ruffled blouse",
+              ""
+            ],
+            [
+              "images/photography/paris2024/P1020027.jpeg",
+              "Pink skirt and a glass of wine",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "trio",
+          "items": [
+            [
+              "images/photography/paris2024/P1020008.jpeg",
+              "Two friends in a narrow street",
+              ""
+            ],
+            [
+              "images/photography/paris2024/P1020009.jpeg",
+              "Guest in a pink ruffled jacket, seated",
+              ""
+            ],
+            [
+              "images/photography/paris2024/P1020043.jpeg",
+              "Woman in wide jeans against a stone wall",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "offset",
+          "side": "right",
+          "items": [
+            [
+              "images/photography/paris2024/P1020011.jpeg",
+              "Model in a white sculpted top",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "pair",
+          "ratio": "6-6",
+          "items": [
+            [
+              "images/photography/paris2024/P1020032.jpeg",
+              "Two guests in black and white on the street",
+              ""
+            ],
+            [
+              "images/photography/paris2024/P1020061.jpeg",
+              "Man in black crossing the street",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "trio",
+          "items": [
+            [
+              "images/photography/paris2024/P1020047.jpeg",
+              "Man walking in a cap and leather jacket",
+              ""
+            ],
+            [
+              "images/photography/paris2024/P1020053.jpeg",
+              "Couple in leather jackets",
+              ""
+            ],
+            [
+              "images/photography/paris2024/P1020059.jpeg",
+              "Two guests in long black coats",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lowside",
+      "title": "Lowside",
+      "subtitle": "Event posters &amp; motion",
+      "index_title": "Lowside",
+      "year": "2022&ndash;23",
+      "discipline": "graphic",
+      "label": "Graphic Design",
+      "meta": [
+        [
+          "Role",
+          "Graphic design, event visual identity"
+        ],
+        [
+          "Format",
+          "Posters, Instagram posts, motion"
+        ],
+        [
+          "For",
+          "Lowside"
+        ]
+      ],
+      "lead": "Posters, motion and digital assets for four Lowside events in Groningen.",
+      "body": [],
+      "cover": [
+        "images/posters/lowside/afropiano.jpg",
+        "Afropiano poster with a dotted pink sphere"
+      ],
+      "cover_style": "contained",
+      "chapters": [
+        {
+          "id": "return-of-10s",
+          "title": "Return of 10&rsquo;s",
+          "index_title": "Lowside Return of 10&rsquo;s",
+          "year": "2023",
+          "meta": [
+            [
+              "Format",
+              "Instagram post"
+            ]
+          ],
+          "text": "Event poster design for Lowside&rsquo;s Return of 10&rsquo;s edition.",
+          "blocks": [
+            {
+              "type": "pair",
+              "ratio": "5-7",
+              "items": [
+                [
+                  "images/posters/lowside/returnof10s.jpeg",
+                  "Return of 10's poster",
+                  ""
+                ],
+                [
+                  "images/posters/lowside/returnof10s1.png",
+                  "Return of 10's visual, cropped",
+                  ""
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "afropiano",
+          "title": "Afropiano",
+          "index_title": "Lowside Afropiano",
+          "year": "2023",
+          "meta": [
+            [
+              "Format",
+              "Instagram post, motion"
+            ]
+          ],
+          "text": "Event poster and digital visual for Lowside&rsquo;s Afropiano edition.",
+          "blocks": [
+            {
+              "type": "row",
+              "items": [
+                {
+                  "video": "images/posters/lowside/afropiano.mp4",
+                  "alt": "Animated Afropiano poster"
+                },
+                [
+                  "images/posters/lowside/afropiano2.jpeg",
+                  "Afropiano poster: To the World",
+                  ""
+                ],
+                [
+                  "images/posters/lowside/afropianosisi.png",
+                  "Afropiano artist announcement: Sisi",
+                  ""
+                ],
+                [
+                  "images/posters/lowside/afropianoannouncement.jpeg",
+                  "Afropiano house rules",
+                  ""
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sip-n-swap",
+          "title": "Sip &rsquo;n Swap",
+          "index_title": "Lowside Sip &rsquo;n Swap",
+          "year": "2022",
+          "meta": [
+            [
+              "Format",
+              "Instagram post, motion"
+            ]
+          ],
+          "text": "Event poster and digital assets for a clothing-swap edition.",
+          "blocks": [
+            {
+              "type": "row",
+              "items": [
+                {
+                  "video": "images/posters/lowside/sipnswap1.mp4",
+                  "alt": "Animated Sip 'n Swap poster"
+                },
+                {
+                  "video": "images/posters/lowside/sipnswap2.mp4",
+                  "alt": "Animated Sip 'n Swap poster"
+                },
+                {
+                  "video": "images/posters/lowside/sipnswap3.mp4",
+                  "alt": "Animated Sip 'n Swap poster"
+                }
+              ]
+            },
+            {
+              "type": "row",
+              "items": [
+                [
+                  "images/posters/lowside/sipnswapmain.jpeg",
+                  "Sip 'n Swap main poster",
+                  ""
+                ],
+                [
+                  "images/posters/lowside/sipnswapprogram.jpeg",
+                  "Sip 'n Swap day programme",
+                  ""
+                ],
+                [
+                  "images/posters/lowside/sipnswapCOD.jpg",
+                  "Sip 'n Swap code of conduct",
+                  ""
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "halloween",
+          "title": "Halloween",
+          "index_title": "Lowside Halloween",
+          "year": "2022",
+          "meta": [
+            [
+              "Format",
+              "Instagram post, motion"
+            ]
+          ],
+          "text": "Halloween event poster and digital visual for Lowside.",
+          "blocks": [
+            {
+              "type": "row",
+              "items": [
+                {
+                  "video": "images/posters/lowside/LShalloween.mp4",
+                  "alt": "Animated Halloween poster"
+                },
+                [
+                  "images/posters/lowside/LShalloween2.jpeg",
+                  "Halloween poster variant",
+                  ""
+                ],
+                [
+                  "images/posters/lowside/LShalloween3.jpeg",
+                  "Halloween poster variant in red",
+                  ""
+                ],
+                [
+                  "images/posters/lowside/LShalloween4.jpeg",
+                  "Halloween poster variant in black and white",
+                  ""
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
