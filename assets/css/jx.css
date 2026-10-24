@@ -951,3 +951,25 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   .colophon--big .closing-hint { font-size: .68rem; line-height: 1.8; max-width: 34ch; margin-bottom: var(--s-3); }
   .colophon--big .closing-body { margin-top: auto; padding-top: var(--s-5); align-self: stretch; }
 }
+
+/* Mobile menu tab: bigger, and always fully on screen.
+   The nav slides out by its own width minus the tab, so the tab can never be clipped. */
+@media (max-width: 63.99rem) {
+  .nav { --tab-w: 2.9rem; transform: translateX(calc(100% - var(--tab-w))); }
+  .menu-open .nav { transform: none; }
+  .menu-tab {
+    box-sizing: border-box; flex: none; width: var(--tab-w); margin-right: 0;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 7.5rem; padding: 1.25rem 0;
+    font-size: .9rem; font-weight: 500; letter-spacing: .16em;
+    border-radius: 18px 0 0 18px;
+  }
+  .nav-panel { box-sizing: border-box; flex: none; }
+}
+
+/* No rubber-band bounce at the page edges (iOS/Android), so drawing at the bottom feels steady */
+html, body { overscroll-behavior-y: none; }
+/* Mobile: keep the e-mail clear of the fixed menu tab on the right edge */
+@media (max-width: 63.99rem) {
+  .colophon--big .closing-body { padding-right: calc(var(--tab-w, 2.9rem) + .25rem); }
+}

@@ -163,17 +163,6 @@
    2000
   ]
  },
- "images/home-portrait.png": {
-  "alpha": true,
-  "h": 2361,
-  "key": "home-portrait",
-  "w": 2400,
-  "widths": [
-   640,
-   1200,
-   2000
-  ]
- },
  "images/magazine/kittycouture/KCkaft.png": {
   "alpha": true,
   "h": 3505,
@@ -924,259 +913,6 @@
    2000
   ]
  },
- "images/posters/NFLToekomstmaker/flyerNFLToekomstmaker1.png": {
-  "alpha": false,
-  "h": 2481,
-  "key": "posters-nfltoekomstmaker-flyernfltoekomstmaker1",
-  "w": 1748,
-  "widths": [
-   640,
-   1200,
-   1748
-  ]
- },
- "images/posters/NFLToekomstmaker/flyerNFLToekomstmaker2.png": {
-  "alpha": false,
-  "h": 2481,
-  "key": "posters-nfltoekomstmaker-flyernfltoekomstmaker2",
-  "w": 1748,
-  "widths": [
-   640,
-   1200,
-   1748
-  ]
- },
- "images/posters/NFLToekomstmaker/flyerNFLToekomstmaker3.png": {
-  "alpha": false,
-  "h": 2481,
-  "key": "posters-nfltoekomstmaker-flyernfltoekomstmaker3",
-  "w": 1748,
-  "widths": [
-   640,
-   1200,
-   1748
-  ]
- },
- "images/posters/NFLToekomstmaker/flyerNFLToekomstmaker4.png": {
-  "alpha": false,
-  "h": 2481,
-  "key": "posters-nfltoekomstmaker-flyernfltoekomstmaker4",
-  "w": 1748,
-  "widths": [
-   640,
-   1200,
-   1748
-  ]
- },
- "images/posters/NFLflyer/NFLflyerSH1.png": {
-  "alpha": false,
-  "h": 2552,
-  "key": "posters-nflflyer-nflflyersh1",
-  "w": 1819,
-  "widths": [
-   640,
-   1200,
-   1819
-  ]
- },
- "images/posters/NFLflyer/NFLflyerSH2.png": {
-  "alpha": false,
-  "h": 2552,
-  "key": "posters-nflflyer-nflflyersh2",
-  "w": 1819,
-  "widths": [
-   640,
-   1200,
-   1819
-  ]
- },
- "images/posters/NFLflyer/NFLflyerSH3.png": {
-  "alpha": false,
-  "h": 2552,
-  "key": "posters-nflflyer-nflflyersh3",
-  "w": 1819,
-  "widths": [
-   640,
-   1200,
-   1819
-  ]
- },
- "images/posters/NFLflyer/NFLflyerSH4.png": {
-  "alpha": false,
-  "h": 2552,
-  "key": "posters-nflflyer-nflflyersh4",
-  "w": 1819,
-  "widths": [
-   640,
-   1200,
-   1819
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-01.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-01",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-02.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-02",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-03.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-03",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-04.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-04",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-05.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-05",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-06.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-06",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-07.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-07",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-08.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-08",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-09.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-09",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-10.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-10",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-11.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-11",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-12.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-12",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-13.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-13",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-14.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-14",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
- "images/posters/ansichtkaartNFL/ansichtkaartNFL-15.png": {
-  "alpha": false,
-  "h": 1748,
-  "key": "posters-ansichtkaartnfl-ansichtkaartnfl-15",
-  "w": 1241,
-  "widths": [
-   640,
-   1200,
-   1241
-  ]
- },
  "images/posters/gisou/mockupEDG.png": {
   "alpha": true,
   "h": 944,
@@ -1248,17 +984,6 @@
    640,
    1200,
    2000
-  ]
- },
- "images/posters/lowside/LShalloween.jpeg": {
-  "alpha": false,
-  "h": 2655,
-  "key": "posters-lowside-lshalloween",
-  "w": 1888,
-  "widths": [
-   640,
-   1200,
-   1888
   ]
  },
  "images/posters/lowside/LShalloween2.jpeg": {
@@ -1778,16 +1503,6 @@
    2000
   ]
  },
- "images/webdesign/heartspace-case/hs-ui-stack.png": {
-  "alpha": false,
-  "h": 721,
-  "key": "webdesign-heartspace-case-hs-ui-stack",
-  "w": 749,
-  "widths": [
-   640,
-   749
-  ]
- },
  "images/webdesign/heartspace-case/hs-ux-principles.png": {
   "alpha": false,
   "h": 775,
@@ -1825,17 +1540,6 @@
   "h": 1147,
   "key": "webdesign-heartspace-case-hsmusthaves",
   "w": 2363,
-  "widths": [
-   640,
-   1200,
-   2000
-  ]
- },
- "images/webdesign/heartspace-case/hswireflow.png": {
-  "alpha": true,
-  "h": 1800,
-  "key": "webdesign-heartspace-case-hswireflow",
-  "w": 2400,
   "widths": [
    640,
    1200,

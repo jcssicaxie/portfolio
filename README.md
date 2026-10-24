@@ -19,7 +19,7 @@ assets/img/           Optimised WebP images (generated)
 _build/content.json   ALL text and image choices live here
 _build/build.py       Generates every page from content.json
 _build/images.json    Generated image manifest (sizes, keys)
-images/, documents/   Your original files (untouched, still the source)
+images/, documents/   Source files the build uses (unused originals were removed in the Oct 2026 clean-up; they remain in Git history)
 projects/*.html, works.html, cv.html
                       Redirects from the old URLs to the new pages
 ```
@@ -63,10 +63,4 @@ always light by default; dark mode only appears when a visitor presses the toggl
 
 - A CV PDF, if you want one linked from About.
 - Short reflections per project (each page has room under the intro; add a `body` paragraph).
-- LumiRise: images and `documents/DesignRationaleLumiRise.pdf` exist but it was not on the old
-  site, so it is not in the index yet.
 - Year for the photos on About, if you want them captioned.
-
-## Notes
-
-- The old `styles/`, `scripts/` and `font/` folders are no longer used by any page and can be deleted.
