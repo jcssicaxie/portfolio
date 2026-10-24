@@ -55,7 +55,7 @@ Projects can also have `chapters` (see Lowside).
 
 Background `#F5F4F0`, ink `#0B0B0A`, cream `#FDFBE2` panels, and one accent: pink `#F973B8`
 (from the previous site), used as "pink ink" for the script and the hand-drawn oval.
-Text links ("CLICK to…") use the same pink. In dark mode the accent becomes turquoise `#1EBDB5`. Jost for everything (display, body, labels),
+Text, links and script words use a deeper pink `#C2307E` (4.75:1 on paper, passes WCAG AA); the light pink stays for dots and the drawing trail. Links read "Label →". In dark mode the accent becomes turquoise `#1EBDB5`. Jost for everything (display, body, labels),
 Ballet for every script word and the name on the cover; only two font families (Jost + Ballet). The 12-column grid (8 on tablet, 4 on phone) is asymmetric by design. The site is
 always light by default; dark mode only appears when a visitor presses the toggle. Motion respects `prefers-reduced-motion`.
 

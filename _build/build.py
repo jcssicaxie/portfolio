@@ -230,7 +230,7 @@ OVAL = (
 # set INTRO_ON = False and add "false&&" before "home&&" in the head script.
 INTRO_ON = True
 INTRO_HTML = '<div class="intro" aria-hidden="true" data-intro><div class="intro-inner"><p class="intro-name">JessicaXie</p><p class="intro-sub">Portfolio</p></div></div>\n'
-NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About")]
+NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About"), ("index.html#contact", "Contact")]
 
 
 def head(title, desc, depth, path, og=None):
@@ -265,7 +265,7 @@ def head(title, desc, depth, path, og=None):
 <meta name="twitter:image" content="{og_img}">
 {ld}
 <meta name="color-scheme" content="light">
-<script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
+<script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!location.hash&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
@@ -280,8 +280,9 @@ def masthead(depth, active):
     items = []
     for i, (href, label) in enumerate(NAV, 1):
         cur = ' aria-current="page"' if href == active else ""
+        link = "#contact" if (href.endswith("#contact") and active == "index.html") else f"{depth}{href}"
         items.append(
-            f'<li class="nav-{href.split(".")[0]}"><a href="{depth}{href}"{cur}><span class="nav-t">{label}{OVAL}</span></a></li>'
+            f'<li class="nav-{label.lower()}"><a href="{link}"{cur}><span class="nav-t">{label}{OVAL}</span></a></li>'
         )
     return f"""<a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
@@ -306,6 +307,7 @@ def colophon(depth, big=False):
     <div class="closing-body">
       <p>Write to me about a project, a question, or anything in these pages.</p>
       <a class="closing-mail" href="mailto:{SITE['email']}">{SITE['email']}</a>
+      <p class="closing-copy"><button class="copy-btn label" type="button" data-copy="{SITE['email']}">Copy address</button> <span class="label" data-copy-status aria-live="polite"></span></p>
     </div>
   </div>"""
     cls = "colophon colophon--big" if big else "colophon"
@@ -436,7 +438,7 @@ def selected_grid(feats):
             f'<h3><a href="{href}">{p["title"]}</a></h3>'
             f'<p>{p["subtitle"]}</p>'
             f'<p class="sw-meta">{p["label"]} &middot; {p["year"]}</p>'
-            f'<a class="sw-more" href="{href}" tabindex="-1" aria-hidden="true">View more</a></div>'
+            f'<a class="sw-more" href="{href}" tabindex="-1" aria-hidden="true">View project &rarr;</a></div>'
         )
     return f'<div class="sw-grid reveal">{cells}{"".join(items)}</div>'
 
@@ -485,7 +487,7 @@ def build_home():
   <header class="section-head grid">
     <h2 class="section-title" id="sel-title"><span class="script">Selected</span><span class="caps">Work</span></h2>
     <p class="label sh-a">{len(feats)} projects</p>
-    <p class="label sh-b"><a href="work.html">All {len(ROWS)} entries &rarr;</a></p>
+    <p class="label sh-b"><a href="work.html">All work &rarr;</a></p>
   </header>
   {selected_grid(feats)}
 </section>
@@ -496,14 +498,14 @@ def build_home():
   <blockquote class="note-text"><p>{SITE['about_short']}</p></blockquote>
   <div class="note-side">
     {facts}
-    <p><a class="click" href="about.html">CLICK to read more about Jessica</a></p>
+    <p><a class="click" href="about.html">More about me &rarr;</a></p>
   </div>
 </section>
 
 <section class="also grid reveal" aria-labelledby="also-title">
   <h2 class="also-title" id="also-title"><span class="script">More</span><span class="caps">work</span></h2>
   <ol class="also-list">{also}</ol>
-  <p class="also-more"><a class="click" href="work.html">CLICK to open the full index</a></p>
+  <p class="also-more"><a class="click" href="work.html">All work &rarr;</a></p>
 </section>"""
     page("index.html", "Jessica Xie — Portfolio",
          plain(SITE["deck"]), main, "index.html", "home", og=None, big_colophon=True)
@@ -531,7 +533,7 @@ def build_work():
         blocks.append(f'<li class="ix-group"><h2 class="ix-year">{y}</h2><ol class="ix-rows">{lis}</ol></li>')
     main = f"""
 <section class="page-head grid">
-  <p class="label ph-b ph-full">{len(ROWS)} entries &middot; 2022&ndash;{SITE['edition']}</p>
+  <p class="label ph-b ph-full">{len(ROWS)} works &middot; 2022&ndash;{SITE['edition']}</p>
   <h1 class="page-title">Index<span class="script">of work</span></h1>
   <p class="page-intro">Every project, newest first. Filter by discipline, or hover a title for a glimpse.</p>
 </section>
@@ -630,9 +632,9 @@ def docs_html(p, depth):
     if not p.get("docs"):
         return ""
     lis = "".join(
-        f'<li><a class="click" href="{url(d, depth)}" target="_blank" rel="noopener">CLICK to {label}</a> <span class="label">{lang} &middot; PDF</span></li>'
+        f'<li><a class="click" href="{url(d, depth)}" target="_blank" rel="noopener">{label[0].upper() + label[1:]} &rarr;</a> <span class="label">{lang} &middot; PDF</span></li>'
         if lang != "PDF" else
-        f'<li><a class="click" href="{url(d, depth)}" target="_blank" rel="noopener">CLICK to {label}</a> <span class="label">PDF</span></li>'
+        f'<li><a class="click" href="{url(d, depth)}" target="_blank" rel="noopener">{label[0].upper() + label[1:]} &rarr;</a> <span class="label">PDF</span></li>'
         for d, label, lang in p["docs"]
     )
     return f'<div class="p-docs"><p class="label">Further reading</p><ul>{lis}</ul></div>'
@@ -689,7 +691,7 @@ def build_project(i, p):
   <nav class="p-next grid" aria-label="More projects">
     <a class="pn pn-prev" href="{prev_p['slug']}.html"><span class="label">&larr; Previous &middot; No.&nbsp;{prev_p['n']}</span><span class="pn-t">{prev_p['title']}</span>
       <span class="pn-img">{img(prev_p['cover'][0], '', depth, '(min-width: 64rem) 20vw, 40vw')}</span></a>
-    <a class="pn pn-all label" href="../work.html">All work</a>
+    <a class="pn pn-all label" href="../work.html">All work &rarr;</a>
     <a class="pn pn-next" href="{next_p['slug']}.html"><span class="label">Next &middot; No.&nbsp;{next_p['n']} &rarr;</span><span class="pn-t">{next_p['title']}</span>
       <span class="pn-img">{img(next_p['cover'][0], '', depth, '(min-width: 64rem) 20vw, 40vw')}</span></a>
   </nav>
@@ -722,7 +724,7 @@ def build_about():
     main = f"""
 <section class="about-head grid">
   <p class="label ph-a">About</p>
-  <p class="label ph-b">In her own words</p>
+  <p class="label ph-b">In my own words</p>
   <h1 class="about-title">Shaped by <em>curiosity</em>, informed by culture.</h1>
   <figure class="about-portrait">{img(SITE['about_portrait'], SITE['about_portrait_alt'], '', '(min-width: 64rem) 40vw, 100vw', eager=True)}</figure>
   <div class="about-text">
@@ -809,7 +811,7 @@ def build_404():
   <p class="label ph-a">404</p>
   <h1 class="erratum-title">This page could not be <em>found</em>.</h1>
   <p class="lead erratum-body">The address may have changed in the redesign. Everything is still listed in the index.</p>
-  <p class="erratum-links"><a class="click" href="/work.html">CLICK to open the index</a><br><a class="click" href="/">CLICK to return to the cover</a></p>
+  <p class="erratum-links"><a class="click" href="/work.html">All work &rarr;</a><br><a class="click" href="/">Back to home &rarr;</a></p>
 </section>"""
     # 404 is served from any depth by GitHub Pages, so use root-absolute asset paths
     doc = (head("Not found | Jessica Xie", "Page not found.", "/", "404.html")

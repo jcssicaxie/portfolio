@@ -18,7 +18,7 @@
 <meta name="twitter:image" content="https://jcssicaxie.com/assets/og-image.png">
 
 <meta name="color-scheme" content="light">
-<script>(function(d){d.className=d.className.replace('no-js','js');try{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}catch(e){}try{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}catch(e){}})(document.documentElement)</script>
+<script>(function(d){d.className=d.className.replace('no-js','js');try{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}catch(e){}try{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!location.hash&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}catch(e){}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
@@ -32,7 +32,7 @@
 <header class="masthead">
   <a class="logo" href="/index.html" aria-label="Jessica Xie, home"><span>Jessica Xie</span><svg class="oval" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg></a>
   <nav class="nav" id="site-nav" aria-label="Main">
-    <div class="nav-panel" id="site-nav-panel"><ol><li class="nav-index"><a href="/index.html"><span class="nav-t">Home<svg class="oval" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg></span></a></li><li class="nav-work"><a href="/work.html"><span class="nav-t">Work<svg class="oval" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg></span></a></li><li class="nav-about"><a href="/about.html"><span class="nav-t">About<svg class="oval" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg></span></a></li></ol></div>
+    <div class="nav-panel" id="site-nav-panel"><ol><li class="nav-home"><a href="/index.html"><span class="nav-t">Home<svg class="oval" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg></span></a></li><li class="nav-work"><a href="/work.html"><span class="nav-t">Work<svg class="oval" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg></span></a></li><li class="nav-about"><a href="/about.html"><span class="nav-t">About<svg class="oval" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg></span></a></li><li class="nav-contact"><a href="/index.html#contact"><span class="nav-t">Contact<svg class="oval" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg></span></a></li></ol></div>
     <button class="menu-tab label" type="button" aria-expanded="false" aria-controls="site-nav-panel" data-menu-toggle><span>Menu</span></button>
   </nav>
   <button class="theme-toggle label" type="button" data-theme-toggle aria-label="Toggle dark mode">
@@ -44,7 +44,7 @@
   <p class="label ph-a">404</p>
   <h1 class="erratum-title">This page could not be <em>found</em>.</h1>
   <p class="lead erratum-body">The address may have changed in the redesign. Everything is still listed in the index.</p>
-  <p class="erratum-links"><a class="click" href="/work.html">CLICK to open the index</a><br><a class="click" href="/">CLICK to return to the cover</a></p>
+  <p class="erratum-links"><a class="click" href="/work.html">All work &rarr;</a><br><a class="click" href="/">Back to home &rarr;</a></p>
 </section></main>
 <footer class="colophon">
   <div class="colophon-row grid">

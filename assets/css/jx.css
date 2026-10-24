@@ -26,7 +26,8 @@
   --c-grey: #D9D9D9;
   --c-white: #FFFFFF;
   --c-ink: #0B0B0A;
-  --c-pink: #F973B8;          /* the only accent: "pink ink" (from the previous site) */
+  --c-pink: #F973B8;          /* the brand pink: dots, drawing trail, soft accents */
+  --c-pink-ink: #C2307E;      /* the same pink, deep enough for text and links (4.75:1 on paper) */
 
   /* Semantic roles — light */
   --bg: var(--c-paper);
@@ -36,8 +37,8 @@
   --line-strong: var(--c-ink);
   --panel: var(--c-paper-2);
   --hi: var(--c-cream);
-  --ink-accent: var(--c-pink); /* display script, ovals (large/graphic use) */
-  --link: var(--c-pink);      /* links in the brand pink */
+  --ink-accent: var(--c-pink-ink); /* script words, active dots, focus ring */
+  --link: var(--c-pink-ink);  /* links: readable pink */
   --grain-opacity: .035;
 
   /* Type families: max three */
@@ -1008,7 +1009,7 @@ html, body { overscroll-behavior-y: none; }
 
 
 /* Mobile menu: Home, Work, About (Contact is the closing section of every page anyway) */
-@media (max-width: 63.99rem) { .nav .nav-contact { display: none; } }
+/* Contact is in the mobile menu again (audit: the main action must be findable) */
 
 /* Footer row without the colophon sentence: label, e-mail, copyright */
 
@@ -1107,3 +1108,52 @@ html { -webkit-tap-highlight-color: transparent; }
 
 /* Project names in lists in capitals (Work index, More work on Home, previous/next) */
 .ix-t, .ar-t, .pn-t { text-transform: uppercase; letter-spacing: .09em; }
+
+/* ── Audit fixes (Oct 24) ─────────────────────────────────────────────── */
+/* Project title: the one place on a project page that may be big on large screens */
+@media (min-width: 64rem) { .p-t { font-size: 3rem; line-height: 1; letter-spacing: -.02em; } }
+
+/* Bigger tap areas for small text links, without changing how they look */
+.colophon-row a, .crumbs a, .pn-all, .click, .sw-more, .h4-scroll, .sh-b a, .closing-mail,
+.copy-btn, .ix-row a, .also-row a, .p-docs a { position: relative; }
+.colophon-row a::after, .crumbs a::after, .pn-all::after, .click::after, .sw-more::after, .h4-scroll::after,
+.sh-b a::after, .closing-mail::after, .copy-btn::after, .p-docs a::after {
+  content: ""; position: absolute; inset: -12px -6px;
+}
+
+/* Copy address (closing section) */
+.closing-copy { display: flex; gap: .75rem; justify-content: flex-end; align-items: baseline; margin: 0; }
+.copy-btn { color: var(--foot-ink, var(--fg)); text-decoration: underline; text-underline-offset: .3em; letter-spacing: .12em; }
+.copy-btn:hover { font-style: italic; }
+.closing-copy [data-copy-status] { color: var(--foot-muted, var(--muted)); }
+@media (max-width: 63.99rem) { .nav li a { padding-block: .55rem; } .nav ol { gap: 0; } }
+.disc-list a, .cr-group a, .receipt a, .note-side a { position: relative; }
+.disc-list a::after, .cr-group a::after, .receipt a::after, .note-side a::after { content: ""; position: absolute; inset: -12px -4px; }
+
+/* Phone: rows with video stack one under the other */
+@media (max-width: 39.99rem) { .b-row:has(video) { grid-template-columns: 1fr; } }
+
+/* Copy address flush right with the e-mail; the "Copied." note appears to its left */
+.closing-copy { flex-direction: row-reverse; justify-content: flex-start; }
+.closing-copy [data-copy-status]:empty { display: none; }
+.copy-btn { margin-right: -.12em; }
+
+/* Smooth scrolling for in-page links (Selected work, Contact); instant with reduced motion */
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+#sel-title, #contact { scroll-margin-top: calc(var(--head-h) + 2rem); }
+
+/* ── Scroll motion (only with JS and when the visitor allows motion; class .motion on <html>) ── */
+/* Selected work: images are revealed by a mask from the bottom, the text follows a beat later */
+.motion .sw-img > span { clip-path: inset(100% 0 0 0); transition: clip-path 1.1s cubic-bezier(.65, 0, .15, 1); }
+.motion .sw-img > span img { transform: scale(1.08); transition: transform 1.6s cubic-bezier(.2, .7, .1, 1); }
+.motion .sw-img.in > span { clip-path: inset(0 0 0 0); }
+.motion .sw-img.in > span img { transform: none; }
+.motion .sw-img.in:hover > span img { transform: scale(1.03); }
+.motion .sw-text { opacity: 0; transform: translateY(14px); transition: opacity .8s var(--ease) .3s, transform .8s var(--ease) .3s; }
+.motion .sw-text.in { opacity: 1; transform: none; }
+/* Project pages: the opening image settles from 106% to 100% as you scroll past it */
+.motion .p-cover { overflow: hidden; }
+.motion .p-cover img { transform: scale(var(--cz, 1.06)); transform-origin: 50% 40%; will-change: transform; }
+/* Work index: rows fade in softly, a little staggered */
+.motion .ix-row { opacity: 0; transform: translateY(10px); transition: opacity .6s var(--ease) var(--d, 0ms), transform .6s var(--ease) var(--d, 0ms); }
+.motion .ix-row.in { opacity: 1; transform: none; }

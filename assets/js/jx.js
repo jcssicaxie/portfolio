@@ -96,6 +96,33 @@
     reveals.forEach((el) => el.classList.add("is-in"));
   }
 
+  /* Scroll motion: mask reveals in Selected work, staggered rows on Work, a settling cover image on
+     project pages. Only when motion is allowed; without JS everything is simply visible. */
+  if (!reduceMotion.matches && "IntersectionObserver" in window) {
+    root.classList.add("motion");
+    $$(".ix-group").forEach((g) => $$(".ix-row", g).forEach((r, i) => r.style.setProperty("--d", `${Math.min(i, 6) * 55}ms`)));
+    const mo = new IntersectionObserver((entries) => {
+      entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); mo.unobserve(en.target); } });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.12 });
+    $$(".sw-img, .sw-text, .ix-row").forEach((el) => mo.observe(el));
+    const covers = $$(".p-cover img");
+    if (covers.length) {
+      let ticking = false;
+      const zoom = () => {
+        ticking = false;
+        const vh = window.innerHeight;
+        covers.forEach((img) => {
+          const r = img.parentElement.getBoundingClientRect();
+          if (r.bottom < 0 || r.top > vh) return;
+          const p = Math.min(1, Math.max(0, (vh - r.top) / (vh + r.height)));
+          img.style.setProperty("--cz", (1.06 - 0.06 * p).toFixed(4));
+        });
+      };
+      window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(zoom); } }, { passive: true });
+      zoom();
+    }
+  }
+
   /* Videos: play only while visible; with reduced motion, show controls instead */
   const vids = $$("video[data-autoplay]");
   if (reduceMotion.matches || !("IntersectionObserver" in window)) {
