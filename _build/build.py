@@ -235,7 +235,16 @@ NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About"), (
 
 def head(title, desc, depth, path, og=None):
     canonical = SITE["url"] + "/" + ("" if path == "index.html" else path)
-    og_img = SITE["url"] + "/" + og if og else ""
+    # Shared/search preview image: the JessicaXie logo on paper, on every page
+    og_img = SITE["url"] + "/assets/og-image.png"
+    ld = ""
+    if path == "index.html":
+        ld = ('<script type="application/ld+json">{"@context":"https://schema.org","@graph":['
+              '{"@type":"WebSite","name":"Jessica Xie","url":"' + SITE["url"] + '/"},'
+              '{"@type":"Person","name":"Jessica Xie","url":"' + SITE["url"] + '/",'
+              '"image":"' + SITE["url"] + '/assets/logo-square.png",'
+              '"jobTitle":"Communication & Multimedia Design student",'
+              '"affiliation":{"@type":"CollegeOrUniversity","name":"Hogeschool van Amsterdam"}}]}</script>')
     return f"""<!doctype html>
 <html lang="en" class="no-js">
 <head>
@@ -248,7 +257,13 @@ def head(title, desc, depth, path, og=None):
 <meta property="og:title" content="{attr(title)}">
 <meta property="og:description" content="{attr(desc)}">
 <meta property="og:url" content="{canonical}">
-{f'<meta property="og:image" content="{og_img}">' if og_img else ''}
+<meta property="og:image" content="{og_img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jessica Xie logo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{og_img}">
+{ld}
 <meta name="color-scheme" content="light">
 <script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -256,6 +271,7 @@ def head(title, desc, depth, path, og=None):
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Pinyon+Script&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
 <link rel="stylesheet" href="{depth}assets/css/jx.css">
 <link rel="icon" href="{depth}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{depth}assets/logo-512.png">
 <script src="{depth}assets/js/jx.js" defer></script>
 </head>"""
 

@@ -1037,3 +1037,6 @@ html { -webkit-tap-highlight-color: transparent; }
 
 /* Intro: sit optically above centre (also in tall in-app browsers like Instagram) */
 .intro-inner { margin-bottom: 16svh; }
+
+/* Mobile menu tab a little lower on the screen */
+@media (max-width: 63.99rem) { .nav { top: 44svh; } }
