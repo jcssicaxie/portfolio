@@ -530,7 +530,11 @@
           ]
         }
       ],
-      "thumb": "images/webdesign/heartspace-case/5. CONVERSION/CRM CTA.png"
+      "thumb": "images/webdesign/heartspace-case/5. CONVERSION/CRM CTA.png",
+      "reflection": [
+        "Working inside an existing luxury brand meant everything had to feel super ‘Gisou’, which made it tempting to only make it aesthetically pleasing. The real challenge was letting the page tell a story, from campaign mood to ritual to community, while every section still had to work as a shop.",
+        "Designing the mobile version alongside the desktop, and carrying it into a CRM email, made me see a campaign as one system rather than a single page."
+      ]
     },
     {
       "slug": "gisou-retail",
@@ -644,6 +648,10 @@
             ]
           ]
         }
+      ],
+      "reflection": [
+        "Moving from screens to shelves asked for a different way of thinking. Designing to Sephora&rsquo;s exact specifications, from tray sizes to shelf covers and French copy, felt restrictive at first, but those limits made every decision more deliberate.",
+        "What I like most is that one simple routine, cleanse, repair, seal, could guide both a service counter and a shelf. I was also open about using AI mock-ups only to show the concept in context. The artwork and layouts are mine."
       ]
     },
     {
@@ -657,7 +665,7 @@
       "meta": [
         [
           "Role",
-          "UX research, service design, concept development"
+          "Communication design, UX research, service design"
         ],
         [
           "Tools",
@@ -674,6 +682,10 @@
         [
           "Duration",
           "Six months"
+        ],
+        [
+          "Team",
+          "Ayesha, Catharina &amp; Jack"
         ]
       ],
       "lead": "Developed over a six-month collaboration with Wereldmuseum Amsterdam, this project explores how immersive, sensory experiences can communicate stories of cultures under pressure.",
@@ -768,6 +780,10 @@
             ]
           ]
         }
+      ],
+      "reflection": [
+        "This was the longest and most layered project I&rsquo;ve worked on: six months, four of us, and a real museum on the other side of the table. Within the team I took on communication design, and presented our content operations work.",
+        "Our turning point came from a conversation with service designer Martijn Bosman, who told us that fewer concepts with more depth would be stronger. That became our compass: food is the means, not the goal. Interviewing a researcher on food, migration and identity also made me aware of how easily a well-meant story can romanticise someone else&rsquo;s culture, and why you make it together with the people whose story it is."
       ]
     },
     {
@@ -922,6 +938,10 @@
             ]
           ]
         }
+      ],
+      "reflection": [
+        "I wanted HeartSpace to feel like the WeHeartIt and Tumblr pages I grew up scrolling, without the algorithmic pressure: a place for personal stories rather than trends.",
+        "The hardest part wasn&rsquo;t designing three versions of one app, but deciding what each device is actually good at. The desktop is for longer writing, the phone for quick thoughts, the watch for a single heart. Feedback on my wireflow pushed me to simplify the navigation and design every state of a screen, not just the ideal one. It taught me to think in flows across devices instead of in separate screens."
       ]
     },
     {
@@ -981,6 +1001,10 @@
             ]
           ]
         }
+      ],
+      "reflection": [
+        "A rebuild of the Thug Club website, and a test of how far I could get with semantic HTML alone: no divs or classes allowed. My accessibility test of the original found missing alt text, several h1s, no skip link and pages you couldn&rsquo;t tab through.",
+        "Along the way I properly learned CSS grid, built my first light and dark mode, and made sure the Korean text in the footer is read out by VoiceOver in Korean. Not everything worked: I never got the animated scroll indicator I had in mind, and swapping product images with <code>:has()</code> is still on my list."
       ]
     },
     {
@@ -1165,6 +1189,10 @@
             ]
           ]
         }
+      ],
+      "reflection": [
+        "Designing for a shared iPad in a middle school library meant every screen had to be understood at a glance. In my second version I scrapped the start button altogether: you simply touch anywhere to begin, and after a minute without interaction it quietly resets.",
+        "I kept to one primary action per screen, gave each type of book its own colour so you always know where you are, and used a drag gesture to confirm borrowing. The little characters from my house style look downwards to nudge you to scroll, a small detail that does a lot of work."
       ]
     },
     {
@@ -1178,7 +1206,7 @@
       "meta": [
         [
           "Role",
-          "Editorial concept, layout, art direction"
+          "Creative direction, layout, promo video"
         ],
         [
           "Format",
@@ -1280,7 +1308,11 @@
         }
       ],
       "index_ctx": "Printed fashion magazine",
-      "thumb": "images/magazine/kittycouture/KCkaft.png"
+      "thumb": "images/magazine/kittycouture/KCkaft.png",
+      "reflection": [
+        "I was put in a group of other fashion fanatics I&rsquo;d never worked with before, and we clicked straight away. I ended up as one of the creative directors: bringing our ideas together, designing and editing some layouts, and making a promo video.",
+        "My biggest lesson was that it doesn&rsquo;t all have to go my way. Four people had four visions, and blending our styles made the magazine better than mine alone would have been. The Makers Lab became our playground: laser-cutting denim, wood and mirror paper, printing stickers and Riso. Even the cover went from real denim to a photograph of denim."
+      ]
     },
     {
       "slug": "public-city-jazz",
@@ -1335,6 +1367,10 @@
             ]
           ]
         }
+      ],
+      "reflection": [
+        "The brief was strict: the Municipality of Rotterdam&rsquo;s house style, on three screen sizes. At first I held on to it too tightly, and leaned too much on my inspiration instead of generating my own ideas. My first motif, oversized quotation marks, had nothing to do with jazz, as my teacher and classmates pointed out.",
+        "I replaced it with the Rotterdam skyline and a piano, and turned the quotation marks into music notes. The most valuable feedback was simple: let my own creativity in, and look at my desktop design at 100%, the way a visitor actually sees it."
       ]
     },
     {
@@ -1395,6 +1431,10 @@
             ]
           ]
         }
+      ],
+      "reflection": [
+        "I grew up being interested in K-pop, so I designed StarSync from inside this community: K-pop and K-R&amp;B fans at CMD. Talking to fellow interested ones, I realised a plain chat app wouldn&rsquo;t be enough; it needed something that brings people together in real life. That became an AR challenge where you collect Hello Kitty figures in the Media Lounge to earn Stars.",
+        "The hardest part was making it interesting for people outside the community too. In a short project I couldn&rsquo;t build everything I imagined, like dance challenges, idol trivia and merch on campus."
       ]
     },
     {
@@ -1456,6 +1496,10 @@
             ]
           ]
         }
+      ],
+      "reflection": [
+        "My very first website, coded in HTML and CSS. I started with a KILO KILO vintage store, but after talking with teachers and classmates I shifted to Amsterdam&rsquo;s high-end vintage shops: rarer pieces, a different story. I left prices out on purpose, out of respect for shops that want to stay exclusive.",
+        "The feedback kept coming back to one thing: be more minimal, and make the navigation clearer. Looking at this portfolio now, I think that advice stuck."
       ]
     },
     {

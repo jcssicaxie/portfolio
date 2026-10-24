@@ -334,7 +334,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .h4-bottom { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1.5rem 2rem; }
 .h4-deck { grid-column: 1 / -1; max-width: 34ch; font-size: var(--fs-small); line-height: 1.5; }
 .h4-statement { text-align: right; line-height: 1.5; letter-spacing: .12em; }
-.h4-scroll { justify-self: start; letter-spacing: .12em; border-bottom: 1px solid currentColor; padding-bottom: .2rem; }
+.h4-scroll { display: none; justify-self: start; letter-spacing: .12em; border-bottom: 1px solid currentColor; padding-bottom: .2rem; }
 .h4-scroll span { display: inline-block; transition: transform var(--t-fast) var(--ease); }
 .h4-scroll:hover span { transform: translateY(.2rem); }
 @media (min-width: 40rem) {
@@ -343,7 +343,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 @media (min-width: 64rem) {
   .h4-bottom { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gap); }
   .h4-deck { grid-column: 1 / 5; }
-  .h4-scroll { grid-column: 6 / 8; justify-self: center; }
+  .h4-scroll { display: block; grid-column: 6 / 8; justify-self: center; }
   .h4-statement { grid-column: 10 / 13; justify-self: end; }
 }
 
@@ -1157,3 +1157,17 @@ html { -webkit-tap-highlight-color: transparent; }
 /* Work index: rows fade in softly, a little staggered */
 .motion .ix-row { opacity: 0; transform: translateY(10px); transition: opacity .6s var(--ease) var(--d, 0ms), transform .6s var(--ease) var(--d, 0ms); }
 .motion .ix-row.in { opacity: 1; transform: none; }
+
+/* ── project reflection ("Looking back") ── */
+.b-reflect { margin-top: var(--s-6); row-gap: var(--s-3); border-top: 1px solid var(--line-strong); padding-top: 1rem; }
+.rf-body { display: grid; gap: 1rem; max-width: 60ch; font-size: var(--t-body); line-height: 1.6; }
+@media (min-width: 64rem) {
+  .rf-title { grid-column: 1 / 4; }
+  .rf-body { grid-column: 5 / 11; padding-top: .4rem; }
+}
+
+/* weight hierarchy on the index: titles bold (look here first), filters regular */
+.filters button { font-weight: 400; }
+.ix-t { font-weight: 600; }
+.ix-n { font-weight: 400; }
+.ix-head, .ix-head * { font-weight: 400; }

@@ -268,7 +268,7 @@ def head(title, desc, depth, path, og=None):
 <script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!location.hash&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;display=swap">
 <link rel="stylesheet" href="{depth}assets/css/jx.css">
 <link rel="icon" href="{depth}assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{depth}assets/logo-512.png">
@@ -615,6 +615,11 @@ def block(b, depth):
             dl = "".join(f'<div><dt>{k}</dt><dd>{v if isinstance(v, str) else ", ".join(v)}</dd></div>' for k, v in rows)
             groups.append(f'<div class="cr-group"><h3 class="label">{title}</h3><dl class="receipt">{dl}</dl></div>')
         return f'<section class="b b-credits grid reveal" aria-label="Credits"><h2 class="cr-title"><span class="script">Credits</span></h2>{"".join(groups)}</section>'
+    if t == "reflection":
+        paras = "".join(f"<p>{x}</p>" for x in CURRENT["p"].get("reflection", []))
+        return (f'<section class="b b-reflect grid reveal" aria-labelledby="rf-t">'
+                f'<h2 class="cr-title rf-title" id="rf-t"><span class="script">Looking back</span></h2>'
+                f'<div class="rf-body">{paras}</div></section>')
     if t == "pages":
         pages = []
         for i in range(1, b["count"] + 1):
@@ -669,7 +674,12 @@ def build_project(i, p):
   </header>
   {''.join(block(b, depth) for b in ch['blocks'])}
 </section>"""
-    blocks = "".join(block(b, depth) for b in p.get("blocks", []))
+    bl = list(p.get("blocks", []))
+    if p.get("reflection") and not any(x["type"] == "reflection" for x in bl):
+        # reflection goes before the credits, otherwise at the very end of the story
+        k = next((j for j, x in enumerate(bl) if x["type"] == "credits"), len(bl))
+        bl.insert(k, {"type": "reflection"})
+    blocks = "".join(block(b, depth) for b in bl)
     prev_p = PROJECTS[i - 1]
     next_p = PROJECTS[(i + 1) % len(PROJECTS)]
     main = f"""
