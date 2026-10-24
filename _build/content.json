@@ -101,8 +101,8 @@
     {
       "slug": "gisou-digital",
       "layout": "b",
-      "image": "images/webdesign/heartspace-case/1. HERO — Hair oil campaign.png",
-      "alt": "Gisou campaign hero: a woman with long blonde hair holding the honey-infused hair oil"
+      "image": "images/webdesign/heartspace-case/5. CONVERSION/CRM CTA.png",
+      "alt": "Gisou community sign-up section: two women with honey-glow hair"
     },
     {
       "slug": "herinnering-aan-tafel",
@@ -347,7 +347,8 @@
         {
           "type": "credits"
         }
-      ]
+      ],
+      "thumb": "images/fashion/cult-classics/cultclassics1.jpg"
     },
     {
       "slug": "gisou-digital",
@@ -507,7 +508,8 @@
             ]
           ]
         }
-      ]
+      ],
+      "thumb": "images/webdesign/heartspace-case/5. CONVERSION/CRM CTA.png"
     },
     {
       "slug": "gisou-retail",
@@ -1072,7 +1074,8 @@
             ]
           ]
         }
-      ]
+      ],
+      "thumb": "images/photography/japan2025/japan1.jpeg"
     },
     {
       "slug": "boekenzoeker",
@@ -1255,7 +1258,8 @@
           ]
         }
       ],
-      "index_ctx": "Printed fashion magazine"
+      "index_ctx": "Printed fashion magazine",
+      "thumb": "images/magazine/kittycouture/KCkaft.png"
     },
     {
       "slug": "public-city-jazz",

@@ -266,12 +266,19 @@
     el.addEventListener("pointerleave", () => { last = null; });
     /* Touch: draw with a finger, also while the page scrolls (passive, never blocks scrolling) */
     const touchPoint = (e) => { const t = e.touches[0]; const r = el.getBoundingClientRect(); return { x: t.clientX - r.left, y: t.clientY - r.top }; };
+    /* In the open middle of the section a finger draws instead of scrolling;
+       on the texts, links and the fade at the top the page scrolls as usual */
+    let drawing = false;
     el.addEventListener("touchstart", (e) => {
       const cs = getComputedStyle(el);
       color = cs.getPropertyValue("--trail").trim() || cs.color;
-      last = touchPoint(e); stamp(last.x, last.y, 1); kick();
+      const p0 = touchPoint(e);
+      const fadeTop = parseFloat(cs.paddingTop) * 0.55;
+      drawing = e.touches.length === 1 && !e.target.closest("a, button, .closing-body, .closing-hint, .closing-label") && p0.y > fadeTop;
+      last = p0; stamp(last.x, last.y, 1); kick();
     }, { passive: true });
     el.addEventListener("touchmove", (e) => {
+      if (drawing && e.cancelable) e.preventDefault();
       const p = touchPoint(e);
       if (last) {
         const dist = Math.hypot(p.x - last.x, p.y - last.y);
@@ -279,8 +286,8 @@
         for (let s = 1; s <= steps; s++) stamp(last.x + (p.x - last.x) * s / steps, last.y + (p.y - last.y) * s / steps, 1);
       } else stamp(p.x, p.y, 1);
       last = p; kick();
-    }, { passive: true });
-    el.addEventListener("touchend", () => { last = null; }, { passive: true });
+    }, { passive: false });
+    el.addEventListener("touchend", () => { last = null; drawing = false; }, { passive: true });
     if ("ResizeObserver" in window) new ResizeObserver(resize).observe(el); else window.addEventListener("resize", resize);
     if ("IntersectionObserver" in window) new IntersectionObserver((en) => { visible = en[0].isIntersecting; if (visible) kick(); }).observe(el);
     resize();
