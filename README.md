@@ -56,8 +56,21 @@ Projects can also have `chapters` (see Lowside).
 Background `#F5F4F0`, ink `#0B0B0A`, cream `#FDFBE2` panels, and one accent: pink `#F973B8`
 (from the previous site), used as "pink ink" for the script and the hand-drawn oval.
 Text links ("CLICK to…") use the same pink. In dark mode the accent becomes turquoise `#1EBDB5`. Jost for everything (display, body, labels),
-Pinyon Script for handwriting, Ballet only for the name on the cover. The 12-column grid (8 on tablet, 4 on phone) is asymmetric by design. The site is
+Ballet for every script word and the name on the cover; only two font families (Jost + Ballet). The 12-column grid (8 on tablet, 4 on phone) is asymmetric by design. The site is
 always light by default; dark mode only appears when a visitor presses the toggle. Motion respects `prefers-reduced-motion`.
+
+## Type sizes
+
+Three sizes, nothing smaller than 14px. Tokens live at the top of `assets/css/jx.css`; nothing else is used.
+
+| token | size | used for |
+|---|---|---|
+| `--t-xs` / `--t-body` (text) | 14px | labels, captions, metadata, nav, running text, intros, links |
+| `--t-menu` (menu) | 16px | mobile menu tab and menu items |
+| `--t-h3` / `--t-h1` (titles) | 20px | every title: page titles, section titles, years, list titles |
+
+The hero name ("JessicaXie" in Ballet) is the logo and sits outside this system.
+Fonts: Jost and Ballet only.
 
 ## Content still to add (not invented)
 

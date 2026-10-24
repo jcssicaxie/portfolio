@@ -43,19 +43,23 @@
   /* Type families: max three */
   --display: Jost, "Futura", "Century Gothic", "Helvetica Neue", Arial, sans-serif;
   --sans: Jost, "Futura", "Century Gothic", "Helvetica Neue", Arial, sans-serif;
-  --script: "Pinyon Script", "Snell Roundhand", cursive;
+  --script: "Ballet", "Snell Roundhand", cursive;
 
-  /* Type scale (fluid) */
-  --fs-nameplate: clamp(5.6rem, 19.4vw, 26rem);
-  --fs-mega: clamp(3.6rem, 13vw, 16rem);
-  --fs-display: clamp(2.8rem, 7.6vw, 9rem);
-  --fs-h1: clamp(2.4rem, 5.4vw, 6rem);
-  --fs-h2: clamp(1.9rem, 3.6vw, 3.6rem);
-  --fs-h3: clamp(1.4rem, 2vw, 2rem);
-  --fs-lead: clamp(1.3rem, 1rem + 1.05vw, 1.95rem);
-  --fs-body: clamp(.95rem, .9rem + .18vw, 1.0625rem);
-  --fs-small: .8125rem;
-  --fs-label: .6875rem;
+  /* Type — three sizes, nothing smaller than 14px:
+       text 14px (labels and running text) · menu 16px (mobile menu tab and items) · titles 20px
+     Only the title grows with the screen; the hero name is the logo and sits outside this system. */
+  --t-xs: .875rem;                                          /* small 14px: labels, captions, metadata, nav, menu tab */
+  --t-menu: 1rem;                                           /* menu 16px: mobile menu tab and items */
+  --t-body: .875rem;                                        /* text 14px: all running text, intros, links */
+  --t-h3: 1.25rem;                                          /* medium 20px: intros, subtitles, list titles, menu */
+  --t-script: 2.1875rem;                                    /* Ballet words 35px (not the hero name / intro) */
+  --t-h1: 1.25rem;                                          /* title 20px: every heading (h1, h2) */
+  --t-name: clamp(3.330rem, 15vw, 14.107rem);               /* the hero name only */
+  /* every older name points at one of these four */
+  --t-h2: var(--t-h1); --t-lead: var(--t-h3); --t-display: var(--t-h1); --t-mega: var(--t-h1);
+  --fs-label: var(--t-xs); --fs-small: var(--t-xs); --fs-body: var(--t-body); --fs-lead: var(--t-h3);
+  --fs-h3: var(--t-h3); --fs-h2: var(--t-h1); --fs-h1: var(--t-h1);
+  --fs-display: var(--t-h1); --fs-mega: var(--t-h1); --fs-nameplate: var(--t-name);
 
   /* Grid & space */
   --cols: 4;
@@ -129,8 +133,8 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 }
 .lead {
   font-family: var(--display);
-  font-size: var(--fs-lead);
-  line-height: 1.22;
+  font-size: var(--t-body);
+  line-height: 1.6;
   letter-spacing: -.012em;
   font-weight: 400;
 }
@@ -182,7 +186,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   justify-self: start;
   position: relative; display: inline-flex; align-items: center;
   padding: .5em 1.05em;
-  font: 500 .78rem/1 var(--sans); letter-spacing: .07em; text-transform: uppercase;
+  font: 500 var(--t-xs)/1 var(--sans); letter-spacing: .07em; text-transform: uppercase;
   white-space: nowrap; z-index: 2;
 }
 .logo .oval { inset: -1px -3px; width: calc(100% + 6px); height: calc(100% + 2px); }
@@ -196,7 +200,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   display: inline-flex; gap: .25em; color: var(--muted); padding: .6rem 0;
   white-space: nowrap;
 }
-.theme-toggle { font: 400 .75rem/1 var(--sans) !important; letter-spacing: .01em !important; text-transform: none !important; }
+.theme-toggle { font: 400 var(--t-xs)/1 var(--sans) !important; letter-spacing: .01em !important; text-transform: none !important; }
 .theme-toggle .tt-l { color: var(--fg); }
 :root[data-theme="dark"] .theme-toggle .tt-l { color: var(--muted); }
 :root[data-theme="dark"] .theme-toggle .tt-d { color: var(--fg); }
@@ -217,7 +221,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   background: var(--c-cream); color: var(--c-ink); border-radius: 22px 0 0 22px;
 }
 .nav ol { display: grid; gap: .35rem; }
-.nav li a { display: block; font: 400 1.25rem/1.15 var(--sans); letter-spacing: .01em; text-transform: uppercase; }
+.nav li a { display: block; font: 400 var(--t-menu)/1.3 var(--sans); letter-spacing: .01em; text-transform: uppercase; }
 .nav-n { display: none; }
 .nav-t { position: relative; display: inline-block; }
 .nav-t .oval { inset: -.3em -.55em; width: calc(100% + 1.1em); height: calc(100% + .6em); stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .7s var(--ease); }
@@ -226,7 +230,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .menu-tab {
   align-self: center; margin-right: -1px;
   background: var(--c-cream); color: var(--c-ink); border-radius: 16px 0 0 16px;
-  padding: 1.1rem .7rem; font-size: .8rem; letter-spacing: .12em;
+  padding: 1.1rem .7rem; font-size: var(--t-xs); letter-spacing: .12em;
 }
 .menu-tab span { display: block; writing-mode: vertical-rl; }
 .no-js .nav { transform: none; }
@@ -243,9 +247,9 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   .nav-panel { width: auto; min-height: 0; padding: 0; background: none; color: inherit; border-radius: 0; display: block; }
   .menu-tab { display: none; }
   .nav ol { display: flex; justify-content: space-around; }
-  .nav li a { display: inline-block; font: 400 .75rem/1 var(--sans); letter-spacing: .01em; text-transform: none; padding: .4rem 0; }
+  .nav li a { display: inline-block; font: 400 var(--t-xs)/1 var(--sans); letter-spacing: .01em; text-transform: none; padding: .4rem 0; }
   .nav-t .oval { inset: -.55em -.9em; width: calc(100% + 1.8em); height: calc(100% + 1.1em); }
-  .theme-toggle { font: 400 .75rem/1 var(--sans); letter-spacing: .01em; text-transform: none; }
+  .theme-toggle { font: 400 var(--t-xs)/1 var(--sans); letter-spacing: .01em; text-transform: none; }
 }
 }
 
@@ -264,7 +268,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 /* CLICK links — pink, underlined; a nod to the early web */
 .click {
   font-family: var(--display);
-  font-size: clamp(1.1rem, 1rem + .3vw, 1.3rem);
+  font-size: var(--t-body);
   color: var(--link);
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -273,16 +277,16 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 }
 .click:hover { font-style: italic; }
 
-.also-title { font-size: clamp(1.8rem, 3.6vw, 3.6rem) !important; }
+.also-title { font-size: var(--t-h1) !important; }
 .section-title, .also-title, .cs-title {
   display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .12em;
-  font-size: clamp(2.2rem, 6.2vw, 7rem); line-height: .9; font-weight: 400;
+  font-size: var(--t-display); line-height: .9; font-weight: 400;
 }
 .section-title .script, .also-title .script, .cs-title .script {
-  font-size: 1.45em; line-height: .6; margin-right: -.08em; position: relative; z-index: 1;
+  font-size: 1em; line-height: .6; margin-right: -.08em; position: relative; z-index: 1;
   transform: translateY(.06em) rotate(-4deg); transform-origin: left bottom; display: inline-block;
 }
-.section-title .caps, .also-title .caps, .cs-title .caps { font-size: .62em; letter-spacing: -.03em; }
+.section-title .caps, .also-title .caps, .cs-title .caps { font-size: var(--t-h3); letter-spacing: -.03em; }
 
 /* 06 — HERO --------------------------------------------------------------- */
 .cover { position: relative; isolation: isolate; }
@@ -303,12 +307,12 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .h4-center { align-self: center; justify-self: center; position: relative; text-align: center; padding-block: 2rem; }
 .h4-name {
   margin: 0; font-family: var(--script); font-weight: 400; font-style: normal;
-  font-size: clamp(4.5rem, 15vw, 17rem); line-height: 1.05; letter-spacing: 0; white-space: nowrap;
+  font-size: var(--t-name); line-height: 1.05; letter-spacing: 0; white-space: nowrap;
 }
-@media (max-width: 39.99rem) { .h4-name { font-size: 13vw; } }
+
 .h4-script {
   margin-top: clamp(.5rem, 1.5vw, 1.5rem);
-  font: 400 clamp(.85rem, .7rem + .7vw, 1.5rem)/1 var(--sans); letter-spacing: .45em; text-transform: uppercase;
+  font: 400 var(--t-lead)/1 var(--sans); letter-spacing: .45em; text-transform: uppercase;
   padding-left: .45em;
 }
 /* Hero intro: the name "writes" itself left to right, then PORTFOLIO settles in. Once, on load. */
@@ -356,12 +360,12 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .sw-img span { display: block; overflow: hidden; }
 .sw-img img { width: 100%; height: auto; transition: transform 1.1s var(--ease); }
 .sw-img:hover img { transform: scale(1.03); }
-.sw-text { grid-column: var(--c); grid-row: var(--r); align-self: start; margin-top: 1.35rem; padding: 0 1rem .6rem 0; background: var(--bg); z-index: 1; font-size: .8125rem; line-height: 1.35; }
-.sw-text h3 { font: 500 .8125rem/1.3 var(--sans); letter-spacing: .05em; text-transform: uppercase; }
+.sw-text { grid-column: var(--c); grid-row: var(--r); align-self: start; margin-top: 1.35rem; padding: 0 1rem .6rem 0; background: var(--bg); z-index: 1; font-size: var(--t-xs); line-height: 1.35; }
+.sw-text h3 { font: 500 var(--t-xs)/1.3 var(--sans); letter-spacing: .05em; text-transform: uppercase; }
 .sw-text h3 a:hover, .sw-text h3 a:focus-visible { text-decoration: underline; text-underline-offset: .2em; }
 .sw-text p { margin-top: .45rem; max-width: 24ch; }
 .sw-meta { color: var(--muted); }
-.sw-more { display: inline-block; margin-top: .6rem; font-size: .75rem; border-bottom: 1px solid currentColor; }
+.sw-more { display: inline-block; margin-top: .6rem; font-size: var(--t-xs); border-bottom: 1px solid currentColor; }
 .cell-m { display: none; }
 @media (max-width: 39.99rem) {
   .sw-grid { --cell: calc((100vw - 2 * var(--m)) / 4 * .85); grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -377,9 +381,9 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .selected .feature:first-of-type { margin-top: 0; }
 .section-head .label { color: var(--muted); }
 @media (min-width: 64rem) {
-  .section-title { grid-column: 1 / 10; }
+  .section-title { grid-column: 1 / 10; grid-row: 1 / 3; }
   .sh-a { grid-column: 10 / 13; grid-row: 1; align-self: start; text-align: right; padding-top: 1rem; border-top: 1px solid var(--line-strong); }
-  .sh-b { grid-column: 10 / 13; grid-row: 1; text-align: right; }
+  .sh-b { grid-column: 10 / 13; grid-row: 2; align-self: end; text-align: right; }
 }
 
 .feature {
@@ -396,7 +400,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .f-num { color: var(--muted); margin-bottom: .9rem; }
 .f-title { font-family: var(--display); font-weight: 400; font-size: var(--fs-h1); line-height: .93; letter-spacing: -.035em; }
 .f-title a { display: inline; }
-.f-s { display: block; margin-top: .4em; font-style: italic; font-size: max(.36em, 1rem); letter-spacing: -.005em; color: var(--muted); line-height: 1.2; }
+.f-s { display: block; margin-top: .4em; font-style: italic; font-size: var(--t-lead); letter-spacing: -.005em; color: var(--muted); line-height: 1.2; }
 .f-title a:hover .f-t, .f-title a:focus-visible .f-t { font-style: italic; }
 .f-meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .3rem 1.5rem; margin-top: 1.4rem; }
 .f-meta div { display: flex; gap: .5rem; align-items: baseline; }
@@ -471,7 +475,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .note-label { border-top: 1px solid var(--line-strong); padding-top: .65rem; }
 .note-portrait { width: 62%; }
 .note-text p {
-  font-family: var(--display); font-size: clamp(1.25rem, 1rem + .9vw, 1.9rem); line-height: 1.3; letter-spacing: -.01em;
+  font-family: var(--display); font-size: var(--t-xs); line-height: 1.6; letter-spacing: 0;
   text-indent: 2.2em; max-width: 40ch;
 }
 .note-text p::first-letter { font-style: italic; }
@@ -489,7 +493,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   padding: .75rem 0; border-bottom: 1px solid var(--line);
 }
 .ar-n { font: 500 var(--fs-label)/1 var(--sans); letter-spacing: .09em; color: var(--muted); }
-.ar-t { font-family: var(--display); font-size: clamp(1rem, .9rem + .35vw, 1.3rem); line-height: 1.2; letter-spacing: 0; }
+.ar-t { font-family: var(--display); font-size: var(--t-xs); line-height: 1.2; letter-spacing: 0; }
 .ar-d { display: none; }
 .ar-y { font-size: var(--fs-small); color: var(--muted); font-variant-numeric: tabular-nums; }
 .also-row a:hover .ar-t, .also-row a:focus-visible .ar-t { font-style: italic; }
@@ -530,7 +534,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   color: var(--foot-ink);
   background: linear-gradient(180deg, var(--bg) 0, var(--foot-bg) var(--fade), var(--foot-bg) 100%);
 }
-.colophon--big .closing-word { font-size: clamp(2.2rem, 5vw, 5.25rem); margin-top: var(--s-2); }
+.colophon--big .closing-word { font-size: var(--t-h1); margin-top: var(--s-2); }
 .colophon--big .closing-label { margin: 0; }
 .colophon--big .closing-body { margin-top: clamp(6rem, 16vw, 14rem); justify-items: end; text-align: right; }
 .colophon--big .closing-body p { margin-left: auto; }
@@ -559,7 +563,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .closing-word {
   margin-top: var(--s-3);
   font-family: var(--display); font-weight: 400;
-  font-size: clamp(3rem, 9vw, 9.5rem); line-height: .85; letter-spacing: -.035em;
+  font-size: var(--t-display); line-height: .85; letter-spacing: -.035em;
 }
 .closing-word span { display: block; }
 .closing-indent { padding-left: 16%; }
@@ -567,13 +571,13 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .closing-body { margin-top: var(--s-4); display: grid; gap: 1rem; }
 .closing-body p { max-width: 30ch; color: var(--muted); }
 .closing-mail {
-  font-family: var(--display); font-size: clamp(1.4rem, 2.6vw, 2.6rem); line-height: 1.1; letter-spacing: -.01em;
+  font-family: var(--display); font-size: var(--t-h3); line-height: 1.1; letter-spacing: -.01em;
   color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em;
   overflow-wrap: anywhere;
 }
 .closing-mail:hover { font-style: italic; }
 .closing-script {
-  font-family: var(--script); color: var(--ink-accent); font-size: clamp(2.4rem, 6vw, 6.5rem); line-height: 1;
+  font-family: var(--script); color: var(--ink-accent); font-size: var(--t-display); line-height: 1;
   transform: rotate(-8deg); justify-self: end; margin-top: 1rem;
 }
 @media (min-width: 64rem) {
@@ -601,7 +605,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   font-family: var(--display); font-weight: 400; font-size: var(--fs-mega); line-height: .85; letter-spacing: -.035em;
   margin-top: var(--s-3);
 }
-.page-title .script { font-size: .42em; transform: rotate(-6deg); display: inline-block; letter-spacing: 0; }
+.page-title .script { font-size: var(--t-h3); transform: rotate(-6deg); display: inline-block; letter-spacing: 0; }
 .page-intro { max-width: 34ch; color: var(--muted); margin-top: var(--s-3); }
 @media (min-width: 64rem) {
   .ph-a { grid-column: 1 / 7; } .ph-b { grid-column: 7 / 13; }
@@ -613,9 +617,9 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .filters { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; padding-block: .4rem; }
 .filters button {
   position: relative; padding: .55rem .3rem;
-  font: 500 .78rem/1 var(--sans); letter-spacing: .07em; text-transform: uppercase; color: var(--muted);
+  font: 500 var(--t-xs)/1 var(--sans); letter-spacing: .07em; text-transform: uppercase; color: var(--muted);
 }
-.filters button sup { font-size: .62rem; margin-left: .25em; letter-spacing: 0; }
+.filters button sup { font-size: 1em; margin-left: .25em; letter-spacing: 0; }
 .filters button .oval { inset: -.1em -.5em; width: calc(100% + 1em); height: calc(100% + .2em); stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .6s var(--ease); }
 .filters button:hover { color: var(--fg); }
 .filters button[aria-pressed="true"] { color: var(--fg); }
@@ -648,7 +652,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   .ix-thumb { display: none; }
   .ix-n, .ix-y { display: block; font: 500 var(--fs-label)/1 var(--sans); letter-spacing: .09em; color: var(--muted); }
   .ix-y { text-align: right; font-variant-numeric: tabular-nums; }
-  .ix-t { font-size: clamp(1.5rem, 2.2vw, 2.25rem); }
+  .ix-t { font-size: var(--t-h3); }
 }
 
 /* Floating preview on hover (pointer devices only) */
@@ -668,7 +672,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .crumbs a { text-decoration: underline; text-underline-offset: .15em; }
 .p-num { color: var(--muted); margin-top: var(--s-3); }
 .p-title { font-family: var(--display); font-weight: 400; font-size: var(--fs-display); line-height: .9; letter-spacing: -.035em; }
-.p-s { display: block; font-style: italic; font-size: max(.32em, 1.15rem); letter-spacing: -.01em; color: var(--muted); margin-top: .45em; line-height: 1.15; }
+.p-s { display: block; font-style: italic; font-size: var(--t-body); letter-spacing: -.01em; color: var(--muted); margin-top: .45em; line-height: 1.15; }
 .p-head .receipt { margin-top: var(--s-3); }
 @media (min-width: 64rem) {
   .p-num { grid-column: 1 / 9; grid-row: 2; }
@@ -696,10 +700,10 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .p-toc .label { color: var(--muted); }
 .p-toc ol { margin-top: .6rem; }
 .p-toc a { display: flex; gap: .6rem; font-family: var(--display); font-size: var(--fs-h3); line-height: 1.3; }
-.p-toc a span { font-family: var(--script); color: var(--ink-accent); font-size: 1.3em; line-height: 1; }
+.p-toc a span { font-family: var(--script); color: var(--ink-accent); font-size: 1em; line-height: 1; }
 .p-toc a:hover { font-style: italic; }
 @media (min-width: 64rem) {
-  .p-intro .lead { grid-column: 1 / 8; font-size: clamp(1.6rem, 2.3vw, 2.4rem); }
+  .p-intro .lead { grid-column: 1 / 8; font-size: var(--t-body); }
   .p-body { grid-column: 9 / 13; padding-top: .4rem; }
   .p-toc { grid-column: 3 / 8; }
 }
@@ -756,7 +760,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 
 /* Credits (fashion stories) */
 .b-credits { margin-top: var(--s-6); row-gap: var(--s-3); border-top: 1px solid var(--line-strong); padding-top: 1rem; }
-.cr-title { font-size: clamp(3rem, 7vw, 6rem); font-weight: 400; line-height: .8; }
+.cr-title { font-size: var(--t-h1); font-weight: 400; line-height: .8; }
 .cr-title .script { display: inline-block; transform: rotate(-5deg); }
 .cr-group h3 { color: var(--muted); margin-bottom: .6rem; }
 .cr-group a { text-decoration: none; }
@@ -785,7 +789,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 /* Chapters (grouped features) */
 .chapter { margin-top: var(--s-6); }
 .ch-head { row-gap: .9rem; border-top: 1px solid var(--line-strong); padding-top: 1rem; align-items: start; }
-.ch-letter { font-family: var(--script); color: var(--ink-accent); font-size: clamp(4rem, 9vw, 9rem); line-height: .7; }
+.ch-letter { font-family: var(--script); color: var(--ink-accent); font-size: var(--t-display); line-height: .7; }
 .ch-title { font-family: var(--display); font-weight: 400; font-size: var(--fs-h1); line-height: .95; letter-spacing: -.035em; }
 .ch-text { font-family: var(--display); font-size: var(--fs-h3); line-height: 1.2; max-width: 34ch; }
 @media (min-width: 64rem) {
@@ -819,7 +823,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .about-title { font-family: var(--display); font-weight: 400; font-size: var(--fs-display); line-height: .92; letter-spacing: -.035em; margin-top: var(--s-2); }
 .about-title em { font-style: italic; }
 .about-text { display: grid; gap: 1rem; max-width: 58ch; }
-.about-quote { font-family: var(--script); color: var(--ink-accent); font-size: clamp(2.2rem, 5vw, 5rem); line-height: 1.05; transform: rotate(-5deg); margin-block: 1rem; }
+.about-quote { font-family: var(--script); color: var(--ink-accent); font-size: var(--t-h2); line-height: 1.05; transform: rotate(-5deg); margin-block: 1rem; }
 @media (min-width: 64rem) {
   .about-title { grid-column: 1 / 11; }
   .about-portrait { grid-column: 1 / 6; grid-row: 3 / 6; }
@@ -832,7 +836,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .disc-list { display: flex; flex-wrap: wrap; gap: 0 .45em; font-family: var(--display); font-size: var(--fs-display); line-height: 1; letter-spacing: -.04em; }
 .disc-list li:not(:last-child)::after { content: ","; }
 .disc-list a:hover span, .disc-list a:focus-visible span { font-style: italic; }
-.disc-list sup { font: 500 .8rem/1 var(--sans); letter-spacing: 0; color: var(--muted); margin-left: .15em; vertical-align: top; position: relative; top: .3em; }
+.disc-list sup { font: 500 var(--t-xs)/1 var(--sans); letter-spacing: 0; color: var(--muted); margin-left: .15em; vertical-align: top; position: relative; top: .3em; }
 .contact-sheet { padding-block: var(--s-6) var(--s-4); row-gap: 1.25rem; }
 .cs-note { color: var(--muted); max-width: 40ch; }
 .cs-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); margin-top: 1.5rem; }
@@ -854,7 +858,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .ct-2 { padding-left: 12%; }
 .contact-title em { font-style: italic; }
 .contact-body { display: grid; gap: 1.25rem; align-content: start; }
-.contact-mail { font-family: var(--display); font-size: clamp(1.6rem, 3.6vw, 3.6rem); line-height: 1.05; color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em; overflow-wrap: anywhere; }
+.contact-mail { font-family: var(--display); font-size: var(--t-h2); line-height: 1.05; color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .12em; overflow-wrap: anywhere; }
 .contact-mail:hover { font-style: italic; }
 .copy-btn { padding: 0; }
 .contact-card {
@@ -862,8 +866,8 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   box-shadow: 0 0 0 1px var(--line); max-width: 24rem; justify-self: end; width: 100%;
 }
 .contact-card .label { color: var(--muted); }
-.cc-name { font-family: var(--display); font-size: 2.4rem; letter-spacing: -.03em; margin-top: 1.5rem; line-height: 1; }
-.cc-script { font-family: var(--script); color: var(--ink-accent); font-size: 2.4rem; line-height: 1; transform: rotate(-6deg); margin: .2rem 0 1.25rem 2rem; }
+.cc-name { font-family: var(--display); font-size: var(--t-h3); letter-spacing: -.03em; margin-top: 1.5rem; line-height: 1; }
+.cc-script { font-family: var(--script); color: var(--ink-accent); font-size: var(--t-h1); line-height: 1; transform: rotate(-6deg); margin: .2rem 0 1.25rem 2rem; }
 @media (min-width: 64rem) {
   .contact-title { grid-column: 1 / 11; }
   .contact-body { grid-column: 1 / 7; margin-top: var(--s-3); }
@@ -895,19 +899,15 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 }
 
 
-/* Smaller type on Work and About (calmer, more spacious) */
-.page-title { font-size: clamp(3rem, 8vw, 8.5rem); }
-.ix-year { font-size: clamp(1.5rem, 2.6vw, 2.6rem); }
-.ix-t { font-size: clamp(1.15rem, 1.5vw, 1.5rem); }
-.about-title { font-size: clamp(2.1rem, 5vw, 6rem); }
-.about-quote { font-size: clamp(1.7rem, 3.4vw, 3.6rem); }
-.disc-list { font-size: clamp(1.9rem, 4.6vw, 5.25rem); }
-.cs-title { font-size: clamp(1.8rem, 4.4vw, 5rem); }
-@media (min-width: 64rem) {
-  .ix-year { font-size: clamp(2rem, 3.8vw, 4rem); }
-  .ix-t { font-size: clamp(1.2rem, 1.6vw, 1.65rem); }
-}
-.about-text .lead { font-size: clamp(1.1rem, 1.35vw, 1.4rem); }
+/* Work and About on the scale */
+.page-title { font-size: var(--t-h3); }
+.ix-year { font-size: var(--t-h3); }
+.ix-t { font-size: var(--t-h3); }
+.about-title { font-size: var(--t-h1); }
+.about-quote { font-size: var(--t-h2); }
+.disc-list { font-size: var(--t-h1); }
+.cs-title { font-size: var(--t-h1); }
+.about-text .lead { font-size: var(--t-body); }
 
 /* Active states without the hand-drawn oval: italic + a small accent dot.
    (The oval stays only around the JESSICA XIE logo.) */
@@ -939,7 +939,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .b-match .m-row > figure { width: var(--pct, 100%); }
 @media (min-width: 40rem) { .b-match .m-row > figure { width: auto; } }
 
-/* Hero name only: Ballet (the rest of the script stays Pinyon) */
+/* Hero name: Ballet at name size (all script words use Ballet too) */
 .h4-name { font-family: "Ballet", var(--script); }
 :root[data-theme="dark"] .nav-t::before, :root[data-theme="dark"] .filters button::before { background: #1EBDB5; }
 
@@ -948,7 +948,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   .colophon--big .closing { min-height: 92svh; display: flex; flex-direction: column; }
   .colophon--big .closing > .closing-hint { align-self: center; }
   .colophon--big .closing > .closing-label { align-self: flex-start; }
-  .colophon--big .closing-hint { font-size: .68rem; line-height: 1.8; max-width: 34ch; margin-bottom: var(--s-3); }
+  .colophon--big .closing-hint { font-size: var(--t-xs); line-height: 1.8; max-width: 34ch; margin-bottom: var(--s-3); }
   .colophon--big .closing-body { margin-top: auto; padding-top: var(--s-5); align-self: stretch; }
 }
 
@@ -961,7 +961,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
     box-sizing: border-box; flex: none; width: var(--tab-w); margin-right: 0;
     display: flex; align-items: center; justify-content: center;
     min-height: 7.5rem; padding: 1.25rem 0;
-    font-size: .9rem; font-weight: 500; letter-spacing: .16em;
+    font-size: var(--t-body); font-weight: 500; letter-spacing: .16em;
     border-radius: 18px 0 0 18px;
   }
   .nav-panel { box-sizing: border-box; flex: none; }
@@ -985,7 +985,7 @@ html, body { overscroll-behavior-y: none; }
 .intro-inner { text-align: center; padding-inline: var(--m); }
 .intro-name {
   margin: 0; font-family: "Ballet", var(--script); font-weight: 400; line-height: 1.1; white-space: nowrap;
-  font-size: clamp(3.4rem, 15vw, 17rem);
+  font-size: var(--t-name);
   padding: .2em .45em; margin-inline: -.45em;
   -webkit-mask-image: linear-gradient(90deg, #000 0 44%, transparent 56% 100%);
           mask-image: linear-gradient(90deg, #000 0 44%, transparent 56% 100%);
@@ -995,7 +995,7 @@ html, body { overscroll-behavior-y: none; }
 }
 .intro-sub {
   margin-top: clamp(.6rem, 1.6vw, 1.6rem);
-  font: 400 clamp(.85rem, .7rem + .8vw, 1.6rem)/1 var(--sans); letter-spacing: .9em; text-transform: uppercase;
+  font: 400 var(--t-lead)/1 var(--sans); letter-spacing: .9em; text-transform: uppercase;
   padding-left: .45em; opacity: 0;
 }
 .intro.go .intro-name { animation: jx-write 2.1s cubic-bezier(.5, .1, .25, 1) .15s forwards; }
@@ -1005,14 +1005,12 @@ html, body { overscroll-behavior-y: none; }
 /* the hero's own writing animation is skipped when the intro has just shown it */
 .show-intro .h4-name, .intro-done .h4-name { animation: none !important; -webkit-mask-image: none !important; mask-image: none !important; }
 .show-intro .h4-script, .intro-done .h4-script { animation: none !important; opacity: 1 !important; letter-spacing: .45em !important; }
-@media (max-width: 39.99rem) { .intro-name { font-size: 15.5vw; } }
+
 
 /* Mobile menu: Home, Work, About (Contact is the closing section of every page anyway) */
 @media (max-width: 63.99rem) { .nav .nav-contact { display: none; } }
 
 /* Footer row without the colophon sentence: label, e-mail, copyright */
-@media (min-width: 40rem) { .c-a { grid-column: 1 / 3; } .c-b { grid-column: 3 / 9; } .c-c { grid-column: 1 / 5; } .c-d { grid-column: 5 / 9; } }
-@media (min-width: 64rem) { .c-a { grid-column: 1 / 3; } .c-b { grid-column: 3 / 8; } .c-c { grid-column: 8 / 11; } .c-d { grid-column: 11 / 13; } }
 
 /* Home: the header floats transparent over the hero photo and turns solid
    once the hero (including its fade) has scrolled past it */
@@ -1040,3 +1038,72 @@ html { -webkit-tap-highlight-color: transparent; }
 
 /* Mobile menu tab a little lower on the screen */
 @media (max-width: 63.99rem) { .nav { top: 44svh; } }
+
+/* Footer row: name · e-mail · © · back to top (no label)
+   phone: name, then e-mail on the right, then © left and back to top right */
+.colophon-row { align-items: baseline; }
+.c-b { grid-column: 1 / 3; white-space: nowrap; }
+.c-c { grid-column: 3 / -1; text-align: right; white-space: nowrap; }
+.c-d { grid-column: 1 / 3; text-align: left; }
+.c-e { grid-column: 3 / -1; text-align: right; }
+@media (min-width: 40rem) {
+  .c-b { grid-column: 1 / 5; } .c-c { grid-column: 5 / 9; }
+  .c-d { grid-column: 1 / 5; } .c-e { grid-column: 5 / 9; }
+}
+@media (min-width: 64rem) {
+  .c-b { grid-column: 1 / 5; } .c-c { grid-column: 5 / 9; text-align: left; }
+  .c-d { grid-column: 9 / 11; } .c-e { grid-column: 11 / 13; }
+}
+/* Mobile menu tab label: medium (20px), same as the menu items */
+@media (max-width: 63.99rem) { .menu-tab { font-size: var(--t-menu); letter-spacing: .14em; } }
+
+/* Every Ballet word is 35px — except the hero name and the intro, which stay large */
+.script, .section-title .script, .also-title .script, .cs-title .script, .page-title .script, .cr-title .script,
+.p-toc a span, .ch-letter, .closing-script, .about-quote, .cc-script { font-size: var(--t-script); }
+
+/* Work page: one meta line across the full width (the title itself says "Index of work") */
+.page-head .ph-full { grid-column: 1 / -1; }
+/* The thank-you line: capitals, regular weight, grey */
+.colophon--big .closing-hint { text-transform: uppercase; letter-spacing: .12em; font-weight: 400; color: var(--foot-muted); }
+
+/* Contact sheet numbers: regular weight */
+.cs-item .label { font-weight: 400; }
+
+
+/* "View more" links in the accent colour (pink; turquoise in dark mode via --link) */
+.sw-more, .f-open { color: var(--link); }
+.sw-more:hover { font-style: italic; }
+
+/* Closing section: same height, but "Contact" and the thank-you line sit higher,
+   leaving more open space to draw in. The space taken off the top is added above the e-mail. */
+.colophon--big .closing { padding-top: calc(var(--fade) * .3); }
+@media (min-width: 64rem) {
+  .colophon--big .closing-body { margin-top: calc(clamp(6rem, 16vw, 14rem) + var(--fade) * .5); }
+}
+
+/* Desktop header: menu items in capitals like the logo (the Light / Dark toggle stays as is) */
+@media (min-width: 64rem) { .nav li a { text-transform: uppercase; letter-spacing: .09em; } }
+
+/* Work index: project titles at 14px, like the list on the home page */
+.ix-t { font-size: var(--t-xs); }
+
+/* Content is 14px, structure is 20px — applied to project pages and About:
+   sentences under section labels, chapter texts, the chapter list, prev/next titles
+   and the disciplines list are content; project and chapter titles stay 20px. */
+.b-heading p { font-size: var(--t-body); line-height: 1.6; letter-spacing: 0; max-width: 46ch; }
+.ch-text { font-size: var(--t-body); line-height: 1.6; max-width: 46ch; }
+.p-toc a { font-size: var(--t-body); line-height: 1.8; }
+.p-toc a span { font-size: var(--t-script); }
+.pn-t { font-size: var(--t-body); line-height: 1.3; letter-spacing: 0; }
+.disc-list { font-size: var(--t-body); line-height: 1.6; letter-spacing: 0; gap: 0 .35em; }
+
+/* Chapter names (Lowside) in capitals, and more air under the dividing line */
+.ch-title, .p-toc a { text-transform: uppercase; letter-spacing: .09em; }
+.p-toc a span { text-transform: none; letter-spacing: 0; }
+.ch-head { padding-top: var(--s-4); }
+.ch-letter { line-height: 1; }
+.p-toc { padding-top: 1.25rem; }
+.p-toc ol { margin-top: 1rem; }
+
+/* Project names in lists in capitals (Work index, More work on Home, previous/next) */
+.ix-t, .ar-t, .pn-t { text-transform: uppercase; letter-spacing: .09em; }

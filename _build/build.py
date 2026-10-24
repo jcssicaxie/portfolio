@@ -230,7 +230,7 @@ OVAL = (
 # set INTRO_ON = False and add "false&&" before "home&&" in the head script.
 INTRO_ON = True
 INTRO_HTML = '<div class="intro" aria-hidden="true" data-intro><div class="intro-inner"><p class="intro-name">JessicaXie</p><p class="intro-sub">Portfolio</p></div></div>\n'
-NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About"), ("contact.html", "Contact")]
+NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About")]
 
 
 def head(title, desc, depth, path, og=None):
@@ -268,7 +268,7 @@ def head(title, desc, depth, path, og=None):
 <script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Pinyon+Script&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
 <link rel="stylesheet" href="{depth}assets/css/jx.css">
 <link rel="icon" href="{depth}assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{depth}assets/logo-512.png">
@@ -300,7 +300,7 @@ def colophon(depth, big=False):
     big_html = ""
     if big:
         big_html = f"""
-  <div class="closing grid" data-ascii-trail>
+  <div class="closing grid" id="contact" data-ascii-trail>
     <p class="closing-hint label">Thank you for viewing my portfolio. Please take a moment to rest here and focus on your breathing as you draw around.</p>
     <h2 class="label closing-label">Contact</h2>
     <div class="closing-body">
@@ -311,10 +311,10 @@ def colophon(depth, big=False):
     cls = "colophon colophon--big" if big else "colophon"
     return f"""<footer class="{cls}">{big_html}
   <div class="colophon-row grid">
-    <p class="label c-a">Footer</p>
     <p class="c-b">Jessica Xie &mdash; Portfolio {SITE['edition']}</p>
     <p class="c-c"><a href="mailto:{SITE['email']}">{SITE['email']}</a></p>
-    <p class="label c-d">&copy; {TODAY.year} &middot; <a href="#top">Back to top&nbsp;&uarr;</a></p>
+    <p class="label c-d">&copy; {TODAY.year}</p>
+    <p class="label c-e"><a href="#top">Back to top&nbsp;&uarr;</a></p>
   </div>
 </footer>"""
 
@@ -531,14 +531,12 @@ def build_work():
         blocks.append(f'<li class="ix-group"><h2 class="ix-year">{y}</h2><ol class="ix-rows">{lis}</ol></li>')
     main = f"""
 <section class="page-head grid">
-  <p class="label ph-a">Index of work</p>
-  <p class="label ph-b">{len(ROWS)} entries &middot; 2022&ndash;{SITE['edition']}</p>
+  <p class="label ph-b ph-full">{len(ROWS)} entries &middot; 2022&ndash;{SITE['edition']}</p>
   <h1 class="page-title">Index<span class="script">of work</span></h1>
   <p class="page-intro">Every project, newest first. Filter by discipline, or hover a title for a glimpse.</p>
 </section>
 <section class="index grid" aria-label="All projects">
   <div class="filters" role="group" aria-label="Filter by discipline">{filters}</div>
-  <p class="label ix-count" aria-live="polite" data-count>{len(ROWS)} entries</p>
   <div class="ix-head label" aria-hidden="true"><span>No.</span><span>Title</span><span>Discipline</span><span>Context</span><span>Year</span></div>
   <ol class="ix-list">{''.join(blocks)}</ol>
 </section>"""
@@ -782,6 +780,7 @@ REDIRECTS = {
     "projects/photography-paris.html": ("work/paris-fashion-week.html", {}),
     "projects/photography-tokyo-kyoto.html": ("work/tokyo-kyoto.html", {}),
     "works.html": ("work.html", {}),
+    "contact.html": ("index.html#contact", {}),
     "cv.html": ("work.html", {}),
 }
 
@@ -820,7 +819,7 @@ def build_404():
 
 
 def build_sitemap():
-    urls = ["", "work.html", "about.html", "contact.html"] + [f"work/{p['slug']}.html" for p in PROJECTS]
+    urls = ["", "work.html", "about.html"] + [f"work/{p['slug']}.html" for p in PROJECTS]
     body = "".join(f"<url><loc>{SITE['url']}/{u}</loc><lastmod>{TODAY.isoformat()}</lastmod></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>\n', "utf-8")
@@ -834,7 +833,7 @@ def main():
     for i, p in enumerate(PROJECTS):
         build_project(i, p)
     build_about()
-    build_contact()
+    # contact page removed: contact.html now redirects to the closing section of the home page
     build_redirects()
     build_404()
     build_sitemap()
