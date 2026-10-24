@@ -7,6 +7,26 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
 
+  /* Intro (home, once per visit): wait for the Ballet font, write the name, then turn the page */
+  const intro = $("[data-intro]");
+  if (intro && root.classList.contains("show-intro")) {
+    let done = false, timer = 0;
+    const finish = (quick) => {
+      if (done) return; done = true; clearTimeout(timer);
+      try { sessionStorage.setItem("jx-intro", "1"); } catch (e) {}
+      intro.classList.add("out"); if (quick) intro.classList.add("quick");
+      const end = () => { root.classList.remove("show-intro"); root.classList.add("intro-done"); intro.remove(); };
+      intro.addEventListener("transitionend", end, { once: true });
+      setTimeout(end, 1200);
+    };
+    const start = () => { intro.classList.add("go"); timer = setTimeout(() => finish(false), 3600); };
+    const fontReady = document.fonts && document.fonts.load ? document.fonts.load('1em "Ballet"') : Promise.resolve();
+    Promise.race([fontReady, new Promise((r) => setTimeout(r, 1500))]).then(start, start);
+    ["pointerdown", "keydown", "wheel", "touchstart"].forEach((ev) => window.addEventListener(ev, () => finish(true), { once: true, passive: true }));
+  } else if (intro) {
+    intro.remove();
+  }
+
   /* Theme: light (#F5F4F0) by default; dark only when the reader chooses it */
   const isDark = () => root.dataset.theme === "dark";
   const themeBtn = $("[data-theme-toggle]");

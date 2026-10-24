@@ -217,7 +217,7 @@ OVAL = (
     '<path pathLength="1" d="M118 5C64 2 14 11 6 30c-7 17 36 30 96 30 58 0 94-12 92-30C192 13 150 3 92 6 66 7 44 12 31 18"/></svg>'
 )
 
-NAV = [("index.html", "Index"), ("work.html", "Work"), ("about.html", "About"), ("contact.html", "Contact")]
+NAV = [("index.html", "Home"), ("work.html", "Work"), ("about.html", "About"), ("contact.html", "Contact")]
 
 
 def head(title, desc, depth, path, og=None):
@@ -237,7 +237,7 @@ def head(title, desc, depth, path, og=None):
 <meta property="og:url" content="{canonical}">
 {f'<meta property="og:image" content="{og_img}">' if og_img else ''}
 <meta name="color-scheme" content="light">
-<script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}}})(document.documentElement)</script>
+<script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname;if((p.slice(-1)=='/'||p.slice(-10)=='index.html')&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Pinyon+Script&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
@@ -252,7 +252,7 @@ def masthead(depth, active):
     for i, (href, label) in enumerate(NAV, 1):
         cur = ' aria-current="page"' if href == active else ""
         items.append(
-            f'<li><a href="{depth}{href}"{cur}><span class="nav-t">{label}{OVAL}</span></a></li>'
+            f'<li class="nav-{href.split(".")[0]}"><a href="{depth}{href}"{cur}><span class="nav-t">{label}{OVAL}</span></a></li>'
         )
     return f"""<a class="skip" href="#main">Skip to content</a>
 <header class="masthead">
@@ -283,7 +283,6 @@ def colophon(depth, big=False):
     return f"""<footer class="{cls}">{big_html}
   <div class="colophon-row grid">
     <p class="label c-a">Footer</p>
-    <p class="c-b">Jessica Xie &mdash; Portfolio {SITE['edition']}. Designed and coded in VS&nbsp;Code, published with GitHub Pages.</p>
     <p class="c-c"><a href="mailto:{SITE['email']}">{SITE['email']}</a></p>
     <p class="label c-d">&copy; {TODAY.year} &middot; <a href="#top">Back to top&nbsp;&uarr;</a></p>
   </div>
@@ -434,6 +433,7 @@ def build_home():
         ("Practice", "UX/UI, visual &amp; editorial design, photography"),
     ], "receipt note-facts")
     main = f"""
+<div class="intro" aria-hidden="true" data-intro><div class="intro-inner"><p class="intro-name">JessicaXie</p><p class="intro-sub">Portfolio</p></div></div>
 <section class="cover hero4" aria-labelledby="cover-title">
   <div class="cover-bg" aria-hidden="true" style="background-image:url('{thumb(SITE['hero_image'], '', 2000)}')"></div>
   <div class="h4-top label">
@@ -646,7 +646,7 @@ def build_project(i, p):
     main = f"""
 <article class="project project--{cover_style}">
   <header class="p-head grid">
-    <nav class="crumbs label" aria-label="Breadcrumb"><a href="../work.html">Index</a> <span aria-hidden="true">/</span> No.&nbsp;{p['n']} <span aria-hidden="true">/</span> {disc}</nav>
+    <nav class="crumbs label" aria-label="Breadcrumb"><a href="../work.html">Work</a> <span aria-hidden="true">/</span> No.&nbsp;{p['n']} <span aria-hidden="true">/</span> {disc}</nav>
     <p class="p-num label" aria-hidden="true">No.&nbsp;{p['n']}</p>
     <h1 class="p-title"><span class="p-t">{p['title']}</span> <span class="p-s">{p['subtitle']}</span></h1>
     {receipt}
