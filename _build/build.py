@@ -72,11 +72,20 @@ def key_for(src: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", stem).strip("-")
 
 
+def derivatives_ok(key: str, widths, src: str) -> bool:
+    """All WebP sizes exist and none is older than the original (so edited originals are re-exported)."""
+    outs = [OUT_IMG / f"{key}-{w}.webp" for w in widths]
+    if not all(o.exists() for o in outs):
+        return False
+    path = ROOT / src
+    if HAS_PIL and path.exists():
+        return path.stat().st_mtime <= min(o.stat().st_mtime for o in outs)
+    return True
+
+
 def ensure_image(src: str) -> dict | None:
     entry = MAN.get(src)
-    if entry and not FORCE_IMAGES and all(
-        (OUT_IMG / f"{entry['key']}-{w}.webp").exists() for w in entry["widths"]
-    ):
+    if entry and not FORCE_IMAGES and derivatives_ok(entry["key"], entry["widths"], src):
         return entry
     if entry and not HAS_PIL:
         return entry
@@ -95,7 +104,7 @@ def ensure_image(src: str) -> dict | None:
     w, h = raw.size if orient not in (5, 6, 7, 8) else raw.size[::-1]
     widths = sorted({x for x in WIDTHS if x < w} | {min(w, WIDTHS[-1])})
     key = key_for(src)
-    if not FORCE_IMAGES and all((OUT_IMG / f"{key}-{tw}.webp").exists() for tw in widths):
+    if not FORCE_IMAGES and derivatives_ok(key, widths, src):
         MAN[src] = {"key": key, "w": w, "h": h, "widths": widths, "alpha": alpha}
         save_manifest()
         return MAN[src]
@@ -715,7 +724,7 @@ def build_about():
 </section>
 <section class="contact-sheet grid reveal" aria-labelledby="cs-t">
   <h2 class="cs-title" id="cs-t"><span class="script">Contact</span><span class="caps">sheet</span></h2>
-  <p class="cs-note">From my own camera roll: outfits, textures, places and small details that quietly find their way into what I make.</p>
+  <p class="cs-note">From my own camera roll: outfits, places and the creative workshops I love to follow, from flameworking and ring-making to ceramic painting, origami and ikebana.</p>
   <ol class="cs-grid">{sheet}</ol>
 </section>"""
     page("about.html", "About | Jessica Xie",

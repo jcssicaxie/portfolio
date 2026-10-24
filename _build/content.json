@@ -17,6 +17,7 @@
     "about_long": [
       "I have a background in communication and multimedia design, increasingly focused on UX/UI and visual design, fashion-informed art direction, and user experience.",
       "My practice is shaped by curiosity and informed by culture, lifestyle, and the many ways creativity appears in everyday life. Influenced by fashion and contemporary visual culture, I approach projects with both aesthetic awareness and strategic intent.",
+      "Outside of my studies I like to learn with my hands: I follow creative workshops in flameworking, ring-making, ceramic painting, origami and ikebana and chahua flower arrangement.",
       "I&rsquo;m interested in creating digital experiences and visual work that invite interaction and form meaningful connections with people."
     ],
     "tools": [
@@ -32,48 +33,68 @@
     "about_portrait_alt": "Jessica Xie lying on white sheets, a pink hair clip in her dark hair",
     "about_sheet": [
       [
-        "images/aboutimgs/about2.JPEG",
-        "Close-up self-portrait on a white pillow"
-      ],
-      [
         "images/aboutimgs/about11.jpg",
         "Crouching in a Japanese garden, wearing a kimono"
+      ],
+      [
+        "images/aboutimgs/359D3906-498A-48AE-AEE1-133F19227F97.jpg",
+        "Chahua flower arrangement with white orchids"
+      ],
+      [
+        "images/aboutimgs/IMG_6249.jpg",
+        "Flameworking: shaping a glass flower over the torch"
       ],
       [
         "images/aboutimgs/about5.png",
         "Mirror selfie in black"
       ],
       [
-        "images/aboutimgs/about4.png",
-        "Standing in green water"
+        "images/aboutimgs/IMG_0842.jpg",
+        "Ikebana workshop: arranging branches and flowers"
       ],
       [
         "images/aboutimgs/about12.png",
         "Pink embroidered veil in a bamboo forest"
       ],
       [
-        "images/aboutimgs/about7.png",
-        "Sitting in a black leather chair"
+        "images/aboutimgs/IMG_1416.jpg",
+        "Ring-making: a carved blue wax ring on a finger"
       ],
       [
         "images/aboutimgs/about3.jpg",
         "Bathing in a ceramic tub"
       ],
       [
+        "images/aboutimgs/IMG_2389.jpg",
+        "Hand-painted ceramic plates with red blossoms"
+      ],
+      [
+        "images/aboutimgs/IMG_3656.jpg",
+        "Standing in a concrete gallery space"
+      ],
+      [
+        "images/aboutimgs/IMG_6259.jpg",
+        "Rings from the workshop on a hand at the workbench"
+      ],
+      [
         "images/aboutimgs/about8.png",
         "Holding a parasol in front of a lit temple at night"
       ],
       [
-        "images/aboutimgs/about10.png",
-        "Self-portrait in a studded top"
+        "images/aboutimgs/IMG_3938.jpg",
+        "Holding pink flowers in a steel-walled room"
       ],
       [
-        "images/aboutimgs/about9.png",
-        "Lying back in white trousers"
+        "images/aboutimgs/IMG_7439.jpg",
+        "A book of Japanese prints with an origami crane"
       ],
       [
         "images/aboutimgs/about6.png",
         "Full outfit photographed from above"
+      ],
+      [
+        "images/aboutimgs/IMG_1419.jpg",
+        "Ring-making tools on the workbench"
       ]
     ],
     "hero_image": "images/Blurjess.JPEG",

@@ -9,6 +9,114 @@
    1152
   ]
  },
+ "images/aboutimgs/359D3906-498A-48AE-AEE1-133F19227F97.jpg": {
+  "alpha": false,
+  "h": 3072,
+  "key": "aboutimgs-359d3906-498a-48ae-aee1-133f19227f97",
+  "w": 2304,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/IMG_0842.jpg": {
+  "alpha": false,
+  "h": 2799,
+  "key": "aboutimgs-img-0842",
+  "w": 2099,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/IMG_1416.jpg": {
+  "alpha": false,
+  "h": 1176,
+  "key": "aboutimgs-img-1416",
+  "w": 882,
+  "widths": [
+   640,
+   882
+  ]
+ },
+ "images/aboutimgs/IMG_1419.jpg": {
+  "alpha": false,
+  "h": 1176,
+  "key": "aboutimgs-img-1419",
+  "w": 882,
+  "widths": [
+   640,
+   882
+  ]
+ },
+ "images/aboutimgs/IMG_2389.jpg": {
+  "alpha": false,
+  "h": 3073,
+  "key": "aboutimgs-img-2389",
+  "w": 2305,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/IMG_3656.jpg": {
+  "alpha": false,
+  "h": 4032,
+  "key": "aboutimgs-img-3656",
+  "w": 3024,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/IMG_3938.jpg": {
+  "alpha": false,
+  "h": 4032,
+  "key": "aboutimgs-img-3938",
+  "w": 3024,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/IMG_6249.jpg": {
+  "alpha": false,
+  "h": 3024,
+  "key": "aboutimgs-img-6249",
+  "w": 2268,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/IMG_6259.jpg": {
+  "alpha": false,
+  "h": 4284,
+  "key": "aboutimgs-img-6259",
+  "w": 3213,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
+ "images/aboutimgs/IMG_7439.jpg": {
+  "alpha": false,
+  "h": 4032,
+  "key": "aboutimgs-img-7439",
+  "w": 3024,
+  "widths": [
+   640,
+   1200,
+   2000
+  ]
+ },
  "images/aboutimgs/about.jpg": {
   "alpha": false,
   "h": 3659,
@@ -93,12 +201,12 @@
  },
  "images/aboutimgs/about6.png": {
   "alpha": true,
-  "h": 768,
+  "h": 1000,
   "key": "aboutimgs-about6",
-  "w": 1000,
+  "w": 768,
   "widths": [
    640,
-   1000
+   768
   ]
  },
  "images/aboutimgs/about7.png": {
