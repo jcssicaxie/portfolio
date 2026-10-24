@@ -265,7 +265,7 @@ def head(title, desc, depth, path, og=None):
 <meta name="twitter:image" content="{og_img}">
 {ld}
 <meta name="color-scheme" content="light">
-<script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!location.hash&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}}})(document.documentElement)</script>
+<script>(function(d){{d.className=d.className.replace('no-js','js');try{{var t=localStorage.getItem('jx-theme');if(t)d.setAttribute('data-theme',t)}}catch(e){{}}try{{var p=location.pathname,home=(p.slice(-1)=='/'||p.slice(-10)=='index.html');if(home)d.classList.add('head-clear');if(home&&!location.hash&&!sessionStorage.getItem('jx-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('show-intro')}}catch(e){{}}try{{if(location.hash){{d.style.scrollBehavior='auto';var jxid=location.hash.slice(1),jxdone=false;var jxsnap=function(){{if(jxdone)return;var jxel=document.getElementById(jxid);if(jxel)jxel.scrollIntoView()}};if(document.fonts&&document.fonts.ready)document.fonts.ready.then(jxsnap);addEventListener('load',function(){{jxsnap();jxdone=true;d.style.scrollBehavior=''}})}}}}catch(e){{}}}})(document.documentElement)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ballet&amp;family=Jost:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;display=swap">

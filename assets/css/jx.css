@@ -629,7 +629,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .ix-head { display: none; }
 .ix-list { margin-top: 1rem; }
 .ix-group { border-top: 1px solid var(--line-strong); padding-top: .65rem; margin-bottom: var(--s-4); }
-.ix-year { font-family: var(--display); font-weight: 400; font-size: var(--fs-h2); line-height: 1; letter-spacing: -.03em; margin-bottom: .5rem; }
+.ix-year { font-family: var(--display); font-weight: 400; font-size: var(--t-xs); line-height: 1; letter-spacing: -.03em; margin-bottom: .5rem; }
 .ix-row a {
   display: grid; grid-template-columns: 4.25rem 1fr; column-gap: 1rem; row-gap: .15rem; align-items: start;
   padding: .85rem 0; border-bottom: 1px solid var(--line);
@@ -647,7 +647,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   .ix-head { display: grid; color: var(--muted); padding: .5rem 0; margin-left: calc((100% + var(--gap)) / 12 * 2); }
   .ix-head span:last-child { text-align: right; }
   .ix-group { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gap); }
-  .ix-year { grid-column: 1 / 3; position: sticky; top: calc(var(--head-h) + 1rem); align-self: start; font-size: var(--fs-h1); }
+  .ix-year { grid-column: 1 / 3; position: sticky; top: calc(var(--head-h) + 1rem); align-self: start; font-size: var(--t-xs); }
   .ix-rows { grid-column: 3 / 13; }
   .ix-row a { align-items: baseline; padding: 1rem 0; }
   .ix-thumb { display: none; }
@@ -837,7 +837,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 .disc-list { display: flex; flex-wrap: wrap; gap: 0 .45em; font-family: var(--display); font-size: var(--fs-display); line-height: 1; letter-spacing: -.04em; }
 .disc-list li:not(:last-child)::after { content: ","; }
 .disc-list a:hover span, .disc-list a:focus-visible span { font-style: italic; }
-.disc-list sup { font: 500 var(--t-xs)/1 var(--sans); letter-spacing: 0; color: var(--muted); margin-left: .15em; vertical-align: top; position: relative; top: .3em; }
+.disc-list sup { font-size: 1em; font-weight: inherit; letter-spacing: 0; color: var(--muted); margin-left: .2em; }
 .contact-sheet { padding-block: var(--s-6) var(--s-4); row-gap: 1.25rem; }
 .cs-note { color: var(--muted); max-width: 40ch; }
 .cs-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); margin-top: 1.5rem; }
@@ -902,7 +902,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 
 /* Work and About on the scale */
 .page-title { font-size: var(--t-h3); }
-.ix-year { font-size: var(--t-h3); }
+.ix-year { font-size: var(--t-xs); }
 .ix-t { font-size: var(--t-h3); }
 .about-title { font-size: var(--t-h1); }
 .about-quote { font-size: var(--t-h2); }
@@ -949,7 +949,7 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   .colophon--big .closing { min-height: 92svh; display: flex; flex-direction: column; }
   .colophon--big .closing > .closing-hint { align-self: center; }
   .colophon--big .closing > .closing-label { align-self: flex-start; }
-  .colophon--big .closing-hint { font-size: var(--t-xs); line-height: 1.8; max-width: 34ch; margin-bottom: var(--s-3); }
+  .colophon--big .closing-hint { font-size: .75rem; line-height: 1.7; max-width: 42ch; margin-bottom: var(--s-3); }
   .colophon--big .closing-body { margin-top: auto; padding-top: var(--s-5); align-self: stretch; }
 }
 
