@@ -946,7 +946,10 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
 
 /* Mobile: a taller closing section with room to draw */
 @media (max-width: 63.99rem) {
-  .colophon--big .closing { min-height: 92svh; display: flex; flex-direction: column; }
+  /* Account for the stacked scroll-padding-top + scroll-margin-top header clearance
+     (2 * --head-h + 3rem) so the section never grows taller than what's actually
+     visible once you land on #contact — otherwise the e-mail sinks below the fold. */
+  .colophon--big .closing { min-height: calc(100svh - (var(--head-h) * 2) - 4rem); display: flex; flex-direction: column; }
   .colophon--big .closing > .closing-hint { align-self: center; }
   .colophon--big .closing > .closing-label { align-self: flex-start; }
   .colophon--big .closing-hint { font-size: .75rem; line-height: 1.7; max-width: 42ch; margin-bottom: var(--s-3); }
