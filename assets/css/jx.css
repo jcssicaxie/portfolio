@@ -1143,7 +1143,13 @@ html { -webkit-tap-highlight-color: transparent; }
 
 /* Smooth scrolling for in-page links (Selected work, Contact); instant with reduced motion */
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
-#sel-title, #contact { scroll-margin-top: calc(var(--head-h) + 2rem); }
+#sel-title { scroll-margin-top: calc(var(--head-h) + 2rem); }
+/* #contact also sits behind the fixed header's scroll-padding-top (html), which already
+   reserves var(--head-h) + 1rem above every anchor. A small negative scroll-margin here
+   cancels most of that so landing on Contact tucks the hint right under the header—
+   instead of leaving the previous section's tail ("All work →") sitting in view—
+   and leaves more of the closing page's canvas actually on screen to draw on. */
+#contact { scroll-margin-top: calc(.5rem - var(--head-h)); }
 
 /* ── Scroll motion (only with JS and when the visitor allows motion; class .motion on <html>) ── */
 /* Selected work: images are revealed by a mask from the bottom, the text follows a beat later */
