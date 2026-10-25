@@ -348,33 +348,6 @@ def clip(s, n=190):
 
 
 # ─────────────────────────────────────────────────────────── home ──
-def feature(f, depth=""):
-    p = BY_SLUG[f["slug"]]
-    href = f"work/{p['slug']}.html"
-    lay = f["layout"]
-    link_img = lambda inner, cls="f-media": f'<a class="{cls}" href="{href}" tabindex="-1" aria-hidden="true">{inner}</a>'
-    if lay in ("e", "f"):
-        sizes = "(min-width: 64rem) 30vw, 50vw" if lay == "e" else "(min-width: 64rem) 16vw, 45vw"
-        figs = "".join(f'<span class="f-img f-img-{i+1}">{img(s, a, depth, sizes)}</span>' for i, (s, a) in enumerate(f["images"]))
-        media = link_img(figs, "f-media f-media--set")
-    else:
-        sizes = {"a": "100vw", "b": "(min-width: 64rem) 66vw, 100vw", "c": "(min-width: 64rem) 66vw, 100vw", "d": "(min-width: 64rem) 30vw, 70vw", "g": "(min-width: 64rem) 66vw, 100vw"}[lay]
-        media = link_img(f'<span class="f-img f-img-1">{img(f["image"], f["alt"], depth, sizes)}</span>')
-        if f.get("image2"):
-            media += link_img(f'<span class="f-img">{img(f["image2"], f["alt2"], depth, "(min-width: 64rem) 25vw, 50vw")}</span>', "f-media f-media--2")
-    return f"""
-<article class="feature feature--{lay} reveal">
-  {media}
-  <div class="f-text">
-    <p class="f-num label" aria-hidden="true">No.&nbsp;{p['n']}</p>
-    <h3 class="f-title"><a href="{href}"><span class="f-t">{p['title']}</span> <span class="f-s">{p['subtitle']}</span></a></h3>
-    {meta_dl([('Discipline', p['label']), ('Year', p['year'])], 'f-meta')}
-    <p class="f-deck">{clip(p['lead'])}</p>
-    <a class="f-open label" href="{href}" tabindex="-1" aria-hidden="true">View more <span>&rarr;</span></a>
-  </div>
-</article>"""
-
-
 # Selected work as a numbered modular grid (6 columns). Each entry:
 # image (col, colspan, row, rowspan) and text cell (col, row).
 # Desktop: (image column, image column-span, text column, text position).
@@ -756,27 +729,6 @@ def build_about():
     page("about.html", "About | Jessica Xie",
          "Jessica Xie studies Communication & Multimedia Design at the Hogeschool van Amsterdam, working across UX/UI, visual and editorial design, and photography.",
          main, "about.html", "about")
-
-
-def build_contact():
-    main = f"""
-<section class="contact grid">
-  <p class="label ph-a">Contact</p>
-  <p class="label ph-b">{SITE['location']}</p>
-  <h1 class="contact-title"><span>Write</span> <span class="ct-2">to <em>me</em>.</span></h1>
-  <div class="contact-body">
-    <p class="lead">For projects, questions, or a conversation about anything on this site, email is the best way to reach me.</p>
-    <a class="contact-mail" href="mailto:{SITE['email']}">{SITE['email']}</a>
-    <p><button class="click copy-btn" type="button" data-copy="{SITE['email']}">CLICK to copy the address</button> <span class="label" data-copy-status aria-live="polite"></span></p>
-  </div>
-  <div class="contact-card" aria-hidden="true">
-    <p class="label">Correspondence card</p>
-    <p class="cc-name">Jessica Xie</p>
-    <p class="cc-script">with love</p>
-    <dl class="receipt"><div><dt>Study</dt><dd>CMD, HvA</dd></div><div><dt>Based</dt><dd>{SITE['location']}</dd></div><div><dt>Date</dt><dd>{STAMP}</dd></div></dl>
-  </div>
-</section>"""
-    page("contact.html", "Contact | Jessica Xie", f"Get in touch with Jessica Xie: {SITE['email']}.", main, "contact.html", "contact-page")
 
 
 # ─────────────────────────────────────────────────────────── extras ──
