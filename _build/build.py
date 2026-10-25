@@ -180,7 +180,7 @@ def video(src, alt, depth):
     p = ensure_poster(src)
     poster = f' poster="{depth}assets/img/{p["poster"]}" width="{p["w"]}" height="{p["h"]}"' if p else ""
     return (
-        f'<video class="vid" muted loop playsinline preload="none" data-autoplay{poster} aria-label="{attr(alt)}">'
+        f'<video class="vid" muted autoplay loop playsinline preload="none" data-autoplay{poster} aria-label="{attr(alt)}">'
         f'<source src="{url(src, depth)}" type="video/mp4"></video>'
     )
 

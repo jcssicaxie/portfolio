@@ -131,7 +131,7 @@
     const vo = new IntersectionObserver((entries) => {
       entries.forEach((en) => {
         const v = en.target;
-        if (en.isIntersecting) { v.play().catch(() => { v.controls = true; }); } else { v.pause(); }
+        if (en.isIntersecting) { v.play().catch(() => {}); } else { v.pause(); }
       });
     }, { threshold: 0.25 });
     vids.forEach((v) => vo.observe(v));

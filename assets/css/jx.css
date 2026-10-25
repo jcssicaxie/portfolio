@@ -479,7 +479,6 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   font-family: var(--display); font-size: var(--t-xs); line-height: 1.6; letter-spacing: 0;
   text-indent: 2.2em; max-width: 40ch;
 }
-.note-text p::first-letter { font-style: italic; }
 .note-side { display: grid; gap: 1.75rem; }
 @media (min-width: 64rem) {
   .note-portrait { grid-column: 1 / 4; grid-row: 2 / 4; width: auto; }
