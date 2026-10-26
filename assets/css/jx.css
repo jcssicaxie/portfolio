@@ -788,8 +788,12 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
 }
 .filters button::before { left: -.45em; }
-.nav li a[aria-current="page"] .nav-t, .nav li a:hover .nav-t,
 .filters button[aria-pressed="true"], .filters button:hover { font-style: italic; }
+/* Nav uses a transform instead of font-style: italic — the real Jost italic face has
+   different glyph widths, which would shift the other nav items (justify-content: space-around
+   ties every item's position to the others' measured width). A transform is paint-only and
+   never affects layout, so hovering one nav item can no longer move the rest. */
+.nav li a[aria-current="page"] .nav-t, .nav li a:hover .nav-t { transform: skewX(-10deg); }
 .nav li a[aria-current="page"] .nav-t::before,
 .filters button[aria-pressed="true"]::before { opacity: 1; transform: none; }
 
