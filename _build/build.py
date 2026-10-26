@@ -83,10 +83,25 @@ def derivatives_ok(key: str, widths, src: str) -> bool:
     return True
 
 
+def file_sig(src: str) -> str | None:
+    """Size + hash of the original. Catches replaced files even when Finder keeps the old date."""
+    path = ROOT / src
+    if not path.exists():
+        return None
+    import hashlib
+    return f"{path.stat().st_size}-{hashlib.sha1(path.read_bytes()).hexdigest()[:12]}"
+
+
 def ensure_image(src: str) -> dict | None:
     entry = MAN.get(src)
     if entry and not FORCE_IMAGES and derivatives_ok(entry["key"], entry["widths"], src):
-        return entry
+        sig = file_sig(src)
+        if entry.get("sig") is None and sig:
+            entry["sig"] = sig  # first time: remember the current original
+            save_manifest()
+        if not sig or entry.get("sig") == sig:
+            return entry
+        entry = None  # original was replaced: re-export below
     if entry and not HAS_PIL:
         return entry
     if not HAS_PIL:
@@ -104,8 +119,8 @@ def ensure_image(src: str) -> dict | None:
     w, h = raw.size if orient not in (5, 6, 7, 8) else raw.size[::-1]
     widths = sorted({x for x in WIDTHS if x < w} | {min(w, WIDTHS[-1])})
     key = key_for(src)
-    if not FORCE_IMAGES and derivatives_ok(key, widths, src):
-        MAN[src] = {"key": key, "w": w, "h": h, "widths": widths, "alpha": alpha}
+    if not FORCE_IMAGES and src not in MAN and derivatives_ok(key, widths, src):
+        MAN[src] = {"key": key, "w": w, "h": h, "widths": widths, "alpha": alpha, "sig": file_sig(src)}
         save_manifest()
         return MAN[src]
     im = ImageOps.exif_transpose(raw).convert("RGBA" if alpha else "RGB")
@@ -115,7 +130,7 @@ def ensure_image(src: str) -> dict | None:
         th = round(h * tw / w)
         out = im if tw == w else im.resize((tw, th), Image.LANCZOS)
         out.save(OUT_IMG / f"{key}-{tw}.webp", "WEBP", quality=80, method=5)
-    entry = {"key": key, "w": w, "h": h, "widths": widths, "alpha": alpha}
+    entry = {"key": key, "w": w, "h": h, "widths": widths, "alpha": alpha, "sig": file_sig(src)}
     MAN[src] = entry
     save_manifest()
     print(f"  + {src} → {len(widths)} sizes", flush=True)

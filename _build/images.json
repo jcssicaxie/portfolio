@@ -3,6 +3,7 @@
   "alpha": false,
   "h": 1152,
   "key": "blurjess",
+  "sig": "98619-1f2f2cc82e14",
   "w": 1152,
   "widths": [
    640,
@@ -13,6 +14,7 @@
   "alpha": false,
   "h": 3072,
   "key": "aboutimgs-359d3906-498a-48ae-aee1-133f19227f97",
+  "sig": "1206617-bde2104642d9",
   "w": 2304,
   "widths": [
    640,
@@ -24,6 +26,7 @@
   "alpha": false,
   "h": 2799,
   "key": "aboutimgs-img-0842",
+  "sig": "924588-65e2c08d077f",
   "w": 2099,
   "widths": [
    640,
@@ -35,6 +38,7 @@
   "alpha": false,
   "h": 1176,
   "key": "aboutimgs-img-1416",
+  "sig": "188499-a75407f38fac",
   "w": 882,
   "widths": [
    640,
@@ -45,6 +49,7 @@
   "alpha": false,
   "h": 1176,
   "key": "aboutimgs-img-1419",
+  "sig": "258436-d93f2678070b",
   "w": 882,
   "widths": [
    640,
@@ -55,6 +60,7 @@
   "alpha": false,
   "h": 3073,
   "key": "aboutimgs-img-2389",
+  "sig": "1840325-87993492eb92",
   "w": 2305,
   "widths": [
    640,
@@ -66,6 +72,7 @@
   "alpha": false,
   "h": 4032,
   "key": "aboutimgs-img-3656",
+  "sig": "1937949-a3c74318d75f",
   "w": 3024,
   "widths": [
    640,
@@ -77,6 +84,7 @@
   "alpha": false,
   "h": 4032,
   "key": "aboutimgs-img-3938",
+  "sig": "2254977-d80aaf2a9a3c",
   "w": 3024,
   "widths": [
    640,
@@ -88,6 +96,7 @@
   "alpha": false,
   "h": 3024,
   "key": "aboutimgs-img-6249",
+  "sig": "644729-c20603f2eb36",
   "w": 2268,
   "widths": [
    640,
@@ -99,6 +108,7 @@
   "alpha": false,
   "h": 4284,
   "key": "aboutimgs-img-6259",
+  "sig": "1826912-314ecd35b59e",
   "w": 3213,
   "widths": [
    640,
@@ -110,6 +120,7 @@
   "alpha": false,
   "h": 4032,
   "key": "aboutimgs-img-7439",
+  "sig": "2161983-1b08860592b7",
   "w": 3024,
   "widths": [
    640,
@@ -121,6 +132,7 @@
   "alpha": false,
   "h": 3659,
   "key": "aboutimgs-about",
+  "sig": "1739729-5e9e04406ad8",
   "w": 3659,
   "widths": [
    640,
@@ -142,6 +154,7 @@
   "alpha": false,
   "h": 1367,
   "key": "aboutimgs-about11",
+  "sig": "910650-9d34b6950d53",
   "w": 1025,
   "widths": [
    640,
@@ -152,6 +165,7 @@
   "alpha": true,
   "h": 1000,
   "key": "aboutimgs-about12",
+  "sig": "2629256-d5d97531dbeb",
   "w": 750,
   "widths": [
    640,
@@ -173,6 +187,7 @@
   "alpha": false,
   "h": 1481,
   "key": "aboutimgs-about3",
+  "sig": "515879-2ced3b72bc95",
   "w": 1111,
   "widths": [
    640,
@@ -193,6 +208,7 @@
   "alpha": true,
   "h": 750,
   "key": "aboutimgs-about5",
+  "sig": "2412747-55f4458f46d7",
   "w": 999,
   "widths": [
    640,
@@ -203,6 +219,7 @@
   "alpha": true,
   "h": 1000,
   "key": "aboutimgs-about6",
+  "sig": "2683692-152d85673ce0",
   "w": 768,
   "widths": [
    640,
@@ -223,6 +240,7 @@
   "alpha": true,
   "h": 1000,
   "key": "aboutimgs-about8",
+  "sig": "3411542-a342a9307a76",
   "w": 751,
   "widths": [
    640,
@@ -243,6 +261,7 @@
   "alpha": false,
   "h": 720,
   "key": "fashion-cult-classics-cultclassics1",
+  "sig": "111240-3a526260eb11",
   "w": 1080,
   "widths": [
    640,
@@ -253,6 +272,7 @@
   "alpha": false,
   "h": 1717,
   "key": "fashion-cult-classics-cultclassics2",
+  "sig": "305317-510ba8660404",
   "w": 2576,
   "widths": [
    640,
@@ -264,6 +284,7 @@
   "alpha": false,
   "h": 1718,
   "key": "fashion-cult-classics-cultclassics3",
+  "sig": "304650-b6dd403a2387",
   "w": 2576,
   "widths": [
    640,
@@ -275,6 +296,7 @@
   "alpha": true,
   "h": 3505,
   "key": "magazine-kittycouture-kckaft",
+  "sig": "3080653-36326026c50c",
   "w": 2483,
   "widths": [
    640,
@@ -286,6 +308,7 @@
   "alpha": true,
   "h": 3505,
   "key": "magazine-kittycouture-kckaft2",
+  "sig": "3573660-a09c456f8f0e",
   "w": 2483,
   "widths": [
    640,
@@ -297,6 +320,7 @@
   "alpha": false,
   "h": 3001,
   "key": "magazine-kittycouture-kcmock",
+  "sig": "6642337-01a347598a2b",
   "w": 2251,
   "widths": [
    640,
@@ -308,6 +332,7 @@
   "alpha": true,
   "h": 2360,
   "key": "magazine-kittycouture-kcschets1",
+  "sig": "948456-4d507189cd24",
   "w": 1640,
   "widths": [
    640,
@@ -319,6 +344,7 @@
   "alpha": false,
   "h": 2360,
   "key": "magazine-kittycouture-kcschets2",
+  "sig": "118478-a1b630211b9b",
   "w": 1640,
   "widths": [
    640,
@@ -330,6 +356,7 @@
   "alpha": false,
   "h": 2360,
   "key": "magazine-kittycouture-kcschets3",
+  "sig": "99760-bfeba6720c3a",
   "w": 1640,
   "widths": [
    640,
@@ -341,6 +368,7 @@
   "alpha": false,
   "h": 1364,
   "key": "magazine-kittycouture-kittycouture",
+  "sig": "123508-23460d022c04",
   "w": 942,
   "widths": [
    640,
@@ -351,6 +379,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0001",
+  "sig": "305700-90e285051e5d",
   "w": 1152,
   "widths": [
    640,
@@ -361,6 +390,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0002",
+  "sig": "121974-aeffe83e1ab7",
   "w": 1152,
   "widths": [
    640,
@@ -371,6 +401,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0003",
+  "sig": "417576-4195a038d01a",
   "w": 1152,
   "widths": [
    640,
@@ -381,6 +412,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0004",
+  "sig": "1025733-4a4d8e6e5831",
   "w": 1152,
   "widths": [
    640,
@@ -391,6 +423,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0005",
+  "sig": "542609-3ff55260d3e1",
   "w": 1152,
   "widths": [
    640,
@@ -401,6 +434,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0006",
+  "sig": "610815-d2523087936d",
   "w": 1152,
   "widths": [
    640,
@@ -411,6 +445,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0007",
+  "sig": "439995-9d5f273461d6",
   "w": 1152,
   "widths": [
    640,
@@ -421,6 +456,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0008",
+  "sig": "543743-148335a35c7e",
   "w": 1152,
   "widths": [
    640,
@@ -431,6 +467,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0009",
+  "sig": "526091-2200a3d538ba",
   "w": 1152,
   "widths": [
    640,
@@ -441,6 +478,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0010",
+  "sig": "745116-3b74315d0e3d",
   "w": 1152,
   "widths": [
    640,
@@ -451,6 +489,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0011",
+  "sig": "512531-17109e324ac7",
   "w": 1152,
   "widths": [
    640,
@@ -461,6 +500,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0012",
+  "sig": "544947-31016b1b10aa",
   "w": 1152,
   "widths": [
    640,
@@ -471,6 +511,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0013",
+  "sig": "757969-717e5ac90e39",
   "w": 1152,
   "widths": [
    640,
@@ -481,6 +522,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0014",
+  "sig": "761096-66923b70b880",
   "w": 1152,
   "widths": [
    640,
@@ -491,6 +533,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0015",
+  "sig": "641895-a3568fb4e5e5",
   "w": 1152,
   "widths": [
    640,
@@ -501,6 +544,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0016",
+  "sig": "334761-5c1eb5764d6d",
   "w": 1152,
   "widths": [
    640,
@@ -511,6 +555,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0017",
+  "sig": "473024-6e2947baa6dd",
   "w": 1152,
   "widths": [
    640,
@@ -521,6 +566,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0018",
+  "sig": "411734-5f1ff66b4267",
   "w": 1152,
   "widths": [
    640,
@@ -531,6 +577,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0019",
+  "sig": "829573-8db6019d1e68",
   "w": 1152,
   "widths": [
    640,
@@ -541,6 +588,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0020",
+  "sig": "779516-90f50634c0df",
   "w": 1152,
   "widths": [
    640,
@@ -551,6 +599,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0021",
+  "sig": "527212-9b1332ca7636",
   "w": 1152,
   "widths": [
    640,
@@ -561,6 +610,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0022",
+  "sig": "987717-985bff78f143",
   "w": 1152,
   "widths": [
    640,
@@ -571,6 +621,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0023",
+  "sig": "730387-237e81e0d0ca",
   "w": 1152,
   "widths": [
    640,
@@ -581,6 +632,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0024",
+  "sig": "825574-eaff4dc32ceb",
   "w": 1152,
   "widths": [
    640,
@@ -591,6 +643,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0025",
+  "sig": "124726-244c7b766db9",
   "w": 1152,
   "widths": [
    640,
@@ -601,6 +654,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0026",
+  "sig": "383833-48e231e99a49",
   "w": 1152,
   "widths": [
    640,
@@ -611,6 +665,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0027",
+  "sig": "556935-91ac7f034153",
   "w": 1152,
   "widths": [
    640,
@@ -621,6 +676,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0028",
+  "sig": "1036009-3b8537e2a1b4",
   "w": 1152,
   "widths": [
    640,
@@ -631,6 +687,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0029",
+  "sig": "974314-9b4bec0c01bf",
   "w": 1152,
   "widths": [
    640,
@@ -641,6 +698,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0030",
+  "sig": "711732-9f487ccdd9c0",
   "w": 1152,
   "widths": [
    640,
@@ -651,6 +709,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0031",
+  "sig": "546926-cd51a2f3eea0",
   "w": 1152,
   "widths": [
    640,
@@ -661,6 +720,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0032",
+  "sig": "692685-161ea099816b",
   "w": 1152,
   "widths": [
    640,
@@ -671,6 +731,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0033",
+  "sig": "611824-e2e6555e18ec",
   "w": 1152,
   "widths": [
    640,
@@ -681,6 +742,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0034",
+  "sig": "1053900-ec8f1f52434f",
   "w": 1152,
   "widths": [
    640,
@@ -691,6 +753,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0035",
+  "sig": "618885-29ed53865f44",
   "w": 1152,
   "widths": [
    640,
@@ -701,6 +764,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0036",
+  "sig": "620592-0a5c0b14f4bc",
   "w": 1152,
   "widths": [
    640,
@@ -711,6 +775,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0037",
+  "sig": "577971-46ec68b57fcf",
   "w": 1152,
   "widths": [
    640,
@@ -721,6 +786,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0038",
+  "sig": "767979-d29c58cc1af2",
   "w": 1152,
   "widths": [
    640,
@@ -731,6 +797,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0039",
+  "sig": "729498-f2e84b2f5fd7",
   "w": 1152,
   "widths": [
    640,
@@ -741,6 +808,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0040",
+  "sig": "713033-5daa9db52311",
   "w": 1152,
   "widths": [
    640,
@@ -751,6 +819,7 @@
   "alpha": false,
   "h": 1630,
   "key": "magazine-kittycouture-kittycouturepages-passieprojectkittycouture-page-0041",
+  "sig": "212792-f850c723f6b7",
   "w": 1152,
   "widths": [
    640,
@@ -761,6 +830,7 @@
   "alpha": false,
   "h": 4342,
   "key": "photography-japan2025-japan1",
+  "sig": "4597004-9e252cec3a0a",
   "w": 3257,
   "widths": [
    640,
@@ -772,6 +842,7 @@
   "alpha": false,
   "h": 4266,
   "key": "photography-japan2025-japan10",
+  "sig": "3007349-bda3ac6f0de6",
   "w": 3200,
   "widths": [
    640,
@@ -783,6 +854,7 @@
   "alpha": false,
   "h": 3672,
   "key": "photography-japan2025-japan11",
+  "sig": "3575003-6fe5d4eb8fa4",
   "w": 2754,
   "widths": [
    640,
@@ -794,6 +866,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-japan2025-japan12",
+  "sig": "3459614-fc57d615e255",
   "w": 3672,
   "widths": [
    640,
@@ -805,6 +878,7 @@
   "alpha": false,
   "h": 3998,
   "key": "photography-japan2025-japan2",
+  "sig": "4208744-e8201b863ee5",
   "w": 2998,
   "widths": [
    640,
@@ -816,6 +890,7 @@
   "alpha": false,
   "h": 4043,
   "key": "photography-japan2025-japan3",
+  "sig": "3037830-24cb66f03fa6",
   "w": 3032,
   "widths": [
    640,
@@ -827,6 +902,7 @@
   "alpha": false,
   "h": 4215,
   "key": "photography-japan2025-japan4",
+  "sig": "3319661-c4ee9b144075",
   "w": 3161,
   "widths": [
    640,
@@ -838,6 +914,7 @@
   "alpha": false,
   "h": 3898,
   "key": "photography-japan2025-japan5",
+  "sig": "3744005-54a0d8f56fd3",
   "w": 2924,
   "widths": [
    640,
@@ -849,6 +926,7 @@
   "alpha": false,
   "h": 4034,
   "key": "photography-japan2025-japan6",
+  "sig": "4140621-d7db969b0fd3",
   "w": 3026,
   "widths": [
    640,
@@ -860,6 +938,7 @@
   "alpha": false,
   "h": 3810,
   "key": "photography-japan2025-japan7",
+  "sig": "3265743-2006b025cd70",
   "w": 2858,
   "widths": [
    640,
@@ -871,6 +950,7 @@
   "alpha": false,
   "h": 4412,
   "key": "photography-japan2025-japan8",
+  "sig": "2088415-64063955eba0",
   "w": 3309,
   "widths": [
    640,
@@ -882,6 +962,7 @@
   "alpha": false,
   "h": 4015,
   "key": "photography-japan2025-japan9",
+  "sig": "3180993-de48fc01e5d0",
   "w": 3011,
   "widths": [
    640,
@@ -893,6 +974,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020008",
+  "sig": "658791-7d12b29a4c3d",
   "w": 3672,
   "widths": [
    640,
@@ -904,6 +986,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020009",
+  "sig": "454265-6a8f56a6143e",
   "w": 3672,
   "widths": [
    640,
@@ -915,6 +998,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020011",
+  "sig": "345994-803dce82d8df",
   "w": 3672,
   "widths": [
    640,
@@ -926,6 +1010,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020014",
+  "sig": "451549-0baf5a769178",
   "w": 3672,
   "widths": [
    640,
@@ -937,6 +1022,7 @@
   "alpha": false,
   "h": 4025,
   "key": "photography-paris2024-p1020027",
+  "sig": "319740-adf35a8c1d37",
   "w": 3019,
   "widths": [
    640,
@@ -948,6 +1034,7 @@
   "alpha": false,
   "h": 4465,
   "key": "photography-paris2024-p1020032",
+  "sig": "570132-d890c3c40886",
   "w": 3348,
   "widths": [
    640,
@@ -959,6 +1046,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020036",
+  "sig": "539339-ed0f9aaa5691",
   "w": 3672,
   "widths": [
    640,
@@ -970,6 +1058,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020043",
+  "sig": "502808-f7856a49439d",
   "w": 3672,
   "widths": [
    640,
@@ -981,6 +1070,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020047",
+  "sig": "374411-abe506be9838",
   "w": 3672,
   "widths": [
    640,
@@ -992,6 +1082,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020053",
+  "sig": "615530-d91fb366552b",
   "w": 3672,
   "widths": [
    640,
@@ -1003,6 +1094,7 @@
   "alpha": false,
   "h": 3709,
   "key": "photography-paris2024-p1020059",
+  "sig": "285658-d0e52b29e5e0",
   "w": 2782,
   "widths": [
    640,
@@ -1014,6 +1106,7 @@
   "alpha": false,
   "h": 4896,
   "key": "photography-paris2024-p1020061",
+  "sig": "426466-105968640aa3",
   "w": 3672,
   "widths": [
    640,
@@ -1025,6 +1118,7 @@
   "alpha": true,
   "h": 944,
   "key": "posters-gisou-mockupedg",
+  "sig": "603479-a6238d2686e9",
   "w": 708,
   "widths": [
    640,
@@ -1035,6 +1129,7 @@
   "alpha": true,
   "h": 917,
   "key": "posters-gisou-mockuphub",
+  "sig": "314864-1e3dc7c6b018",
   "w": 688,
   "widths": [
    640,
@@ -1045,6 +1140,7 @@
   "alpha": false,
   "h": 2218,
   "key": "posters-gisou-process-gisou-artworks-overview",
+  "sig": "2690129-9a8c39f64be0",
   "w": 3622,
   "widths": [
    640,
@@ -1056,6 +1152,7 @@
   "alpha": false,
   "h": 1763,
   "key": "posters-gisou-process-gisou-colour-palette",
+  "sig": "84515-569455e36db9",
   "w": 840,
   "widths": [
    640,
@@ -1066,6 +1163,7 @@
   "alpha": false,
   "h": 965,
   "key": "posters-gisou-process-gisou-gwp-signage",
+  "sig": "142989-f1e9557515bb",
   "w": 965,
   "widths": [
    640,
@@ -1076,6 +1174,7 @@
   "alpha": false,
   "h": 2445,
   "key": "posters-gisou-process-gisou-moodboard",
+  "sig": "6751919-1d1190abd13d",
   "w": 2360,
   "widths": [
    640,
@@ -1087,6 +1186,7 @@
   "alpha": false,
   "h": 635,
   "key": "posters-gisou-process-gisou-tester-tray",
+  "sig": "61558-cdfbbf0748f6",
   "w": 2670,
   "widths": [
    640,
@@ -1098,6 +1198,7 @@
   "alpha": false,
   "h": 2655,
   "key": "posters-lowside-lshalloween2",
+  "sig": "243051-a955e520ee97",
   "w": 1888,
   "widths": [
    640,
@@ -1109,6 +1210,7 @@
   "alpha": false,
   "h": 3235,
   "key": "posters-lowside-lshalloween3",
+  "sig": "442707-40b340812047",
   "w": 2301,
   "widths": [
    640,
@@ -1120,6 +1222,7 @@
   "alpha": false,
   "h": 2655,
   "key": "posters-lowside-lshalloween4",
+  "sig": "263555-27ea1a790c15",
   "w": 1888,
   "widths": [
    640,
@@ -1131,6 +1234,7 @@
   "alpha": false,
   "h": 2045,
   "key": "posters-lowside-afropiano",
+  "sig": "108976-07dfdaa50235",
   "w": 1640,
   "widths": [
    640,
@@ -1142,6 +1246,7 @@
   "alpha": false,
   "h": 2045,
   "key": "posters-lowside-afropiano2",
+  "sig": "92804-891bc38e0324",
   "w": 1640,
   "widths": [
    640,
@@ -1153,6 +1258,7 @@
   "alpha": false,
   "h": 2045,
   "key": "posters-lowside-afropianoannouncement",
+  "sig": "131189-7d11df674012",
   "w": 1640,
   "widths": [
    640,
@@ -1164,6 +1270,7 @@
   "alpha": true,
   "h": 2045,
   "key": "posters-lowside-afropianosisi",
+  "sig": "2494473-4b999388dda5",
   "w": 1640,
   "widths": [
    640,
@@ -1175,6 +1282,7 @@
   "alpha": false,
   "h": 2045,
   "key": "posters-lowside-returnof10s",
+  "sig": "195389-459e13b46c15",
   "w": 1638,
   "widths": [
    640,
@@ -1186,6 +1294,7 @@
   "alpha": true,
   "h": 2048,
   "key": "posters-lowside-returnof10s1",
+  "sig": "3349830-67091e73d679",
   "w": 2048,
   "widths": [
    640,
@@ -1197,6 +1306,7 @@
   "alpha": false,
   "h": 2045,
   "key": "posters-lowside-sipnswapcod",
+  "sig": "129363-dfc375d90380",
   "w": 1638,
   "widths": [
    640,
@@ -1208,6 +1318,7 @@
   "alpha": false,
   "h": 2045,
   "key": "posters-lowside-sipnswapmain",
+  "sig": "160282-fdf748537a8f",
   "w": 1638,
   "widths": [
    640,
@@ -1219,6 +1330,7 @@
   "alpha": false,
   "h": 2045,
   "key": "posters-lowside-sipnswapprogram",
+  "sig": "148623-227a74022a74",
   "w": 1638,
   "widths": [
    640,
@@ -1230,6 +1342,7 @@
   "alpha": true,
   "h": 2044,
   "key": "uxdesign-asiancy1",
+  "sig": "4016984-0fe5518c1740",
   "w": 1693,
   "widths": [
    640,
@@ -1241,6 +1354,7 @@
   "alpha": true,
   "h": 1811,
   "key": "uxdesign-asiancyplattegrond",
+  "sig": "164348-475a8eb02de0",
   "w": 2309,
   "widths": [
    640,
@@ -1252,6 +1366,7 @@
   "alpha": false,
   "h": 1086,
   "key": "uxdesign-asiancyprototype",
+  "sig": "2044923-4b65a0224565",
   "w": 1448,
   "widths": [
    640,
@@ -1263,6 +1378,7 @@
   "alpha": false,
   "h": 1086,
   "key": "uxdesign-asiancyprototype2",
+  "sig": "2205573-44d3d4abf907",
   "w": 1448,
   "widths": [
    640,
@@ -1274,6 +1390,7 @@
   "alpha": false,
   "h": 1086,
   "key": "uxdesign-asiancyprototype3",
+  "sig": "2323389-ac375abaa150",
   "w": 1448,
   "widths": [
    640,
@@ -1285,6 +1402,7 @@
   "alpha": false,
   "h": 1086,
   "key": "uxdesign-asiancyprototype4",
+  "sig": "2090318-1859bdd5be95",
   "w": 1448,
   "widths": [
    640,
@@ -1296,6 +1414,7 @@
   "alpha": false,
   "h": 1086,
   "key": "uxdesign-asiancyprototype5",
+  "sig": "2113169-59ab134e596d",
   "w": 1448,
   "widths": [
    640,
@@ -1307,6 +1426,7 @@
   "alpha": true,
   "h": 1876,
   "key": "uxdesign-asiancyreflectie",
+  "sig": "299489-a6fc6c34fc43",
   "w": 2400,
   "widths": [
    640,
@@ -1318,6 +1438,7 @@
   "alpha": true,
   "h": 1876,
   "key": "uxdesign-asiancyreflectie2",
+  "sig": "280171-16267d1ff713",
   "w": 2400,
   "widths": [
    640,
@@ -1329,6 +1450,7 @@
   "alpha": true,
   "h": 1459,
   "key": "webdesign-boekenzoekermockup1",
+  "sig": "1199340-dc3439554e88",
   "w": 3000,
   "widths": [
    640,
@@ -1340,6 +1462,7 @@
   "alpha": true,
   "h": 11485,
   "key": "webdesign-boekenzoekermockup2",
+  "sig": "10244302-19bbbddc7a3e",
   "w": 2893,
   "widths": [
    640,
@@ -1351,6 +1474,7 @@
   "alpha": true,
   "h": 5439,
   "key": "webdesign-boekenzoekermockup3",
+  "sig": "4120468-b7f5ba93e732",
   "w": 2710,
   "widths": [
    640,
@@ -1362,6 +1486,7 @@
   "alpha": true,
   "h": 1800,
   "key": "webdesign-gisouasset",
+  "sig": "3705755-3811cacd1309",
   "w": 2400,
   "widths": [
    640,
@@ -1373,6 +1498,7 @@
   "alpha": true,
   "h": 10666,
   "key": "webdesign-gisouhomepage",
+  "sig": "26786025-809629a0cf87",
   "w": 2893,
   "widths": [
    640,
@@ -1384,6 +1510,7 @@
   "alpha": false,
   "h": 1205,
   "key": "webdesign-gisoumockup",
+  "sig": "1400929-9528f46d8fbf",
   "w": 2177,
   "widths": [
    640,
@@ -1395,6 +1522,7 @@
   "alpha": true,
   "h": 1205,
   "key": "webdesign-hsmockup",
+  "sig": "533444-dd8357f96b2d",
   "w": 2185,
   "widths": [
    640,
@@ -1406,6 +1534,7 @@
   "alpha": true,
   "h": 1800,
   "key": "webdesign-hsmockup2",
+  "sig": "1818832-b075a77c1f8e",
   "w": 2400,
   "widths": [
    640,
@@ -1417,6 +1546,7 @@
   "alpha": true,
   "h": 3059,
   "key": "webdesign-hsmockup3",
+  "sig": "3560518-b917e14691ee",
   "w": 5631,
   "widths": [
    640,
@@ -1428,6 +1558,7 @@
   "alpha": true,
   "h": 1756,
   "key": "webdesign-hsscreenflow",
+  "sig": "426171-e1ec9c3d7209",
   "w": 2930,
   "widths": [
    640,
@@ -1439,6 +1570,7 @@
   "alpha": true,
   "h": 1516,
   "key": "webdesign-hsuserjourney",
+  "sig": "205141-94dfdd8107f1",
   "w": 2401,
   "widths": [
    640,
@@ -1450,6 +1582,7 @@
   "alpha": true,
   "h": 2738,
   "key": "webdesign-tcmockup",
+  "sig": "5133969-98ddf940d289",
   "w": 5631,
   "widths": [
    640,
@@ -1461,6 +1594,7 @@
   "alpha": true,
   "h": 1167,
   "key": "webdesign-tcmockup2",
+  "sig": "1392862-27dd8aef5aac",
   "w": 2400,
   "widths": [
    640,
@@ -1472,6 +1606,7 @@
   "alpha": true,
   "h": 1651,
   "key": "webdesign-tcmockup3",
+  "sig": "1037108-3e0763ddda02",
   "w": 2483,
   "widths": [
    640,
@@ -1483,6 +1618,7 @@
   "alpha": true,
   "h": 1651,
   "key": "webdesign-tcmockup4",
+  "sig": "1050759-d146cdf55225",
   "w": 2483,
   "widths": [
    640,
@@ -1494,6 +1630,7 @@
   "alpha": true,
   "h": 1707,
   "key": "webdesign-heartspace-case-1-hero-hair-oil-campaign",
+  "sig": "5769494-41967f8be767",
   "w": 2400,
   "widths": [
    640,
@@ -1505,6 +1642,7 @@
   "alpha": true,
   "h": 1707,
   "key": "webdesign-heartspace-case-2-product-spotlight-the-icon",
+  "sig": "3978568-b5d8ac1a9984",
   "w": 2400,
   "widths": [
    640,
@@ -1516,6 +1654,7 @@
   "alpha": true,
   "h": 1707,
   "key": "webdesign-heartspace-case-3-how-it-works-signature-ritual",
+  "sig": "674201-bc70b4aa72b8",
   "w": 2400,
   "widths": [
    640,
@@ -1527,6 +1666,7 @@
   "alpha": true,
   "h": 1707,
   "key": "webdesign-heartspace-case-4-campaign-editorial-lifestyle-immersion",
+  "sig": "3784945-64bf781cf698",
   "w": 2400,
   "widths": [
    640,
@@ -1538,6 +1678,7 @@
   "alpha": true,
   "h": 1707,
   "key": "webdesign-heartspace-case-5-conversion-crm-cta",
+  "sig": "6417764-50a4e6a714b3",
   "w": 2400,
   "widths": [
    640,
@@ -1549,6 +1690,7 @@
   "alpha": true,
   "h": 1857,
   "key": "webdesign-heartspace-case-gisoucolorpalette",
+  "sig": "700590-d03b3a3a1be1",
   "w": 2461,
   "widths": [
    640,
@@ -1560,6 +1702,7 @@
   "alpha": true,
   "h": 11498,
   "key": "webdesign-heartspace-case-gisouemailassignment",
+  "sig": "20867360-ae3e61b34370",
   "w": 2400,
   "widths": [
    640,
@@ -1571,6 +1714,7 @@
   "alpha": true,
   "h": 7166,
   "key": "webdesign-heartspace-case-gisoumobilelayout",
+  "sig": "14919283-5136f92a7d61",
   "w": 2400,
   "widths": [
    640,
@@ -1582,6 +1726,7 @@
   "alpha": true,
   "h": 1787,
   "key": "webdesign-heartspace-case-gisoucompetitors",
+  "sig": "2969419-0db36ee62217",
   "w": 2400,
   "widths": [
    640,
@@ -1593,6 +1738,7 @@
   "alpha": true,
   "h": 2096,
   "key": "webdesign-heartspace-case-gisougraphicassets",
+  "sig": "5217049-ccb50557c6ec",
   "w": 2400,
   "widths": [
    640,
@@ -1604,6 +1750,7 @@
   "alpha": true,
   "h": 1102,
   "key": "webdesign-heartspace-case-uistates",
+  "sig": "499899-b1266ba83249",
   "w": 2349,
   "widths": [
    640,
@@ -1615,6 +1762,7 @@
   "alpha": false,
   "h": 775,
   "key": "webdesign-heartspace-case-hs-ux-principles",
+  "sig": "330986-3d75a3b84bfc",
   "w": 1032,
   "widths": [
    640,
@@ -1625,6 +1773,7 @@
   "alpha": false,
   "h": 1558,
   "key": "webdesign-heartspace-case-hs-visual-research",
+  "sig": "2059502-a5b6b5ee16bd",
   "w": 2880,
   "widths": [
    640,
@@ -1636,6 +1785,7 @@
   "alpha": true,
   "h": 1800,
   "key": "webdesign-heartspace-case-hsdeskresearch",
+  "sig": "1122814-a9351e3809da",
   "w": 2400,
   "widths": [
    640,
@@ -1647,6 +1797,7 @@
   "alpha": true,
   "h": 1147,
   "key": "webdesign-heartspace-case-hsmusthaves",
+  "sig": "305673-eb4a6ea3e807",
   "w": 2363,
   "widths": [
    640,
@@ -1658,6 +1809,7 @@
   "alpha": true,
   "h": 2015,
   "key": "webdesign-heartspace-case-smartphone",
+  "sig": "1139026-0697c7e47c34",
   "w": 2400,
   "widths": [
    640,
@@ -1669,6 +1821,7 @@
   "alpha": true,
   "h": 1241,
   "key": "webdesign-heartspace-case-smartwatch",
+  "sig": "97569-f585f9945a28",
   "w": 2400,
   "widths": [
    640,
@@ -1680,6 +1833,7 @@
   "alpha": true,
   "h": 2044,
   "key": "webdesign-heartspacemockup3",
+  "sig": "885111-fbaae1e3f372",
   "w": 1693,
   "widths": [
    640,
@@ -1691,6 +1845,7 @@
   "alpha": true,
   "h": 3398,
   "key": "webdesign-logoneworder",
+  "sig": "788395-93a9c36bde73",
   "w": 5692,
   "widths": [
    640,
@@ -1702,6 +1857,7 @@
   "alpha": true,
   "h": 947,
   "key": "webdesign-productbiografieneworder",
+  "sig": "599674-5b0042b83883",
   "w": 1263,
   "widths": [
    640,
@@ -1713,6 +1869,7 @@
   "alpha": true,
   "h": 3258,
   "key": "webdesign-publiccityjazz1",
+  "sig": "4391327-0129f35f63aa",
   "w": 2696,
   "widths": [
    640,
@@ -1724,6 +1881,7 @@
   "alpha": true,
   "h": 1167,
   "key": "webdesign-publiccityjazz2",
+  "sig": "1701915-d8817982a838",
   "w": 2400,
   "widths": [
    640,
@@ -1735,6 +1893,7 @@
   "alpha": true,
   "h": 1440,
   "key": "webdesign-starsyncmockup1",
+  "sig": "1413062-fa2da93e4588",
   "w": 1499,
   "widths": [
    640,
@@ -1746,6 +1905,7 @@
   "alpha": true,
   "h": 1155,
   "key": "webdesign-starsyncmockup2",
+  "sig": "2509988-6636ac4309e3",
   "w": 2920,
   "widths": [
    640,
@@ -1757,6 +1917,7 @@
   "alpha": true,
   "h": 1440,
   "key": "webdesign-starsyncmockup3",
+  "sig": "2297371-9bfa64f2a1d5",
   "w": 1920,
   "widths": [
    640,
@@ -1768,6 +1929,7 @@
   "alpha": false,
   "h": 3508,
   "key": "webdesign-stijlpaginaboekenzoeker",
+  "sig": "2526640-dfbdb6804d5d",
   "w": 4961,
   "widths": [
    640,
@@ -1779,6 +1941,7 @@
   "alpha": true,
   "h": 1459,
   "key": "webdesign-thenewordermockup1",
+  "sig": "2919358-e47640df8f09",
   "w": 2400,
   "widths": [
    640,
@@ -1790,6 +1953,7 @@
   "alpha": true,
   "h": 1440,
   "key": "webdesign-thenewordermockup2",
+  "sig": "1592353-89f66961cf35",
   "w": 1499,
   "widths": [
    640,
