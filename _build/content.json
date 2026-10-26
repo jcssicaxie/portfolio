@@ -728,7 +728,7 @@
         },
         {
           "type": "offset",
-          "side": "left",
+          "side": "center",
           "items": [
             [
               "images/uxdesign/asiancyplattegrond.png",
@@ -994,19 +994,28 @@
           ]
         },
         {
-          "type": "wide",
+          "type": "offset",
           "items": [
             [
               "images/webdesign/TCmockup2.png",
               "Thug Club website on a laptop, dark",
               "Collection overview"
             ]
-          ]
+          ],
+          "side": "center",
+          "hover": "images/webdesign/TCmockup.png"
         }
       ],
       "reflection": [
         "A rebuild of the Thug Club website, and a test of how far I could get with semantic HTML alone: no divs or classes allowed. My accessibility test of the original found missing alt text, several h1s, no skip link and pages you couldn&rsquo;t tab through.",
         "Along the way I properly learned CSS grid, built my first light and dark mode, and made sure the Korean text in the footer is read out by VoiceOver in Korean. Not everything worked: I never got the animated scroll indicator I had in mind, and swapping product images with <code>:has()</code> is still on my list."
+      ],
+      "docs": [
+        [
+          "documents/ThugClub_Procesverslag_JX.pdf",
+          "view the process report",
+          "NL"
+        ]
       ]
     },
     {

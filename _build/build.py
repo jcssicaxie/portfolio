@@ -540,12 +540,18 @@ FIG = {"n": 0}
 CURRENT: dict = {}
 
 
-def fig(item, depth, sizes, cls="b-fig"):
+def fig(item, depth, sizes, cls="b-fig", hover=None):
     if isinstance(item, dict):
         return f'<figure class="{cls}">{video(item["video"], item.get("alt", ""), depth)}</figure>'
     src, alt, cap = (item + ["", ""])[:3]
     FIG["n"] += 1
     capt = f'<figcaption><span class="fig-n">Fig. {FIG["n"]:02d}</span> {cap}</figcaption>' if cap else ""
+    if hover:
+        # second image fades in on hover (e.g. dark -> light mode); same aspect ratio as the first
+        hint = ' <span class="hint swap-hint">hover for light mode</span>' if cap else ""
+        capt = capt.replace("</figcaption>", f"{hint}</figcaption>")
+        return (f'<figure class="{cls} has-swap"><span class="swap">{img(src, alt, depth, sizes)}'
+                f'{img(hover, "", depth, sizes, cls="swap-b")}</span>{capt}</figure>')
     return f'<figure class="{cls}">{img(src, alt, depth, sizes)}{capt}</figure>'
 
 
@@ -559,7 +565,7 @@ def block(b, depth):
     if t == "wide":
         return f'<div class="b b-wide grid reveal">{fig(items[0], depth, "(min-width: 64rem) 85vw, 100vw")}</div>'
     if t == "offset":
-        return f'<div class="b b-offset b-offset--{b.get("side", "right")} grid reveal">{fig(items[0], depth, "(min-width: 64rem) 62vw, 100vw")}</div>'
+        return f'<div class="b b-offset b-offset--{b.get("side", "right")} grid reveal">{fig(items[0], depth, "(min-width: 64rem) 62vw, 100vw", hover=b.get("hover"))}</div>'
     if t == "pair":
         r = b.get("ratio", "6-6")
         st = " b-stagger" if b.get("stagger") else ""
