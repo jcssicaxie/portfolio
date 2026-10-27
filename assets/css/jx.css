@@ -789,7 +789,9 @@ sup { font-size: .55em; vertical-align: super; line-height: 0; }
   transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
 }
 .filters button::before { left: -.45em; }
-.filters button[aria-pressed="true"], .filters button:hover { font-style: italic; }
+/* Filters: slant with a transform, not font-style (italic glyphs are wider and push the other filters) */
+.filters button { font-style: normal; transition: color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease); }
+.filters button[aria-pressed="true"], .filters button:hover { font-style: normal; transform: skewX(-10deg); }
 /* Nav uses a transform instead of font-style: italic — the real Jost italic face has
    different glyph widths, which would shift the other nav items (justify-content: space-around
    ties every item's position to the others' measured width). A transform is paint-only and
